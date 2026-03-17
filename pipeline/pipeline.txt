@@ -1,0 +1,290 @@
+Bien, voy a darte un **pipeline concreto, técnico y accionable**, orientado a responder *exactamente* a los puntos críticos de ambos revisores sin rehacer todo el paper.
+
+---
+
+# 🔧 PIPELINE DE REVISIÓN (ENFOQUE ESTRATÉGICO)
+
+## **FASE 0 — Diagnóstico (lo que realmente te están pidiendo)**
+
+Ambos revisores coinciden en 3 debilidades estructurales:
+
+1. **Comparación débil / injusta**
+2. **Estado del arte insuficiente**
+3. **Falta de análisis más allá de simulación puntual**
+
+El resto (figuras, estructura) es superficial.
+
+👉 Traducción:
+Tu paper es técnicamente sólido, pero **no está bien posicionado científicamente**.
+
+---
+
+# 🚀 FASE 1 — Estado del arte (impacto alto, esfuerzo bajo)
+
+## Objetivo:
+
+Eliminar crítica de “no contextualiza contribución”.
+
+## Acción:
+
+### 1. Expandir sección Related Work:
+
+Divide en 3 bloques:
+
+### (A) UCC model-based (baseline real)
+
+* LQR / MPC
+* Control jerárquico
+
+Incluye explícitamente:
+
+* Chen et al. (2021)
+* Lai et al. (2021)
+
+👉 No hace falta replicarlos, solo posicionarte:
+
+> “These approaches rely on high-fidelity models…”
+
+---
+
+### (B) Métodos robustos / compensación de incertidumbre
+
+Aquí es donde matas la crítica fuerte del revisor 1:
+
+Incluye:
+
+* Fuzzy control
+* NN-based control
+* Gaussian Processes
+* Adaptive control
+
+👉 Mensaje clave:
+
+> “Several approaches use simplified models plus compensation terms…”
+
+(esto conecta directamente con tu MFC)
+
+---
+
+### (C) Model-Free Control (Fliess & Join)
+
+Aquí posicionas tu contribución:
+
+> “However, MFC has not been widely explored for *joint lateral + vertical UCC*…”
+
+---
+
+✅ Resultado:
+
+* Ya no pareces “naive”
+* Tu contribución queda clara como *gap real*
+
+---
+
+# ⚖️ FASE 2 — Comparación justa (CRÍTICO)
+
+Este es el punto más importante.
+
+## Problema actual:
+
+Comparas contra un PID fijo → revisor lo destruye (con razón).
+
+---
+
+## Solución mínima viable (sin rehacer todo):
+
+### Añadir **2 nuevos controladores baseline**
+
+### ✅ Opción 1 (recomendada):
+
+**Gain-Scheduled PID**
+
+* PID con ganancias dependientes de:
+
+  * velocidad
+  * fricción (μ)
+
+👉 Esto ya lo convierte en “state-of-the-art básico”
+
+---
+
+### ✅ Opción 2 (mejor aún):
+
+**LQR simplificado**
+
+* Modelo linealizado lateral + roll
+* No necesitas modelo perfecto
+
+👉 Esto mata la crítica de “usa algo moderno”
+
+---
+
+### ⚠️ Alternativa si estás justo de tiempo:
+
+Mantener PID pero:
+
+* Explicar tuning (Ziegler-Nichols / manual / optimización)
+* Añadir:
+
+  * PID optimizado por escenario
+
+---
+
+## Métricas que DEBES añadir:
+
+No basta con trayectoria:
+
+* Error de yaw rate
+* Error de sideslip
+* Roll angle
+* **Control effort (revisor 2 lo pide)**
+
+👉 Define:
+
+```math
+J = \int (e^2 + \lambda u^2) dt
+```
+
+---
+
+# 📊 FASE 3 — Experimentos (robustez real)
+
+## Problema:
+
+Solo evalúas **Sine with Dwell**.
+
+## Solución:
+
+### Añadir al menos 2 escenarios más:
+
+1. **Double lane change (ISO)**
+2. **Step steering input**
+
+---
+
+### Añadir variación:
+
+* μ = {1.0, 0.6, 0.3}
+* velocidad distinta (ej: 60 / 100 km/h)
+
+---
+
+👉 Objetivo:
+Responder a:
+
+> “What can be said about overall stability?”
+
+---
+
+# 📐 FASE 4 — Estabilidad (sin meterte en Lyapunov duro)
+
+No necesitas prueba formal completa.
+
+## Haz esto:
+
+### 1. Argumento teórico ligero:
+
+* Basado en estructura iPID + estimador
+
+### 2. Añade:
+
+* boundedness de señales
+* convergencia empírica
+
+### 3. Opcional (muy potente):
+
+* análisis tipo ISS (input-to-state stability, informal)
+
+---
+
+👉 Frase clave:
+
+> “While formal global stability proofs are challenging due to the ultra-local model, empirical evidence shows bounded and stable behavior across scenarios.”
+
+---
+
+# 📈 FASE 5 — Figuras (quick win)
+
+Revisor 2 y 1 lo mencionan.
+
+## Haz:
+
+* zoom en regiones críticas
+* separa señales en subplots
+* aumenta grosor de líneas
+
+---
+
+# ⚙️ FASE 6 — Explicar tuning del iPID
+
+Crítica directa:
+
+> “The tuning is not explained”
+
+## Solución:
+
+Añade sección corta:
+
+* cómo elegiste:
+
+  * Kp, Ki, Kd
+  * α (ultra-local)
+  * filtro derivativo
+
+👉 Incluso si es heurístico:
+
+> “Parameters were tuned empirically to balance responsiveness and robustness”
+
+---
+
+# 🧠 FASE 7 — Reencuadre de contribución
+
+Reescribe claramente:
+
+❌ Antes:
+“Aplicamos MFC a UCC”
+
+✅ Después:
+
+> “This work demonstrates that a model-free ultra-local framework can achieve performance comparable to model-based UCC approaches while maintaining robustness under low-friction conditions and reduced modeling requirements.”
+
+---
+
+# 🧩 RESUMEN EJECUTIVO
+
+Si haces SOLO esto, el paper pasa:
+
+### 🔴 Obligatorio:
+
+* Añadir 1–2 controladores baseline (LQR o PID mejorado)
+* Expandir estado del arte
+* Explicar tuning
+* Añadir métricas + control effort
+
+### 🟡 Muy recomendable:
+
+* 2 escenarios adicionales
+* discusión de estabilidad
+
+### 🟢 Cosmético:
+
+* figuras
+* estructura
+
+---
+
+# 💬 Nota honesta (importante)
+
+El revisor 1 no está rechazando tu idea.
+Está diciendo:
+
+> “Esto está bien, pero no está demostrado contra algo serio.”
+
+Si corriges eso → el paper es publicable.
+
+---
+
+Si quieres, en el siguiente paso puedo:
+
+* proponerte **exactamente qué baseline implementar (con ecuaciones)**
+* o ayudarte a redactar la **respuesta a revisores (review rebuttal)** que es igual de crítico que el paper mismo

@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: sn-article.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+The style file: sn-chicago.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Database file #1: sn-bibliography.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--page numbers missing in Sirwan2023
+Warning--no volume for Hac2007
+Warning--page numbers missing in Hac2007
+Warning--no number and no volume in Bilen2010
+Warning--no number and no volume in Lew2024Risk-Averse
+Warning--empty organization in carsimintro2021
+Warning--no number and no volume in Owen2018
+Warning--page numbers missing in Rizk2023
+You've used 37 entries,
+            3204 wiz_defined-function locations,
+            944 strings with 13959 characters,
+and the built_in function-call counts, 28652 in all, are:
+= -- 2262
+> -- 2371
+< -- 2
++ -- 724
+- -- 780
+* -- 2791
+:= -- 5221
+add.period$ -- 150
+call.type$ -- 37
+change.case$ -- 301
+chr.to.int$ -- 37
+cite$ -- 45
+duplicate$ -- 720
+empty$ -- 1684
+format.name$ -- 884
+if$ -- 5371
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 32
+newline$ -- 199
+num.names$ -- 370
+pop$ -- 248
+preamble$ -- 1
+purify$ -- 523
+quote$ -- 0
+skip$ -- 707
+stack$ -- 0
+substring$ -- 1385
+swap$ -- 223
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 740
+warning$ -- 8
+while$ -- 323
+width$ -- 0
+write$ -- 510
+(There were 8 warnings)

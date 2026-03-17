@@ -1,0 +1,277 @@
+\begin{thebibliography}{}
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\bibcommenthead
+
+\bibitem[\protect\citeauthoryear{Ahmadi}{Ahmadi}{2021}]{Ahmadi2021}
+Ahmadi, B. 2021.
+\newblock Design a reliable model predictive control for path following with
+  application to the autonomous vehicle and considering different vehicle
+  models.
+\newblock Master's thesis, University of Waterloo.
+
+\bibitem[\protect\citeauthoryear{Ahmed, Mohammed, Abdulqadir, El-Kader,
+  El-Shall, Chandran, Rehman, and Dhama}{Ahmed et~al.}{2023}]{Sirwan2023}
+Ahmed, S.K., M.G. Mohammed, S.O. Abdulqadir, R.G.A. El-Kader, N.A. El-Shall,
+  D.~Chandran, M.E.U. Rehman, and K.~Dhama. 2023.
+\newblock Road traffic accidental injuries and deaths: A neglected global
+  health issue.
+\newblock {\em Health Science Report\/}~{\em 6\/}(5).
+\newblock \doi{10.1002/hsr2.1240} .
+
+\bibitem[\protect\citeauthoryear{Ahrenhold, Iatropoulos, and Henze}{Ahrenhold
+  et~al.}{2023}]{Ahrenhold2023}
+Ahrenhold, T., J.~Iatropoulos, and R.~Henze. 2023.
+\newblock Accuracy requirements for the road friction coefficient estimation of
+  a friction-adaptive automatic emergency steer assist (esa).
+\newblock {\em Automotive and Engine Technology\/}~{\em 8\/}(3): 141--151 .
+
+\bibitem[\protect\citeauthoryear{Aleksander and Edward}{Aleksander and
+  Edward}{2007}]{Hac2007}
+Aleksander, H. and B.~Edward. 2007.
+\newblock Robustness of side slip estimation and control algorithms for vehicle
+  chassis control.
+\newblock {\em 20th International Technical Conference on the Enhanced Safety
+  of Vehicles (ESV)\/}~(07-0353) .
+
+\bibitem[\protect\citeauthoryear{Anafjeh, Moosavi, and Danesh}{Anafjeh
+  et~al.}{2023}]{Anafjeh2023}
+Anafjeh, B., H.~Moosavi, and M.~Danesh. 2023.
+\newblock Active optimal roll control of railway vehicles in curved tracks
+  using an electrically actuated anti-roll bar system.
+\newblock {\em International Journal of Control, Automation and Systems\/}~{\em
+  21\/}(4): 1127--1142 .
+
+\bibitem[\protect\citeauthoryear{Arronte, Ripari, Angélico, and
+  Colón}{Arronte et~al.}{2023}]{Arronte2023}
+Arronte, C.A., G.A. Ripari, B.A. Angélico, and D.~Colón 2023.
+\newblock Design and validation of pid controller for electronic stability
+  control.
+\newblock In {\em 2023 15th IEEE International Conference on Industry
+  Applications (INDUSCON)}, São Bernardo do Campo, São Paulo, pp.\  343--350.
+
+\bibitem[\protect\citeauthoryear{Bilen}{Bilen}{2010}]{Bilen2010}
+Bilen, {\"O}. 2010.
+\newblock Path control algorithms for autonomous steering and braking of heavy
+  vehicles.
+\newblock {\em Göteborg: Chalmers University of Technology\/}: 10--52 .
+
+\bibitem[\protect\citeauthoryear{Chen, Wang, and Wang}{Chen
+  et~al.}{2021}]{Chen2021}
+Chen, X., M.~Wang, and W.~Wang. 2021.
+\newblock Unified chassis control of electric vehicles considering wheel
+  vertical vibrations.
+\newblock {\em Sensors\/}~{\em 21\/}(11): 321--342 .
+
+\bibitem[\protect\citeauthoryear{Ding, Wang, Meng, and Chen}{Ding
+  et~al.}{2023}]{Renkai2023}
+Ding, R., R.~Wang, X.~Meng, and L.~Chen. 2023.
+\newblock Research on time-delay-dependent h$\inf$/h2 optimal control of
+  magnetorheological semi-active suspension with response delay.
+\newblock {\em Journal of Vibration and Control\/}~{\em 29\/}(5-6): 1447--1458
+  .
+
+\bibitem[\protect\citeauthoryear{Dong, Jin, and Hou}{Dong
+  et~al.}{2014}]{Dong2014}
+Dong, H.r., S.t. Jin, and Z.s. Hou 2014.
+\newblock Model free adaptive control for automatic car parking systems.
+\newblock In {\em Proceeding of the 11th World Congress on Intelligent Control
+  and Automation}, pp.\  1769--1774.
+
+\bibitem[\protect\citeauthoryear{Fahimi}{Fahimi}{2013}]{Fahimi2013}
+Fahimi, F. 2013.
+\newblock Full drive-by-wire dynamic control for four-wheel-steer
+  all-wheel-drive vehicles.
+\newblock {\em Vehicle System Dynamics\/}~{\em 51\/}(3): 360--376 .
+
+\bibitem[\protect\citeauthoryear{Fliess}{Fliess}{2009}]{Fliess2009}
+Fliess, M. 2009.
+\newblock Model-free control and intelligent pid controllers: towards a
+  possible trivialization of nonlinear control?
+\newblock {\em IFAC Proceedings Volumes\/}~{\em 42\/}(10): 1531--1550 .
+
+\bibitem[\protect\citeauthoryear{Fliess and Join}{Fliess and
+  Join}{2008}]{Fliess2008}
+Fliess, M. and C.~Join. 2008.
+\newblock {Commande sans mod{\`e}le et commande {\`a} mod{\`e}le restreint}.
+\newblock {\em {e-STA Sciences et Technologies de l'Automatique}\/}~{\em
+  5\/}(4): 1--23 .
+
+\bibitem[\protect\citeauthoryear{Friedman, Mattos, and Paver}{Friedman
+  et~al.}{2010}]{Friedman2010}
+Friedman, D., G.~Mattos, and J.~Paver 2010.
+\newblock Characterizing the injury potential of a real world rollover.
+\newblock In {\em ICRASH Conference, Washington, DC}.
+
+\bibitem[\protect\citeauthoryear{Gidlewski, JANKOWSKI, MUSZYŃSKI, and
+  ŻARDECKI}{Gidlewski et~al.}{2017}]{Gidlewski2017}
+Gidlewski, M.J., K.~JANKOWSKI, A.~MUSZYŃSKI, and D.~ŻARDECKI 2017, mar.
+\newblock Vehicle lane change automation with active steering - theoretical
+  studies and numerical investigations.
+\newblock In {\em WCX™ 17: SAE World Congress Experience}. SAE International.
+
+\bibitem[\protect\citeauthoryear{Guo, Lenzo, Zhang, Zou, Zhai, and Zhang}{Guo
+  et~al.}{2020}]{Guo2020A}
+Guo, N., B.~Lenzo, X.~Zhang, Y.~Zou, R.~Zhai, and T.~Zhang. 2020.
+\newblock A real-time nonlinear model predictive controller for yaw motion
+  optimization of distributed drive electric vehicles.
+\newblock {\em IEEE Transactions on Vehicular Technology\/}~69: 4935--4946.
+\newblock \doi{10.1109/tvt.2020.2980169} .
+
+\bibitem[\protect\citeauthoryear{Jin, Wang, He, Yan, Xu, Wei, and Yin}{Jin
+  et~al.}{2023}]{Xianjian2023}
+Jin, X., J.~Wang, X.~He, Z.~Yan, L.~Xu, C.~Wei, and G.~Yin. 2023.
+\newblock Improving vibration performance of electric vehicles based on
+  in-wheel motor-active suspension system via robust finite frequency control.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
+  24\/}(2): 1631--1643 .
+
+\bibitem[\protect\citeauthoryear{Lai and Jiang}{Lai and Jiang}{2021}]{Lai2021}
+Lai, F. and C.Y. Jiang. 2021.
+\newblock Establishment and simulation analysis of 18 dof unified dynamics
+  model of automobile chassis.
+\newblock {\em International Journal of Control, Automation and Systems\/}~{\em
+  19\/}(7): 2323--2342.
+\newblock \doi{10.1007/s12555-019-0750-9} .
+
+\bibitem[\protect\citeauthoryear{Lew, Greiff, Djeumou, Suminaka, Thompson, and
+  Subosits}{Lew et~al.}{2024}]{Lew2024Risk-Averse}
+Lew, T., M.~Greiff, F.~Djeumou, M.~Suminaka, M.~Thompson, and J.K. Subosits.
+  2024.
+\newblock Risk-averse model predictive control for racing in adverse
+  conditions.
+\newblock {\em 2025 IEEE International Conference on Robotics and Automation
+  (ICRA)\/}: 8508--8514.
+\newblock \doi{10.1109/icra55743.2025.11127729} .
+
+\bibitem[\protect\citeauthoryear{Li, Wang, Cui, Lu, and Zhang}{Li
+  et~al.}{2023}]{Shaosong2023}
+Li, S., X.~Wang, G.~Cui, X.~Lu, and B.~Zhang. 2023.
+\newblock Yaw and lateral stability control based on predicted trend of stable
+  state of the vehicle.
+\newblock {\em Vehicle System Dynamics\/}~{\em 61\/}(1): 111--127 .
+
+\bibitem[\protect\citeauthoryear{Li, Chen, Liu, Wang, and Gong}{Li
+  et~al.}{2022}]{Zihan2022}
+Li, Z., H.~Chen, H.~Liu, P.~Wang, and X.~Gong. 2022.
+\newblock Integrated longitudinal and lateral vehicle stability control for
+  extreme conditions with safety dynamic requirements analysis.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
+  23\/}(10): 19285--19298.
+\newblock \doi{10.1109/TITS.2022.3152485} .
+
+\bibitem[\protect\citeauthoryear{{Mechanical Simulation
+  Corporation}}{{Mechanical Simulation Corporation}}{2012}]{MSC2012}
+{Mechanical Simulation Corporation} 2012, October.
+\newblock Sine with dwell test in carsim.
+\newblock Technical memo, Mechanical Simulation Corporation, 755 Phoenix Drive,
+  Ann Arbor MI, 48108, USA.
+
+\bibitem[\protect\citeauthoryear{{Mechanical Simulation
+  Corporation}}{{Mechanical Simulation Corporation}}{2021}]{carsimintro2021}
+{Mechanical Simulation Corporation} 2021, June.
+\newblock {\em Introduction to CarSim}.
+\newblock 755 Phoenix Drive, Ann Arbor MI, 48108, USA.
+\newblock Technical overview of CarSim features and capabilities.
+
+\bibitem[\protect\citeauthoryear{Menhour, d’Andréa Novel, Fliess, Gruyer,
+  and Mounier}{Menhour et~al.}{2018}]{Menhour2018}
+Menhour, L., B.~d’Andréa Novel, M.~Fliess, D.~Gruyer, and H.~Mounier. 2018.
+\newblock An efficient model-free setting for longitudinal and lateral vehicle
+  control: Validation through the interconnected pro-sivic/rtmaps prototyping
+  platform.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
+  19\/}(2): 461--475 .
+
+\bibitem[\protect\citeauthoryear{Mustafa, Wang, and Tian}{Mustafa
+  et~al.}{2019}]{Mustafa2019}
+Mustafa, G.I., H.~Wang, and Y.~Tian. 2019.
+\newblock Model-free adaptive fuzzy logic control for a half-car active
+  suspension system.
+\newblock {\em Studies in Informatics and Control\/}~{\em 28\/}(1): 13--24 .
+
+\bibitem[\protect\citeauthoryear{{Naciones Unidas (Noticias ONU)}}{{Naciones
+  Unidas (Noticias ONU)}}{2022}]{UN2022}
+{Naciones Unidas (Noticias ONU)}. 2022, June~30.
+\newblock Accidentes viales: “una epidemia silenciosa y ambulante” que mata
+  a 1,3 millones de personas por año.
+\newblock https://news.un.org/es/story/2022/06/1511112.
+\newblock Accessed 2025-06-24.
+
+\bibitem[\protect\citeauthoryear{Nguyen}{Nguyen}{2023}]{nguyen2023rollover}
+Nguyen, T.A. 2023, April.
+\newblock Assessing the dependence of vehicle rollover on many factors based on
+  new 4d graphs.
+\newblock {\em PLoS One\/}~{\em 18\/}(4): e0284018 .
+
+\bibitem[\protect\citeauthoryear{Owen}{Owen}{2018}]{Owen2018}
+Owen, E.D. 2018.
+\newblock The benefits of four-wheel drive for a high-performance fsae electric
+  racecar.
+\newblock {\em Cambridge: Massachusetts Institute of Technology\/}: 21--64 .
+
+\bibitem[\protect\citeauthoryear{Pereira~das Neves and
+  Augusto~Angélico}{Pereira~das Neves and Augusto~Angélico}{2022}]{NA2022}
+Pereira~das Neves, G. and B.~Augusto~Angélico. 2022.
+\newblock Model-free control of mechatronic systems based on algebraic
+  estimation.
+\newblock {\em Asian Journal of Control\/}~{\em 24\/}(4): 1575--1584 .
+
+\bibitem[\protect\citeauthoryear{Radac and Precup}{Radac and
+  Precup}{2018}]{Radac2018}
+Radac, M.B. and R.E. Precup. 2018.
+\newblock Data-driven model-free slip control of anti-lock braking systems
+  using reinforcement q-learning.
+\newblock {\em Neurocomputing\/}~275: 317--329 .
+
+\bibitem[\protect\citeauthoryear{Rizk, Chaibet, and Kribèche}{Rizk
+  et~al.}{2023}]{Rizk2023}
+Rizk, H., A.~Chaibet, and A.~Kribèche. 2023.
+\newblock Model-based control and model-free control techniques for autonomous
+  vehicles: A technical survey.
+\newblock {\em Applied Sciences\/}~{\em 13\/}(11) .
+
+\bibitem[\protect\citeauthoryear{Stolle, Bohlken, Lechtenberg, and
+  Sicking}{Stolle et~al.}{2011}]{Stolle2011}
+Stolle, C.S., J.C. Bohlken, K.A. Lechtenberg, and D.~Sicking 2011.
+\newblock Side-impact and non-tracking crash conditions.”.
+\newblock In {\em 90th Annual Meeting of the Transportation Research Board,
+  Washington, DC}.
+
+\bibitem[\protect\citeauthoryear{Wanki, Jaewoong, Chongkap, Seibum, and
+  Kyongsu}{Wanki et~al.}{2012}]{Cho2012}
+Wanki, C., C.~Jaewoong, K.~Chongkap, C.~Seibum, and Y.~Kyongsu. 2012.
+\newblock Unified chassis control for the improvement of agility,
+  maneuverability, and lateral stability.
+\newblock {\em IEEE Transactions on Vehicular Technology\/}~{\em 61\/}(3):
+  1008--1020.
+\newblock \doi{10.1109/TVT.2012.2183152} .
+
+\bibitem[\protect\citeauthoryear{{World Health Organization}}{{World Health
+  Organization}}{2021}]{WHO2021}
+{World Health Organization}. 2021.
+\newblock Decade of action for road safety 2021--2030.
+\newblock
+  \url{https://www.who.int/teams/social-determinants-of-health/safety-and-mobility/decade-of-action-for-road-safety-2021-2030/}.
+\newblock Accessed 2025-06-24.
+
+\bibitem[\protect\citeauthoryear{Xia, Lin, Zhang, Fu, Li, Li, and Yang}{Xia
+  et~al.}{2021}]{Xia2021}
+Xia, Y., M.~Lin, J.~Zhang, M.~Fu, C.~Li, S.~Li, and Y.~Yang. 2021.
+\newblock Trajectory planning and tracking for four-wheel steering vehicle
+  based on differential flatness and active disturbance rejection controller.
+\newblock {\em International Journal of Adaptive Control and Signal
+  Processing\/}~{\em 35\/}(11): 2214--2244 .
+
+\bibitem[\protect\citeauthoryear{Yakub, Abu, Sarip, and Mori}{Yakub
+  et~al.}{2016}]{Yakub2016}
+Yakub, F., A.~Abu, S.~Sarip, and Y.~Mori. 2016, 01.
+\newblock Study of model predictive control for path-following autonomous
+  ground vehicle control under crosswind effect.
+\newblock {\em Journal of Control Science and Engineering\/}~2016: 1--18 .
+
+\bibitem[\protect\citeauthoryear{Zhan}{Zhan}{2017}]{zhan2017yawrate}
+Zhan, W. 2017.
+\newblock A new methodology for reducing yaw rate estimation error.
+\newblock {\em World Journal of Engineering and Technology\/}~5: 12--20 .
+
+\end{thebibliography}
