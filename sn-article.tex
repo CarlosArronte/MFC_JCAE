@@ -163,6 +163,23 @@ This work proposes a unified chassis controller (UCC) to regulate lateral and ro
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 \section{Introduction}\label{intro}
+
+Road traffic accidents remain a major global concern, causing approximately 1.3 million deaths and tens of millions of injuries each year \citep{UN2022}. Many of these incidents are associated with loss of vehicle stability during abrupt maneuvers, tire failures, or adverse road conditions \citep{Friedman2010}. Such situations are typically characterized by excessive side-slip angle and yaw rate, which can lead to oversteer or understeer, as well as increased rollover risk due to significant roll angle variations \citep{Stolle2011,zhan2017yawrate,nguyen2023rollover}.\
+
+To address these challenges, modern vehicles incorporate advanced control systems such as Electronic Stability Control (ESC), which improves lateral stability through selective braking and torque modulation \citep{Hac2007}. In parallel, suspension-based systems, including active and semi-active suspensions, are used to regulate vertical dynamics and enhance ride comfort. Unified Chassis Control (UCC) extends these concepts by coordinating multiple subsystems to simultaneously regulate lateral and vertical vehicle dynamics, improving overall stability and safety, particularly under extreme driving conditions \citep{Cho2012}.\
+
+Most existing UCC strategies rely on model-based control approaches. Simplified representations such as the bicycle model are widely used for controller design, particularly within Model Predictive Control (MPC) frameworks \citep{Ahmadi2021,Gidlewski2017,Yakub2016}. For higher fidelity, more complex models have been proposed, including multi-degree-of-freedom formulations that capture the coupling between lateral, vertical, and suspension dynamics \citep{Lai2021,Chen2021}. While these approaches enable accurate prediction and control of vehicle behavior, they often require significant computational resources and are sensitive to modeling errors and parameter uncertainties \citep{Guo2020A,Lew2024Risk-Averse}.\
+
+To mitigate these limitations, several works have introduced uncertainty compensation mechanisms based on data-driven or adaptive techniques. Neural network-based controllers have been widely used to approximate unknown nonlinearities and disturbances in vehicle dynamics, enhancing robustness under varying conditions. Similarly, fuzzy and neuro-fuzzy approaches enable online adaptation of control parameters, while sliding mode control combined with intelligent approximators provides robustness against disturbances and model mismatch \citep{electronics10040510,Guo2021}. More recently, hybrid strategies combining model-based controllers with learning-based compensation terms have demonstrated improved performance in the presence of uncertainties \citep{levine2016end}.\
+
+In this context, Model-Free Control (MFC), introduced by \citet{Fliess2008}, provides an alternative framework that avoids explicit reliance on detailed system models. Instead, it employs ultra-local models and algebraic estimators to capture system behavior and compensate for uncertainties in real time. This work proposes an MFC-based UCC strategy to simultaneously regulate lateral and vertical vehicle dynamics. The main contribution lies in demonstrating that a model-free approach can achieve robust performance under varying operating conditions while reducing dependence on accurate vehicle modeling.\
+
+The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\
+
+
+
+
+\section{Introduction}\label{intro}
 Millions of people are affected by car accidents annually. According to the UN, 1.3 million people die and around 50 million suffer severe injuries each year \citep{UN2022}. In the U.S. alone, traffic accidents caused approximately 2.1 million emergency visits and 40,000 deaths in 2020, with an estimated cost of \$430 billion due to healthcare and reduced life expectancy \citep{Sirwan2023}.\
 
 In response to the global rise in accidents, the UN adopted Resolution A/RES/74/299 in 2020, urging countries to strengthen road safety policies and adopt the Decade of Action for Road Safety 2021–2030. The resolution emphasizes improved road safety management, safer vehicles and infrastructure, and public awareness to reduce traffic fatalities by 50\% \citep{WHO2021}.\
@@ -188,7 +205,7 @@ To achieve higher fidelity, some authors develop more complex models to capture 
 
 Similarly, \cite{Chen2021} proposed a 6-DOF rigid-body model that integrates planar motion (longitudinal, lateral, and yaw) with spatial motion (vertical, roll, and pitch). Combined with unsprung mass dynamics, this approach treats the vehicle as a unified system under longitudinal and lateral accelerations. To characterize nonlinear tire behavior, the authors utilize Pacejka’s Magic Formula, an empirical approach that unifies longitudinal force, lateral force, and self-aligning moment through parameter sets fitted to experimental data.
 
-In summary, the use of model-based controls in vehicle dynamics offers the fundamental advantage of enabling precise and coordinated management of complex multivariable systems—such as the interaction between independent wheel drive and active suspension—facilitating the incorporation of physical constraints and the prediction of critical states to maximize safety and comfort \cite{Zihan2022}. However, this approach has critical drawbacks, primarily a high demand for computational resources to process high-fidelity models in real time \cite{Guo2020A}, as well as significant sensitivity to modeling errors (model mismatch) \cite{Lew2024Risk-Averse}. Any discrepancy between mathematical parameters and real-world conditions—such as variations in mass or unexpected changes in tire friction—can significantly degrade system performance and stability if robust adaptation mechanisms are not in place.
+The use of model-based controls in vehicle dynamics offers the fundamental advantage of enabling precise and coordinated management of complex multivariable systems—such as the interaction between independent wheel drive and active suspension—facilitating the incorporation of physical constraints and the prediction of critical states to maximize safety and comfort \cite{Zihan2022}. However, this approach has critical drawbacks, primarily a high demand for computational resources to process high-fidelity models in real time \cite{Guo2020A}, as well as significant sensitivity to modeling errors (model mismatch) \cite{Lew2024Risk-Averse}. Any discrepancy between mathematical parameters and real-world conditions—such as variations in mass or unexpected changes in tire friction—can significantly degrade system performance and stability if robust adaptation mechanisms are not in place.
 
 
 \begin{figure}
@@ -199,6 +216,20 @@ In summary, the use of model-based controls in vehicle dynamics offers the funda
 \end{figure}
 
 \subsection{Uncertainty Compensation}
+Given the limitations discussed above, neural network-based controllers have been widely used to compensate for model uncertainties and unmodeled nonlinearities in vehicle dynamics. This is the case in \cite{electronics10040510}, where the lateral dynamics are described using a dynamic bicycle model, capturing key variables such as longitudinal velocity, slip angle, yaw rate, and tire lateral forces, while also accounting for trajectory tracking errors and unmodeled external disturbances (e.g., crosswinds). To compensate for parametric uncertainties, nonlinearities, and unmodeled dynamics, a radial basis function neural network (RBFNN) is integrated into a higher-order sliding mode control (HOSMC) scheme. The RBFNN estimates the unknown dynamics online based on the sliding surface, with its parameters updated through Lyapunov-based adaptive laws. This combined approach enhances robustness against disturbances, reduces chattering, and preserves lateral control performance under adverse conditions.
+
+In addition to neural network-based approaches, fuzzy logic has also been employed to handle parametric uncertainties within sliding mode control frameworks. This is the case in \cite{Guo2021}, where a fuzzy inference system is used to adaptively tune the boundary layer thickness based on the magnitude of the sliding surface, as part of a neuro-fuzzy adaptive sliding mode control strategy.
+
+In this approach, the absolute value of the sliding surface is used as the input to the fuzzy system, while the boundary layer thickness is the output. Using predefined linguistic rules and membership functions, the controller adjusts this parameter online: large deviations from the sliding surface lead to a thinner boundary layer to ensure fast convergence, whereas small deviations result in a thicker layer to attenuate chattering.
+
+This adaptive fuzzy mechanism enables an effective trade-off between robustness and oscillation reduction, improving control performance in the presence of parametric uncertainties and external disturbances.
+
+
+
+
+
+
+
 
 
 One of the most widely used schemes for validating controller design in automotive systems is the CarSim\textsuperscript{\textregistered} software.  CarSim\textsuperscript{\textregistered} mathematical models are highly optimized for computational efficiency and are represented at the system level, meaning that vehicle data is intended to be measured or calculated and does not rely on detailed knowledge of component materials or suspension linkage complexities. When using a CarSim\textsuperscript{\textregistered} model, major issues may include the need for detailed vehicle data, accurate environmental conditions, and a good understanding of vehicle models at the system level. Users should also be aware of the importance of accurate kinematics and suspension compliance, tire strength and moment properties, and environmental conditions, as well as the potential impact of limited reference data on the accuracy of simulation results \citep{carsimintro2021}.\

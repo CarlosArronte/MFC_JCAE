@@ -109,6 +109,14 @@ Gidlewski, M.J., K.~JANKOWSKI, A.~MUSZYŃSKI, and D.~ŻARDECKI 2017, mar.
   studies and numerical investigations.
 \newblock In {\em WCX™ 17: SAE World Congress Experience}. SAE International.
 
+\bibitem[\protect\citeauthoryear{Guo, Li, Fan, Luo, and Wang}{Guo
+  et~al.}{2021}]{Guo2021}
+Guo, J., K.~Li, J.~Fan, Y.~Luo, and J.~Wang. 2021.
+\newblock Neural-fuzzy-based adaptive sliding mode automatic steering control
+  of vision-based unmanned electric vehicles.
+\newblock {\em Chinese Journal of Mechanical Engineering\/}~{\em 34\/}(1): 88.
+\newblock \doi{10.1186/s10033-021-00597-w} .
+
 \bibitem[\protect\citeauthoryear{Guo, Lenzo, Zhang, Zou, Zhai, and Zhang}{Guo
   et~al.}{2020}]{Guo2020A}
 Guo, N., B.~Lenzo, X.~Zhang, Y.~Zou, R.~Zhai, and T.~Zhang. 2020.
@@ -132,6 +140,12 @@ Lai, F. and C.Y. Jiang. 2021.
 \newblock {\em International Journal of Control, Automation and Systems\/}~{\em
   19\/}(7): 2323--2342.
 \newblock \doi{10.1007/s12555-019-0750-9} .
+
+\bibitem[\protect\citeauthoryear{Levine, Finn, Darrell, and Abbeel}{Levine
+  et~al.}{2016}]{levine2016end}
+Levine, S., C.~Finn, T.~Darrell, and P.~Abbeel. 2016.
+\newblock End-to-end training of deep visuomotor policies.
+\newblock {\em Journal of Machine Learning Research\/}~{\em 17\/}(39): 1--40 .
 
 \bibitem[\protect\citeauthoryear{Lew, Greiff, Djeumou, Suminaka, Thompson, and
   Subosits}{Lew et~al.}{2024}]{Lew2024Risk-Averse}
@@ -236,6 +250,14 @@ Stolle, C.S., J.C. Bohlken, K.A. Lechtenberg, and D.~Sicking 2011.
 \newblock Side-impact and non-tracking crash conditions.”.
 \newblock In {\em 90th Annual Meeting of the Transportation Research Board,
   Washington, DC}.
+
+\bibitem[\protect\citeauthoryear{Swain, Rath, and Veluvolu}{Swain
+  et~al.}{2021}]{electronics10040510}
+Swain, S.K., J.J. Rath, and K.C. Veluvolu. 2021.
+\newblock Neural network based robust lateral control for an autonomous
+  vehicle.
+\newblock {\em Electronics\/}~{\em 10\/}(4).
+\newblock \doi{10.3390/electronics10040510} .
 
 \bibitem[\protect\citeauthoryear{Wanki, Jaewoong, Chongkap, Seibum, and
   Kyongsu}{Wanki et~al.}{2012}]{Cho2012}

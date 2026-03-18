@@ -14,45 +14,46 @@ Warning--no number and no volume in Lew2024Risk-Averse
 Warning--empty organization in carsimintro2021
 Warning--no number and no volume in Owen2018
 Warning--page numbers missing in Rizk2023
-You've used 37 entries,
+Warning--page numbers missing in electronics10040510
+You've used 40 entries,
             3204 wiz_defined-function locations,
-            944 strings with 13959 characters,
-and the built_in function-call counts, 28652 in all, are:
-= -- 2262
-> -- 2371
+            964 strings with 14599 characters,
+and the built_in function-call counts, 31100 in all, are:
+= -- 2444
+> -- 2605
 < -- 2
-+ -- 724
-- -- 780
-* -- 2791
-:= -- 5221
-add.period$ -- 150
-call.type$ -- 37
-change.case$ -- 301
-chr.to.int$ -- 37
-cite$ -- 45
-duplicate$ -- 720
-empty$ -- 1684
-format.name$ -- 884
-if$ -- 5371
++ -- 796
+- -- 852
+* -- 3060
+:= -- 5669
+add.period$ -- 164
+call.type$ -- 40
+change.case$ -- 328
+chr.to.int$ -- 40
+cite$ -- 49
+duplicate$ -- 778
+empty$ -- 1813
+format.name$ -- 968
+if$ -- 5827
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 199
-num.names$ -- 370
-pop$ -- 248
+missing$ -- 35
+newline$ -- 216
+num.names$ -- 400
+pop$ -- 269
 preamble$ -- 1
-purify$ -- 523
+purify$ -- 568
 quote$ -- 0
-skip$ -- 707
+skip$ -- 759
 stack$ -- 0
-substring$ -- 1385
-swap$ -- 223
+substring$ -- 1467
+swap$ -- 241
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 740
-warning$ -- 8
-while$ -- 323
+type$ -- 800
+warning$ -- 9
+while$ -- 344
 width$ -- 0
-write$ -- 510
-(There were 8 warnings)
+write$ -- 553
+(There were 9 warnings)

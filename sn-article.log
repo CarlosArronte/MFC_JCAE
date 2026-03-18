@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.11)  17 MAR 2026 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.11)  18 MAR 2026 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,7 +561,11 @@ Package amsthm Warning: Unknown theoremstyle `thmstylethree' on input line 96.
 (/home/lab-gpu-03/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count358
-) (sn-article.aux)
+) (sn-article.aux
+
+LaTeX Warning: Label `intro' multiply defined.
+
+)
 \openout1 = `sn-article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
@@ -715,18 +719,58 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
 
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 161.
 
-Underfull \hbox (badness 1484) in paragraph at lines 166--167
-\OT1/cmr/m/n/10 each year ([]Naciones Unidas (Noticias ONU)[],
+Underfull \hbox (badness 2035) in paragraph at lines 167--168
+\OT1/cmr/m/n/10 incidents are associated with loss of vehicle
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 168--169
-\OT1/cmr/m/n/10 Safety 2021{2030. The resolution emphasizes
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 incorporate advanced control systems such
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 168--169
-\OT1/cmr/m/n/10 and infrastructure, and public awareness to
+Underfull \hbox (badness 1565) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 as Electronic Stability Control (ESC), which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 improves lateral stability through selective
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 braking and torque modulation ([]Aleksander
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 and Edward[], []2007[]). In parallel, suspension-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 suspensions, are used to regulate vertical
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 dynamics and enhance ride comfort. Unified
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 by coordinating multiple subsystems to
+ []
+
+
+Underfull \hbox (badness 6741) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 simultaneously regulate lateral and vertical
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 169--170
+\OT1/cmr/m/n/10 vehicle dynamics, improving overall stability
  []
 
 
@@ -741,83 +785,153 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
-Underfull \hbox (badness 3930) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+[]\OT1/cmr/m/n/10 Most existing UCC strategies rely on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 model-based control approaches. Simplified
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 within Model Predictive Control (MPC)
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 frameworks ([]Ahmadi[], []2021[]; []Gidlewski et al.[],
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 more complex models have been proposed,
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 including multi-degree-of-freedom formulations
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 that capture the coupling between lateral,
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 vertical, and suspension dynamics ([]Lai and
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 computational resources and are sensitive to
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 171--172
+\OT1/cmr/m/n/10 modeling errors and parameter uncertainties
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 have introduced uncertainty compensation
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 techniques. Neural network-based controllers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 have been widely used to approximate
+ []
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 unknown nonlinearities and disturbances in
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 vehicle dynamics, enhancing robustness under
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 fuzzy approaches enable online adaptation of
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 robustness against disturbances and model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 More recently, hybrid strategies combining
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 model-based controllers with learning-based
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 173--174
+\OT1/cmr/m/n/10 performance in the presence of uncertainties
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 175--176
+\OT1/cmr/m/n/10 capture system behavior and compensate for
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 175--176
+\OT1/cmr/m/n/10 The main contribution lies in demonstrating
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 177--178
+[]\OT1/cmr/m/n/10 The remainder of the paper is organized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+\OT1/cmr/m/n/10 framework and reviews model-based UCC
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 177--178
+\OT1/cmr/m/n/10 controllers. Section []4[] describes the proposed
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 183--184
+\OT1/cmr/m/n/10 each year ([]Naciones Unidas (Noticias ONU)[],
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 185--186
+\OT1/cmr/m/n/10 Safety 2021{2030. The resolution emphasizes
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 185--186
+\OT1/cmr/m/n/10 and infrastructure, and public awareness to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 187--188
 \OT1/cmr/m/n/10 due to sudden maneuvers, tire failures, or
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 170--171
+Underfull \hbox (badness 2529) in paragraph at lines 187--188
 \OT1/cmr/m/n/10 situations manifest as increases in side slip
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 172--173
-[]\OT1/cmr/m/n/10 Electronic Stability Control (ESC) is the
- []
-
-
-Underfull \hbox (badness 5189) in paragraph at lines 172--173
-\OT1/cmr/m/n/10 braking wheels and reducing engine power
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 172--173
-\OT1/cmr/m/n/10 or semi-active suspensions ([]Jin et al.[], []2023[];
- []
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 172--173
-\OT1/cmr/m/n/10 to improve stability and comfort. It helps
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 174--175
-[]\OT1/cmr/m/n/10 This work proposes a model-free control
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 174--175
-\OT1/cmr/m/n/10 discusses the results. In particular, the UCC
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 174--175
-\OT1/cmr/m/n/10 stability during the tests (the open-loop and
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 174--175
-\OT1/cmr/m/n/10 simple PID controllers unstabilize after some
- []
-
-
-Underfull \hbox (badness 3792) in paragraph at lines 187--188
-[]\OT1/cmr/m/n/10 To achieve higher fidelity, some authors
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 187--188
-\OT1/cmr/m/n/10 comprehensive chassis dynamics. This model
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 187--188
-\OT1/cmr/m/n/10 facilitates the design of a UCC system that
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 187--188
-\OT1/cmr/m/n/10 evaluates the trade-off between ride comfort
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 187--188
-\OT1/cmr/m/n/10 accounting for the complex coupling between
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 187--188
-\OT1/cmr/m/n/10 as five rigid bodies: a sprung mass (chassis)
  []
 
 
@@ -829,128 +943,88 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 2617) in paragraph at lines 189--190
+Underfull \hbox (badness 1895) in paragraph at lines 189--190
+[]\OT1/cmr/m/n/10 Electronic Stability Control (ESC) is the
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 braking wheels and reducing engine power
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 or semi-active suspensions ([]Jin et al.[], []2023[];
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 to improve stability and comfort. It helps
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 191--192
+[]\OT1/cmr/m/n/10 This work proposes a model-free control
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 191--192
+\OT1/cmr/m/n/10 discusses the results. In particular, the UCC
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 191--192
+\OT1/cmr/m/n/10 stability during the tests (the open-loop and
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 191--192
+\OT1/cmr/m/n/10 simple PID controllers unstabilize after some
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 204--205
+[]\OT1/cmr/m/n/10 To achieve higher fidelity, some authors
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 comprehensive chassis dynamics. This model
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 facilitates the design of a UCC system that
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 evaluates the trade-off between ride comfort
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 accounting for the complex coupling between
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 as five rigid bodies: a sprung mass (chassis)
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 206--207
 \OT1/cmr/m/n/10 (longitudinal, lateral, and yaw) with spatial
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 189--190
+Underfull \hbox (badness 5091) in paragraph at lines 206--207
 \OT1/cmr/m/n/10 tire behavior, the authors utilize Pacejka's
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 189--190
+Underfull \hbox (badness 2941) in paragraph at lines 206--207
 \OT1/cmr/m/n/10 Magic Formula, an empirical approach that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-[]\OT1/cmr/m/n/10 In summary, the use of model-based
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 controls in vehicle dynamics offers the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 fundamental advantage of enabling precise
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 and coordinated management of complex
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 between independent wheel drive and active
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 suspension|facilitating the incorporation of
- []
-
-
-Underfull \hbox (badness 7344) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 physical constraints and the prediction of
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 critical drawbacks, primarily a high demand
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 for computational resources to process high-
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 as well as significant sensitivity to modeling
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 discrepancy between mathematical parameters
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 191--192
-\OT1/cmr/m/n/10 significantly degrade system performance and
- []
-
-<Bicicleta.png, id=207, 521.95pt x 250.9375pt>
-File: Bicicleta.png Graphic file (type png)
-<use Bicicleta.png>
-Package pdftex.def Info: Bicicleta.png  used on input line 196.
-(pdftex.def)             Requested size: 194.61551pt x 93.56526pt.
-
-Underfull \hbox (badness 3354) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 One of the most widely used schemes for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 validating controller design in automotive
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 systems is the CarSim$[]$ software. CarSim$[]$
- []
-
-
-Underfull \hbox (badness 2961) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 materials or suspension linkage complexities.
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 may include the need for detailed vehicle
- []
-
-
-Underfull \hbox (badness 2173) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 data, accurate environmental conditions, and
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 204--205
-\OT1/cmr/m/n/10 and environmental conditions, as well as the
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 206--207
-\OT1/cmr/m/n/10 from "classical" proportional-integral-derivative
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 208--209
-[]\OT1/cmr/m/n/10 However, there are no references in the
  []
 
 
@@ -961,66 +1035,195 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[3 <./Bicicleta.png>]
-Underfull \hbox (badness 1342) in paragraph at lines 224--225
+[3]
+Underfull \hbox (badness 1297) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 of physical constraints and the prediction of
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 critical drawbacks, primarily a high demand
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 for computational resources to process high-
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 as well as significant sensitivity to modeling
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 discrepancy between mathematical parameters
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 208--209
+\OT1/cmr/m/n/10 significantly degrade system performance and
+ []
+
+<Bicicleta.png, id=268, 521.95pt x 250.9375pt>
+File: Bicicleta.png Graphic file (type png)
+<use Bicicleta.png>
+Package pdftex.def Info: Bicicleta.png  used on input line 213.
+(pdftex.def)             Requested size: 194.61551pt x 93.56526pt.
+
+Underfull \hbox (badness 1028) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 Given the limitations discussed above, neural
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 network-based controllers have been widely
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 unmodeled nonlinearities in vehicle dynamics.
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 tire lateral forces, while also accounting for
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 unmodeled dynamics, a radial basis function
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 higher-order sliding mode control (HOSMC)
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 scheme. The RBFNN estimates the unknown
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 enhances robustness against disturbances,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+[]\OT1/cmr/m/n/10 In addition to neural network-based
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 225--226
+[]\OT1/cmr/m/n/10 This adaptive fuzzy mechanism enables
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+\OT1/cmr/m/n/10 an effective trade-off between robustness
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 225--226
+\OT1/cmr/m/n/10 and oscillation reduction, improving control
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 225--226
+\OT1/cmr/m/n/10 performance in the presence of parametric
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 235--236
+[]\OT1/cmr/m/n/10 One of the most widely used schemes
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 for validating controller design in automotive
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 systems is the CarSim$[]$ software. CarSim$[]$
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 materials or suspension linkage complexities.
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 may include the need for detailed vehicle
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 good understanding of vehicle models at the
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 and environmental conditions, as well as the
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[4 <./Bicicleta.png>]
+Underfull \hbox (badness 1210) in paragraph at lines 237--238
+\OT1/cmr/m/n/10 from "classical" proportional-integral-derivative
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 239--240
+[]\OT1/cmr/m/n/10 However, there are no references in the
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 255--256
 \OT1/cmr/m/n/10 dynamics in a short time window, then the
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 232.
+(hyperref)                removing `\beta' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 232.
+(hyperref)                removing `\phi' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
-
-
-Underfull \hbox (badness 1755) in paragraph at lines 245--246
-[]\OT1/cmr/m/n/10 Returning to the time domain using the
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Overfull \vbox (4.84717pt too high) has occurred while \output is active []
+(hyperref)                removing `math shift' on input line 263.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1030,28 +1233,52 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[5]
+Underfull \hbox (badness 1755) in paragraph at lines 276--277
+[]\OT1/cmr/m/n/10 Returning to the time domain using the
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 \OT1/cmr/m/n/10 is possible through the window integral
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 275--276
+Underfull \hbox (badness 1009) in paragraph at lines 306--307
 \OT1/cmr/m/n/10 the larger the window, the more precise the
  []
 
-<MuC mio.png, id=271, 770.88pt x 578.16pt>
+<MuC mio.png, id=327, 770.88pt x 578.16pt>
 File: MuC mio.png Graphic file (type png)
 <use MuC mio.png>
-Package pdftex.def Info: MuC mio.png  used on input line 304.
+Package pdftex.def Info: MuC mio.png  used on input line 335.
 (pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
 
-Underfull \hbox (badness 2452) in paragraph at lines 312--313
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 343--344
 \OT1/cmr/m/n/10 The supervision layer aims to compute the
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 312--313
+Underfull \hbox (badness 1127) in paragraph at lines 343--344
 \OT1/cmr/m/n/10 based in the longitudinal speed, the steering
  []
 
@@ -1063,14 +1290,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[5 <./MuC mio.png>]
-<MFC_Blocos.png, id=292, 723.6636pt x 283.2984pt>
+[6]
+<MFC_Blocos.png, id=349, 723.6636pt x 283.2984pt>
 File: MFC_Blocos.png Graphic file (type png)
 <use MFC_Blocos.png>
-Package pdftex.def Info: MFC_Blocos.png  used on input line 333.
+Package pdftex.def Info: MFC_Blocos.png  used on input line 364.
 (pdftex.def)             Requested size: 455.24408pt x 178.21524pt.
 
-Underfull \hbox (badness 2197) in paragraph at lines 330--337
+Underfull \hbox (badness 2197) in paragraph at lines 361--368
 \OT1/cmr/m/n/10 calculated by the supervision layer and the
  []
 
@@ -1078,50 +1305,18 @@ Underfull \hbox (badness 2197) in paragraph at lines 330--337
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 345--346
+Underfull \hbox (badness 3049) in paragraph at lines 376--377
 \OT1/cmr/m/n/10 At this step, the control signals calculated
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 345--346
+Underfull \hbox (badness 3536) in paragraph at lines 376--377
 \OT1/cmr/m/n/10 in the previous steps are transformed into
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 345--346
+Underfull \hbox (badness 1077) in paragraph at lines 376--377
 \OT1/cmr/m/n/10 "understandable" variables by the subsystems
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 364.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 366--367
-\OT1/cmr/m/n/10 law, and has direct influence on the system
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 366--367
-\OT1/cmr/m/n/10 signal is composed of the sum of individual
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 366--367
-\OT1/cmr/m/n/10 and the yaw rate control, it is necessary to
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 366--367
-\OT1/cmr/m/n/10 looking for a relationship between them and
  []
 
 
@@ -1132,8 +1327,41 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[6]
-Underfull \hbox (badness 2057) in paragraph at lines 380--381
+[7 <./MuC mio.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 395.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 395.
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 397--398
+\OT1/cmr/m/n/10 law, and has direct influence on the system
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 397--398
+\OT1/cmr/m/n/10 signal is composed of the sum of individual
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 397--398
+\OT1/cmr/m/n/10 and the yaw rate control, it is necessary to
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 397--398
+\OT1/cmr/m/n/10 looking for a relationship between them and
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 411--412
 \OT1/cmr/m/n/10 tests are performed three different $\OML/cmm/m/it/10 ^^V$ \OT1/cmr/m/n/10 values
  []
 
@@ -1144,21 +1372,16 @@ Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)                    date: 2026-03-11 11:23:06
 (epstopdf)                    size: 81100 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=SWD_original-eps-converted-to.pdf SWD_original.eps>
-(epstopdf)             \includegraphics on input line 385.
+(epstopdf)             \includegraphics on input line 416.
 Package epstopdf Info: Output file is already uptodate.
-<SWD_original-eps-converted-to.pdf, id=308, 554.07pt x 303.1325pt>
+<SWD_original-eps-converted-to.pdf, id=370, 554.07pt x 303.1325pt>
 File: SWD_original-eps-converted-to.pdf Graphic file (type pdf)
 <use SWD_original-eps-converted-to.pdf>
-Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 385.
+Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 416.
 (pdftex.def)             Requested size: 216.24094pt x 118.30446pt.
 
-Underfull \hbox (badness 1917) in paragraph at lines 382--389
+Underfull \hbox (badness 1917) in paragraph at lines 413--420
 \OT1/cmr/m/n/10 No. 13-H []Mechanical Simulation Corporation[]
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 397--398
-\OT1/cmr/m/n/10 The UCC is tested by simulating a SWD
  []
 
 
@@ -1169,18 +1392,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[7 <./MFC_Blocos.png> <./SWD_original-eps-converted-to.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 402.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 402.
+[8 <./MFC_Blocos.png>]
+Underfull \hbox (badness 3058) in paragraph at lines 428--429
+\OT1/cmr/m/n/10 The UCC is tested by simulating a SWD
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 433.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 433.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 433.
 
 Package epstopdf Info: Source file: <beta_07.eps>
 (epstopdf)                    date: 2026-03-10 13:23:20
@@ -1189,12 +1416,12 @@ Package epstopdf Info: Source file: <beta_07.eps>
 (epstopdf)                    date: 2026-03-11 11:23:07
 (epstopdf)                    size: 57487 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=beta_07-eps-converted-to.pdf beta_07.eps>
-(epstopdf)             \includegraphics on input line 411.
+(epstopdf)             \includegraphics on input line 442.
 Package epstopdf Info: Output file is already uptodate.
-<beta_07-eps-converted-to.pdf, id=330, 421.575pt x 224.84pt>
+<beta_07-eps-converted-to.pdf, id=384, 421.575pt x 224.84pt>
 File: beta_07-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_07-eps-converted-to.pdf>
-Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 411.
+Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 442.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <yaw_rate_07.eps>
 (epstopdf)                    date: 2026-03-10 13:23:20
@@ -1203,12 +1430,12 @@ Package epstopdf Info: Source file: <yaw_rate_07.eps>
 (epstopdf)                    date: 2026-03-11 11:23:07
 (epstopdf)                    size: 88624 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_07-eps-converted-to.pdf yaw_rate_07.eps>
-(epstopdf)             \includegraphics on input line 417.
+(epstopdf)             \includegraphics on input line 448.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_07-eps-converted-to.pdf, id=331, 421.575pt x 224.84pt>
+<yaw_rate_07-eps-converted-to.pdf, id=385, 421.575pt x 224.84pt>
 File: yaw_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 417.
+Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 448.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <roll_07.eps>
 (epstopdf)                    date: 2026-03-10 13:23:20
@@ -1217,12 +1444,12 @@ Package epstopdf Info: Source file: <roll_07.eps>
 (epstopdf)                    date: 2026-03-11 11:23:07
 (epstopdf)                    size: 54380 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_07-eps-converted-to.pdf roll_07.eps>
-(epstopdf)             \includegraphics on input line 423.
+(epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
-<roll_07-eps-converted-to.pdf, id=332, 421.575pt x 225.84375pt>
+<roll_07-eps-converted-to.pdf, id=386, 421.575pt x 225.84375pt>
 File: roll_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 423.
+Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 454.
 (pdftex.def)             Requested size: 182.09485pt x 97.552pt.
 Package epstopdf Info: Source file: <roll_rate_07.eps>
 (epstopdf)                    date: 2026-03-10 13:23:22
@@ -1231,149 +1458,25 @@ Package epstopdf Info: Source file: <roll_rate_07.eps>
 (epstopdf)                    date: 2026-03-11 11:23:07
 (epstopdf)                    size: 63035 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_07-eps-converted-to.pdf roll_rate_07.eps>
-(epstopdf)             \includegraphics on input line 429.
+(epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_07-eps-converted-to.pdf, id=333, 421.575pt x 225.84375pt>
+<roll_rate_07-eps-converted-to.pdf, id=387, 421.575pt x 225.84375pt>
 File: roll_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 429.
+Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 460.
 (pdftex.def)             Requested size: 182.09485pt x 97.552pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 467.
+(hyperref)                removing `math shift' on input line 498.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 467.
+(hyperref)                removing `\mu' on input line 498.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 467.
+(hyperref)                removing `math shift' on input line 498.
 
-Package epstopdf Info: Source file: <beta_05.eps>
-(epstopdf)                    date: 2026-03-10 13:23:20
-(epstopdf)                    size: 58194 bytes
-(epstopdf)             Output file: <beta_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:08
-(epstopdf)                    size: 57738 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=beta_05-eps-converted-to.pdf beta_05.eps>
-(epstopdf)             \includegraphics on input line 477.
-Package epstopdf Info: Output file is already uptodate.
-<beta_05-eps-converted-to.pdf, id=338, 421.575pt x 225.84375pt>
-File: beta_05-eps-converted-to.pdf Graphic file (type pdf)
-<use beta_05-eps-converted-to.pdf>
-Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 477.
-(pdftex.def)             Requested size: 182.09485pt x 97.552pt.
-Package epstopdf Info: Source file: <yaw_rate_05.eps>
-(epstopdf)                    date: 2026-03-10 13:23:22
-(epstopdf)                    size: 86760 bytes
-(epstopdf)             Output file: <yaw_rate_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:08
-(epstopdf)                    size: 89442 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_05-eps-converted-to.pdf yaw_rate_05.eps>
-(epstopdf)             \includegraphics on input line 483.
-Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_05-eps-converted-to.pdf, id=339, 421.575pt x 224.84pt>
-File: yaw_rate_05-eps-converted-to.pdf Graphic file (type pdf)
-<use yaw_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 483.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <roll_05.eps>
-(epstopdf)                    date: 2026-03-10 13:23:20
-(epstopdf)                    size: 70111 bytes
-(epstopdf)             Output file: <roll_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:08
-(epstopdf)                    size: 69867 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_05-eps-converted-to.pdf roll_05.eps>
-(epstopdf)             \includegraphics on input line 489.
-Package epstopdf Info: Output file is already uptodate.
-<roll_05-eps-converted-to.pdf, id=340, 421.575pt x 224.84pt>
-File: roll_05-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 489.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <roll_rate_05.eps>
-(epstopdf)                    date: 2026-03-10 13:23:22
-(epstopdf)                    size: 68318 bytes
-(epstopdf)             Output file: <roll_rate_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:08
-(epstopdf)                    size: 68067 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_05-eps-converted-to.pdf roll_rate_05.eps>
-(epstopdf)             \includegraphics on input line 495.
-Package epstopdf Info: Output file is already uptodate.
-<roll_rate_05-eps-converted-to.pdf, id=341, 421.575pt x 226.8475pt>
-File: roll_rate_05-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 495.
-(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 533.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 533.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 533.
-
-Package epstopdf Info: Source file: <beta_03.eps>
-(epstopdf)                    date: 2026-03-10 13:23:20
-(epstopdf)                    size: 50589 bytes
-(epstopdf)             Output file: <beta_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:09
-(epstopdf)                    size: 49424 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=beta_03-eps-converted-to.pdf beta_03.eps>
-(epstopdf)             \includegraphics on input line 541.
-Package epstopdf Info: Output file is already uptodate.
-<beta_03-eps-converted-to.pdf, id=346, 421.575pt x 224.84pt>
-File: beta_03-eps-converted-to.pdf Graphic file (type pdf)
-<use beta_03-eps-converted-to.pdf>
-Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 541.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <yaw_rate_03.eps>
-(epstopdf)                    date: 2026-03-10 13:23:20
-(epstopdf)                    size: 68461 bytes
-(epstopdf)             Output file: <yaw_rate_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:09
-(epstopdf)                    size: 66859 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_03-eps-converted-to.pdf yaw_rate_03.eps>
-(epstopdf)             \includegraphics on input line 547.
-Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_03-eps-converted-to.pdf, id=347, 421.575pt x 221.82875pt>
-File: yaw_rate_03-eps-converted-to.pdf Graphic file (type pdf)
-<use yaw_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 547.
-(pdftex.def)             Requested size: 182.09485pt x 95.81775pt.
-Package epstopdf Info: Source file: <roll_03.eps>
-(epstopdf)                    date: 2026-03-10 13:23:20
-(epstopdf)                    size: 56895 bytes
-(epstopdf)             Output file: <roll_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:09
-(epstopdf)                    size: 54634 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_03-eps-converted-to.pdf roll_03.eps>
-(epstopdf)             \includegraphics on input line 553.
-Package epstopdf Info: Output file is already uptodate.
-<roll_03-eps-converted-to.pdf, id=348, 421.575pt x 226.8475pt>
-File: roll_03-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 553.
-(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
-Package epstopdf Info: Source file: <roll_rate_03.eps>
-(epstopdf)                    date: 2026-03-10 13:23:22
-(epstopdf)                    size: 50971 bytes
-(epstopdf)             Output file: <roll_rate_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-11 11:23:09
-(epstopdf)                    size: 49246 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_03-eps-converted-to.pdf roll_rate_03.eps>
-(epstopdf)             \includegraphics on input line 559.
-Package epstopdf Info: Output file is already uptodate.
-<roll_rate_03-eps-converted-to.pdf, id=349, 421.575pt x 224.84pt>
-File: roll_rate_03-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 559.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1382,8 +1485,134 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[8 <./beta_07-eps-converted-to.pdf> <./yaw_rate_07-eps-converted-to.pdf> <./roll_07-eps-converted-to.pdf> <./roll_rate_07-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 600--601
+[9 <./SWD_original-eps-converted-to.pdf> <./beta_07-eps-converted-to.pdf> <./yaw_rate_07-eps-converted-to.pdf> <./roll_07-eps-converted-to.pdf> <./roll_rate_07-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <beta_05.eps>
+(epstopdf)                    date: 2026-03-10 13:23:20
+(epstopdf)                    size: 58194 bytes
+(epstopdf)             Output file: <beta_05-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:08
+(epstopdf)                    size: 57738 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=beta_05-eps-converted-to.pdf beta_05.eps>
+(epstopdf)             \includegraphics on input line 508.
+Package epstopdf Info: Output file is already uptodate.
+<beta_05-eps-converted-to.pdf, id=426, 421.575pt x 225.84375pt>
+File: beta_05-eps-converted-to.pdf Graphic file (type pdf)
+<use beta_05-eps-converted-to.pdf>
+Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 508.
+(pdftex.def)             Requested size: 182.09485pt x 97.552pt.
+Package epstopdf Info: Source file: <yaw_rate_05.eps>
+(epstopdf)                    date: 2026-03-10 13:23:22
+(epstopdf)                    size: 86760 bytes
+(epstopdf)             Output file: <yaw_rate_05-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:08
+(epstopdf)                    size: 89442 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_05-eps-converted-to.pdf yaw_rate_05.eps>
+(epstopdf)             \includegraphics on input line 514.
+Package epstopdf Info: Output file is already uptodate.
+<yaw_rate_05-eps-converted-to.pdf, id=427, 421.575pt x 224.84pt>
+File: yaw_rate_05-eps-converted-to.pdf Graphic file (type pdf)
+<use yaw_rate_05-eps-converted-to.pdf>
+Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 514.
+(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
+Package epstopdf Info: Source file: <roll_05.eps>
+(epstopdf)                    date: 2026-03-10 13:23:20
+(epstopdf)                    size: 70111 bytes
+(epstopdf)             Output file: <roll_05-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:08
+(epstopdf)                    size: 69867 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=roll_05-eps-converted-to.pdf roll_05.eps>
+(epstopdf)             \includegraphics on input line 520.
+Package epstopdf Info: Output file is already uptodate.
+<roll_05-eps-converted-to.pdf, id=428, 421.575pt x 224.84pt>
+File: roll_05-eps-converted-to.pdf Graphic file (type pdf)
+<use roll_05-eps-converted-to.pdf>
+Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 520.
+(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
+Package epstopdf Info: Source file: <roll_rate_05.eps>
+(epstopdf)                    date: 2026-03-10 13:23:22
+(epstopdf)                    size: 68318 bytes
+(epstopdf)             Output file: <roll_rate_05-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:08
+(epstopdf)                    size: 68067 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_05-eps-converted-to.pdf roll_rate_05.eps>
+(epstopdf)             \includegraphics on input line 526.
+Package epstopdf Info: Output file is already uptodate.
+<roll_rate_05-eps-converted-to.pdf, id=429, 421.575pt x 226.8475pt>
+File: roll_rate_05-eps-converted-to.pdf Graphic file (type pdf)
+<use roll_rate_05-eps-converted-to.pdf>
+Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 526.
+(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 564.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 564.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 564.
+
+Package epstopdf Info: Source file: <beta_03.eps>
+(epstopdf)                    date: 2026-03-10 13:23:20
+(epstopdf)                    size: 50589 bytes
+(epstopdf)             Output file: <beta_03-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:09
+(epstopdf)                    size: 49424 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=beta_03-eps-converted-to.pdf beta_03.eps>
+(epstopdf)             \includegraphics on input line 572.
+Package epstopdf Info: Output file is already uptodate.
+<beta_03-eps-converted-to.pdf, id=434, 421.575pt x 224.84pt>
+File: beta_03-eps-converted-to.pdf Graphic file (type pdf)
+<use beta_03-eps-converted-to.pdf>
+Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 572.
+(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
+Package epstopdf Info: Source file: <yaw_rate_03.eps>
+(epstopdf)                    date: 2026-03-10 13:23:20
+(epstopdf)                    size: 68461 bytes
+(epstopdf)             Output file: <yaw_rate_03-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:09
+(epstopdf)                    size: 66859 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_03-eps-converted-to.pdf yaw_rate_03.eps>
+(epstopdf)             \includegraphics on input line 578.
+Package epstopdf Info: Output file is already uptodate.
+<yaw_rate_03-eps-converted-to.pdf, id=435, 421.575pt x 221.82875pt>
+File: yaw_rate_03-eps-converted-to.pdf Graphic file (type pdf)
+<use yaw_rate_03-eps-converted-to.pdf>
+Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 578.
+(pdftex.def)             Requested size: 182.09485pt x 95.81775pt.
+Package epstopdf Info: Source file: <roll_03.eps>
+(epstopdf)                    date: 2026-03-10 13:23:20
+(epstopdf)                    size: 56895 bytes
+(epstopdf)             Output file: <roll_03-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:09
+(epstopdf)                    size: 54634 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=roll_03-eps-converted-to.pdf roll_03.eps>
+(epstopdf)             \includegraphics on input line 584.
+Package epstopdf Info: Output file is already uptodate.
+<roll_03-eps-converted-to.pdf, id=436, 421.575pt x 226.8475pt>
+File: roll_03-eps-converted-to.pdf Graphic file (type pdf)
+<use roll_03-eps-converted-to.pdf>
+Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 584.
+(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
+Package epstopdf Info: Source file: <roll_rate_03.eps>
+(epstopdf)                    date: 2026-03-10 13:23:22
+(epstopdf)                    size: 50971 bytes
+(epstopdf)             Output file: <roll_rate_03-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-03-11 11:23:09
+(epstopdf)                    size: 49246 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_03-eps-converted-to.pdf roll_rate_03.eps>
+(epstopdf)             \includegraphics on input line 590.
+Package epstopdf Info: Output file is already uptodate.
+<roll_rate_03-eps-converted-to.pdf, id=437, 421.575pt x 224.84pt>
+File: roll_rate_03-eps-converted-to.pdf Graphic file (type pdf)
+<use roll_rate_03-eps-converted-to.pdf>
+Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 590.
+(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 []\OT1/cmr/bx/n/10 Side-slip angle: \OT1/cmr/m/n/10 Both controllers
  []
 
@@ -1395,102 +1624,111 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[9 <./beta_05-eps-converted-to.pdf> <./yaw_rate_05-eps-converted-to.pdf> <./roll_05-eps-converted-to.pdf> <./roll_rate_05-eps-converted-to.pdf> <./beta_03-eps-converted-to.pdf> <./yaw_rate_03-eps-converted-to.pdf> <./roll_03-eps-converted-to.pdf> <./roll_rate_03-eps-converted-to.pdf>]
-Underfull \hbox (badness 2096) in paragraph at lines 608--609
+[10 <./beta_05-eps-converted-to.pdf> <./yaw_rate_05-eps-converted-to.pdf> <./roll_05-eps-converted-to.pdf> <./roll_rate_05-eps-converted-to.pdf>]
+Underfull \hbox (badness 2096) in paragraph at lines 639--640
 \OT1/cmr/m/n/10 and iPD MFC) significantly enhance vehicle
  []
 
 
-Overfull \hbox (5.0059pt too wide) in paragraph at lines 645--681
+Overfull \hbox (5.0059pt too wide) in paragraph at lines 676--712
 [] 
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 699--700
+Underfull \hbox (badness 1308) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 This study proposes a novel Unified Chassis
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 699--700
+Underfull \hbox (badness 2050) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 Control (UCC) system based on Model-Free
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 699--700
+Underfull \hbox (badness 1215) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 vehicle lateral (side-slip angle and yaw rate)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 and vertical (roll angle) dynamics during
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 699--700
+Underfull \hbox (badness 4341) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 abrupt maneuvers. By leveraging ultra-local
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 699--700
+Underfull \hbox (badness 1184) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 nature of traditional model-based approaches.
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 699--700
+Underfull \hbox (badness 1132) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 The controller was evaluated through a Sine
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 699--700
+Underfull \hbox (badness 3690) in paragraph at lines 730--731
 \OT1/cmr/m/n/10 environment using MATLAB/Simulink$[]$ and
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 701--702
+Underfull \hbox (badness 7796) in paragraph at lines 732--733
 \OT1/cmr/m/n/10 the tuning using optimization to enhance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
 \OT1/cmr/m/n/10 scalability and precision, validating the
  []
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 701--702
+Underfull \hbox (badness 1997) in paragraph at lines 732--733
 \OT1/cmr/m/n/10 approach through real-world implementations,
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 701--702
+Underfull \hbox (badness 1275) in paragraph at lines 732--733
 \OT1/cmr/m/n/10 and comparing it with alternative model-free
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 701--702
+Underfull \hbox (badness 2698) in paragraph at lines 732--733
 \OT1/cmr/m/n/10 controllers. Additionally, extending the UCC
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[11 <./beta_03-eps-converted-to.pdf> <./yaw_rate_03-eps-converted-to.pdf> <./roll_03-eps-converted-to.pdf> <./roll_rate_03-eps-converted-to.pdf>]
+
 Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 706.
+(hyperref)                than one, level fixed on input line 737.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
  []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 706--707
+Underfull \hbox (badness 2065) in paragraph at lines 737--738
 \OT1/cmr/m/n/10 Funda^^Xc~ao de Desenvolvimento da Pesquisa -
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 706--707
+Underfull \hbox (badness 3189) in paragraph at lines 737--738
 \OT1/cmr/m/n/10 de Estabilidade (SUSP-EST)'' and ``Projeto,
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 706--707
+Underfull \hbox (badness 4024) in paragraph at lines 737--738
 \OT1/cmr/m/n/10 Implementa^^Xc~ao e Testes de Componentes e
  []
 
@@ -1515,14 +1753,6 @@ Underfull \hbox (badness 6526) in paragraph at lines 14--20
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[10]
 Underfull \hbox (badness 1688) in paragraph at lines 23--27
 \OT1/cmr/m/n/10 friction coefficient estimation of a friction-
  []
@@ -1533,6 +1763,14 @@ Underfull \hbox (badness 1122) in paragraph at lines 46--51
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[12]
 Underfull \hbox (badness 1430) in paragraph at lines 53--57
 \OT1/cmr/m/n/10 autonomous steering and braking of heavy
  []
@@ -1573,14 +1811,6 @@ Underfull \hbox (badness 4254) in paragraph at lines 87--91
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[11]
 Underfull \hbox (badness 3713) in paragraph at lines 101--104
 \OT1/cmr/m/n/10 world rollover.  In \OT1/cmr/m/it/10 ICRASH Conference,
  []
@@ -1596,143 +1826,88 @@ Underfull \hbox (badness 6995) in paragraph at lines 107--111
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 114--119
+Underfull \hbox (badness 2293) in paragraph at lines 114--119
+\OT1/cmr/m/n/10 2021.  Neural-fuzzy-based adaptive sliding
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 122--127
 []\OT1/cmr/m/n/10 Guo, N., B. Lenzo, X. Zhang, Y. Zou,
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 114--119
+Underfull \hbox (badness 1360) in paragraph at lines 122--127
 \OT1/cmr/m/n/10 vehicles.  \OT1/cmr/m/it/10 IEEE Transactions on Vehicular
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 122--127
+Underfull \hbox (badness 2529) in paragraph at lines 130--135
 \OT1/cmr/m/n/10 active suspension system via robust finite
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 122--127
+Underfull \hbox (badness 1810) in paragraph at lines 130--135
 \OT1/cmr/m/n/10 frequency control.  \OT1/cmr/m/it/10 IEEE Transactions on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--135
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
 \OT1/cmr/m/n/10 and simulation analysis of 18 dof
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--135
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
 \OT1/cmr/m/n/10 unified dynamics model of automobile
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 129--135
+Underfull \hbox (badness 1728) in paragraph at lines 137--143
 \OT1/cmr/m/n/10 chassis.  \OT1/cmr/m/it/10 International Journal of Control,
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 129--135
+Underfull \hbox (badness 1210) in paragraph at lines 137--143
 \OT1/cmr/m/it/10 Automation and Systems 19\OT1/cmr/m/n/10 (7): 2323--2342.
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 138--145
+Underfull \hbox (badness 7151) in paragraph at lines 146--149
+\OT1/cmr/m/n/10 policies.  \OT1/cmr/m/it/10 Journal of Machine Learning
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 152--159
 \OT1/cmr/m/n/10 M. Thompson, and J.K. Subosits. 2024.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--145
+Underfull \hbox (badness 10000) in paragraph at lines 152--159
 \OT1/cmr/m/n/10 Risk-averse model predictive control for
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 138--145
+Underfull \hbox (badness 1596) in paragraph at lines 152--159
 \OT1/cmr/m/n/10 racing in adverse conditions.  \OT1/cmr/m/it/10 2025 IEEE
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 138--145
+Underfull \hbox (badness 5878) in paragraph at lines 152--159
 \OT1/cmr/m/it/10 International Conference on Robotics and
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 138--145
+Underfull \hbox (badness 6792) in paragraph at lines 152--159
 \OT1/cmr/m/it/10 Automation (ICRA)\OT1/cmr/m/n/10 : 8508--8514.  []$https :
  []
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 155--161
+Underfull \hbox (badness 5260) in paragraph at lines 169--175
 []\OT1/cmr/m/n/10 Li, Z., H. Chen, H. Liu, P. Wang, and
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 155--161
+Underfull \hbox (badness 1314) in paragraph at lines 169--175
 \OT1/cmr/m/n/10 lateral vehicle stability control for extreme
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--168
-[]\OT1/cmr/m/n/10 Mechanical Simulation Corporation 2012,
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 164--168
-\OT1/cmr/m/n/10 October.  Sine with dwell test in carsim.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--168
-\OT1/cmr/m/n/10 Technical memo, Mechanical Simulation
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 178--184
-[]\OT1/cmr/m/n/10 Menhour, L., B. d'Andr^^Sea Novel, M. Fliess,
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 178--184
-\OT1/cmr/m/n/10 D. Gruyer, and H. Mounier. 2018.  An
- []
-
-
-Underfull \hbox (badness 4805) in paragraph at lines 178--184
-\OT1/cmr/m/n/10 interconnected pro-sivic/rtmaps prototyping
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
-[]\OT1/cmr/m/n/10 Naciones Unidas (Noticias ONU). 2022,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
-\OT1/cmr/m/n/10 June 30.  Accidentes viales: \una
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--199
-\OT1/cmr/m/n/10 epidemia silenciosa y ambulante" que
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 194--199
-\OT1/cmr/m/n/10 mata a 1,3 millones de personas por a~no.
- []
-
-
-Overfull \hbox (4.03738pt too wide) in paragraph at lines 194--199
-\OT1/cmr/m/n/10 https://news.un.org/es/story/2022/06/1511112.
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 201--205
-[]\OT1/cmr/m/n/10 Nguyen, T.A. 2023, April.  Assessing the
- []
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 207--211
-\OT1/cmr/m/n/10 drive for a high-performance fsae electric
  []
 
 
@@ -1743,58 +1918,123 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[12]
-Underfull \hbox (badness 2875) in paragraph at lines 221--225
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+[]\OT1/cmr/m/n/10 Mechanical Simulation Corporation 2012,
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 178--182
+\OT1/cmr/m/n/10 October.  Sine with dwell test in carsim.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+\OT1/cmr/m/n/10 Technical memo, Mechanical Simulation
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 192--198
+[]\OT1/cmr/m/n/10 Menhour, L., B. d'Andr^^Sea Novel, M. Fliess,
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 192--198
+\OT1/cmr/m/n/10 D. Gruyer, and H. Mounier. 2018.  An
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 192--198
+\OT1/cmr/m/n/10 interconnected pro-sivic/rtmaps prototyping
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
+[]\OT1/cmr/m/n/10 Naciones Unidas (Noticias ONU). 2022,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
+\OT1/cmr/m/n/10 June 30.  Accidentes viales: \una
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
+\OT1/cmr/m/n/10 epidemia silenciosa y ambulante" que
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 208--213
+\OT1/cmr/m/n/10 mata a 1,3 millones de personas por a~no.
+ []
+
+
+Overfull \hbox (4.03738pt too wide) in paragraph at lines 208--213
+\OT1/cmr/m/n/10 https://news.un.org/es/story/2022/06/1511112.
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 215--219
+[]\OT1/cmr/m/n/10 Nguyen, T.A. 2023, April.  Assessing the
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 221--225
+\OT1/cmr/m/n/10 drive for a high-performance fsae electric
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 235--239
 \OT1/cmr/m/n/10 driven model-free slip control of anti-lock
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 228--232
+Underfull \hbox (badness 1264) in paragraph at lines 242--246
 \OT1/cmr/m/n/10 Model-based control and model-free control
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 235--239
+Underfull \hbox (badness 1102) in paragraph at lines 249--253
 []\OT1/cmr/m/n/10 Stolle, C.S., J.C. Bohlken, K.A. Lechtenberg,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--248
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
 []\OT1/cmr/m/n/10 Wanki, C., C. Jaewoong, K. Chongkap,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--248
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
 \OT1/cmr/m/n/10 chassis control for the improvement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--248
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
 \OT1/cmr/m/n/10 of agility, maneuverability, and lateral
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 242--248
+Underfull \hbox (badness 1122) in paragraph at lines 264--270
 \OT1/cmr/m/n/10 stability.  \OT1/cmr/m/it/10 IEEE Transactions on Vehicular
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--248
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
 \OT1/cmr/m/it/10 Technology 61\OT1/cmr/m/n/10 (3): 1008--1020.  []$https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--256
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 \OT1/cmr/m/n/10 who . int / teams / social-[]determinants-[]of-[]health /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--256
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 \OT1/cmr/m/n/10 safety-[]and-[]mobility /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--256
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 \OT1/cmr/m/n/10 decade-[]of-[]action-[]for-[]road-[]safety-[]2021-[]2030/$[].
  []
 
@@ -1806,7 +2046,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[13] (sn-article.aux)
+[14] (sn-article.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1816,21 +2056,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.48314pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `sn-article.out' has not changed.
-(rerunfilecheck)             Checksum: 3758DFF8DDA9D85826866839D8A54B7F;4111.
+(rerunfilecheck)             Checksum: F5772366BF6A5C026D1C34D21A794493;4214.
  ) 
 Here is how much of TeX's memory you used:
- 16635 strings out of 469804
- 260523 string characters out of 5469929
- 693684 words of memory out of 5000000
- 44909 multiletter control sequences out of 15000+600000
+ 16650 strings out of 469804
+ 260793 string characters out of 5469929
+ 692921 words of memory out of 5000000
+ 44919 multiletter control sequences out of 15000+600000
  647681 words of font info for 121 fonts, out of 8000000 for 9000
  11 hyphenation exceptions out of 8191
- 90i,15n,117p,1270b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,117p,1314b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk> </home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0700.pk> </home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (13 pages, 1541601 bytes).
+Output written on sn-article.pdf (14 pages, 1558589 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
