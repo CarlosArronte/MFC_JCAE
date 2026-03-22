@@ -6,7 +6,6 @@ The style file: sn-chicago.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: sn-bibliography.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Warning--page numbers missing in Sirwan2023
 Warning--no volume for Hac2007
 Warning--page numbers missing in Hac2007
 Warning--no number and no volume in Bilen2010
@@ -15,45 +14,45 @@ Warning--empty organization in carsimintro2021
 Warning--no number and no volume in Owen2018
 Warning--page numbers missing in Rizk2023
 Warning--page numbers missing in electronics10040510
-You've used 40 entries,
+You've used 38 entries,
             3204 wiz_defined-function locations,
-            964 strings with 14599 characters,
-and the built_in function-call counts, 31100 in all, are:
-= -- 2444
-> -- 2605
+            954 strings with 13964 characters,
+and the built_in function-call counts, 29162 in all, are:
+= -- 2304
+> -- 2398
 < -- 2
-+ -- 796
-- -- 852
-* -- 3060
-:= -- 5669
-add.period$ -- 164
-call.type$ -- 40
-change.case$ -- 328
-chr.to.int$ -- 40
-cite$ -- 49
-duplicate$ -- 778
-empty$ -- 1813
-format.name$ -- 968
-if$ -- 5827
++ -- 730
+- -- 786
+* -- 2841
+:= -- 5316
+add.period$ -- 157
+call.type$ -- 38
+change.case$ -- 306
+chr.to.int$ -- 38
+cite$ -- 46
+duplicate$ -- 743
+empty$ -- 1725
+format.name$ -- 894
+if$ -- 5465
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 35
-newline$ -- 216
-num.names$ -- 400
-pop$ -- 269
+newline$ -- 207
+num.names$ -- 380
+pop$ -- 255
 preamble$ -- 1
-purify$ -- 568
+purify$ -- 535
 quote$ -- 0
-skip$ -- 759
+skip$ -- 722
 stack$ -- 0
-substring$ -- 1467
-swap$ -- 241
+substring$ -- 1389
+swap$ -- 226
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 800
-warning$ -- 9
-while$ -- 344
+type$ -- 750
+warning$ -- 8
+while$ -- 332
 width$ -- 0
-write$ -- 553
-(There were 9 warnings)
+write$ -- 530
+(There were 8 warnings)

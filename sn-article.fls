@@ -1,519 +1,519 @@
-PWD /home/lab-gpu-03/Carlos/Papers_mios/MFC_para_JCAE
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/lab-gpu-03/Carlos/Papers_mios/MFC_para_JCAE/sn-article.tex
+PWD c:\Users\Carlos A. Arronte\Desktop\MFC_JCAE\MFC_JCAE
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Carlos A. Arronte\Desktop\MFC_JCAE\MFC_JCAE\sn-article.tex
 OUTPUT sn-article.log
-INPUT ./sn-jnl.cls
+INPUT .\sn-jnl.cls
 INPUT sn-jnl.cls
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/article.cls
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/article.cls
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/fleqn.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/fleqn.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/fleqn.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/size10.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/size10.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/size10.clo
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/sttools/cuted.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/sttools/cuted.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/rotating.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/rotating.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/trig.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/trig.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/ifthen.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/threeparttable/threeparttable.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/threeparttable/threeparttable.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/appendix/appendix.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/appendix/appendix.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/url/url.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/url/url.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/breakurl/breakurl.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/breakurl/breakurl.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/natbib/natbib.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/natbib/natbib.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/jknappen/mathrsfs.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/jknappen/mathrsfs.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/textcomp.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/base/textcomp.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/ncctools/manyfoot.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/ncctools/manyfoot.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/ncctools/nccfoots.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/ncctools/nccfoots.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/float/float.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/float/float.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/listings.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/listings.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/listings.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/listings.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/listings/listings.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/caption.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/caption.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/caption3.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/caption3.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/makecell/makecell.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/makecell/makecell.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/tools/array.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/tools/array.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./sn-article.aux
-INPUT ./sn-article.aux
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\fleqn.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\fleqn.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\fleqn.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\sttools\cuted.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\sttools\cuted.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\threeparttable\threeparttable.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\threeparttable\threeparttable.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\appendix\appendix.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\appendix\appendix.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\breakurl\breakurl.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\breakurl\breakurl.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\manyfoot.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\manyfoot.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccfoots.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\ncctools\nccfoots.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\sn-article.aux
+INPUT .\sn-article.aux
 INPUT sn-article.aux
 OUTPUT sn-article.aux
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-INPUT ./sn-article.out
-INPUT ./sn-article.out
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\sn-article.out
+INPUT .\sn-article.out
 INPUT sn-article.out
 INPUT sn-article.out
 OUTPUT sn-article.pdf
-INPUT ./sn-article.out
-INPUT ./sn-article.out
+INPUT .\sn-article.out
+INPUT .\sn-article.out
 OUTPUT sn-article.out
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx6.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx9.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm0600.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmex10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm0700.tfm
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT ./Bicicleta.png
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MuC mio.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./MFC_Blocos.png
-INPUT ./SWD_original.eps
-INPUT ./SWD_original.eps
-INPUT ./SWD_original.eps
-INPUT ./SWD_original.eps
-INPUT ./SWD_original.eps
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./SWD_original.eps
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./SWD_original-eps-converted-to.pdf
-INPUT ./beta_07.eps
-INPUT ./beta_07.eps
-INPUT ./beta_07.eps
-INPUT ./beta_07.eps
-INPUT ./beta_07.eps
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./beta_07.eps
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./beta_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07.eps
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./yaw_rate_07-eps-converted-to.pdf
-INPUT ./roll_07.eps
-INPUT ./roll_07.eps
-INPUT ./roll_07.eps
-INPUT ./roll_07.eps
-INPUT ./roll_07.eps
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_07.eps
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_07-eps-converted-to.pdf
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./roll_rate_07.eps
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./roll_rate_07-eps-converted-to.pdf
-INPUT ./beta_05.eps
-INPUT ./beta_05.eps
-INPUT ./beta_05.eps
-INPUT ./beta_05.eps
-INPUT ./beta_05.eps
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./beta_05.eps
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./beta_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05.eps
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./yaw_rate_05-eps-converted-to.pdf
-INPUT ./roll_05.eps
-INPUT ./roll_05.eps
-INPUT ./roll_05.eps
-INPUT ./roll_05.eps
-INPUT ./roll_05.eps
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_05.eps
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_05-eps-converted-to.pdf
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./roll_rate_05.eps
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./roll_rate_05-eps-converted-to.pdf
-INPUT ./beta_03.eps
-INPUT ./beta_03.eps
-INPUT ./beta_03.eps
-INPUT ./beta_03.eps
-INPUT ./beta_03.eps
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./beta_03.eps
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./beta_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03.eps
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./yaw_rate_03-eps-converted-to.pdf
-INPUT ./roll_03.eps
-INPUT ./roll_03.eps
-INPUT ./roll_03.eps
-INPUT ./roll_03.eps
-INPUT ./roll_03.eps
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_03.eps
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_03-eps-converted-to.pdf
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./roll_rate_03.eps
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./roll_rate_03-eps-converted-to.pdf
-INPUT ./sn-article.bbl
-INPUT ./sn-article.bbl
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib9.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy9.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT .\Bicicleta.png
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0700.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MuC mio.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\MFC_Blocos.png
+INPUT .\SWD_original.eps
+INPUT .\SWD_original.eps
+INPUT .\SWD_original.eps
+INPUT .\SWD_original.eps
+INPUT .\SWD_original.eps
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\SWD_original.eps
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\SWD_original-eps-converted-to.pdf
+INPUT .\beta_07.eps
+INPUT .\beta_07.eps
+INPUT .\beta_07.eps
+INPUT .\beta_07.eps
+INPUT .\beta_07.eps
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\beta_07.eps
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\beta_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07.eps
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\yaw_rate_07-eps-converted-to.pdf
+INPUT .\roll_07.eps
+INPUT .\roll_07.eps
+INPUT .\roll_07.eps
+INPUT .\roll_07.eps
+INPUT .\roll_07.eps
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_07.eps
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_07-eps-converted-to.pdf
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\roll_rate_07.eps
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\roll_rate_07-eps-converted-to.pdf
+INPUT .\beta_05.eps
+INPUT .\beta_05.eps
+INPUT .\beta_05.eps
+INPUT .\beta_05.eps
+INPUT .\beta_05.eps
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\beta_05.eps
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\beta_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05.eps
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\yaw_rate_05-eps-converted-to.pdf
+INPUT .\roll_05.eps
+INPUT .\roll_05.eps
+INPUT .\roll_05.eps
+INPUT .\roll_05.eps
+INPUT .\roll_05.eps
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_05.eps
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_05-eps-converted-to.pdf
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\roll_rate_05.eps
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\roll_rate_05-eps-converted-to.pdf
+INPUT .\beta_03.eps
+INPUT .\beta_03.eps
+INPUT .\beta_03.eps
+INPUT .\beta_03.eps
+INPUT .\beta_03.eps
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\beta_03.eps
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\beta_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03.eps
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\yaw_rate_03-eps-converted-to.pdf
+INPUT .\roll_03.eps
+INPUT .\roll_03.eps
+INPUT .\roll_03.eps
+INPUT .\roll_03.eps
+INPUT .\roll_03.eps
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_03.eps
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_03-eps-converted-to.pdf
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT .\roll_rate_03.eps
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT .\roll_rate_03-eps-converted-to.pdf
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT .\sn-article.bbl
+INPUT .\sn-article.bbl
 INPUT sn-article.bbl
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcti1000.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcti1000.tfm
 INPUT sn-article.aux
-INPUT ./sn-article.out
-INPUT ./sn-article.out
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1000.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0700.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0700.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /home/lab-gpu-03/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT .\sn-article.out
+INPUT .\sn-article.out
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1000.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1000.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0700.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0700.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0600.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0600.pk
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

@@ -164,35 +164,98 @@ This work proposes a unified chassis controller (UCC) to regulate lateral and ro
 % ------------------------------------------------------------------------
 \section{Introduction}\label{intro}
 
-Road traffic accidents remain a major global concern, causing approximately 1.3 million deaths and tens of millions of injuries each year \citep{UN2022}. Many of these incidents are associated with loss of vehicle stability during abrupt maneuvers, tire failures, or adverse road conditions \citep{Friedman2010}. Such situations are typically characterized by excessive side-slip angle and yaw rate, which can lead to oversteer or understeer, as well as increased rollover risk due to significant roll angle variations \citep{Stolle2011,zhan2017yawrate,nguyen2023rollover}.\
+Road traffic accidents remain a major global concern, causing approximately 1.3 million deaths 
+and tens of millions of injuries each year \citep{UN2022}. Many of these incidents are associated 
+with loss of vehicle stability during abrupt maneuvers, tire failures, or adverse road conditions 
+\citep{Friedman2010}. Such situations are typically characterized by excessive side-slip angle and 
+yaw rate, which can lead to oversteer or understeer, as well as increased rollover risk due to 
+significant roll angle variations \citep{Stolle2011,zhan2017yawrate,nguyen2023rollover}. 
+Consequently, side-slip angle, yaw rate, and roll angle have been widely recognized as the key 
+state variables for vehicle stability monitoring and control, serving as the primary feedback 
+signals in active safety systems \citep{Rajamani2012}. %Ok
 
-To address these challenges, modern vehicles incorporate advanced control systems such as Electronic Stability Control (ESC), which improves lateral stability through selective braking and torque modulation \citep{Hac2007}. In parallel, suspension-based systems, including active and semi-active suspensions, are used to regulate vertical dynamics and enhance ride comfort. Unified Chassis Control (UCC) extends these concepts by coordinating multiple subsystems to simultaneously regulate lateral and vertical vehicle dynamics, improving overall stability and safety, particularly under extreme driving conditions \citep{Cho2012}.\
+To address these challenges, modern vehicles incorporate advanced control systems such as Electronic 
+Stability Control (ESC), which improves lateral stability through selective braking and torque 
+modulation \citep{Hac2007}. In parallel, suspension-based systems, including active and semi-active 
+suspensions, are used to regulate vertical dynamics and enhance ride comfort.\
 
-Most existing UCC strategies rely on model-based control approaches. Simplified representations such as the bicycle model are widely used for controller design, particularly within Model Predictive Control (MPC) frameworks \citep{Ahmadi2021,Gidlewski2017,Yakub2016}. For higher fidelity, more complex models have been proposed, including multi-degree-of-freedom formulations that capture the coupling between lateral, vertical, and suspension dynamics \citep{Lai2021,Chen2021}. While these approaches enable accurate prediction and control of vehicle behavior, they often require significant computational resources and are sensitive to modeling errors and parameter uncertainties \citep{Guo2020A,Lew2024Risk-Averse}.\
+ Unified Chassis Control 
+(UCC) extends these concepts by coordinating multiple subsystems to simultaneously regulate lateral 
+and vertical vehicle dynamics, improving overall stability and safety, particularly under extreme 
+driving conditions \citep{Cho2012}. However, achieving this coordination is non-trivial, as 
+lateral stability enhancement, rollover mitigation, and actuator allocation are inherently competing 
+objectives, requiring careful trade-off management to avoid control conflicts between subsystems 
+\citep{Falcone2007}. %Ok
 
-To mitigate these limitations, several works have introduced uncertainty compensation mechanisms based on data-driven or adaptive techniques. Neural network-based controllers have been widely used to approximate unknown nonlinearities and disturbances in vehicle dynamics, enhancing robustness under varying conditions. Similarly, fuzzy and neuro-fuzzy approaches enable online adaptation of control parameters, while sliding mode control combined with intelligent approximators provides robustness against disturbances and model mismatch \citep{electronics10040510,Guo2021}. More recently, hybrid strategies combining model-based controllers with learning-based compensation terms have demonstrated improved performance in the presence of uncertainties \citep{levine2016end}.\
+Most existing UCC strategies rely on model-based control approaches, which can be broadly 
+categorized by their underlying vehicle representation. On one end, simplified formulations 
+such as the bicycle model have been widely adopted within Model Predictive Control (MPC) 
+frameworks, offering computational tractability for real-time path-following and yaw 
+stabilization tasks \citep{Ahmadi2021,Gidlewski2017,Yakub2016}. On the other end, 
+multi-degree-of-freedom formulations have been proposed to capture the coupling between 
+lateral, vertical, and suspension dynamics more faithfully: \citet{Lai2021} developed an 
+18-DOF chassis model that enables high-fidelity simulation of cross-subsystem interactions, 
+while \citet{Chen2021} extended this perspective to electric vehicles by explicitly 
+incorporating wheel vertical vibrations into a UCC architecture.\
 
-In this context, Model-Free Control (MFC), introduced by \citet{Fliess2008}, provides an alternative framework that avoids explicit reliance on detailed system models. Instead, it employs ultra-local models and algebraic estimators to capture system behavior and compensate for uncertainties in real time. This work proposes an MFC-based UCC strategy to simultaneously regulate lateral and vertical vehicle dynamics. The main contribution lies in demonstrating that a model-free approach can achieve robust performance under varying operating conditions while reducing dependence on accurate vehicle modeling.\
+Although these high-fidelity representations improve prediction accuracy and allow for 
+a more principled treatment of lateral-vertical coupling, they introduce substantial 
+computational overhead and exhibit strong sensitivity to parametric uncertainty, limiting 
+their portability across varying road conditions and vehicle configurations 
+\citep{Guo2020A,Lew2024Risk-Averse}. %Ok
 
-The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\
+To mitigate these limitations, several works have introduced uncertainty compensation mechanisms 
+based on data-driven or adaptive techniques. Neural network-based controllers have been widely 
+used to approximate unknown nonlinearities and disturbances in vehicle dynamics, enhancing 
+robustness under varying conditions. Similarly, fuzzy and neuro-fuzzy approaches enable online 
+adaptation of control parameters, while sliding mode control combined with intelligent 
+approximators provides robustness against disturbances and model mismatch 
+\citep{electronics10040510,Guo2021}.\ 
+
+More recently, hybrid strategies combining model-based 
+controllers with learning-based compensation terms have demonstrated improved performance in 
+the presence of uncertainties \citep{levine2016end}. While these strategies collectively 
+advance robustness against parametric uncertainty and external disturbances, a systematic 
+and homogeneous comparison between them and model-free control approaches within a UCC architecture remains scarce in the literature, limiting the ability to draw 
+generalizable conclusions about their relative merits under consistent evaluation conditions \citep{SanchezMorales2023,Mazzilli2021}.%ok
 
 
+Despite the advances described above, the practical deployment of UCC strategies under varying operating conditions remains challenging. Model-based approaches, even when augmented with adaptive or learning-based compensation mechanisms, often remain sensitive to parametric uncertainty and typically require significant retuning when vehicle parameters or road conditions change.\ 
 
+ In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on fixed-gain PID controllers, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers, simulator-embedded baseline strategies, and learning-based alternatives under consistent evaluation conditions.\ 
+ 
+ To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-gain PID, a gain-scheduled PID, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
 
-\section{Introduction}\label{intro}
-Millions of people are affected by car accidents annually. According to the UN, 1.3 million people die and around 50 million suffer severe injuries each year \citep{UN2022}. In the U.S. alone, traffic accidents caused approximately 2.1 million emergency visits and 40,000 deaths in 2020, with an estimated cost of \$430 billion due to healthcare and reduced life expectancy \citep{Sirwan2023}.\
-
-In response to the global rise in accidents, the UN adopted Resolution A/RES/74/299 in 2020, urging countries to strengthen road safety policies and adopt the Decade of Action for Road Safety 2021–2030. The resolution emphasizes improved road safety management, safer vehicles and infrastructure, and public awareness to reduce traffic fatalities by 50\% \citep{WHO2021}.\
-
-Accidents often result from loss of control due to sudden maneuvers, tire failures, or driver inattention \citep{Friedman2010}. Such situations manifest as increases in side slip angle and yaw rate. Excessive side slip angle raises rollover risk, especially when weight shifts laterally \citep{Stolle2011}, while high yaw rates may exceed tire grip limits, causing oversteer and loss of control \citep{zhan2017yawrate}. The vehicle roll angle depends on vehicle speed, steering, and geometry, and its increase reduces vertical load on wheels, heightening rollover risk \citep{nguyen2023rollover}. The roll rate measures how quickly the vehicle leans in a turn and is influenced by weight distribution, suspension, and tire grip. Sudden direction changes can sharply increase roll rate, leading to loss of control \citep{Friedman2010}.\
-
-Electronic Stability Control (ESC) is the most widespread system to counteract lateral instability. ESC maintains stability by selectively braking wheels and reducing engine power \citep{Hac2007}, and may involve steering control systems \citep{Shaosong2023}. To control roll angle and rate, systems like active or semi-active suspensions \citep{Xianjian2023,Renkai2023} and anti-roll bars \citep{Anafjeh2023} are commonly used, improving both stability and passenger comfort. Unified Chassis Control (UCC) enhances vehicle robustness and performance by coordinating multiple subsystems to improve stability and comfort. It helps mitigate understeer/oversteer, reduces body roll, improves traction, and is applicable to electric and hybrid vehicles. UCC has proven effective in preventing rollovers by detecting and correcting critical situations such as high speed and sudden maneuvers \citep{Cho2012}.\
-
-This work proposes a model-free control (MFC) approach to UCC. MFC is advantageous in that it does not rely on precise system models. Section~\ref{model} presents the model structure, that is, without the parameters precisely known, followed by a literature review on UCC and MFC. Section~\ref{sec:ulmodel} outlines the mathematical principles of MFC and deduces formulas for the ultra-local controllers, that are based in PID controllers (here called intelligent PIDs, or iPIDs). Section~\ref{sec:ucc} details the proposed UCC architecture. Section~\ref{sec:contr} addresses MFC controller tuning, based in Matlab\textsuperscript{\textregistered} and Carsim\textsuperscript{\textregistered} simulations. Section~\ref{sec:exper} describes the validation tests to be performed, and  Section~\ref{sec2} discusses the results. In particular, the UCC with MFC controllers (the iPIDs) are the only controllers capable of guaranteeing robustness of stability during the tests (the open-loop and simple PID controllers unstabilize after some time). Finally, section~\ref{sec:concl} concludes the study.
+%REESCRIBIR
+The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\ %Reescribir (ver estructura final)
 
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
+
+\section{Control Problem Formulation}
+\subsection{Vehicle States and Control Objectives}
+\subsection{Reference Generation and Operating Constraints}
+\subsection{Maneuver Completion and Failure Criteria}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{UCC model-based}\label{model}
 
 Currently, most of the UCC systems use vehicle models to obtain and adjust the parameters of the individual controllers. 

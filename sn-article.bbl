@@ -9,15 +9,6 @@ Ahmadi, B. 2021.
   models.
 \newblock Master's thesis, University of Waterloo.
 
-\bibitem[\protect\citeauthoryear{Ahmed, Mohammed, Abdulqadir, El-Kader,
-  El-Shall, Chandran, Rehman, and Dhama}{Ahmed et~al.}{2023}]{Sirwan2023}
-Ahmed, S.K., M.G. Mohammed, S.O. Abdulqadir, R.G.A. El-Kader, N.A. El-Shall,
-  D.~Chandran, M.E.U. Rehman, and K.~Dhama. 2023.
-\newblock Road traffic accidental injuries and deaths: A neglected global
-  health issue.
-\newblock {\em Health Science Report\/}~{\em 6\/}(5).
-\newblock \doi{10.1002/hsr2.1240} .
-
 \bibitem[\protect\citeauthoryear{Ahrenhold, Iatropoulos, and Henze}{Ahrenhold
   et~al.}{2023}]{Ahrenhold2023}
 Ahrenhold, T., J.~Iatropoulos, and R.~Henze. 2023.
@@ -32,14 +23,6 @@ Aleksander, H. and B.~Edward. 2007.
   chassis control.
 \newblock {\em 20th International Technical Conference on the Enhanced Safety
   of Vehicles (ESV)\/}~(07-0353) .
-
-\bibitem[\protect\citeauthoryear{Anafjeh, Moosavi, and Danesh}{Anafjeh
-  et~al.}{2023}]{Anafjeh2023}
-Anafjeh, B., H.~Moosavi, and M.~Danesh. 2023.
-\newblock Active optimal roll control of railway vehicles in curved tracks
-  using an electrically actuated anti-roll bar system.
-\newblock {\em International Journal of Control, Automation and Systems\/}~{\em
-  21\/}(4): 1127--1142 .
 
 \bibitem[\protect\citeauthoryear{Arronte, Ripari, Angélico, and
   Colón}{Arronte et~al.}{2023}]{Arronte2023}
@@ -62,14 +45,6 @@ Chen, X., M.~Wang, and W.~Wang. 2021.
   vertical vibrations.
 \newblock {\em Sensors\/}~{\em 21\/}(11): 321--342 .
 
-\bibitem[\protect\citeauthoryear{Ding, Wang, Meng, and Chen}{Ding
-  et~al.}{2023}]{Renkai2023}
-Ding, R., R.~Wang, X.~Meng, and L.~Chen. 2023.
-\newblock Research on time-delay-dependent h$\inf$/h2 optimal control of
-  magnetorheological semi-active suspension with response delay.
-\newblock {\em Journal of Vibration and Control\/}~{\em 29\/}(5-6): 1447--1458
-  .
-
 \bibitem[\protect\citeauthoryear{Dong, Jin, and Hou}{Dong
   et~al.}{2014}]{Dong2014}
 Dong, H.r., S.t. Jin, and Z.s. Hou 2014.
@@ -82,6 +57,14 @@ Fahimi, F. 2013.
 \newblock Full drive-by-wire dynamic control for four-wheel-steer
   all-wheel-drive vehicles.
 \newblock {\em Vehicle System Dynamics\/}~{\em 51\/}(3): 360--376 .
+
+\bibitem[\protect\citeauthoryear{Falcone, Borrelli, Asgari, Tseng, and
+  Hrovat}{Falcone et~al.}{2007}]{Falcone2007}
+Falcone, P., F.~Borrelli, J.~Asgari, H.E. Tseng, and D.~Hrovat. 2007.
+\newblock Predictive active steering control for autonomous vehicle systems.
+\newblock {\em IEEE Transactions on Control Systems Technology\/}~{\em
+  15\/}(3): 566--580.
+\newblock \doi{10.1109/TCST.2007.894653} .
 
 \bibitem[\protect\citeauthoryear{Fliess}{Fliess}{2009}]{Fliess2009}
 Fliess, M. 2009.
@@ -125,14 +108,6 @@ Guo, N., B.~Lenzo, X.~Zhang, Y.~Zou, R.~Zhai, and T.~Zhang. 2020.
 \newblock {\em IEEE Transactions on Vehicular Technology\/}~69: 4935--4946.
 \newblock \doi{10.1109/tvt.2020.2980169} .
 
-\bibitem[\protect\citeauthoryear{Jin, Wang, He, Yan, Xu, Wei, and Yin}{Jin
-  et~al.}{2023}]{Xianjian2023}
-Jin, X., J.~Wang, X.~He, Z.~Yan, L.~Xu, C.~Wei, and G.~Yin. 2023.
-\newblock Improving vibration performance of electric vehicles based on
-  in-wheel motor-active suspension system via robust finite frequency control.
-\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
-  24\/}(2): 1631--1643 .
-
 \bibitem[\protect\citeauthoryear{Lai and Jiang}{Lai and Jiang}{2021}]{Lai2021}
 Lai, F. and C.Y. Jiang. 2021.
 \newblock Establishment and simulation analysis of 18 dof unified dynamics
@@ -157,13 +132,6 @@ Lew, T., M.~Greiff, F.~Djeumou, M.~Suminaka, M.~Thompson, and J.K. Subosits.
   (ICRA)\/}: 8508--8514.
 \newblock \doi{10.1109/icra55743.2025.11127729} .
 
-\bibitem[\protect\citeauthoryear{Li, Wang, Cui, Lu, and Zhang}{Li
-  et~al.}{2023}]{Shaosong2023}
-Li, S., X.~Wang, G.~Cui, X.~Lu, and B.~Zhang. 2023.
-\newblock Yaw and lateral stability control based on predicted trend of stable
-  state of the vehicle.
-\newblock {\em Vehicle System Dynamics\/}~{\em 61\/}(1): 111--127 .
-
 \bibitem[\protect\citeauthoryear{Li, Chen, Liu, Wang, and Gong}{Li
   et~al.}{2022}]{Zihan2022}
 Li, Z., H.~Chen, H.~Liu, P.~Wang, and X.~Gong. 2022.
@@ -172,6 +140,16 @@ Li, Z., H.~Chen, H.~Liu, P.~Wang, and X.~Gong. 2022.
 \newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
   23\/}(10): 19285--19298.
 \newblock \doi{10.1109/TITS.2022.3152485} .
+
+\bibitem[\protect\citeauthoryear{Mazzilli, De~Pinto, Pascali, Contrino,
+  Bottiglione, Mantriota, Gruber, and Sorniotti}{Mazzilli
+  et~al.}{2021}]{Mazzilli2021}
+Mazzilli, V., S.~De~Pinto, L.~Pascali, M.~Contrino, F.~Bottiglione,
+  G.~Mantriota, P.~Gruber, and A.~Sorniotti. 2021.
+\newblock Integrated chassis control: Classification, analysis and future
+  trends.
+\newblock {\em Annual Reviews in Control\/}~51: 172--205.
+\newblock \doi{10.1016/j.arcontrol.2021.01.005} .
 
 \bibitem[\protect\citeauthoryear{{Mechanical Simulation
   Corporation}}{{Mechanical Simulation Corporation}}{2012}]{MSC2012}
@@ -237,12 +215,24 @@ Radac, M.B. and R.E. Precup. 2018.
   using reinforcement q-learning.
 \newblock {\em Neurocomputing\/}~275: 317--329 .
 
+\bibitem[\protect\citeauthoryear{Rajamani}{Rajamani}{2012}]{Rajamani2012}
+Rajamani, R. 2012.
+\newblock {\em Vehicle Dynamics and Control\/} (2 ed.).
+\newblock New York: Springer.
+
 \bibitem[\protect\citeauthoryear{Rizk, Chaibet, and Kribèche}{Rizk
   et~al.}{2023}]{Rizk2023}
 Rizk, H., A.~Chaibet, and A.~Kribèche. 2023.
 \newblock Model-based control and model-free control techniques for autonomous
   vehicles: A technical survey.
 \newblock {\em Applied Sciences\/}~{\em 13\/}(11) .
+
+\bibitem[\protect\citeauthoryear{S{\'a}nchez-Morales, Naranjo, and
+  Sotelo}{S{\'a}nchez-Morales et~al.}{2023}]{SanchezMorales2023}
+S{\'a}nchez-Morales, A., J.E. Naranjo, and M.{\'A}. Sotelo. 2023.
+\newblock Lateral control for autonomous vehicles: A comparative evaluation.
+\newblock {\em Annual Reviews in Control\/}~56: 100926.
+\newblock \doi{10.1016/j.arcontrol.2023.100926} .
 
 \bibitem[\protect\citeauthoryear{Stolle, Bohlken, Lechtenberg, and
   Sicking}{Stolle et~al.}{2011}]{Stolle2011}
@@ -267,14 +257,6 @@ Wanki, C., C.~Jaewoong, K.~Chongkap, C.~Seibum, and Y.~Kyongsu. 2012.
 \newblock {\em IEEE Transactions on Vehicular Technology\/}~{\em 61\/}(3):
   1008--1020.
 \newblock \doi{10.1109/TVT.2012.2183152} .
-
-\bibitem[\protect\citeauthoryear{{World Health Organization}}{{World Health
-  Organization}}{2021}]{WHO2021}
-{World Health Organization}. 2021.
-\newblock Decade of action for road safety 2021--2030.
-\newblock
-  \url{https://www.who.int/teams/social-determinants-of-health/safety-and-mobility/decade-of-action-for-road-safety-2021-2030/}.
-\newblock Accessed 2025-06-24.
 
 \bibitem[\protect\citeauthoryear{Xia, Lin, Zhang, Fu, Li, Li, and Yang}{Xia
   et~al.}{2021}]{Xia2021}
