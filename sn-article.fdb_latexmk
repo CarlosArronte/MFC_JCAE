@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sn-article"] 1774201093.48274 "sn-article.aux" "sn-article.bbl" "sn-article" 1774201096.58689 0
+["bibtex sn-article"] 1774200228.52016 "sn-article.aux" "sn-article.bbl" "sn-article" 1774200231.65623 0
   "./sn-bibliography.bib" 1774196738 24460 7e5cbe3df398f2edbd5ef1bd4644756c ""
   "./sn-chicago.bst" 1774185503 42206 c63937dde0e51cb67319b12bd767934b ""
-  "sn-article.aux" 1774201095 13304 901c97dd4f4af8d160ddff434df375a9 "pdflatex"
+  "sn-article.aux" 1774200230 14420 5b60ac1a1eb93450ed0c54d16ed11cad "pdflatex"
   (generated)
   "sn-article.bbl"
   "sn-article.blg"
   (rewritten before read)
-["pdflatex"] 1774201093.82845 "c:/Users/Carlos A. Arronte/Desktop/MFC_JCAE/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1774201096.58754 0
+["pdflatex"] 1774200228.96701 "c:/Users/Carlos A. Arronte/Desktop/MFC_JCAE/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1774200231.65686 0
   "Bicicleta.png" 1774185503 34290 7386daccb81ee9c36774a6376f1f4ae3 ""
   "C:/Users/Carlos A. Arronte/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774187930 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Carlos A. Arronte/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk" 1774187948 7284 548eba9d09d668e5088c74b31aa53bb8 ""
@@ -167,17 +167,17 @@
   "beta_03.eps" 1774185503 50589 b702f84302ca81190b95418299285ec9 ""
   "beta_05.eps" 1774185503 58194 01bdbc11bbd73168b3e7748f0dcab5a9 ""
   "beta_07.eps" 1774185503 57399 fbed870cbb930dc0e0344ecad6271050 ""
-  "c:/Users/Carlos A. Arronte/Desktop/MFC_JCAE/MFC_JCAE/sn-article.tex" 1774201088 63708 86e2e9c0b769db5094b9cd93d2342ce8 ""
+  "c:/Users/Carlos A. Arronte/Desktop/MFC_JCAE/MFC_JCAE/sn-article.tex" 1774200211 70884 29b0e4ff18417bcdfaf3e79ebe0c6e61 ""
   "roll_03.eps" 1774185503 56895 1118b55657160bc208ca477388adcb17 ""
   "roll_05.eps" 1774185503 70111 3753d27a764e26fcecae7a445d3979ca ""
   "roll_07.eps" 1774185503 54525 01476d55aa843f2c057e0b11c97875fe ""
   "roll_rate_03.eps" 1774185503 50971 5e5603e6c88942f2db69bc8a90eee842 ""
   "roll_rate_05.eps" 1774185503 68318 f0303cb9e3c7e667a81b257e94de0e74 ""
   "roll_rate_07.eps" 1774185503 62451 c03722380eadeb754354cd9ca5a46687 ""
-  "sn-article.aux" 1774201095 13304 901c97dd4f4af8d160ddff434df375a9 "pdflatex"
-  "sn-article.bbl" 1774201093 13322 7bf346d3fbc85f3864a762c9645c669c "bibtex sn-article"
-  "sn-article.out" 1774201095 5117 49037a9b72bce29deb1c820ae92503ac "pdflatex"
-  "sn-article.tex" 1774201088 63708 86e2e9c0b769db5094b9cd93d2342ce8 ""
+  "sn-article.aux" 1774200230 14420 5b60ac1a1eb93450ed0c54d16ed11cad "pdflatex"
+  "sn-article.bbl" 1774200228 13322 7bf346d3fbc85f3864a762c9645c669c "bibtex sn-article"
+  "sn-article.out" 1774200230 5381 f361c2fc63483c84e01398f8fe356e96 "pdflatex"
+  "sn-article.tex" 1774200211 70884 29b0e4ff18417bcdfaf3e79ebe0c6e61 ""
   "sn-jnl.cls" 1774185503 57122 d7cf5cb282c5c6c90059534004dcdf13 ""
   "yaw_rate_03.eps" 1774185503 68461 5eba53744a62818dbc55761dcd6ea1fe ""
   "yaw_rate_05.eps" 1774185503 86760 73c168c6a248bc7a36a95f310e87bb51 ""

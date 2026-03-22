@@ -233,10 +233,244 @@ The remainder of the paper is organized as follows. Section~\ref{model} presents
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 
-\section{Control Problem Formulation}
-\subsection{Vehicle States and Control Objectives}
-\subsection{Reference Generation and Operating Constraints}
-\subsection{Maneuver Completion and Failure Criteria}
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+\section{Control Problem Formulation}\label{sec:problem}
+
+This section formally defines the control problem addressed in this work. 
+The regulated variables, reference generation strategy, actuator constraints, 
+and maneuver evaluation criteria are described, establishing the framework 
+within which the proposed UCC is designed and assessed.
+
+% -----------------------------------------------------------------------
+\subsection{Vehicle States and Control Objectives}\label{sec:states}
+
+The vehicle dynamics relevant to this work are characterized by three state 
+variables: the side-slip angle $\beta$, the yaw rate $\dot{\psi}$, and the 
+roll angle $\phi$. Together, these variables capture the coupled lateral and 
+vertical behavior of the chassis during abrupt maneuvers and serve as the 
+primary feedback signals for the proposed UCC.
+
+The side-slip angle is defined as:
+\begin{equation}
+    \beta = \tan^{-1}\left(\frac{V_y}{V_x}\right),
+    \label{Eq:beta_def}
+\end{equation}
+where $V_y$ and $V_x$ are the lateral and longitudinal vehicle velocities, 
+respectively. In the present co-simulation setup, both $V_x$ and $V_y$ are directly obtained from CarSim. Accordingly, $\beta$ is computed from ideal state information available in simulation, rather than being reconstructed from measured signals through an estimation algorithm. This choice is suitable for comparative controller assessment, although it abstracts from the state-estimation problem that would arise in a real-vehicle implementation.
+
+The reference for $\beta$ is set to zero, reflecting the control objective 
+of minimizing lateral drift. The controller acts only when the side-slip 
+angle exceeds the safety threshold:
+\begin{equation}
+    |\beta| > \beta_{\mathrm{lim}} = 2^{\circ}.
+    \label{Eq:beta_lim}
+\end{equation}
+
+The yaw rate reference $\dot{\psi}_D$ is computed dynamically based on 
+longitudinal speed, front wheel steering angle, and road friction coefficient, 
+as described in Section~\ref{sec:references}. The roll angle reference is 
+always set to zero, as the control objective is to minimize chassis tilt 
+throughout the maneuver.\ 
+
+For the sine-with-dwell maneuver SWD considered in this study, choosing $\phi^* = 0$ is appropriate because the main control objective is to minimize body roll and preserve rollover safety margins during a severe transient maneuver, rather than to track a nonzero equilibrium roll angle. Under this perspective, a zero roll reference represents the nominal upright posture of the vehicle and allows the controller to directly counteract excessive lateral load transfer.
+
+
+% -----------------------------------------------------------------------
+\subsection{Reference Generation and Operating 
+            Constraints}\label{sec:references}
+
+The desired yaw rate is computed as:
+\begin{equation}
+    \dot{\psi}_D = \min\left(\left|\frac{\mu g}{V_x}\right|, 
+    \left|G_{\dot{\psi}}\,\delta_f\right|\right) 
+    \cdot \mathrm{sign}(\delta_f),
+    \label{Eq:yaw_ref}
+\end{equation}
+where $G_{\dot{\psi}} = V_x / (L + K_{us} V_x^2)$ is the yaw rate gain, 
+$L$ is the vehicle wheelbase, $K_{us}$ is the understeer coefficient, 
+$\delta_f$ is the front wheel steering angle, $\mu$ is the road friction 
+coefficient, and $g$ is the gravitational acceleration. The parameters required to compute $G_{\dot{\psi}}$ are taken from \cite{Arronte2023}. The same reference provides the full set of vehicle parameters used in the CarSim model considered in this work.\ 
+
+In this study, the road friction coefficient $\mu$ is imposed as a simulation parameter and kept constant within each test scenario. Therefore, $\mu$ is not estimated online, but prescribed a priori in CarSim to define the operating condition under which the controllers are evaluated. This choice is consistent with the main objective of the experiments, namely, to assess controller performance and robustness under different known friction levels.
+
+
+% -----------------------------------------------------------------------
+\subsection{Control Inputs and Actuator 
+            Constraints}\label{sec:actuators}
+
+The high-level controller produces two virtual control inputs: a yaw moment 
+$M_z$, acting about the vehicle's vertical axis to regulate lateral dynamics, 
+and a roll moment $M_x$, acting about the longitudinal axis to regulate 
+vertical dynamics. These moments are subject to the following saturation 
+constraints:
+\begin{equation}
+    M_z \in [-8000,\; 8000] \;\text{Nm},
+    \label{Eq:Mz_sat}
+\end{equation}
+\begin{equation}
+    M_x \in [-1500,\; 1500] \;\text{Nm}.
+    \label{Eq:Mx_sat}
+\end{equation}
+
+The saturation limits were set in accordance with the maximum 
+torque capacity of the ABS and AARB subsystems as defined in the 
+CarSim\textsuperscript{\textregistered} SUV model used throughout 
+this work, consistent with the simulation framework established 
+in \citep{Arronte2023}.\
+
+At the actuation level, $M_z$ is decomposed into individual wheel brake 
+pressure commands by the ABS subsystem, while $M_x$ is translated into 
+active anti-roll bar (AARB) force commands. Both decompositions are 
+handled internally by CarSim\textsuperscript{\textregistered}, as described 
+in Section~\ref{sec:ucc}.
+
+% -----------------------------------------------------------------------
+\subsection{Maneuver Completion and Failure 
+            Criteria}\label{sec:criteria}
+
+The performance of the UCC is evaluated under a Sine With Dwell (SWD) 
+maneuver, a standardized test used to assess vehicle response to sudden 
+evasive inputs, as specified in FMVSS 126 and UN/ECE Regulation No. 13-H 
+\citep{MSC2012}. A maneuver is considered successfully completed if the 
+vehicle maintains controlled motion throughout the full duration of the 
+steering input without loss of stability.\
+
+In the context of the SWD maneuver, maneuver failure is determined 
+following the criteria established by FMVSS 126 and implemented in 
+CarSim\textsuperscript{\textregistered} \citep{carsimintro2021}: 
+the vehicle is considered to have failed the maneuver if the yaw rate 
+measured at 1.0\,s after the completion of steering exceeds 35\% of 
+the peak yaw rate recorded during the maneuver, or if the yaw rate 
+at 1.75\,s after the completion of steering exceeds 20\% of that peak 
+value \citep{MSC2012}. In practice, within the CarSim co-simulation 
+environment, this condition manifests as an abrupt termination of the 
+simulation due to vehicle loss of control, which is the failure 
+indicator used throughout Section~\ref{sec2}.
+
+In addition to maneuver completion, controller performance is quantified 
+using the root mean square (RMS) of each regulated variable, the root mean 
+square error (RMSE) with respect to the corresponding reference, and the 
+maximum absolute value (MAX) recorded during the maneuver. Control effort 
+is monitored through the time histories of $M_z$ and $M_x$, with particular 
+attention to saturation occurrence and duration.%Ojo a las metricas de esf ctrl (hacerlas coincidir con experimentos)
+
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+\section{Benchmark Controllers and Comparative Framework}\label{sec:bench}
+
+To provide a rigorous and meaningful assessment of the proposed MFC-based 
+UCC, three benchmark controllers are considered. Each controller operates 
+within the same UCC architecture described in Section~\ref{sec:ucc}, 
+receives the same input signals, and is subject to the same actuator 
+saturation constraints defined in Section~\ref{sec:actuators}. The 
+benchmarks are selected to represent progressively more capable reference 
+strategies, allowing the comparison to go beyond the fixed-gain baselines 
+that are common in the literature \citep{SanchezMorales2023}.
+
+% ------------------------------------------------------------------------
+\subsection{Fixed-Gain PID Controller}\label{sec:pid}
+
+The first benchmark is a fixed-gain PID controller previously designed and 
+validated in \citep{Arronte2023}. 
+
+%TODO: especificar cuáles de las tres variables ($\beta$, $\dot{\psi}$, 
+%      $\phi$) regula este controlador. Si no regula las tres, indicar 
+%      explícitamente cuáles quedan sin controlar y cómo se maneja 
+%      esa diferencia en la comparación — por ejemplo, si la variable 
+%      no regulada se deja en lazo abierto o si otro subsistema la gestiona.
+%      Esto es crítico para la fairness de la comparación.
+
+%TODO: reportar los valores de las ganancias $K_P$, $K_I$, $K_D$ 
+%      para cada canal controlado, o indicar que se encuentran en 
+%      \cite{Arronte2023} con referencia de sección/tabla específica.
+
+%TODO: describir brevemente el criterio de tuning usado en 
+%      \cite{Arronte2023} (empírico, Ziegler-Nichols, optimización, etc.) 
+%      para que el lector pueda evaluar si la comparación es justa 
+%      en términos de esfuerzo de diseño.
+
+% ------------------------------------------------------------------------
+\subsection{Gain-Scheduled PID Controller}\label{sec:gspid}
+
+The second benchmark is a gain-scheduled PID controller, in which the 
+control gains are adapted as a function of the longitudinal vehicle speed 
+$V_x$.
+
+%TODO: describir la estructura de scheduling: 
+%      (a) ¿cuántos puntos de operación se definen?
+%      (b) ¿cómo se interpolan las ganancias entre puntos?
+%      (c) ¿el scheduling aplica a los tres canales o solo a algunos?
+
+%TODO: reportar la tabla de ganancias por punto de operación, 
+%      o al menos los valores en los extremos del rango de operación.
+
+%TODO: justificar por qué $V_x$ es la variable de scheduling elegida 
+%      — una oración es suficiente (e.g., porque la dinámica lateral 
+%      es fuertemente dependiente de la velocidad longitudinal).
+
+This controller represents a more capable baseline than the fixed-gain PID, 
+as it partially adapts to changes in operating conditions without requiring 
+an explicit vehicle model. Its inclusion allows the comparison to isolate 
+the contribution of the MFC's online disturbance estimation from simple 
+gain adaptation.
+
+% ------------------------------------------------------------------------
+\subsection{CarSim Built-in Baseline Controller}\label{sec:carsim_base}
+
+The third benchmark is the ESC baseline controller embedded in 
+CarSim\textsuperscript{\textregistered}, which implements a representative 
+Electronic Stability Control strategy based on selective wheel braking 
+\citep{carsimintro2021}.
+
+%TODO: describir brevemente qué variables regula el controlador 
+%      interno de CarSim (típicamente yaw rate y/o side-slip), 
+%      y si actúa también sobre la dinámica de roll o no.
+
+%TODO: aclarar si el controlador de CarSim tiene acceso a información 
+%      que los otros controladores no tienen (e.g., $\mu$ interno, 
+%      estados adicionales), para que el lector pueda evaluar 
+%      la equidad de la comparación.
+
+This baseline is particularly relevant because it represents a 
+production-level reference strategy implemented within the same simulation 
+environment, providing a direct indication of the performance margin 
+achievable with a conventional ESC system under identical test conditions.
+
+% ------------------------------------------------------------------------
+\subsection{Comparative Assumptions and Fairness 
+            Criteria}\label{sec:fairness}
+
+All four controllers — the fixed-gain PID, the gain-scheduled PID, the 
+CarSim ESC baseline, and the proposed MFC-based UCC — are evaluated under 
+identical conditions: the same vehicle model, the same SWD maneuver 
+profile, and the same friction scenarios ($\mu = 0.7$, $0.5$, and $0.3$). 
+Performance is assessed using the metrics defined in 
+Section~\ref{sec:criteria}: RMS, RMSE, and MAX for each regulated variable, 
+complemented by control effort analysis.
+
+%TODO: aclarar si todos los controladores comparten exactamente 
+%      los mismos límites de saturación ($M_z$, $M_x$) o si 
+%      el CarSim baseline opera con una interfaz de actuación diferente 
+%      (e.g., presiones de freno directamente, sin pasar por $M_z$).
+%      Si hay diferencias, explicar cómo se maneja eso para mantener 
+%      la comparación justa.
+
+%TODO: si el PID de \cite{Arronte2023} no regula las mismas tres 
+%      variables que el MFC, añadir aquí una nota explícita sobre 
+%      cómo se interpreta esa asimetría en la comparación — 
+%      por ejemplo: "the fixed-gain PID does not include a dedicated 
+%      roll controller; roll dynamics are therefore left uncontrolled 
+%      in that benchmark, which must be taken into account when 
+%      interpreting the roll angle results in Section~\ref{sec2}."
+
+
+
+
+
 
 
 

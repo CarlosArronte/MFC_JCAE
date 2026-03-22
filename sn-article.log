@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.22)  22 MAR 2026 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.22)  22 MAR 2026 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,7 +561,14 @@ Package amsthm Warning: Unknown theoremstyle `thmstylethree' on input line 96.
 (C:\Users\Carlos A. Arronte\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count358
-) (sn-article.aux)
+) (sn-article.aux
+
+LaTeX Warning: Label `Eq:beta_def' multiply defined.
+
+
+LaTeX Warning: Label `Eq:beta_lim' multiply defined.
+
+)
 \openout1 = `sn-article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
@@ -794,18 +801,13 @@ Underfull \hbox (badness 1009) in paragraph at lines 230--231
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 267--268
-[]\OT1/cmr/m/n/10 To achieve higher fidelity, some authors
+Underfull \hbox (badness 2875) in paragraph at lines 241--245
+\OT1/cmr/m/n/10 described, estab-lish-ing the frame-work within
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 269--270
-\OT1/cmr/m/n/10 with unsprung mass dynam-ics, this approach
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 271--272
-\OT1/cmr/m/n/10 as vari-a-tions in mass or unex-pected changes
+Underfull \hbox (badness 2165) in paragraph at lines 271--276
+[]\OT1/cmr/m/n/10 The yaw rate ref-er-ence $[]$ is com-puted
  []
 
 
@@ -817,28 +819,50 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-<Bicicleta.png, id=247, 521.95pt x 250.9375pt>
+Underfull \hbox (badness 3792) in paragraph at lines 389--390
+[]\OT1/cmr/m/n/10 To achieve higher fidelity, some authors
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[4]
+Underfull \hbox (badness 1122) in paragraph at lines 391--392
+\OT1/cmr/m/n/10 with unsprung mass dynam-ics, this approach
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 as vari-a-tions in mass or unex-pected changes
+ []
+
+<Bicicleta.png, id=276, 521.95pt x 250.9375pt>
 File: Bicicleta.png Graphic file (type png)
 <use Bicicleta.png>
-Package pdftex.def Info: Bicicleta.png  used on input line 276.
+Package pdftex.def Info: Bicicleta.png  used on input line 398.
 (pdftex.def)             Requested size: 194.61551pt x 93.56526pt.
 
-Underfull \hbox (badness 3209) in paragraph at lines 282--283
+Underfull \hbox (badness 3209) in paragraph at lines 404--405
 \OT1/cmr/m/n/10 Given the lim-i-ta-tions dis-cussed above, neu-
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 282--283
+Underfull \hbox (badness 1264) in paragraph at lines 404--405
 \OT1/cmr/m/n/10 unmod-eled non-lin-ear-i-ties in vehi-cle dynam-ics.
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 282--283
+Underfull \hbox (badness 1715) in paragraph at lines 404--405
 \OT1/cmr/m/n/10 ness against dis-tur-bances, reduces chat-ter-ing,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 []\OT1/cmr/m/n/10 In addi-tion to neu-ral network-based
  []
 
@@ -850,77 +874,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[4 <./Bicicleta.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 326.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[5]
-Underfull \hbox (badness 1755) in paragraph at lines 339--340
-[]\OT1/cmr/m/n/10 Returning to the time domain using the
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 346.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 346.
-
-<MuC mio.png, id=308, 770.88pt x 578.16pt>
-File: MuC mio.png Graphic file (type png)
-<use MuC mio.png>
-Package pdftex.def Info: MuC mio.png  used on input line 398.
-(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[5 <./Bicicleta.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -929,26 +883,61 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6]
-<MFC_Blocos.png, id=331, 723.6636pt x 283.2984pt>
-File: MFC_Blocos.png Graphic file (type png)
-<use MFC_Blocos.png>
-Package pdftex.def Info: MFC_Blocos.png  used on input line 427.
-(pdftex.def)             Requested size: 455.24408pt x 178.21524pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 458.
+(hyperref)                removing `math shift' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 458.
+(hyperref)                removing `math shift' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 458.
+(hyperref)                removing `\beta' on input line 448.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 448.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 461--462
+[]\OT1/cmr/m/n/10 Returning to the time domain using the
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 468.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 468.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 468.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 468.
+
+
+Overfull \vbox (0.72565pt too high) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -958,7 +947,51 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[7 <./MuC mio.png>]
+[7]
+<MuC mio.png, id=348, 770.88pt x 578.16pt>
+File: MuC mio.png Graphic file (type png)
+<use MuC mio.png>
+Package pdftex.def Info: MuC mio.png  used on input line 520.
+(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
+<MFC_Blocos.png, id=353, 723.6636pt x 283.2984pt>
+File: MFC_Blocos.png Graphic file (type png)
+<use MFC_Blocos.png>
+Package pdftex.def Info: MFC_Blocos.png  used on input line 549.
+(pdftex.def)             Requested size: 455.24408pt x 178.21524pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[8 <./MuC mio.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 580.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\alpha' on input line 580.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 580.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[9 <./MFC_Blocos.png>]
 Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 86888 bytes
@@ -966,33 +999,25 @@ Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 81100 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=SWD_original-eps-converted-to.pdf SWD_original.eps>
-(epstopdf)             \includegraphics on input line 479.
+(epstopdf)             \includegraphics on input line 601.
 Package epstopdf Info: Output file is already uptodate.
-<SWD_original-eps-converted-to.pdf, id=350, 554.07pt x 303.1325pt>
+<SWD_original-eps-converted-to.pdf, id=380, 554.07pt x 303.1325pt>
 File: SWD_original-eps-converted-to.pdf Graphic file (type pdf)
 <use SWD_original-eps-converted-to.pdf>
-Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 479.
+Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 601.
 (pdftex.def)             Requested size: 216.24094pt x 118.30446pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[8 <./MFC_Blocos.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 496.
+(hyperref)                removing `math shift' on input line 618.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 496.
+(hyperref)                removing `\mu' on input line 618.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 496.
+(hyperref)                removing `math shift' on input line 618.
 
 Package epstopdf Info: Source file: <beta_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1001,12 +1026,12 @@ Package epstopdf Info: Source file: <beta_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 57487 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=beta_07-eps-converted-to.pdf beta_07.eps>
-(epstopdf)             \includegraphics on input line 505.
+(epstopdf)             \includegraphics on input line 627.
 Package epstopdf Info: Output file is already uptodate.
-<beta_07-eps-converted-to.pdf, id=366, 421.575pt x 224.84pt>
+<beta_07-eps-converted-to.pdf, id=387, 421.575pt x 224.84pt>
 File: beta_07-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_07-eps-converted-to.pdf>
-Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 505.
+Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 627.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <yaw_rate_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1015,12 +1040,12 @@ Package epstopdf Info: Source file: <yaw_rate_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 88624 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_07-eps-converted-to.pdf yaw_rate_07.eps>
-(epstopdf)             \includegraphics on input line 511.
+(epstopdf)             \includegraphics on input line 633.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_07-eps-converted-to.pdf, id=367, 421.575pt x 224.84pt>
+<yaw_rate_07-eps-converted-to.pdf, id=388, 421.575pt x 224.84pt>
 File: yaw_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 511.
+Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 633.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <roll_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1029,12 +1054,12 @@ Package epstopdf Info: Source file: <roll_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 54380 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_07-eps-converted-to.pdf roll_07.eps>
-(epstopdf)             \includegraphics on input line 517.
+(epstopdf)             \includegraphics on input line 639.
 Package epstopdf Info: Output file is already uptodate.
-<roll_07-eps-converted-to.pdf, id=368, 421.575pt x 225.84375pt>
+<roll_07-eps-converted-to.pdf, id=389, 421.575pt x 225.84375pt>
 File: roll_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 517.
+Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 639.
 (pdftex.def)             Requested size: 182.09485pt x 97.552pt.
 Package epstopdf Info: Source file: <roll_rate_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1043,24 +1068,24 @@ Package epstopdf Info: Source file: <roll_rate_07.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 63035 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_07-eps-converted-to.pdf roll_rate_07.eps>
-(epstopdf)             \includegraphics on input line 523.
+(epstopdf)             \includegraphics on input line 645.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_07-eps-converted-to.pdf, id=369, 421.575pt x 225.84375pt>
+<roll_rate_07-eps-converted-to.pdf, id=390, 421.575pt x 225.84375pt>
 File: roll_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 523.
+Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 645.
 (pdftex.def)             Requested size: 182.09485pt x 97.552pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 683.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 561.
+(hyperref)                removing `\mu' on input line 683.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 561.
+(hyperref)                removing `math shift' on input line 683.
 
 Package epstopdf Info: Source file: <beta_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1069,12 +1094,12 @@ Package epstopdf Info: Source file: <beta_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 57738 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=beta_05-eps-converted-to.pdf beta_05.eps>
-(epstopdf)             \includegraphics on input line 571.
+(epstopdf)             \includegraphics on input line 693.
 Package epstopdf Info: Output file is already uptodate.
-<beta_05-eps-converted-to.pdf, id=374, 421.575pt x 225.84375pt>
+<beta_05-eps-converted-to.pdf, id=395, 421.575pt x 225.84375pt>
 File: beta_05-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_05-eps-converted-to.pdf>
-Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 571.
+Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 693.
 (pdftex.def)             Requested size: 182.09485pt x 97.552pt.
 Package epstopdf Info: Source file: <yaw_rate_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1083,12 +1108,12 @@ Package epstopdf Info: Source file: <yaw_rate_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 89442 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_05-eps-converted-to.pdf yaw_rate_05.eps>
-(epstopdf)             \includegraphics on input line 577.
+(epstopdf)             \includegraphics on input line 699.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_05-eps-converted-to.pdf, id=375, 421.575pt x 224.84pt>
+<yaw_rate_05-eps-converted-to.pdf, id=396, 421.575pt x 224.84pt>
 File: yaw_rate_05-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 577.
+Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 699.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <roll_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1097,12 +1122,12 @@ Package epstopdf Info: Source file: <roll_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 69867 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_05-eps-converted-to.pdf roll_05.eps>
-(epstopdf)             \includegraphics on input line 583.
+(epstopdf)             \includegraphics on input line 705.
 Package epstopdf Info: Output file is already uptodate.
-<roll_05-eps-converted-to.pdf, id=376, 421.575pt x 224.84pt>
+<roll_05-eps-converted-to.pdf, id=397, 421.575pt x 224.84pt>
 File: roll_05-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 583.
+Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 705.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <roll_rate_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1111,34 +1136,25 @@ Package epstopdf Info: Source file: <roll_rate_05.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 68067 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_05-eps-converted-to.pdf roll_rate_05.eps>
-(epstopdf)             \includegraphics on input line 589.
+(epstopdf)             \includegraphics on input line 711.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_05-eps-converted-to.pdf, id=377, 421.575pt x 226.8475pt>
+<roll_rate_05-eps-converted-to.pdf, id=398, 421.575pt x 226.8475pt>
 File: roll_rate_05-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 589.
+Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 711.
 (pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 627.
+(hyperref)                removing `math shift' on input line 749.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 627.
+(hyperref)                removing `\mu' on input line 749.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 627.
+(hyperref)                removing `math shift' on input line 749.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[9 <./SWD_original-eps-converted-to.pdf> <./beta_07-eps-converted-to.pdf> <./yaw_rate_07-eps-converted-to.pdf> <./roll_07-eps-converted-to.pdf> <./roll_rate_07-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <beta_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 50589 bytes
@@ -1146,12 +1162,12 @@ Package epstopdf Info: Source file: <beta_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 49424 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=beta_03-eps-converted-to.pdf beta_03.eps>
-(epstopdf)             \includegraphics on input line 635.
+(epstopdf)             \includegraphics on input line 757.
 Package epstopdf Info: Output file is already uptodate.
-<beta_03-eps-converted-to.pdf, id=414, 421.575pt x 224.84pt>
+<beta_03-eps-converted-to.pdf, id=403, 421.575pt x 224.84pt>
 File: beta_03-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_03-eps-converted-to.pdf>
-Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 635.
+Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 757.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 Package epstopdf Info: Source file: <yaw_rate_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1160,12 +1176,12 @@ Package epstopdf Info: Source file: <yaw_rate_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 66859 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_03-eps-converted-to.pdf yaw_rate_03.eps>
-(epstopdf)             \includegraphics on input line 641.
+(epstopdf)             \includegraphics on input line 763.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_03-eps-converted-to.pdf, id=415, 421.575pt x 221.82875pt>
+<yaw_rate_03-eps-converted-to.pdf, id=404, 421.575pt x 221.82875pt>
 File: yaw_rate_03-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 641.
+Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 763.
 (pdftex.def)             Requested size: 182.09485pt x 95.81775pt.
 Package epstopdf Info: Source file: <roll_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1174,12 +1190,12 @@ Package epstopdf Info: Source file: <roll_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 54634 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_03-eps-converted-to.pdf roll_03.eps>
-(epstopdf)             \includegraphics on input line 647.
+(epstopdf)             \includegraphics on input line 769.
 Package epstopdf Info: Output file is already uptodate.
-<roll_03-eps-converted-to.pdf, id=416, 421.575pt x 226.8475pt>
+<roll_03-eps-converted-to.pdf, id=405, 421.575pt x 226.8475pt>
 File: roll_03-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 647.
+Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 769.
 (pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
 Package epstopdf Info: Source file: <roll_rate_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
@@ -1188,12 +1204,12 @@ Package epstopdf Info: Source file: <roll_rate_03.eps>
 (epstopdf)                    date: 2026-03-22 10:18:23
 (epstopdf)                    size: 49246 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_03-eps-converted-to.pdf roll_rate_03.eps>
-(epstopdf)             \includegraphics on input line 653.
+(epstopdf)             \includegraphics on input line 775.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_03-eps-converted-to.pdf, id=417, 421.575pt x 224.84pt>
+<roll_rate_03-eps-converted-to.pdf, id=406, 421.575pt x 224.84pt>
 File: roll_rate_03-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 653.
+Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 775.
 (pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1203,28 +1219,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[10 <./beta_05-eps-converted-to.pdf> <./yaw_rate_05-eps-converted-to.pdf> <./roll_05-eps-converted-to.pdf> <./roll_rate_05-eps-converted-to.pdf> <./beta_03-eps-converted-to.pdf> <./yaw_rate_03-eps-converted-to.pdf> <./roll_03-eps-converted-to.pdf> <./roll_rate_03-eps-converted-to.pdf>]
-Underfull \hbox (badness 1354) in paragraph at lines 694--695
+[10 <./SWD_original-eps-converted-to.pdf>]
+Underfull \hbox (badness 1354) in paragraph at lines 816--817
 []\OT1/cmr/bx/n/10 Side-slip angle: \OT1/cmr/m/n/10 Both con-trollers demon-
- []
-
-
-Overfull \hbox (5.0059pt too wide) in paragraph at lines 739--775
-[] 
- []
-
-
-Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 800.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--801
- []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 800--801
-\OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
  []
 
 
@@ -1235,20 +1232,48 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[11] (sn-article.bbl
+[11 <./beta_07-eps-converted-to.pdf> <./yaw_rate_07-eps-converted-to.pdf> <./roll_07-eps-converted-to.pdf> <./roll_rate_07-eps-converted-to.pdf> <./beta_05-eps-converted-to.pdf> <./yaw_rate_05-eps-converted-to.pdf> <./roll_05-eps-converted-to.pdf> <./roll_rate_05-eps-converted-to.pdf>]
+Overfull \hbox (5.0059pt too wide) in paragraph at lines 861--897
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[12 <./beta_03-eps-converted-to.pdf> <./yaw_rate_03-eps-converted-to.pdf> <./roll_03-eps-converted-to.pdf> <./roll_rate_03-eps-converted-to.pdf>]
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 922.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
+ []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 922--923
+\OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
+ []
+
+(sn-article.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[13]
 Underfull \hbox (badness 1168) in paragraph at lines 63--68
 \OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[12]
 Underfull \hbox (badness 10000) in paragraph at lines 90--94
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1269,6 +1294,14 @@ Underfull \hbox (badness 1824) in paragraph at lines 127--134
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[14]
 Underfull \hbox (badness 1742) in paragraph at lines 170--176
 []\OT1/cmr/m/n/10 Menhour, L., B. d'Andr^^Sea Novel, M. Fliess,
  []
@@ -1299,14 +1332,6 @@ Overfull \hbox (4.03738pt too wide) in paragraph at lines 186--191
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[13]
 Underfull \hbox (badness 1264) in paragraph at lines 225--229
 \OT1/cmr/m/n/10 Model-based con-trol and model-free con-trol
  []
@@ -1349,7 +1374,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[14] (sn-article.aux)
+[15] (sn-article.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1359,21 +1384,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.48314pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `sn-article.out' has not changed.
-(rerunfilecheck)             Checksum: 49037A9B72BCE29DEB1C820AE92503AC;5117.
+(rerunfilecheck)             Checksum: F361C2FC63483C84E01398F8FE356E96;5381.
  ) 
 Here is how much of TeX's memory you used:
- 16650 strings out of 467867
- 264789 string characters out of 5412490
- 699568 words of memory out of 5000000
- 45159 multiletter control sequences out of 15000+600000
+ 16666 strings out of 467867
+ 264985 string characters out of 5412490
+ 699155 words of memory out of 5000000
+ 45168 multiletter control sequences out of 15000+600000
  647681 words of font info for 121 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,15n,117p,1275b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,117p,1275b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\Carlos A. Arronte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Carlos A. Arronte/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (14 pages, 1553614 bytes).
+Output written on sn-article.pdf (15 pages, 1563218 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
