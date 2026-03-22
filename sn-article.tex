@@ -467,7 +467,261 @@ complemented by control effort analysis.
 %      in that benchmark, which must be taken into account when 
 %      interpreting the roll angle results in Section~\ref{sec2}."
 
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+\section{Model-Free Unified Chassis Control 
+         Design}\label{sec:mfc_ucc}
 
+This section presents the proposed MFC-based UCC architecture. The 
+formulation begins with the ultra-local model and the intelligent PID 
+control law, followed by the algebraic estimators for the lumped 
+disturbance term, the overall UCC architecture, and the coordination 
+and control allocation strategies. The section concludes with the 
+parameter selection procedure.
+
+% ------------------------------------------------------------------------
+\subsection{Ultra-Local Model and Intelligent PID 
+            Formulation}\label{sec:ulmodel}
+
+The MFC framework adopted in this work is based on the ultra-local model 
+introduced by \citet{Fliess2008}, which assumes that the plant input-output 
+behavior can be approximated over a short time window as:
+\begin{equation}
+    y^{(v)} = F + \alpha u,
+    \label{Eq:Def-MFC}
+\end{equation}
+where $y^{(v)}$ denotes the $v$-th time derivative of the output, $F$ is 
+a lumped term that captures the unknown plant dynamics, external 
+disturbances, and unmodeled nonlinearities, $\alpha \in \mathbb{R}$ is a 
+non-physical scaling parameter chosen by the designer, and $u$ is the 
+control input \citep{Fliess2009}. The term $F$ is treated as a 
+piecewise-constant function updated at each estimation window, making 
+the representation independent of any explicit vehicle model.
+
+In this work, three plant variables are regulated: the yaw rate 
+$\dot{\psi}$, the side-slip angle $\beta$, and the roll angle $\phi$. 
+The yaw rate channel is represented by a first-order ultra-local model 
+($v = 1$), while the side-slip angle and roll angle channels use a 
+second-order formulation ($v = 2$).
+
+%TODO: agregar una justificación breve de por qué $\dot{\psi}$ se 
+%      modela con $v=1$ y $\beta$, $\phi$ con $v=2$. Una oración 
+%      es suficiente — por ejemplo, en términos de la relación 
+%      entrada-salida observable o del grado relativo del sistema.
+
+Assuming that the ultra-local model holds over a short time window, 
+the stabilizing intelligent PID (iPID) control law is given by:
+\begin{equation}
+    u = \frac{-F + \ddot{y}^*}{\alpha} + K_P e + K_I \int e \, dt 
+        + K_D \frac{de}{dt},
+    \label{Def-u-v2}
+\end{equation}
+where $y^*$ is the reference trajectory, $e = y - y^*$ is the tracking 
+error, and $K_P$, $K_I$, $K_D$ are the PID gains. In this work, the 
+integral term is set to zero ($K_I = 0$), reducing the controller to an 
+intelligent PD (iPD) structure. The term $-F/\alpha$ acts as an online 
+feedforward compensation that cancels the estimated lumped dynamics, 
+while the PD component handles residual tracking errors.
+
+%TODO: agregar una oración que justifique brevemente la elección 
+%      iPD en lugar de iPID — por ejemplo, que la naturaleza 
+%      transitoria de la maniobra SWD no requiere eliminación 
+%      de error en estado estacionario, o que el estimador de $F$ 
+%      ya absorbe los efectos de perturbación persistente.
+
+% ------------------------------------------------------------------------
+\subsection{Algebraic Estimation of the Lumped 
+            Term}\label{sec:estimators}
+
+The real-time estimation of $F$ is performed using an algebraic approach 
+derived from the ultra-local model via Laplace-domain manipulations, 
+following \citet{Fliess2009}. The estimators are expressed as weighted 
+integrals of the input and output signals over a sliding window of 
+length $T$, which provides inherent noise attenuation without requiring 
+explicit filtering.
+
+\subsubsection{Second-order estimator for $\beta$ and $\phi$}
+
+For the second-order channels ($v = 2$), the lumped term is estimated as:
+\begin{multline}
+    F_2 = \frac{60}{t^5}\int_{0}^{t}(t^2 - 6t\tau + 6\tau^2)
+          y(\tau)\,d\tau \\
+        - \frac{30\alpha}{t^5}\int_{0}^{t}(t-\tau)^2\tau^2
+          u(\tau)\,d\tau.
+    \label{Antilaplace-Def-MFC-v2}
+\end{multline}
+
+\subsubsection{First-order estimator for $\dot{\psi}$}
+
+For the first-order channel ($v = 1$), the estimator takes the form:
+\begin{multline}
+    F_1 = -\frac{6}{t^3}\int_{0}^{t}(t - 2\tau)y(\tau)\,d\tau \\
+          - \frac{6\alpha}{t^3}\int_{0}^{t}(t-\tau)\tau\, 
+          u(\tau)\,d\tau.
+    \label{Antilaplace-Def-MFC-v1}
+\end{multline}
+
+\subsubsection{Discrete-time implementation}
+
+For digital implementation, the integrals in 
+Eqs.~(\ref{Antilaplace-Def-MFC-v2}) and (\ref{Antilaplace-Def-MFC-v1}) 
+are approximated using the trapezoidal rule over a window of length $T$, 
+sampled at period $T_s$. The discrete estimators are:
+\begin{multline}
+    \hat{F}_2 = \frac{60}{T^5}\sum_{k=0}^{T/T_s} a_k
+                (T^2 - 6TkT_s + 6(kT_s)^2)y[k] \\
+              - \frac{30\hat{\alpha}}{T^5}\sum_{k=0}^{T/T_s} 
+                a_k(T - kT_s)^2(kT_s)^2 u[k],
+\end{multline}
+\begin{multline}
+    \hat{F}_1 = -\frac{6}{T^3}\sum_{k=0}^{T/T_s} 
+                a_k(T - 2kT_s)y[k] \\
+              - \frac{6\hat{\alpha}}{T^3}\sum_{k=0}^{T/T_s}
+                a_k(T - kT_s)kT_s\, u[k],
+\end{multline}
+where the trapezoidal weights are:
+\begin{equation}
+    a_k = \begin{cases}
+        T_s/2, & k = 0 \text{ and } k = T/T_s, \\
+        T_s,   & k = 1, \dots, T/T_s - 1.
+    \end{cases}
+\end{equation}
+
+The integration window was set to $T = 1.0$\,s for all three estimators, 
+based on the characteristic response time of the vehicle dynamics under 
+the SWD maneuver.
+
+%TODO: agregar una oración que discuta brevemente el trade-off 
+%      entre ventana larga (mayor precisión de $\hat{F}$, respuesta 
+%      más lenta) y ventana corta (convergencia más rápida, mayor 
+%      sensibilidad al ruido), y justificar $T = 1.0$\,s en ese 
+%      contexto. Actualmente el texto solo menciona que se eligió 
+%      ese valor sin más explicación.
+
+% ------------------------------------------------------------------------
+\subsection{Unified Chassis Control 
+            Architecture}\label{sec:ucc}
+
+An upstream Multi-layer Coordination (MuC) architecture is adopted for 
+the UCC, as illustrated in Fig.~\ref{fig:MuC mio}. The architecture 
+comprises four layers: supervision, high-level control, coordination, 
+and control allocation. The inputs to the system — longitudinal speed 
+$V_x$, front wheel steering angle $\delta_f$, lateral speed $V_y$, 
+yaw rate $\dot{\psi}$, roll angle $\phi$, and roll rate $\dot{\phi}$ — 
+are obtained directly from CarSim\textsuperscript{\textregistered}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{MuC mio.png}
+    \caption{UCC architecture}
+    \label{fig:MuC mio}
+\end{figure}
+
+%TODO: considerar reemplazar o complementar esta figura con una 
+%      versión que muestre explícitamente los tres canales MFC 
+%      ($\beta$, $\dot{\psi}$, $\phi$) y sus estimadores de $F$ 
+%      dentro del bloque de control de alto nivel. La figura actual 
+%      muestra la arquitectura general pero no el detalle interno 
+%      del controlador propuesto.
+
+\subsubsection{Supervision layer}
+
+The supervision layer computes the references and defines the activation 
+conditions for each controller channel, as formalized in 
+Section~\ref{sec:references}. The $\beta$ controller is activated only 
+when $|\beta| > 2^\circ$; the $\dot{\psi}$ reference is computed 
+dynamically via Eq.~(\ref{Eq:yaw_ref}); and the $\phi$ reference is 
+always zero.
+
+\subsubsection{High-level controller}
+
+The high-level controller applies three independent iPD controllers — 
+one per regulated variable — to compute the virtual control moments. 
+The lateral dynamics channels ($\beta$ and $\dot{\psi}$) produce a 
+combined yaw moment $M_z$, while the roll channel produces a roll 
+moment $M_x$. Both are subject to the saturation limits defined in 
+Eqs.~(\ref{Eq:Mz_sat})--(\ref{Eq:Mx_sat}). The implementation in 
+MATLAB/Simulink\textsuperscript{\textregistered} is shown in 
+Fig.~\ref{Fig:UCC-implem}.
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=\linewidth]{MFC_Blocos.png}
+    \caption{UCC implementation}
+    \label{Fig:UCC-implem}
+\end{figure*}
+
+\subsubsection{Coordination layer}
+
+Since both the $\beta$ and $\dot{\psi}$ controllers contribute to $M_z$, 
+a Pure Subsumption strategy is used in the coordination layer to weight 
+their respective contributions in the final torque signal. The roll 
+channel is independent and not affected by this coordination step.
+
+%TODO: describir con más precisión el criterio de subsumption: 
+%      ¿cuándo tiene prioridad el canal $\beta$ sobre $\dot{\psi}$ 
+%      o viceversa? ¿Es una conmutación discreta o una ponderación 
+%      continua? Esto es relevante para reproducibilidad.
+
+% ------------------------------------------------------------------------
+\subsection{Control Allocation}\label{sec:allocation}
+
+The virtual control moments $M_z$ and $M_x$ are translated into 
+physical actuator commands by CarSim\textsuperscript{\textregistered}. 
+Specifically, $M_z$ is decomposed into individual wheel brake pressure 
+signals processed by the ABS subsystem, and $M_x$ is converted into 
+active anti-roll bar force commands. This allocation step is handled 
+internally by the simulator, consistent with the setup described 
+in \citep{Arronte2023}.
+
+%TODO: si existe documentación interna o de CarSim sobre el 
+%      algoritmo de alocación usado (e.g., distribución proporcional 
+%      de frenado por eje, modelo del AARB), citarla o describirla 
+%      brevemente. De lo contrario, una nota aclarando que la 
+%      alocación es transparente al controlador de alto nivel 
+%      es suficiente.
+
+% ------------------------------------------------------------------------
+\subsection{Parameter Selection and Implementation 
+            Details}\label{sec:params}
+
+The iPD controllers involve three sets of parameters per channel: the 
+scaling constant $\alpha$, the proportional gain $K_P$, and the derivative 
+gain $K_D$. These were selected empirically through iterative simulation, 
+guided by the following criteria: $\alpha$ was adjusted to match the 
+order of magnitude of the unknown plant gain for each channel, while 
+$K_P$ and $K_D$ were tuned to balance tracking performance and control 
+signal smoothness, prioritizing maneuver safety over passenger comfort.
+
+The effect of $\alpha$ on closed-loop behavior was observed to be 
+monotonic: higher values introduce response delay, while lower values 
+increase control signal oscillation. An intermediate value was sought 
+for each channel independently. It was further verified through 
+simulation that variations in $K_D$ had negligible influence on the 
+system response; therefore, $K_D$ was fixed at a small value for all 
+channels to provide light damping.
+
+%TODO: agregar una oración que cite o mencione que, aunque el tuning 
+%      es empírico, la estabilidad del lazo cerrado bajo estas 
+%      ganancias es discutida en la Sección~\ref{sec:stability} 
+%      (cuando esa sección exista), para que el lector no quede 
+%      con la sensación de que el tuning es puramente ad hoc.
+
+The resulting parameter values are summarized in 
+Table~\ref{tab:params}.
+
+%TODO: crear Table~\ref{tab:params} con las siguientes columnas:
+%      Canal | $\alpha$ | $K_P$ | $K_D$ | Modelo ultra-local ($v$)
+%      Con los valores: 
+%      $\beta$:      $\alpha = 0.01$,   $K_P = 20$,  $K_D = 3$, $v=2$
+%      $\dot{\psi}$: $\alpha = 10^{-3}$, $K_P = 50$, $K_D = 3$, $v=1$
+%      $\phi$:       $\alpha = 10^{-2}$, $K_P = 200$, $K_D = 3$, $v=2$
+%      Una tabla consolida esta información mejor que el texto corrido 
+%      actual y facilita la reproducibilidad.
+
+The simulation sampling period was set to $T_s = 1$\,ms, and the 
+estimation window to $T = 1.0$\,s for all three channels.
 
 
 
