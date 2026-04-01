@@ -136,7 +136,7 @@
 %%==================================%%
 
 \abstract{Automotive safety has been a critical focus for both national and international research institutions in recent years. The combined control of lateral dynamics and roll stability in vehicles has been extensively studied, often relying on automotive models to design and tune controllers. However, these models frequently include parametric uncertainties, nonlinear dynamics, and simplifying assumptions, which can lead to suboptimal controller performance in real-world applications.
-This work proposes a unified chassis controller (UCC) to regulate lateral and roll dynamics during abrupt maneuvers, comparing two control strategies: one based on traditional PID controllers and another based on model-free controllers (MFC). Both approaches employ three independent controllers to maintain the side-slip angle, yaw rate, and roll angle within safe limits. The robustness and performance of these control structures is evaluated using a Sine With Dwell maneuver in a co-simulation environment combining MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}. Results demonstrate that while the PID-based UCC struggles to maintain stability under varying road conditions, the MFC-based UCC achieves superior robustness and performance, effectively regulating the state variables across different scenarios. These findings highlight the robustness and adaptability of MFCs, making them a promising solution for enhancing vehicle safety.
+This work proposes a unified chassis controller (UCC) to regulate lateral and roll dynamics during abrupt maneuvers and evaluates a model-free control (MFC) strategy against representative benchmark controllers. The comparison includes a fixed-gain PID controller, a gain-scheduled linear quadratic regulator (LQR), and the built-in CarSim ESC baseline, all assessed within the same co-simulation environment combining MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}. Results demonstrate that while the benchmark controllers degrade under varying road conditions, the MFC-based UCC achieves superior robustness and performance, effectively regulating the state variables across different scenarios. These findings highlight the robustness and adaptability of MFCs, making them a promising solution for enhancing vehicle safety.
 }
 
 %%================================%%
@@ -224,7 +224,7 @@ Despite the advances described above, the practical deployment of UCC strategies
 
  In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on fixed-gain PID controllers, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers, simulator-embedded baseline strategies, and learning-based alternatives under consistent evaluation conditions.\ 
  
- To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-gain PID, a gain-scheduled PID, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
+ To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-gain PID, a gain-scheduled LQR, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
 
 %REESCRIBIR
 The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\ %Reescribir (ver estructura final)
@@ -394,29 +394,29 @@ validated in \citep{Arronte2023}.
 %      en términos de esfuerzo de diseño.
 
 % ------------------------------------------------------------------------
-\subsection{Gain-Scheduled PID Controller}\label{sec:gspid}
+\subsection{Gain-Scheduled LQR Controller}\label{sec:gslqr}
 
-The second benchmark is a gain-scheduled PID controller, in which the 
-control gains are adapted as a function of the longitudinal vehicle speed 
-$V_x$.
+The second benchmark is a gain-scheduled linear quadratic regulator 
+(LQR), in which the state-feedback gain matrix is adapted as a function 
+of the longitudinal vehicle speed $V_x$.
 
 %TODO: describir la estructura de scheduling: 
 %      (a) ¿cuántos puntos de operación se definen?
-%      (b) ¿cómo se interpolan las ganancias entre puntos?
-%      (c) ¿el scheduling aplica a los tres canales o solo a algunos?
+%      (b) ¿cómo se interpolan las matrices de realimentación entre puntos?
+%      (c) ¿el scheduling aplica a la dinámica lateral y de roll, o solo a una parte del sistema?
 
-%TODO: reportar la tabla de ganancias por punto de operación, 
-%      o al menos los valores en los extremos del rango de operación.
+%TODO: reportar las matrices de ponderación $Q$ y $R$, o al menos 
+%      las ganancias LQR en los extremos del rango de operación.
 
 %TODO: justificar por qué $V_x$ es la variable de scheduling elegida 
 %      — una oración es suficiente (e.g., porque la dinámica lateral 
 %      es fuertemente dependiente de la velocidad longitudinal).
 
 This controller represents a more capable baseline than the fixed-gain PID, 
-as it partially adapts to changes in operating conditions without requiring 
-an explicit vehicle model. Its inclusion allows the comparison to isolate 
-the contribution of the MFC's online disturbance estimation from simple 
-gain adaptation.
+as it explicitly exploits a linearized vehicle model while adapting the 
+feedback gains to changing operating conditions. Its inclusion allows the 
+comparison to contrast the MFC's online disturbance estimation against a 
+structured model-based strategy with state-feedback scheduling.
 
 % ------------------------------------------------------------------------
 \subsection{CarSim Built-in Baseline Controller}\label{sec:carsim_base}
@@ -444,7 +444,7 @@ achievable with a conventional ESC system under identical test conditions.
 \subsection{Comparative Assumptions and Fairness 
             Criteria}\label{sec:fairness}
 
-All four controllers — the fixed-gain PID, the gain-scheduled PID, the 
+All four controllers — the fixed-gain PID, the gain-scheduled LQR, the 
 CarSim ESC baseline, and the proposed MFC-based UCC — are evaluated under 
 identical conditions: the same vehicle model, the same SWD maneuver 
 profile, and the same friction scenarios ($\mu = 0.7$, $0.5$, and $0.3$). 
@@ -959,7 +959,7 @@ It was verified by simulations that the variation of the $K_d$ parameter does no
 % ------------------------------------------------------------------------
 \section{Experiment design} \label{sec:exper}
 
-To validate the designed UCC, it is simulated in Matlab/Simulink\textsuperscript{\textregistered} acting on the Carsim\textsuperscript{\textregistered} SUV model adapted to the parameters referred in \cite{Arronte2023} in a Sine With Dwell (SWD) maneuver. This simulation will be compared to the response of the traditional PID controllers designed in \cite{Arronte2023} acting under the same conditions. To show the system's robustness, tests are performed three different $\mu$ values \citep{Ahrenhold2023}: $\mu = 0.7$ (Dry Asphalt Road), which simulates good grip and stability for vehicles, $\mu = 0.5$ (Wet Road), which corresponds to reduced traction due to a lubricating film of water, increasing the risk of skidding, and $\mu = 0.3$ (Icy Road), which simulates extremely low traction, and requires careful driving and often needs specialized tires or chains for safety.
+To validate the designed UCC, it is simulated in Matlab/Simulink\textsuperscript{\textregistered} acting on the Carsim\textsuperscript{\textregistered} SUV model adapted to the parameters referred in \cite{Arronte2023} in a Sine With Dwell (SWD) maneuver. The results presented in this section focus on the comparison between the proposed iPD-based MFC controller, the gain-scheduled LQR benchmark, and the open-loop vehicle response under the same test conditions. To show the system's robustness, tests are performed three different $\mu$ values \citep{Ahrenhold2023}: $\mu = 0.7$ (Dry Asphalt Road), which simulates good grip and stability for vehicles, $\mu = 0.5$ (Wet Road), which corresponds to reduced traction due to a lubricating film of water, increasing the risk of skidding, and $\mu = 0.3$ (Icy Road), which simulates extremely low traction, and requires careful driving and often needs specialized tires or chains for safety.
 
 The SWD maneuver involves accelerating the vehicle to a speed of just over 80 km/h without steering or braking, leaving it in the highest gear up to 80 km/h, and then using a robot to apply a steering control in the form of a sine wave with a dwell (momentary pause in the maximum steering angle). The purpose of the test is to evaluate the vehicle's response to a sudden evasive maneuver, such as swerving to avoid an obstacle, and to ensure compliance with regulations such as USA FMVSS 126 and UN/ECE Regulation No. 13-H \cite{MSC2012}. The system simulation is performed by using CarSim\textsuperscript{\textregistered} and Matlab\textsuperscript{\textregistered} together. Figure \ref{fig:sine-maneuver} shows the waveform of the steering signal in this maneuver.
 \begin{figure}
@@ -976,14 +976,14 @@ The SWD maneuver involves accelerating the vehicle to a speed of just over 80 km
 % ------------------------------------------------------------------------
 \section{Simulation results}\label{sec2}
 
-The UCC is tested by simulating a SWD maneuver as specified above for three different values of friction coefficient as described. The tests are performed for open-loop situation (without controller), PID controllers as designed in \cite{Arronte2023}, and iPD MFC controllers. It is shown that for the first and second cases, stability is not even guaranteed.
+The UCC is tested by simulating a SWD maneuver as specified above for three different values of friction coefficient as described. The results below compare the open-loop situation (without controller), the gain-scheduled LQR benchmark, and the iPD MFC controller. It is shown that the first and second cases do not guarantee stability in all friction scenarios.
 
 %As a concept, a car is considered to have lateral stability in a maneuver if the side-slip angle and the difference between the measured yaw rate and the desired yaw rate are minimized. On the other hand, vertical stability (or roll stability) is achieved by minimizing the roll angle. In this work, it is not intended to minimize the roll rate (which would create a more comfortable environment for passengers) but this parameter is observed in the simulations.
  
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.7$}\label{sec3}
 
-Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show the side slip angle and yaw rate in the SWD maneuver for $\mu =0.7$. Here, both the controllers, that is PID and iPD (MFC), manage to decrease the side slip angle during the maneuver. Also, the measured yaw rate follows the reference for both controllers. It can be observed that the vehicle fails to complete the maneuver without the action of any controller (open-loop). Figures \ref{fig:roll_07} and \ref{fig:roll_rate_07} show the roll angle and roll rate behavior during the maneuver. Both controllers manage to reduce these variables during the maneuver, thus demonstrating their effectiveness in controlling the rollover dynamics.
+Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show the side slip angle and yaw rate in the SWD maneuver for $\mu =0.7$. Here, both controllers, namely the gain-scheduled LQR and the iPD-based MFC, manage to decrease the side slip angle during the maneuver. Also, the measured yaw rate follows the reference for both controllers. It can be observed that the vehicle fails to complete the maneuver without the action of any controller (open-loop). Figures \ref{fig:roll_07} and \ref{fig:roll_rate_07} show the roll angle and roll rate behavior during the maneuver. Both controllers manage to reduce these variables during the maneuver, thus demonstrating their effectiveness in controlling the rollover dynamics.
 
 
 \begin{figure}
@@ -1048,7 +1048,7 @@ Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show the side slip angle and yaw 
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.5$}
 
-Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show the side slip angle and yaw rate respectively in the SWD maneuver with $\mu = 0.5$. Both controllers (PID and iPD MFC) effectively reduce the side-slip angle and ensure that the yaw rate follows its reference. As in the previous simulation, it can be observed that the car does not manage to complete the maneuver in open-loop (sudden stops in the curves). Figures \ref{fig:roll_05} and \ref{fig:roll_rate_05} show the behavior of the roll angle and roll rate respectively. Here it is also evident the positive influence of the designed controllers in the reduction of the key parameters in the car rollover dynamics.
+Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show the side slip angle and yaw rate respectively in the SWD maneuver with $\mu = 0.5$. Both controllers (gain-scheduled LQR and iPD MFC) effectively reduce the side-slip angle and ensure that the yaw rate follows its reference. As in the previous simulation, it can be observed that the car does not manage to complete the maneuver in open-loop (sudden stops in the curves). Figures \ref{fig:roll_05} and \ref{fig:roll_rate_05} show the behavior of the roll angle and roll rate respectively. Here it is also evident the positive influence of the designed controllers in the reduction of the key parameters in the car rollover dynamics.
 
 
 
@@ -1114,7 +1114,7 @@ Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show the side slip angle and yaw 
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.3$}
 
-Figures \ref{fig:beta_03} and \ref{fig:yaw_03} show the side slip angle and yaw rate respectively during the SWD maneuver with a friction coefficient of $\mu=0.3$. It is observed that only the iPD MFC controllers are able to complete the maneuver and reduce the side slip angle and yaw rate error. Both the open-loop and the simple PID controllers fail shortly after the start of the maneuver. Figures \ref{fig:roll_03} and \ref{fig:roll_rate_03} show the roll angle and roll rate and the failure can also be seen. On the other hand, it is remarkable how the designed MFC controller manages not only to complete the maneuver but also to maintain the roll dynamics in a desired range of values.
+Figures \ref{fig:beta_03} and \ref{fig:yaw_03} show the side slip angle and yaw rate respectively during the SWD maneuver with a friction coefficient of $\mu=0.3$. It is observed that only the iPD MFC controller is able to complete the maneuver and reduce the side slip angle and yaw rate error. Both the open-loop case and the gain-scheduled LQR benchmark fail shortly after the start of the maneuver. Figures \ref{fig:roll_03} and \ref{fig:roll_rate_03} show the roll angle and roll rate, where the failure can also be seen. On the other hand, the proposed MFC controller manages not only to complete the maneuver but also to maintain the roll dynamics in a desired range of values.
 
 \begin{figure}
      \centering
@@ -1177,17 +1177,17 @@ Figures \ref{fig:beta_03} and \ref{fig:yaw_03} show the side slip angle and yaw 
 % ------------------------------------------------------------------------
 \subsection{Statistical results across different friction conditions}
 
-Table~\ref{tab3} presents a statistical analysis of the vehicle's dynamic response under a Sine With Dwell (SWD) maneuver, considering the same three different road friction coefficients: $\mu = 0.7$, $\mu = 0.5$, and $\mu = 0.3$. The results are reported for the two control strategies (PID and iPD MFC) as well as open-loop case. The cases in which stability is not guaranteed are presented in \textbf{bold numbers}. 
+Table~\ref{tab3} presents a statistical analysis of the vehicle's dynamic response under a Sine With Dwell (SWD) maneuver, considering the same three different road friction coefficients: $\mu = 0.7$, $\mu = 0.5$, and $\mu = 0.3$. The results are reported for the two control strategies (gain-scheduled LQR and iPD MFC) as well as the open-loop case. The cases in which stability is not guaranteed are presented in \textbf{bold numbers}. 
 
-\textbf{Side-slip angle:} Both controllers demonstrate a clear ability to reduce the side-slip angle. The MFC consistently achieves the lowest RMS and RMSE values, particularly at $\mu = 0.5$ and $\mu = 0.3$, where the PID controller shows slightly higher slip levels. At $\mu = 0.7$, MFC manages a lower RMS (0.627) compared to PID (0.735), and at $\mu = 0.5$, this difference becomes more significant (MFC: 0.531 vs. PID: 0.71). In the open-loop case, the side-slip angle increases substantially, peaking at 11.945° for $\mu = 0.5$, highlighting the importance of active control for maintaining lateral stability.
+\textbf{Side-slip angle:} Both controllers demonstrate a clear ability to reduce the side-slip angle. The MFC consistently achieves the lowest RMS and RMSE values, particularly at $\mu = 0.5$ and $\mu = 0.3$, where the gain-scheduled LQR benchmark shows slightly higher slip levels. At $\mu = 0.7$, MFC manages a lower RMS (0.627) compared to LQR (0.735), and at $\mu = 0.5$, this difference becomes more significant (MFC: 0.531 vs. LQR: 0.71). In the open-loop case, the side-slip angle increases substantially, peaking at 11.945° for $\mu = 0.5$, highlighting the importance of active control for maintaining lateral stability.
 
-\textbf{Yaw rate:} In all conditions, the MFC achieves the lowest yaw rate RMS and RMSE values, followed by the PID controller. At $\mu = 0.7$, MFC maintains an RMS of 10.770 deg/s and a maximum yaw rate of 34.203 deg/s, while the uncontrolled vehicle reaches a peak of 49.98 deg/s. This pattern continues for $\mu = 0.5$, where MFC maintains better tracking and dampening of yaw motion. 
+\textbf{Yaw rate:} In all conditions, the MFC achieves the lowest yaw rate RMS and RMSE values, followed by the gain-scheduled LQR benchmark. At $\mu = 0.7$, MFC maintains an RMS of 10.770 deg/s and a maximum yaw rate of 34.203 deg/s, while the uncontrolled vehicle reaches a peak of 49.98 deg/s. This pattern continues for $\mu = 0.5$, where MFC maintains better tracking and dampening of yaw motion. 
 
-\textbf{Roll angle:} Roll behavior also improves with both controllers. At $\mu = 0.7$, the uncontrolled vehicle experiences an extreme peak roll angle of 79.993, while MFC and PID limit this to 5.917° and 4.161°, respectively. At $\mu = 0.5$, the PID controller shows superior performance in minimizing the roll angle (RMS: 0.222), while MFC reaches a higher RMS (1.260) but still provides acceptable control.
+\textbf{Roll angle:} Roll behavior also improves with both controllers. At $\mu = 0.7$, the uncontrolled vehicle experiences an extreme peak roll angle of 79.993, while MFC and the gain-scheduled LQR limit this to 5.917° and 4.161°, respectively. At $\mu = 0.5$, the LQR benchmark shows superior performance in minimizing the roll angle (RMS: 0.222), while MFC reaches a higher RMS (1.260) but still provides acceptable control.
 
-\textbf{Roll rate:} Similar to the roll angle, the roll rate is substantially reduced by the control strategies. At $\mu = 0.7$, the uncontrolled vehicle reaches a peak roll rate of 115.104 deg/s, whereas the PID and MFC controllers keep it below 42 deg/s. The same trend is observed for $\mu = 0.5$, with the MFC showing higher values than PID at $\mu = 0.5$.
+\textbf{Roll rate:} Similar to the roll angle, the roll rate is substantially reduced by the control strategies. At $\mu = 0.7$, the uncontrolled vehicle reaches a peak roll rate of 115.104 deg/s, whereas the LQR and MFC controllers keep it below 42 deg/s. The same trend is observed for $\mu = 0.5$, with the MFC showing higher values than LQR at $\mu = 0.5$.
 
-For $\mu=0.3$, PID control and open-loop does not reach stability. Overall, the analysis demonstrates that both control strategies (PID and iPD MFC) significantly enhance vehicle stability and rollover mitigation during the SWD maneuver for $\mu=0.7$ and $\mu=0.5$, with the MFC generally offering superior performance in minimizing side-slip and yaw rate errors. The roll angle and roll rate are better in PID control. On the other hand, iPD MFC has a better robustness of stability, as it does not fail in the case of $\mu=0.3$. The uncontrolled vehicle (open-loop) is not robustly stable. 
+For $\mu=0.3$, the gain-scheduled LQR benchmark and the open-loop case do not reach stability. Overall, the analysis demonstrates that both control strategies (gain-scheduled LQR and iPD MFC) significantly enhance vehicle stability and rollover mitigation during the SWD maneuver for $\mu=0.7$ and $\mu=0.5$, with the MFC generally offering superior performance in minimizing side-slip and yaw rate errors. The roll angle and roll rate are better under the LQR benchmark. On the other hand, the iPD MFC has better robustness of stability, as it does not fail in the case of $\mu=0.3$. The uncontrolled vehicle (open-loop) is not robustly stable. 
 
 % \begin{table*}
 % \setlength{\tabcolsep}{0.2cm}
@@ -1195,7 +1195,7 @@ For $\mu=0.3$, PID control and open-loop does not reach stability. Overall, the 
 % \caption{Statistical analysis of simulations}\label{tab3}
 % \begin{tabular*}{\textwidth}{llccccccccc}
 % \hline
-% & & \multicolumn{3}{c}{PID} & \multicolumn{3}{c}{MFC} & \multicolumn{3}{c}{No Control} \\
+% & & \multicolumn{3}{c}{GS-LQR} & \multicolumn{3}{c}{MFC} & \multicolumn{3}{c}{No Control} \\
 % \cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
 % Parameter & $\mu$ & RMS\footnotemark[1] & RMSE\footnotemark[2] & MAX\footnotemark[3] & RMS\footnotemark[1] & RMSE\footnotemark[2] & MAX\footnotemark[3] & RMS\footnotemark[1] & RMSE\footnotemark[2] & MAX\footnotemark[3] \\
 % \hline
@@ -1228,7 +1228,7 @@ For $\mu=0.3$, PID control and open-loop does not reach stability. Overall, the 
 \setlength{\tabcolsep}{5pt}
 \begin{tabular}{llccccccccc}
 \toprule
-& & \multicolumn{3}{c}{PID} & \multicolumn{3}{c}{MFC} & \multicolumn{3}{c}{No Control} \\
+& & \multicolumn{3}{c}{GS-LQR} & \multicolumn{3}{c}{MFC} & \multicolumn{3}{c}{No Control} \\
 \cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
 Parameter & $\mu$ & RMS\tnote{1} & RMSE\tnote{2} & MAX\tnote{3} & RMS & RMSE & MAX & RMS & RMSE & MAX \\
 \midrule
@@ -1270,7 +1270,7 @@ Parameter & $\mu$ & RMS\tnote{1} & RMSE\tnote{2} & MAX\tnote{3} & RMS & RMSE & M
 
 % This study introduced a novel Unified Chassis Control (UCC) system based on Model-Free Controllers (MFCs) to simultaneously regulate the lateral (side-slip angle and yaw rate) and vertical (roll angle) dynamics of a vehicle during abrupt maneuvers. By leveraging an ultra-local model and algebraic estimators, the proposed MFC-based UCC eliminates the reliance on detailed vehicle models, addressing the challenges posed by parametric uncertainties and nonlinear dynamics inherent in traditional model-based approaches.
 
-% The performance of the MFC-based UCC was evaluated through a Sine With Dwell (SWD) maneuver in a co-simulation environment using MATLAB/Simulink and CarSim, under varying road friction conditions ($\mu = 0.7$, 0.5, and 0.3). The results demonstrated that the MFC-based UCC effectively minimized the side-slip angle, reduced yaw rate errors, and maintained roll angle stability, ensuring both lateral and vertical vehicle stability. Notably, the MFC outperformed a conventional PID-based controller in challenging low-friction conditions ($\mu = 0.3$), where the PID-controlled and uncontrolled systems failed to complete the maneuver. This highlights the robustness of the MFC approach in handling adverse driving scenarios, such as icy roads, which are critical for enhancing vehicle safety.
+% The performance of the MFC-based UCC was evaluated through a Sine With Dwell (SWD) maneuver in a co-simulation environment using MATLAB/Simulink and CarSim, under varying road friction conditions ($\mu = 0.7$, 0.5, and 0.3). The results demonstrated that the MFC-based UCC effectively minimized the side-slip angle, reduced yaw rate errors, and maintained roll angle stability, ensuring both lateral and vertical vehicle stability. Notably, the MFC outperformed the gain-scheduled LQR benchmark in challenging low-friction conditions ($\mu = 0.3$), where the LQR-controlled and uncontrolled systems failed to complete the maneuver. This highlights the robustness of the MFC approach in handling adverse driving scenarios, such as icy roads, which are critical for enhancing vehicle safety.
 
 % The successful integration of three independent MFC controllers within a multi-layer coordination architecture underscores the potential of model-free strategies for real-time vehicle control. By empirically tuning the control parameters, the system achieved a balance between responsiveness and stability, prioritizing vehicle safety over passenger comfort during sudden maneuvers. These findings contribute to the growing body of research on advanced vehicle control systems and align with global efforts to reduce traffic accidents.
 
@@ -1278,7 +1278,7 @@ Parameter & $\mu$ & RMS\tnote{1} & RMSE\tnote{2} & MAX\tnote{3} & RMS & RMSE & M
 
 % In summary, the proposed MFC-based UCC represents a promising step toward robust and adaptable vehicle control systems, offering a viable solution for improving automotive safety and stability in critical driving scenarios. This work lays a foundation for further exploration of model-free control techniques in the pursuit of safer and more reliable transportation systems.
 
-This study proposes a novel Unified Chassis Control (UCC) system based on Model-Free Controllers (MFCs) to simultaneously regulate vehicle lateral (side-slip angle and yaw rate) and vertical (roll angle) dynamics during abrupt maneuvers. By leveraging ultra-local models and algebraic estimators, the MFC-based UCC eliminates the need for detailed vehicle modeling, effectively addressing challenges posed by parametric uncertainties and the nonlinear nature of traditional model-based approaches. The controller was evaluated through a Sine With Dwell (SWD) maneuver in a co-simulation environment using MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}, under varying road friction conditions ($\mu = 0.7$, $\mu = 0.5$, and $\mu = 0.3$). Results showed that the MFC-based UCC significantly reduced side-slip angle and yaw rate errors while maintaining good roll angle stability, ensuring comprehensive lateral and vertical control. In low-friction scenarios ($\mu = 0.3$), only the MFC showed stability. 
+This study proposes a novel Unified Chassis Control (UCC) system based on Model-Free Controllers (MFCs) to simultaneously regulate vehicle lateral (side-slip angle and yaw rate) and vertical (roll angle) dynamics during abrupt maneuvers. By leveraging ultra-local models and algebraic estimators, the MFC-based UCC eliminates the need for detailed vehicle modeling, effectively addressing challenges posed by parametric uncertainties and the nonlinear nature of traditional model-based approaches. The controller was evaluated through a Sine With Dwell (SWD) maneuver in a co-simulation environment using MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}, under varying road friction conditions ($\mu = 0.7$, $\mu = 0.5$, and $\mu = 0.3$), and compared against a gain-scheduled LQR benchmark. Results showed that the MFC-based UCC significantly reduced side-slip angle and yaw rate errors while maintaining good roll angle stability, ensuring comprehensive lateral and vertical control. In low-friction scenarios ($\mu = 0.3$), only the MFC showed stability. 
 
 Future research should focus on automating the tuning using optimization to enhance scalability and precision, validating the approach through real-world implementations, and comparing it with alternative model-free techniques such as neural networks or fuzzy logic controllers. Additionally, extending the UCC framework to account for longitudinal dynamics or adapting it for diverse vehicle types, including electric and heavy-duty platforms, could further expand its applicability. 
 
