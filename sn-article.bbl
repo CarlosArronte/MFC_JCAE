@@ -165,6 +165,14 @@ Mazzilli, V., S.~De~Pinto, L.~Pascali, M.~Contrino, F.~Bottiglione,
 \newblock 755 Phoenix Drive, Ann Arbor MI, 48108, USA.
 \newblock Technical overview of CarSim features and capabilities.
 
+\bibitem[\protect\citeauthoryear{{Mechanical Simulation
+  Corporation}}{{Mechanical Simulation Corporation}}{2025}]{carsim_fmvss126}
+{Mechanical Simulation Corporation}. 2025.
+\newblock The sine with dwell test in carsim.
+\newblock Official CarSim application note describing the FMVSS 126 / ECE R13H
+  sine-with-dwell ESC test procedure and CarSim example implementation.
+  Accessed April 1, 2026.
+
 \bibitem[\protect\citeauthoryear{Menhour, d’Andréa Novel, Fliess, Gruyer,
   and Mounier}{Menhour et~al.}{2018}]{Menhour2018}
 Menhour, L., B.~d’Andréa Novel, M.~Fliess, D.~Gruyer, and H.~Mounier. 2018.

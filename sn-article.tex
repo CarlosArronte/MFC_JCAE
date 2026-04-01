@@ -410,45 +410,97 @@ The second benchmark is a gain-scheduled linear quadratic regulator
 (LQR), in which the state-feedback gain matrix is adapted as a function 
 of the longitudinal vehicle speed $V_x$.
 
-%TODO: describir la estructura de scheduling: 
-%      (a) ¿cuántos puntos de operación se definen?
-%      (b) ¿cómo se interpolan las matrices de realimentación entre puntos?
-%      (c) ¿el scheduling aplica a la dinámica lateral y de roll, o solo a una parte del sistema?
+The LQR benchmark is derived from the bicycle-model framework described 
+in \citep{Arronte2023}, but extended to represent the coupled lateral and 
+roll dynamics required by the present UCC problem. In particular, the 
+state-space model is written in the descriptor form 
+$E\dot{x}+Fx=Gu$, with state vector 
+$x=[v\ \dot{\psi}\ \dot{\phi}\ \phi]^{\top}$ and input vector 
+$u=[\delta\ M_z\ M_x]^{\top}$, where $\delta$ is the steering input, 
+$M_z$ is the external yaw moment, and $M_x$ is the external roll moment. 
+Relative to the model used in \citep{Arronte2023}, the main modification 
+lies in the input matrix $G$, which is reformulated to account 
+simultaneously for steering excitation and for the two control moments 
+used by the UCC architecture. This yields a speed-dependent linear model 
+that preserves the bicycle-model interpretation while explicitly 
+capturing the actuation channels required for both lateral stabilization 
+and roll regulation.
 
-%TODO: reportar las matrices de ponderación $Q$ y $R$, o al menos 
-%      las ganancias LQR en los extremos del rango de operación.
+The scheduling structure is defined over 11 longitudinal-speed operating 
+points, from 20\,km/h to 120\,km/h in increments of 10\,km/h. For each 
+point, a state-feedback gain matrix is precomputed, and the gains used 
+during simulation are obtained by interpolating these matrices in 
+MATLAB using the \texttt{interp1} function as a function of the measured 
+vehicle speed $V_x$. The resulting gain-scheduling mechanism is applied 
+to the complete controlled system, so that both the lateral dynamics and 
+the roll dynamics are governed by speed-dependent state feedback. The 
+longitudinal speed $V_x$ is selected as the scheduling variable because, 
+in the modified bicycle model used to derive the LQR, the system 
+matrices depend explicitly on $V_x$, which directly changes the lateral 
+tire-force terms, yaw dynamics, and the overall lateral-roll coupling.
 
-%TODO: justificar por qué $V_x$ es la variable de scheduling elegida 
-%      — una oración es suficiente (e.g., porque la dinámica lateral 
-%      es fuertemente dependiente de la velocidad longitudinal).
+The weighting matrices were selected following a normalized design logic 
+similar to Bryson's rule, in which each state and input is penalized 
+according to an admissible maximum value. For the state vector 
+$x=[v\ \dot{\psi}\ \dot{\phi}\ \phi]^{\top}$, the adopted limits were 
+$v_{\max}=0.5$\,m/s, $\dot{\psi}_{\max}=0.3$\,rad/s, 
+$\dot{\phi}_{\max}=0.2$\,rad/s, and $\phi_{\max}=0.08$\,rad, leading to 
+$Q=\mathrm{diag}(1/v_{\max}^2,\ 1/\dot{\psi}_{\max}^2,\ 
+1/\dot{\phi}_{\max}^2,\ 1/\phi_{\max}^2)$. For the input vector 
+$u=[\delta\ M_z\ M_x]^{\top}$, the admissible values were taken as 
+$\delta_{\max}=0.1$\,rad, $M_{z,\max}=8000$\,Nm, and 
+$M_{x,\max}=1500$\,Nm, so that 
+$R=0.1\,\mathrm{diag}(1/\delta_{\max}^2,\ 1/M_{z,\max}^2,\ 
+1/M_{x,\max}^2)$. The scalar factor 0.1 was introduced as a global 
+aggressiveness coefficient to allow a more responsive controller without 
+over-penalizing the control action. For each scheduling point, the 
+descriptor model is converted to the standard form 
+$\dot{x}=A_{\mathrm{sys}}x+B_{\mathrm{sys}}u$ with 
+$A_{\mathrm{sys}}=-E^{-1}F$ and $B_{\mathrm{sys}}=E^{-1}G$, and the 
+corresponding feedback gain is then obtained from 
+$K_{\mathrm{LQR}}=\mathrm{lqr}(A_{\mathrm{sys}},B_{\mathrm{sys}},Q,R)$.
 
-This controller represents a more capable baseline than the fixed-gain PID, 
-as it explicitly exploits a linearized vehicle model while adapting the 
-feedback gains to changing operating conditions. Its inclusion allows the 
-comparison to contrast the MFC's online disturbance estimation against a 
-structured model-based strategy with state-feedback scheduling.
+This controller represents a more capable baseline than the fixed-gain PID,
+as it exploits a linearized vehicle model and schedules the state-feedback
+gains as a function of the longitudinal speed $V_x$. Its inclusion allows
+the comparison to contrast the MFC's online disturbance estimation against
+a structured model-based benchmark with speed-dependent state feedback.
+
 
 % ------------------------------------------------------------------------
 \subsection{CarSim Built-in Baseline Controller}\label{sec:carsim_base}
 
 The third benchmark is the ESC baseline controller embedded in 
-CarSim\textsuperscript{\textregistered}, which implements a representative 
-Electronic Stability Control strategy based on selective wheel braking 
-\citep{carsimintro2021}.
+CarSim\textsuperscript{\textregistered}, which provides a representative 
+Electronic Stability Control example for FMVSS~126 / ECE R13H 
+sine-with-dwell testing 
+\citep{carsim_fmvss126}.
 
-%TODO: describir brevemente qué variables regula el controlador 
-%      interno de CarSim (típicamente yaw rate y/o side-slip), 
-%      y si actúa también sobre la dinámica de roll o no.
+As described in the official CarSim FMVSS~126 application example, this 
+built-in baseline is intended for ESC evaluation under the sine-with-dwell 
+procedure and is assessed through lateral-stability criteria based mainly 
+on yaw-rate decay after the steering input, together with the prescribed 
+lateral-displacement check for high-gain cases \citep{carsim_fmvss126}. 
+The public description does not indicate any dedicated roll-control 
+channel; therefore, this baseline is interpreted here as an ESC-oriented 
+lateral-stability controller rather than as a full unified chassis 
+controller with explicit roll regulation.
 
-%TODO: aclarar si el controlador de CarSim tiene acceso a información 
-%      que los otros controladores no tienen (e.g., $\mu$ interno, 
-%      estados adicionales), para que el lector pueda evaluar 
-%      la equidad de la comparación.
+The public CarSim description documents the test procedure and the example 
+workflow, but it does not disclose the internal implementation of the 
+embedded ESC in sufficient detail to establish whether the controller uses 
+additional simulator-internal variables beyond the documented test signals 
+\citep{carsim_fmvss126}. For that reason, the CarSim baseline should be 
+viewed as a simulator-native black-box reference. This makes it valuable 
+as a practical benchmark, but also means that its informational symmetry 
+with the other controllers cannot be fully verified from the publicly 
+available documentation.
 
 This baseline is particularly relevant because it represents a 
-production-level reference strategy implemented within the same simulation 
-environment, providing a direct indication of the performance margin 
-achievable with a conventional ESC system under identical test conditions.
+industry-relevant reference implemented within the same simulation 
+environment, providing a practical indication of the performance margin 
+achievable with a conventional ESC-oriented strategy under identical test 
+conditions.
 
 % ------------------------------------------------------------------------
 \subsection{Comparative Assumptions and Fairness 

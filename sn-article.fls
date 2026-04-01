@@ -249,6 +249,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/MuC mio.png
 INPUT /home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/MuC mio.png
 INPUT /home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/MuC mio.png
@@ -418,4 +419,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
