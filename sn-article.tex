@@ -57,9 +57,6 @@
 \usepackage{textcomp}%
 \usepackage{manyfoot}%
 \usepackage{booktabs}%
-\usepackage{algorithm}%
-\usepackage{algorithmicx}%
-\usepackage{algpseudocode}%
 \usepackage{listings}%
 \usepackage{caption}
 \usepackage{subcaption}
@@ -222,7 +219,7 @@ generalizable conclusions about their relative merits under consistent evaluatio
 
 Despite the advances described above, the practical deployment of UCC strategies under varying operating conditions remains challenging. Model-based approaches, even when augmented with adaptive or learning-based compensation mechanisms, often remain sensitive to parametric uncertainty and typically require significant retuning when vehicle parameters or road conditions change.\ 
 
- In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on fixed-gain PID controllers, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers, simulator-embedded baseline strategies, and learning-based alternatives under consistent evaluation conditions.\ 
+ In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on fixed-gain PID controllers, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers and, simulator-embedded baseline strategies alternatives under consistent evaluation conditions.\ 
  
  To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-gain PID, a gain-scheduled LQR, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
 
