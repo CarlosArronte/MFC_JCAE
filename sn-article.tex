@@ -373,22 +373,35 @@ that are common in the literature \citep{SanchezMorales2023}.
 
 The first benchmark is a fixed-gain PID controller previously designed and 
 validated in \citep{Arronte2023}. 
+In that design, the ESC benchmark regulates the side-slip angle $\beta$ 
+and the yaw rate $\dot{\psi}$ through two PID branches with hysteresis 
+that generate a corrective yaw moment implemented by differential wheel 
+braking. By contrast, the roll angle $\phi$ is not directly regulated in 
+\citep{Arronte2023}$:$ it is only monitored as part of the vehicle 
+response. Accordingly, in the present comparison the fixed-gain PID 
+benchmark has no dedicated roll-control channel, and the roll-related 
+results must be interpreted as an indirect consequence of lateral 
+stabilization rather than as the outcome of explicit roll regulation.\\
+The controller parameters reported in \citep[Sec.~III-E, 
+Eqs.~(19)--(20)]{Arronte2023} are as follows. For the side-slip 
+channel, the gains are $K_P = 5.0 \times 10^4$, $K_I = 0.01$, and 
+$K_D = 5.0 \times 10^3$. For the yaw-rate channel, the gains are 
+$K_P = 1.0 \times 10^5$, $K_I = 0.01$, and $K_D = 2.0 \times 10^3$. 
+In both cases, the derivative term is implemented with a filter of 
+order $N = 100$.
 
-%TODO: especificar cuáles de las tres variables ($\beta$, $\dot{\psi}$, 
-%      $\phi$) regula este controlador. Si no regula las tres, indicar 
-%      explícitamente cuáles quedan sin controlar y cómo se maneja 
-%      esa diferencia en la comparación — por ejemplo, si la variable 
-%      no regulada se deja en lazo abierto o si otro subsistema la gestiona.
-%      Esto es crítico para la fairness de la comparación.
-
-%TODO: reportar los valores de las ganancias $K_P$, $K_I$, $K_D$ 
-%      para cada canal controlado, o indicar que se encuentran en 
-%      \cite{Arronte2023} con referencia de sección/tabla específica.
-
-%TODO: describir brevemente el criterio de tuning usado en 
-%      \cite{Arronte2023} (empírico, Ziegler-Nichols, optimización, etc.) 
-%      para que el lector pueda evaluar si la comparación es justa 
-%      en términos de esfuerzo de diseño.
+The tuning procedure in \citep{Arronte2023} combines analytical 
+linearization with empirical adjustment rather than relying on a 
+standard heuristic such as Ziegler--Nichols. The plant is first 
+linearized under the assumptions that the lateral forces are 
+proportional to the cornering stiffness and that $\beta \approx v/u_0$. 
+Based on this approximation, the proportional gains are selected from 
+desired closed-loop poles of $-12.5$ for the side-slip loop and $-22$ 
+for the yaw-rate loop. The integral gain is kept small because 
+eliminating steady-state error is not the primary objective during 
+abrupt maneuvers, whereas $K_D$ and the derivative filter parameter $N$ 
+are adjusted by trial and error to reduce error oscillations and smooth 
+the control effort.
 
 % ------------------------------------------------------------------------
 \subsection{Gain-Scheduled LQR Controller}\label{sec:gslqr}
