@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2026.4.1)  2 APR 2026 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2026.4.1)  2 APR 2026 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,14 +873,6 @@ Underfull \hbox (badness 3428) in paragraph at lines 589--593
 \OT1/cmr/m/n/10 For dig-i-tal imple-men-ta-tion, the inte-grals in
  []
 
-<MuC mio.png, id=365, 770.88pt x 578.16pt>
-File: MuC mio.png Graphic file (type png)
-<use MuC mio.png>
-Package pdftex.def Info: MuC mio.png  used on input line 638.
-(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -890,6 +882,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
+<MuC mio.png, id=382, 770.88pt x 578.16pt>
+File: MuC mio.png Graphic file (type png)
+<use MuC mio.png>
+Package pdftex.def Info: MuC mio.png  used on input line 638.
+(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
 <MFC_Blocos.png, id=389, 723.6636pt x 283.2984pt>
 File: MFC_Blocos.png Graphic file (type png)
 <use MFC_Blocos.png>
@@ -925,7 +922,7 @@ Underfull \hbox (badness 1231) in paragraph at lines 781--782
 \OT1/cmr/m/n/10 as vari-a-tions in mass or unex-pected changes
  []
 
-<Bicicleta.png, id=427, 521.95pt x 250.9375pt>
+<Bicicleta.png, id=426, 521.95pt x 250.9375pt>
 File: Bicicleta.png Graphic file (type png)
 <use Bicicleta.png>
 Package pdftex.def Info: Bicicleta.png  used on input line 786.
@@ -953,7 +950,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[9 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/MFC_Blocos.png> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/Bicicleta.png>]
+[9 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/MFC_Blocos.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 794--795
 []\OT1/cmr/m/n/10 In addi-tion to neu-ral network-based
  []
@@ -966,7 +963,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[10]
+[10 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/Bicicleta.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 836.
@@ -1005,25 +1002,6 @@ Underfull \hbox (badness 1755) in paragraph at lines 849--850
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 856.
-
-
-Overfull \vbox (0.72565pt too high) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1032,6 +1010,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [11]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 856.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 856.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 856.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 856.
+
 File: MuC mio.png Graphic file (type png)
 <use MuC mio.png>
 Package pdftex.def Info: MuC mio.png  used on input line 908.
@@ -1096,7 +1090,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[14 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/SWD_original-eps-converted-to.pdf>]
+[14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1006.
@@ -1118,7 +1112,7 @@ Package epstopdf Info: Source file: <beta_07.eps>
 (epstopdf)             Command: <repstopdf --outfile=beta_07-eps-converted-to.pdf beta_07.eps>
 (epstopdf)             \includegraphics on input line 1015.
 Package epstopdf Info: Output file is already uptodate.
-<beta_07-eps-converted-to.pdf, id=534, 421.575pt x 224.84pt>
+<beta_07-eps-converted-to.pdf, id=529, 421.575pt x 224.84pt>
 File: beta_07-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_07-eps-converted-to.pdf>
 Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 1015.
@@ -1132,7 +1126,7 @@ Package epstopdf Info: Source file: <yaw_rate_07.eps>
 (epstopdf)             Command: <repstopdf --outfile=yaw_rate_07-eps-converted-to.pdf yaw_rate_07.eps>
 (epstopdf)             \includegraphics on input line 1021.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_07-eps-converted-to.pdf, id=535, 421.575pt x 224.84pt>
+<yaw_rate_07-eps-converted-to.pdf, id=530, 421.575pt x 224.84pt>
 File: yaw_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_07-eps-converted-to.pdf>
 Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 1021.
@@ -1146,7 +1140,7 @@ Package epstopdf Info: Source file: <roll_07.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_07-eps-converted-to.pdf roll_07.eps>
 (epstopdf)             \includegraphics on input line 1027.
 Package epstopdf Info: Output file is already uptodate.
-<roll_07-eps-converted-to.pdf, id=536, 421.575pt x 225.84375pt>
+<roll_07-eps-converted-to.pdf, id=531, 421.575pt x 225.84375pt>
 File: roll_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_07-eps-converted-to.pdf>
 Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 1027.
@@ -1160,7 +1154,7 @@ Package epstopdf Info: Source file: <roll_rate_07.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_rate_07-eps-converted-to.pdf roll_rate_07.eps>
 (epstopdf)             \includegraphics on input line 1033.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_07-eps-converted-to.pdf, id=537, 421.575pt x 225.84375pt>
+<roll_rate_07-eps-converted-to.pdf, id=532, 421.575pt x 225.84375pt>
 File: roll_rate_07-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_07-eps-converted-to.pdf>
 Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 1033.
@@ -1186,7 +1180,7 @@ Package epstopdf Info: Source file: <beta_05.eps>
 (epstopdf)             Command: <repstopdf --outfile=beta_05-eps-converted-to.pdf beta_05.eps>
 (epstopdf)             \includegraphics on input line 1081.
 Package epstopdf Info: Output file is already uptodate.
-<beta_05-eps-converted-to.pdf, id=542, 421.575pt x 225.84375pt>
+<beta_05-eps-converted-to.pdf, id=537, 421.575pt x 225.84375pt>
 File: beta_05-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_05-eps-converted-to.pdf>
 Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 1081.
@@ -1200,7 +1194,7 @@ Package epstopdf Info: Source file: <yaw_rate_05.eps>
 (epstopdf)             Command: <repstopdf --outfile=yaw_rate_05-eps-converted-to.pdf yaw_rate_05.eps>
 (epstopdf)             \includegraphics on input line 1087.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_05-eps-converted-to.pdf, id=543, 421.575pt x 224.84pt>
+<yaw_rate_05-eps-converted-to.pdf, id=538, 421.575pt x 224.84pt>
 File: yaw_rate_05-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_05-eps-converted-to.pdf>
 Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 1087.
@@ -1214,7 +1208,7 @@ Package epstopdf Info: Source file: <roll_05.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_05-eps-converted-to.pdf roll_05.eps>
 (epstopdf)             \includegraphics on input line 1093.
 Package epstopdf Info: Output file is already uptodate.
-<roll_05-eps-converted-to.pdf, id=544, 421.575pt x 224.84pt>
+<roll_05-eps-converted-to.pdf, id=539, 421.575pt x 224.84pt>
 File: roll_05-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_05-eps-converted-to.pdf>
 Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 1093.
@@ -1228,7 +1222,7 @@ Package epstopdf Info: Source file: <roll_rate_05.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_rate_05-eps-converted-to.pdf roll_rate_05.eps>
 (epstopdf)             \includegraphics on input line 1099.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_05-eps-converted-to.pdf, id=545, 421.575pt x 226.8475pt>
+<roll_rate_05-eps-converted-to.pdf, id=540, 421.575pt x 226.8475pt>
 File: roll_rate_05-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_05-eps-converted-to.pdf>
 Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 1099.
@@ -1245,6 +1239,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1137.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[15 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/SWD_original-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_07-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <beta_03.eps>
 (epstopdf)                    date: 2026-03-20 18:05:25
 (epstopdf)                    size: 50589 bytes
@@ -1254,7 +1257,7 @@ Package epstopdf Info: Source file: <beta_03.eps>
 (epstopdf)             Command: <repstopdf --outfile=beta_03-eps-converted-to.pdf beta_03.eps>
 (epstopdf)             \includegraphics on input line 1145.
 Package epstopdf Info: Output file is already uptodate.
-<beta_03-eps-converted-to.pdf, id=550, 421.575pt x 224.84pt>
+<beta_03-eps-converted-to.pdf, id=577, 421.575pt x 224.84pt>
 File: beta_03-eps-converted-to.pdf Graphic file (type pdf)
 <use beta_03-eps-converted-to.pdf>
 Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 1145.
@@ -1268,7 +1271,7 @@ Package epstopdf Info: Source file: <yaw_rate_03.eps>
 (epstopdf)             Command: <repstopdf --outfile=yaw_rate_03-eps-converted-to.pdf yaw_rate_03.eps>
 (epstopdf)             \includegraphics on input line 1151.
 Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_03-eps-converted-to.pdf, id=551, 421.575pt x 221.82875pt>
+<yaw_rate_03-eps-converted-to.pdf, id=578, 421.575pt x 221.82875pt>
 File: yaw_rate_03-eps-converted-to.pdf Graphic file (type pdf)
 <use yaw_rate_03-eps-converted-to.pdf>
 Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 1151.
@@ -1282,7 +1285,7 @@ Package epstopdf Info: Source file: <roll_03.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_03-eps-converted-to.pdf roll_03.eps>
 (epstopdf)             \includegraphics on input line 1157.
 Package epstopdf Info: Output file is already uptodate.
-<roll_03-eps-converted-to.pdf, id=552, 421.575pt x 226.8475pt>
+<roll_03-eps-converted-to.pdf, id=579, 421.575pt x 226.8475pt>
 File: roll_03-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_03-eps-converted-to.pdf>
 Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 1157.
@@ -1296,7 +1299,7 @@ Package epstopdf Info: Source file: <roll_rate_03.eps>
 (epstopdf)             Command: <repstopdf --outfile=roll_rate_03-eps-converted-to.pdf roll_rate_03.eps>
 (epstopdf)             \includegraphics on input line 1163.
 Package epstopdf Info: Output file is already uptodate.
-<roll_rate_03-eps-converted-to.pdf, id=553, 421.575pt x 224.84pt>
+<roll_rate_03-eps-converted-to.pdf, id=580, 421.575pt x 224.84pt>
 File: roll_rate_03-eps-converted-to.pdf Graphic file (type pdf)
 <use roll_rate_03-eps-converted-to.pdf>
 Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 1163.
@@ -1309,20 +1312,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[15 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_07-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_07-eps-converted-to.pdf>]
+[16 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_03-eps-converted-to.pdf>]
 Underfull \hbox (badness 1354) in paragraph at lines 1204--1205
 []\OT1/cmr/bx/n/10 Side-slip angle: \OT1/cmr/m/n/10 Both con-trollers demon-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[16 </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_05-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/beta_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/yaw_rate_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_03-eps-converted-to.pdf> </home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/roll_rate_03-eps-converted-to.pdf>]
 Overfull \hbox (5.0059pt too wide) in paragraph at lines 1249--1285
 [] 
  []
@@ -1341,7 +1336,7 @@ Underfull \hbox (badness 3189) in paragraph at lines 1310--1311
 \OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
  []
 
-(/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1349,12 +1344,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[17]
-Underfull \hbox (badness 1168) in paragraph at lines 71--76
-\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
- []
-
-
+[17] (/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1363,6 +1353,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [18]
+Underfull \hbox (badness 1168) in paragraph at lines 71--76
+\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 98--102
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1383,6 +1378,14 @@ Underfull \hbox (badness 1824) in paragraph at lines 135--142
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[19]
 Underfull \hbox (badness 1742) in paragraph at lines 186--192
 []\OT1/cmr/m/n/10 Menhour, L., B. d'Andr^^Sea Novel, M. Fliess,
  []
@@ -1413,14 +1416,6 @@ Overfull \hbox (4.03738pt too wide) in paragraph at lines 202--207
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[19]
 Underfull \hbox (badness 1264) in paragraph at lines 241--245
 \OT1/cmr/m/n/10 Model-based con-trol and model-free con-trol
  []
@@ -1488,13 +1483,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1319.
 Here is how much of TeX's memory you used:
  12093 strings out of 483183
  179440 string characters out of 5966293
- 461382 words of memory out of 5000000
+ 462383 words of memory out of 5000000
  26691 multiletter control sequences out of 15000+600000
  552466 words of font info for 106 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  55i,15n,96p,1276b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1000.600pk> </home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk> </home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.pdf" (20 pages, 1513254 bytes).
+Output written on "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.pdf" (20 pages, 1513784 bytes).
 PDF statistics:
  788 PDF objects out of 1000 (max. 8388607)
  662 compressed objects within 7 object streams

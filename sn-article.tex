@@ -613,13 +613,13 @@ where the trapezoidal weights are:
 The integration window was set to $T = 1.0$\,s for all three estimators, 
 based on the characteristic response time of the vehicle dynamics under 
 the SWD maneuver.
-
-%TODO: agregar una oración que discuta brevemente el trade-off 
-%      entre ventana larga (mayor precisión de $\hat{F}$, respuesta 
-%      más lenta) y ventana corta (convergencia más rápida, mayor 
-%      sensibilidad al ruido), y justificar $T = 1.0$\,s en ese 
-%      contexto. Actualmente el texto solo menciona que se eligió 
-%      ese valor sin más explicación.
+This value represents a compromise between estimation smoothness and 
+responsiveness: longer windows improve the accuracy and noise attenuation 
+of $\hat{F}$ but slow down the estimator, whereas shorter windows yield 
+faster convergence at the expense of greater sensitivity to measurement 
+noise; in the present SWD conditions, $T = 1.0$\,s provided adequate 
+filtering without introducing excessive delay in the transient control 
+action.
 
 % ------------------------------------------------------------------------
 \subsection{Unified Chassis Control 
