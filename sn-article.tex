@@ -640,12 +640,6 @@ are obtained directly from CarSim\textsuperscript{\textregistered}.
     \label{fig:MuC mio}
 \end{figure}
 
-%TODO: considerar reemplazar o complementar esta figura con una 
-%      versión que muestre explícitamente los tres canales MFC 
-%      ($\beta$, $\dot{\psi}$, $\phi$) y sus estimadores de $F$ 
-%      dentro del bloque de control de alto nivel. La figura actual 
-%      muestra la arquitectura general pero no el detalle interno 
-%      del controlador propuesto.
 
 \subsubsection{Supervision layer}
 
@@ -681,11 +675,6 @@ a Pure Subsumption strategy is used in the coordination layer to weight
 their respective contributions in the final torque signal. The roll 
 channel is independent and not affected by this coordination step.
 
-%TODO: describir con más precisión el criterio de subsumption: 
-%      ¿cuándo tiene prioridad el canal $\beta$ sobre $\dot{\psi}$ 
-%      o viceversa? ¿Es una conmutación discreta o una ponderación 
-%      continua? Esto es relevante para reproducibilidad.
-
 % ------------------------------------------------------------------------
 \subsection{Control Allocation}\label{sec:allocation}
 
@@ -695,14 +684,16 @@ Specifically, $M_z$ is decomposed into individual wheel brake pressure
 signals processed by the ABS subsystem, and $M_x$ is converted into 
 active anti-roll bar force commands. This allocation step is handled 
 internally by the simulator, consistent with the setup described 
-in \citep{Arronte2023}.
-
-%TODO: si existe documentación interna o de CarSim sobre el 
-%      algoritmo de alocación usado (e.g., distribución proporcional 
-%      de frenado por eje, modelo del AARB), citarla o describirla 
-%      brevemente. De lo contrario, una nota aclarando que la 
-%      alocación es transparente al controlador de alto nivel 
-%      es suficiente.
+in \citep{Arronte2023}. Public CarSim documentation states that the 
+built-in ESC modulates the brakes of individual wheels, but it does not 
+provide the detailed internal allocation law used to map $M_z$ into 
+wheel-level brake pressures, nor an explicit public description of the 
+internal AARB mapping from $M_x$ to actuator commands 
+\citep{carsim_builtincontrollers,carsim_fmvss126}. Accordingly, in the 
+present work the allocation stage is treated as transparent to the 
+high-level controller: the controller supplies the virtual moments 
+$M_z$ and $M_x$, while the actuator-level distribution is resolved 
+internally by CarSim.
 
 % ------------------------------------------------------------------------
 \subsection{Parameter Selection and Implementation 

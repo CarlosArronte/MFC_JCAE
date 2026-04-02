@@ -174,8 +174,16 @@ Mazzilli, V., S.~De~Pinto, L.~Pascali, M.~Contrino, F.~Bottiglione,
 \newblock Technical overview of CarSim features and capabilities.
 
 \bibitem[\protect\citeauthoryear{{Mechanical Simulation
-  Corporation}}{{Mechanical Simulation Corporation}}{2025}]{carsim_fmvss126}
-{Mechanical Simulation Corporation}. 2025.
+  Corporation}}{{Mechanical Simulation
+  Corporation}}{2025a}]{carsim_builtincontrollers}
+{Mechanical Simulation Corporation}. 2025a.
+\newblock Built-in controllers.
+\newblock Official CarSim page describing built-in controllers, including ABS
+  and ESC. Accessed April 2, 2026.
+
+\bibitem[\protect\citeauthoryear{{Mechanical Simulation
+  Corporation}}{{Mechanical Simulation Corporation}}{2025b}]{carsim_fmvss126}
+{Mechanical Simulation Corporation}. 2025b.
 \newblock The sine with dwell test in carsim.
 \newblock Official CarSim application note describing the FMVSS 126 / ECE R13H
   sine-with-dwell ESC test procedure and CarSim example implementation.
