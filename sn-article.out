@@ -5,42 +5,41 @@
 \BOOKMARK [2][]{subsection.2.3}{Control Inputs and Actuator Constraints}{section.2}% 5
 \BOOKMARK [2][]{subsection.2.4}{Maneuver Completion and Failure Criteria}{section.2}% 6
 \BOOKMARK [1][]{section.3}{Benchmark Controllers and Comparative Framework}{}% 7
-\BOOKMARK [2][]{subsection.3.1}{Fixed-Gain PID Controller}{section.3}% 8
+\BOOKMARK [2][]{subsection.3.1}{Fixed-Parameter 2PID+Fuzzy Controller}{section.3}% 8
 \BOOKMARK [2][]{subsection.3.2}{Gain-Scheduled LQR Controller}{section.3}% 9
 \BOOKMARK [2][]{subsection.3.3}{CarSim Built-in Baseline Controller}{section.3}% 10
-\BOOKMARK [2][]{subsection.3.4}{Comparative Assumptions and Fairness Criteria}{section.3}% 11
-\BOOKMARK [1][]{section.4}{Model-Free Unified Chassis Control Design}{}% 12
-\BOOKMARK [2][]{subsection.4.1}{Ultra-Local Model and Intelligent PID Formulation}{section.4}% 13
-\BOOKMARK [2][]{subsection.4.2}{Algebraic Estimation of the Lumped Term}{section.4}% 14
-\BOOKMARK [3][]{subsubsection.4.2.1}{Second-order estimator for \040and }{subsection.4.2}% 15
-\BOOKMARK [3][]{subsubsection.4.2.2}{First-order estimator for }{subsection.4.2}% 16
-\BOOKMARK [3][]{subsubsection.4.2.3}{Discrete-time implementation}{subsection.4.2}% 17
-\BOOKMARK [2][]{subsection.4.3}{Unified Chassis Control Architecture}{section.4}% 18
-\BOOKMARK [3][]{subsubsection.4.3.1}{Supervision layer}{subsection.4.3}% 19
-\BOOKMARK [3][]{subsubsection.4.3.2}{High-level controller}{subsection.4.3}% 20
-\BOOKMARK [3][]{subsubsection.4.3.3}{Coordination layer}{subsection.4.3}% 21
-\BOOKMARK [2][]{subsection.4.4}{Control Allocation}{section.4}% 22
-\BOOKMARK [2][]{subsection.4.5}{Parameter Selection and Implementation Details}{section.4}% 23
-\BOOKMARK [2][]{subsection.4.6}{UCC model-based}{section.4}% 24
-\BOOKMARK [2][]{subsection.4.7}{Uncertainty Compensation}{section.4}% 25
-\BOOKMARK [1][]{section.5}{The ultra-local model-based MFC controller}{}% 26
-\BOOKMARK [2][]{subsection.5.1}{F estimator to the ultra-local model of \040and }{section.5}% 27
-\BOOKMARK [2][]{subsection.5.2}{F estimator to the ultra-local model of }{section.5}% 28
-\BOOKMARK [2][]{subsection.5.3}{Discretization of algebraic estimators}{section.5}% 29
-\BOOKMARK [1][]{section.6}{UCC structure}{}% 30
-\BOOKMARK [2][]{subsection.6.1}{Supervision layer}{section.6}% 31
-\BOOKMARK [2][]{subsection.6.2}{High level controller}{section.6}% 32
-\BOOKMARK [2][]{subsection.6.3}{Coordination layer}{section.6}% 33
-\BOOKMARK [2][]{subsection.6.4}{Control allocation}{section.6}% 34
-\BOOKMARK [2][]{subsection.6.5}{Individual actuators}{section.6}% 35
-\BOOKMARK [1][]{section.7}{Control tuning}{}% 36
-\BOOKMARK [2][]{subsection.7.1}{ adjustment}{section.7}% 37
-\BOOKMARK [2][]{subsection.7.2}{iPD adjustment}{section.7}% 38
-\BOOKMARK [1][]{section.8}{Experiment design}{}% 39
-\BOOKMARK [1][]{section.9}{Simulation results}{}% 40
-\BOOKMARK [2][]{subsection.9.1}{Simulation for = 0.7}{section.9}% 41
-\BOOKMARK [2][]{subsection.9.2}{Simulation for = 0.5}{section.9}% 42
-\BOOKMARK [2][]{subsection.9.3}{Simulation for = 0.3}{section.9}% 43
-\BOOKMARK [2][]{subsection.9.4}{Statistical results across different friction conditions}{section.9}% 44
-\BOOKMARK [1][]{section.10}{Conclusions}{}% 45
-\BOOKMARK [2][]{section*.14}{Acknowledgements}{section.10}% 46
+\BOOKMARK [1][]{section.4}{Model-Free Unified Chassis Control Design}{}% 11
+\BOOKMARK [2][]{subsection.4.1}{Ultra-Local Model and Intelligent PID Formulation}{section.4}% 12
+\BOOKMARK [2][]{subsection.4.2}{Algebraic Estimation of the Lumped Term}{section.4}% 13
+\BOOKMARK [3][]{subsubsection.4.2.1}{Second-order estimator for \040and }{subsection.4.2}% 14
+\BOOKMARK [3][]{subsubsection.4.2.2}{First-order estimator for }{subsection.4.2}% 15
+\BOOKMARK [3][]{subsubsection.4.2.3}{Discrete-time implementation}{subsection.4.2}% 16
+\BOOKMARK [2][]{subsection.4.3}{Unified Chassis Control Architecture}{section.4}% 17
+\BOOKMARK [3][]{subsubsection.4.3.1}{Supervision layer}{subsection.4.3}% 18
+\BOOKMARK [3][]{subsubsection.4.3.2}{High-level controller}{subsection.4.3}% 19
+\BOOKMARK [3][]{subsubsection.4.3.3}{Coordination layer}{subsection.4.3}% 20
+\BOOKMARK [2][]{subsection.4.4}{Control Allocation}{section.4}% 21
+\BOOKMARK [2][]{subsection.4.5}{Parameter Selection and Implementation Details}{section.4}% 22
+\BOOKMARK [2][]{subsection.4.6}{UCC model-based}{section.4}% 23
+\BOOKMARK [2][]{subsection.4.7}{Uncertainty Compensation}{section.4}% 24
+\BOOKMARK [1][]{section.5}{The ultra-local model-based MFC controller}{}% 25
+\BOOKMARK [2][]{subsection.5.1}{F estimator to the ultra-local model of \040and }{section.5}% 26
+\BOOKMARK [2][]{subsection.5.2}{F estimator to the ultra-local model of }{section.5}% 27
+\BOOKMARK [2][]{subsection.5.3}{Discretization of algebraic estimators}{section.5}% 28
+\BOOKMARK [1][]{section.6}{UCC structure}{}% 29
+\BOOKMARK [2][]{subsection.6.1}{Supervision layer}{section.6}% 30
+\BOOKMARK [2][]{subsection.6.2}{High level controller}{section.6}% 31
+\BOOKMARK [2][]{subsection.6.3}{Coordination layer}{section.6}% 32
+\BOOKMARK [2][]{subsection.6.4}{Control allocation}{section.6}% 33
+\BOOKMARK [2][]{subsection.6.5}{Individual actuators}{section.6}% 34
+\BOOKMARK [1][]{section.7}{Control tuning}{}% 35
+\BOOKMARK [2][]{subsection.7.1}{ adjustment}{section.7}% 36
+\BOOKMARK [2][]{subsection.7.2}{iPD adjustment}{section.7}% 37
+\BOOKMARK [1][]{section.8}{Experiment design}{}% 38
+\BOOKMARK [1][]{section.9}{Simulation results}{}% 39
+\BOOKMARK [2][]{subsection.9.1}{Simulation for = 0.7}{section.9}% 40
+\BOOKMARK [2][]{subsection.9.2}{Simulation for = 0.5}{section.9}% 41
+\BOOKMARK [2][]{subsection.9.3}{Simulation for = 0.3}{section.9}% 42
+\BOOKMARK [2][]{subsection.9.4}{Statistical results across different friction conditions}{section.9}% 43
+\BOOKMARK [1][]{section.10}{Conclusions}{}% 44
+\BOOKMARK [2][]{section*.14}{Acknowledgements}{section.10}% 45

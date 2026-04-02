@@ -133,7 +133,7 @@
 %%==================================%%
 
 \abstract{Automotive safety has been a critical focus for both national and international research institutions in recent years. The combined control of lateral dynamics and roll stability in vehicles has been extensively studied, often relying on automotive models to design and tune controllers. However, these models frequently include parametric uncertainties, nonlinear dynamics, and simplifying assumptions, which can lead to suboptimal controller performance in real-world applications.
-This work proposes a unified chassis controller (UCC) to regulate lateral and roll dynamics during abrupt maneuvers and evaluates a model-free control (MFC) strategy against representative benchmark controllers. The comparison includes a fixed-gain PID controller, a gain-scheduled linear quadratic regulator (LQR), and the built-in CarSim ESC baseline, all assessed within the same co-simulation environment combining MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}. Results demonstrate that while the benchmark controllers degrade under varying road conditions, the MFC-based UCC achieves superior robustness and performance, effectively regulating the state variables across different scenarios. These findings highlight the robustness and adaptability of MFCs, making them a promising solution for enhancing vehicle safety.
+This work proposes a unified chassis controller (UCC) to regulate lateral and roll dynamics during abrupt maneuvers and evaluates a model-free control (MFC) strategy against representative benchmark controllers. The comparison includes a fixed-parameter 2PID+fuzzy controller, a gain-scheduled linear quadratic regulator (LQR), and the built-in CarSim ESC baseline, all assessed within the same co-simulation environment combining MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}. Results demonstrate that while the benchmark controllers degrade under varying road conditions, the MFC-based UCC achieves superior robustness and performance, effectively regulating the state variables across different scenarios. These findings highlight the robustness and adaptability of MFCs, making them a promising solution for enhancing vehicle safety.
 }
 
 %%================================%%
@@ -219,9 +219,9 @@ generalizable conclusions about their relative merits under consistent evaluatio
 
 Despite the advances described above, the practical deployment of UCC strategies under varying operating conditions remains challenging. Model-based approaches, even when augmented with adaptive or learning-based compensation mechanisms, often remain sensitive to parametric uncertainty and typically require significant retuning when vehicle parameters or road conditions change.\ 
 
- In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on fixed-gain PID controllers, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers and, simulator-embedded baseline strategies alternatives under consistent evaluation conditions.\ 
+ In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines. In particular, many comparative studies in this domain rely primarily on simplified fixed-parameter benchmarks, often limited to lateral PID-based ESC schemes, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers and, simulator-embedded baseline strategies alternatives under consistent evaluation conditions.\ 
  
- To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-gain PID, a gain-scheduled LQR, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
+ To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-parameter 2PID+fuzzy controller, a gain-scheduled LQR, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
 
 %REESCRIBIR
 The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\ %Reescribir (ver estructura final)
@@ -369,39 +369,32 @@ strategies, allowing the comparison to go beyond the fixed-gain baselines
 that are common in the literature \citep{SanchezMorales2023}.
 
 % ------------------------------------------------------------------------
-\subsection{Fixed-Gain PID Controller}\label{sec:pid}
+\subsection{Fixed-Parameter 2PID+Fuzzy Controller}\label{sec:pid}
 
-The first benchmark is a fixed-gain PID controller previously designed and 
-validated in \citep{Arronte2023}. 
-In that design, the ESC benchmark regulates the side-slip angle $\beta$ 
-and the yaw rate $\dot{\psi}$ through two PID branches with hysteresis 
-that generate a corrective yaw moment implemented by differential wheel 
-braking. By contrast, the roll angle $\phi$ is not directly regulated in 
-\citep{Arronte2023}$:$ it is only monitored as part of the vehicle 
-response. Accordingly, in the present comparison the fixed-gain PID 
-benchmark has no dedicated roll-control channel, and the roll-related 
-results must be interpreted as an indirect consequence of lateral 
-stabilization rather than as the outcome of explicit roll regulation.\\
-The controller parameters reported in \citep[Sec.~III-E, 
-Eqs.~(19)--(20)]{Arronte2023} are as follows. For the side-slip 
-channel, the gains are $K_P = 5.0 \times 10^4$, $K_I = 0.01$, and 
-$K_D = 5.0 \times 10^3$. For the yaw-rate channel, the gains are 
-$K_P = 1.0 \times 10^5$, $K_I = 0.01$, and $K_D = 2.0 \times 10^3$. 
-In both cases, the derivative term is implemented with a filter of 
-order $N = 100$.
+The first benchmark is the fixed-parameter UCC architecture reported in 
+\citep{arronte2024controle}. In that design, the lateral dynamics are 
+regulated by two independent PID controllers with hysteresis acting on 
+the side-slip angle $\beta$ and the yaw rate $\dot{\psi}$. Their outputs 
+are combined into a corrective yaw moment $M_z$, which is implemented by 
+differential braking in the ESC layer. As in the earlier ESC design, the 
+lateral PID branches are only activated when the corresponding regulated 
+variables leave prescribed admissible bands, which reduces unnecessary 
+braking effort during mild transients.
 
-The tuning procedure in \citep{Arronte2023} combines analytical 
-linearization with empirical adjustment rather than relying on a 
-standard heuristic such as Ziegler--Nichols. The plant is first 
-linearized under the assumptions that the lateral forces are 
-proportional to the cornering stiffness and that $\beta \approx v/u_0$. 
-Based on this approximation, the proportional gains are selected from 
-desired closed-loop poles of $-12.5$ for the side-slip loop and $-22$ 
-for the yaw-rate loop. The integral gain is kept small because 
-eliminating steady-state error is not the primary objective during 
-abrupt maneuvers, whereas $K_D$ and the derivative filter parameter $N$ 
-are adjusted by trial and error to reduce error oscillations and smooth 
-the control effort.
+The reference described in \citep{arronte2024controle} forms an 
+integrated ``2PID+fuzzy'' structure. The vertical dynamics are handled 
+by a Mamdani-type fuzzy controller that uses the roll angle $\phi$ and 
+the roll rate $\dot{\phi}$ as inputs and generates the corrective roll 
+moment $M_x$ as output. In addition, the fuzzy layer is complemented by 
+a feedforward stage intended to attenuate the effect of lateral-force 
+disturbances on the roll dynamics.
+
+Accordingly, this benchmark acts on the same two control moments 
+considered in the present UCC framework, namely $M_z$ for lateral 
+stabilization and $M_x$ for roll mitigation. It therefore provides a 
+fixed-parameter reference for the joint lateral-roll regulation problem 
+addressed in this paper, while retaining a comparatively simple and 
+interpretable control structure.
 
 % ------------------------------------------------------------------------
 \subsection{Gain-Scheduled LQR Controller}\label{sec:gslqr}
@@ -460,7 +453,7 @@ $A_{\mathrm{sys}}=-E^{-1}F$ and $B_{\mathrm{sys}}=E^{-1}G$, and the
 corresponding feedback gain is then obtained from 
 $K_{\mathrm{LQR}}=\mathrm{lqr}(A_{\mathrm{sys}},B_{\mathrm{sys}},Q,R)$.
 
-This controller represents a more capable baseline than the fixed-gain PID,
+This controller represents a more capable baseline than the fixed-parameter 2PID+fuzzy controller,
 as it exploits a linearized vehicle model and schedules the state-feedback
 gains as a function of the longitudinal speed $V_x$. Its inclusion allows
 the comparison to contrast the MFC's online disturbance estimation against
@@ -502,36 +495,6 @@ environment, providing a practical indication of the performance margin
 achievable with a conventional ESC-oriented strategy under identical test 
 conditions.
 
-% ------------------------------------------------------------------------
-\subsection{Comparative Assumptions and Fairness 
-            Criteria}\label{sec:fairness}
-
-All four controllers — the fixed-gain PID, the gain-scheduled LQR, the 
-CarSim ESC baseline, and the proposed MFC-based UCC — are evaluated under 
-identical conditions: the same vehicle model, the same SWD maneuver 
-profile, and the same friction scenarios ($\mu = 0.7$, $0.5$, and $0.3$). 
-Performance is assessed using the metrics defined in 
-Section~\ref{sec:criteria}: RMS, RMSE, and MAX for each regulated variable, 
-complemented by control effort analysis.
-
-%TODO: aclarar si todos los controladores comparten exactamente 
-%      los mismos límites de saturación ($M_z$, $M_x$) o si 
-%      el CarSim baseline opera con una interfaz de actuación diferente 
-%      (e.g., presiones de freno directamente, sin pasar por $M_z$).
-%      Si hay diferencias, explicar cómo se maneja eso para mantener 
-%      la comparación justa.
-
-%TODO: si el PID de \cite{Arronte2023} no regula las mismas tres 
-%      variables que el MFC, añadir aquí una nota explícita sobre 
-%      cómo se interpreta esa asimetría en la comparación — 
-%      por ejemplo: "the fixed-gain PID does not include a dedicated 
-%      roll controller; roll dynamics are therefore left uncontrolled 
-%      in that benchmark, which must be taken into account when 
-%      interpreting the roll angle results in Section~\ref{sec2}."
-
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
 \section{Model-Free Unified Chassis Control 
          Design}\label{sec:mfc_ucc}
 
