@@ -714,24 +714,29 @@ for each channel independently. It was further verified through
 simulation that variations in $K_D$ had negligible influence on the 
 system response; therefore, $K_D$ was fixed at a small value for all 
 channels to provide light damping.
-
-%TODO: agregar una oración que cite o mencione que, aunque el tuning 
-%      es empírico, la estabilidad del lazo cerrado bajo estas 
-%      ganancias es discutida en la Sección~\ref{sec:stability} 
-%      (cuando esa sección exista), para que el lector no quede 
-%      con la sensación de que el tuning es puramente ad hoc.
+Although the tuning was empirical, it was guided by safety-oriented 
+criteria in the SWD maneuver, namely preserving closed-loop stability, 
+limiting actuator saturation, and achieving adequate transient 
+regulation, whose effectiveness is confirmed by the results in 
+Section~\ref{sec2}.
 
 The resulting parameter values are summarized in 
 Table~\ref{tab:params}.
 
-%TODO: crear Table~\ref{tab:params} con las siguientes columnas:
-%      Canal | $\alpha$ | $K_P$ | $K_D$ | Modelo ultra-local ($v$)
-%      Con los valores: 
-%      $\beta$:      $\alpha = 0.01$,   $K_P = 20$,  $K_D = 3$, $v=2$
-%      $\dot{\psi}$: $\alpha = 10^{-3}$, $K_P = 50$, $K_D = 3$, $v=1$
-%      $\phi$:       $\alpha = 10^{-2}$, $K_P = 200$, $K_D = 3$, $v=2$
-%      Una tabla consolida esta información mejor que el texto corrido 
-%      actual y facilita la reproducibilidad.
+\begin{table}[h]
+\centering
+\caption{Selected iPD parameters for each regulated channel}
+\label{tab:params}
+\begin{tabular}{lcccc}
+\toprule
+Channel & $\alpha$ & $K_P$ & $K_D$ & Ultra-local model ($v$) \\
+\midrule
+$\beta$ & $0.01$   & $20$  & $3$ & $2$ \\
+$\dot{\psi}$ & $10^{-3}$ & $50$  & $3$ & $1$ \\
+$\phi$ & $10^{-2}$ & $200$ & $3$ & $2$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 The simulation sampling period was set to $T_s = 1$\,ms, and the 
 estimation window to $T = 1.0$\,s for all three channels.
