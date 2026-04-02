@@ -528,12 +528,12 @@ In this work, three plant variables are regulated: the yaw rate
 $\dot{\psi}$, the side-slip angle $\beta$, and the roll angle $\phi$. 
 The yaw rate channel is represented by a first-order ultra-local model 
 ($v = 1$), while the side-slip angle and roll angle channels use a 
-second-order formulation ($v = 2$).
-
-%TODO: agregar una justificación breve de por qué $\dot{\psi}$ se 
-%      modela con $v=1$ y $\beta$, $\phi$ con $v=2$. Una oración 
-%      es suficiente — por ejemplo, en términos de la relación 
-%      entrada-salida observable o del grado relativo del sistema.
+second-order formulation ($v = 2$). This choice is consistent with the 
+order of the corresponding vehicle equations: $\dot{\psi}$ is taken as 
+the derivative of the yaw motion, whose dynamics stem from a second-order 
+equation and are therefore adequately captured with $v=1$, whereas 
+$\beta$ and $\phi$ are governed by first-order equations, making a 
+second-order ultra-local description more suitable for their regulation.
 
 Assuming that the ultra-local model holds over a short time window, 
 the stabilizing intelligent PID (iPID) control law is given by:
@@ -548,12 +548,9 @@ integral term is set to zero ($K_I = 0$), reducing the controller to an
 intelligent PD (iPD) structure. The term $-F/\alpha$ acts as an online 
 feedforward compensation that cancels the estimated lumped dynamics, 
 while the PD component handles residual tracking errors.
-
-%TODO: agregar una oración que justifique brevemente la elección 
-%      iPD en lugar de iPID — por ejemplo, que la naturaleza 
-%      transitoria de la maniobra SWD no requiere eliminación 
-%      de error en estado estacionario, o que el estimador de $F$ 
-%      ya absorbe los efectos de perturbación persistente.
+This choice is appropriate for the SWD maneuver because the control task 
+is dominated by transient stabilization rather than by the elimination 
+of steady-state error.
 
 % ------------------------------------------------------------------------
 \subsection{Algebraic Estimation of the Lumped 
