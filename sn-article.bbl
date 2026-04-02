@@ -40,31 +40,12 @@ Arronte~Delgado, C.A. 2024.
   Politécnica, Universidade de São Paulo, São Paulo.
 \newblock Acesso em: 2026-04-02.
 
-\bibitem[\protect\citeauthoryear{Bilen}{Bilen}{2010}]{Bilen2010}
-Bilen, {\"O}. 2010.
-\newblock Path control algorithms for autonomous steering and braking of heavy
-  vehicles.
-\newblock {\em Göteborg: Chalmers University of Technology\/}: 10--52 .
-
 \bibitem[\protect\citeauthoryear{Chen, Wang, and Wang}{Chen
   et~al.}{2021}]{Chen2021}
 Chen, X., M.~Wang, and W.~Wang. 2021.
 \newblock Unified chassis control of electric vehicles considering wheel
   vertical vibrations.
 \newblock {\em Sensors\/}~{\em 21\/}(11): 321--342 .
-
-\bibitem[\protect\citeauthoryear{Dong, Jin, and Hou}{Dong
-  et~al.}{2014}]{Dong2014}
-Dong, H.r., S.t. Jin, and Z.s. Hou 2014.
-\newblock Model free adaptive control for automatic car parking systems.
-\newblock In {\em Proceeding of the 11th World Congress on Intelligent Control
-  and Automation}, pp.\  1769--1774.
-
-\bibitem[\protect\citeauthoryear{Fahimi}{Fahimi}{2013}]{Fahimi2013}
-Fahimi, F. 2013.
-\newblock Full drive-by-wire dynamic control for four-wheel-steer
-  all-wheel-drive vehicles.
-\newblock {\em Vehicle System Dynamics\/}~{\em 51\/}(3): 360--376 .
 
 \bibitem[\protect\citeauthoryear{Falcone, Borrelli, Asgari, Tseng, and
   Hrovat}{Falcone et~al.}{2007}]{Falcone2007}
@@ -140,15 +121,6 @@ Lew, T., M.~Greiff, F.~Djeumou, M.~Suminaka, M.~Thompson, and J.K. Subosits.
   (ICRA)\/}: 8508--8514.
 \newblock \doi{10.1109/icra55743.2025.11127729} .
 
-\bibitem[\protect\citeauthoryear{Li, Chen, Liu, Wang, and Gong}{Li
-  et~al.}{2022}]{Zihan2022}
-Li, Z., H.~Chen, H.~Liu, P.~Wang, and X.~Gong. 2022.
-\newblock Integrated longitudinal and lateral vehicle stability control for
-  extreme conditions with safety dynamic requirements analysis.
-\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
-  23\/}(10): 19285--19298.
-\newblock \doi{10.1109/TITS.2022.3152485} .
-
 \bibitem[\protect\citeauthoryear{Mazzilli, De~Pinto, Pascali, Contrino,
   Bottiglione, Mantriota, Gruber, and Sorniotti}{Mazzilli
   et~al.}{2021}]{Mazzilli2021}
@@ -189,22 +161,6 @@ Mazzilli, V., S.~De~Pinto, L.~Pascali, M.~Contrino, F.~Bottiglione,
   sine-with-dwell ESC test procedure and CarSim example implementation.
   Accessed April 1, 2026.
 
-\bibitem[\protect\citeauthoryear{Menhour, d’Andréa Novel, Fliess, Gruyer,
-  and Mounier}{Menhour et~al.}{2018}]{Menhour2018}
-Menhour, L., B.~d’Andréa Novel, M.~Fliess, D.~Gruyer, and H.~Mounier. 2018.
-\newblock An efficient model-free setting for longitudinal and lateral vehicle
-  control: Validation through the interconnected pro-sivic/rtmaps prototyping
-  platform.
-\newblock {\em IEEE Transactions on Intelligent Transportation Systems\/}~{\em
-  19\/}(2): 461--475 .
-
-\bibitem[\protect\citeauthoryear{Mustafa, Wang, and Tian}{Mustafa
-  et~al.}{2019}]{Mustafa2019}
-Mustafa, G.I., H.~Wang, and Y.~Tian. 2019.
-\newblock Model-free adaptive fuzzy logic control for a half-car active
-  suspension system.
-\newblock {\em Studies in Informatics and Control\/}~{\em 28\/}(1): 13--24 .
-
 \bibitem[\protect\citeauthoryear{{Naciones Unidas (Noticias ONU)}}{{Naciones
   Unidas (Noticias ONU)}}{2022}]{UN2022}
 {Naciones Unidas (Noticias ONU)}. 2022, June~30.
@@ -219,37 +175,10 @@ Nguyen, T.A. 2023, April.
   new 4d graphs.
 \newblock {\em PLoS One\/}~{\em 18\/}(4): e0284018 .
 
-\bibitem[\protect\citeauthoryear{Owen}{Owen}{2018}]{Owen2018}
-Owen, E.D. 2018.
-\newblock The benefits of four-wheel drive for a high-performance fsae electric
-  racecar.
-\newblock {\em Cambridge: Massachusetts Institute of Technology\/}: 21--64 .
-
-\bibitem[\protect\citeauthoryear{Pereira~das Neves and
-  Augusto~Angélico}{Pereira~das Neves and Augusto~Angélico}{2022}]{NA2022}
-Pereira~das Neves, G. and B.~Augusto~Angélico. 2022.
-\newblock Model-free control of mechatronic systems based on algebraic
-  estimation.
-\newblock {\em Asian Journal of Control\/}~{\em 24\/}(4): 1575--1584 .
-
-\bibitem[\protect\citeauthoryear{Radac and Precup}{Radac and
-  Precup}{2018}]{Radac2018}
-Radac, M.B. and R.E. Precup. 2018.
-\newblock Data-driven model-free slip control of anti-lock braking systems
-  using reinforcement q-learning.
-\newblock {\em Neurocomputing\/}~275: 317--329 .
-
 \bibitem[\protect\citeauthoryear{Rajamani}{Rajamani}{2012}]{Rajamani2012}
 Rajamani, R. 2012.
 \newblock {\em Vehicle Dynamics and Control\/} (2 ed.).
 \newblock New York: Springer.
-
-\bibitem[\protect\citeauthoryear{Rizk, Chaibet, and Kribèche}{Rizk
-  et~al.}{2023}]{Rizk2023}
-Rizk, H., A.~Chaibet, and A.~Kribèche. 2023.
-\newblock Model-based control and model-free control techniques for autonomous
-  vehicles: A technical survey.
-\newblock {\em Applied Sciences\/}~{\em 13\/}(11) .
 
 \bibitem[\protect\citeauthoryear{S{\'a}nchez-Morales, Naranjo, and
   Sotelo}{S{\'a}nchez-Morales et~al.}{2023}]{SanchezMorales2023}
@@ -281,14 +210,6 @@ Wanki, C., C.~Jaewoong, K.~Chongkap, C.~Seibum, and Y.~Kyongsu. 2012.
 \newblock {\em IEEE Transactions on Vehicular Technology\/}~{\em 61\/}(3):
   1008--1020.
 \newblock \doi{10.1109/TVT.2012.2183152} .
-
-\bibitem[\protect\citeauthoryear{Xia, Lin, Zhang, Fu, Li, Li, and Yang}{Xia
-  et~al.}{2021}]{Xia2021}
-Xia, Y., M.~Lin, J.~Zhang, M.~Fu, C.~Li, S.~Li, and Y.~Yang. 2021.
-\newblock Trajectory planning and tracking for four-wheel steering vehicle
-  based on differential flatness and active disturbance rejection controller.
-\newblock {\em International Journal of Adaptive Control and Signal
-  Processing\/}~{\em 35\/}(11): 2214--2244 .
 
 \bibitem[\protect\citeauthoryear{Yakub, Abu, Sarip, and Mori}{Yakub
   et~al.}{2016}]{Yakub2016}

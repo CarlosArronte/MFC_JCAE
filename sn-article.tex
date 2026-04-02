@@ -223,7 +223,11 @@ Despite the advances described above, the practical deployment of UCC strategies
  
  To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink-CarSim co-simulation environment under a sine-with-dwell maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-parameter 2PID+fuzzy controller, a gain-scheduled LQR, and a CarSim built-in baseline; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach. %OK
 
-%REESCRIBIR
+%TODO: actualizar este párrafo para que refleje la estructura actual del
+%      manuscrito. La versión presente todavía referencia la organización
+%      antigua (por ejemplo, Section~\ref{model} y Section~\ref{sec:contr})
+%      y debería alinearse con las secciones efectivamente activas tras la
+%      reestructuración.
 The remainder of the paper is organized as follows. Section~\ref{model} presents the modeling framework and reviews model-based UCC approaches. Section~\ref{sec:ulmodel} introduces the fundamentals of MFC and the design of intelligent PID (iPID) controllers. Section~\ref{sec:ucc} describes the proposed UCC architecture. Section~\ref{sec:contr} discusses controller tuning, and Section~\ref{sec:exper} presents the experimental setup. Finally, Section~\ref{sec2} discusses the results, and Section~\ref{sec:concl} concludes the paper.\ %Reescribir (ver estructura final)
 
 % ------------------------------------------------------------------------
@@ -351,7 +355,13 @@ using the root mean square (RMS) of each regulated variable, the root mean
 square error (RMSE) with respect to the corresponding reference, and the 
 maximum absolute value (MAX) recorded during the maneuver. Control effort 
 is monitored through the time histories of $M_z$ and $M_x$, with particular 
-attention to saturation occurrence and duration.%Ojo a las metricas de esf ctrl (hacerlas coincidir con experimentos)
+attention to saturation occurrence and duration.
+%TODO: hacer coincidir esta promesa metodológica con los resultados
+%      efectivamente reportados. Incluir, al menos para un caso
+%      representativo o en una tabla compacta, métricas/curvas de esfuerzo
+%      de control para $M_z$ y $M_x$ (por ejemplo RMS, pico y tiempo en
+%      saturación) para responder explícitamente al comentario del revisor
+%      sobre control effort.
 
 
 % ------------------------------------------------------------------------
@@ -743,235 +753,6 @@ estimation window to $T = 1.0$\,s for all three channels.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{UCC model-based}\label{model}
-
-Currently, most of the UCC systems use vehicle models to obtain and adjust the parameters of the individual controllers. 
-
-A widely adopted approach is the bicycle model, illustrated in Fig. \ref{fig:Modelo-bicicleta}. In this representation, $F_f$ and $F_r$ denote the lateral forces acting on the front and rear axles, respectively; $V_{ref}$ is the vehicle's velocity vector; and $\alpha_f$ and $\alpha_r$ are the slip angles of the front and rear wheels. The Center of Gravity (CG) is located at distances $l_f$ and $l_r$ from the front and rear axles. The side-slip angle, $\beta$, represents the relationship between the vehicle's longitudinal and lateral velocities, while $r = \dot{\psi}$ denotes the yaw rate. Additionally, $\delta_f$ epresents the front wheel steering angle, and $V_f$ and $V_r$ are the velocity vectors at the front and rear tires.\
-
-This model is frequently integrated into Model Predictive Control (MPC) frameworks, as seen in \cite{Ahmadi2021}, \cite{Gidlewski2017}, and \cite{Yakub2016}. Other studies, such as \cite{Owen2018}, utilize it to analyze the impact of the center-of-mass location on vehicle performance, while \cite{Bilen2010} and \cite{Fahimi2013} employ it for computational simulations and controller design \citep{Xia2021}.
-
-To achieve higher fidelity, some authors develop more complex models to capture intricate vehicle dynamics and subsystem interactions. For instance, \cite{Lai2021} introduced an 18-degree-of-freedom (DOF) model to represent comprehensive chassis dynamics. This model facilitates the design of a UCC system that evaluates the trade-off between ride comfort and handling stability across various maneuvers, accounting for the complex coupling between subsystems. The 18-DOF model treats the vehicle as five rigid bodies: a sprung mass (chassis) with 6-DOF (roll, pitch, yaw, and translational motions) and four unsprung masses (wheels). Each wheel is modeled with 3-DOF, corresponding to vertical displacement, wheel rotation, and steering rotation.
-
-Similarly, \cite{Chen2021} proposed a 6-DOF rigid-body model that integrates planar motion (longitudinal, lateral, and yaw) with spatial motion (vertical, roll, and pitch). Combined with unsprung mass dynamics, this approach treats the vehicle as a unified system under longitudinal and lateral accelerations. To characterize nonlinear tire behavior, the authors utilize Pacejka’s Magic Formula, an empirical approach that unifies longitudinal force, lateral force, and self-aligning moment through parameter sets fitted to experimental data.
-
-The use of model-based controls in vehicle dynamics offers the fundamental advantage of enabling precise and coordinated management of complex multivariable systems—such as the interaction between independent wheel drive and active suspension—facilitating the incorporation of physical constraints and the prediction of critical states to maximize safety and comfort \cite{Zihan2022}. However, this approach has critical drawbacks, primarily a high demand for computational resources to process high-fidelity models in real time \cite{Guo2020A}, as well as significant sensitivity to modeling errors (model mismatch) \cite{Lew2024Risk-Averse}. Any discrepancy between mathematical parameters and real-world conditions—such as variations in mass or unexpected changes in tire friction—can significantly degrade system performance and stability if robust adaptation mechanisms are not in place.
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{Bicicleta.png}
-    \caption{Bicycle model}
-    \label{fig:Modelo-bicicleta}    
-\end{figure}
-
-\subsection{Uncertainty Compensation}
-Given the limitations discussed above, neural network-based controllers have been widely used to compensate for model uncertainties and unmodeled nonlinearities in vehicle dynamics. This is the case in \cite{electronics10040510}, where the lateral dynamics are described using a dynamic bicycle model, capturing key variables such as longitudinal velocity, slip angle, yaw rate, and tire lateral forces, while also accounting for trajectory tracking errors and unmodeled external disturbances (e.g., crosswinds). To compensate for parametric uncertainties, nonlinearities, and unmodeled dynamics, a radial basis function neural network (RBFNN) is integrated into a higher-order sliding mode control (HOSMC) scheme. The RBFNN estimates the unknown dynamics online based on the sliding surface, with its parameters updated through Lyapunov-based adaptive laws. This combined approach enhances robustness against disturbances, reduces chattering, and preserves lateral control performance under adverse conditions.
-
-In addition to neural network-based approaches, fuzzy logic has also been employed to handle parametric uncertainties within sliding mode control frameworks. This is the case in \cite{Guo2021}, where a fuzzy inference system is used to adaptively tune the boundary layer thickness based on the magnitude of the sliding surface, as part of a neuro-fuzzy adaptive sliding mode control strategy.
-
-In this approach, the absolute value of the sliding surface is used as the input to the fuzzy system, while the boundary layer thickness is the output. Using predefined linguistic rules and membership functions, the controller adjusts this parameter online: large deviations from the sliding surface lead to a thinner boundary layer to ensure fast convergence, whereas small deviations result in a thicker layer to attenuate chattering.
-
-This adaptive fuzzy mechanism enables an effective trade-off between robustness and oscillation reduction, improving control performance in the presence of parametric uncertainties and external disturbances.
-
-
-
-
-
-
-
-
-
-One of the most widely used schemes for validating controller design in automotive systems is the CarSim\textsuperscript{\textregistered} software.  CarSim\textsuperscript{\textregistered} mathematical models are highly optimized for computational efficiency and are represented at the system level, meaning that vehicle data is intended to be measured or calculated and does not rely on detailed knowledge of component materials or suspension linkage complexities. When using a CarSim\textsuperscript{\textregistered} model, major issues may include the need for detailed vehicle data, accurate environmental conditions, and a good understanding of vehicle models at the system level. Users should also be aware of the importance of accurate kinematics and suspension compliance, tire strength and moment properties, and environmental conditions, as well as the potential impact of limited reference data on the accuracy of simulation results \citep{carsimintro2021}.\
-
-Due to the above, the study of MFC for the regulation of vehicle dynamics in real-time is of interest. It should be noted that the term "Model-free control" can be seen in the literature as referring to a wide range of controllers that can go from "classical" proportional-integral-derivative (PID) to robust and adaptive control techniques derived, for example, from neural networks, fuzzy systems, and soft computing. The type of MFC used in this paper (intelligent PID based on ultra-local model) was presented by \cite{Fliess2008}, which makes it a novel technique and alternative to classical control in the automotive domain. Several authors have used this control technique as part of an automotive UCC system. In general, the MFC can be used in this field to regulate the longitudinal dynamics (direction and/or speed) of the vehicle \citep{Dong2014}, as a controller of the lateral dynamics (yaw rate and/or side slip angle) as in the case of \cite{Radac2018}, for the control of the joint lateral and longitudinal dynamics like in \cite{Menhour2018} and \cite{Rizk2023}, or for the control of the vertical dynamics, that is roll, roll rate and/or pitch \citep{Mustafa2019}.\
-
-However, there are no references in the literature to works that use this control method to jointly regulate the lateral and vertical dynamics at the same time and in a single UCC system. In the present work, an automotive UCC system is designed using only MFC controllers to minimize the side-slip angle, reducing the yaw rate error and maintaining the vertical stability corresponding to the car roll angle and roll rate. The proposed system is tuned and validated through a Sine With Dwell maneuver in CarSim\textsuperscript{\textregistered} software. Those are original contributions, to the best of the authors' knowledge.
-
-
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-\section{The ultra-local model-based MFC controller} \label{sec:ulmodel}
-
-The Model-Free Controller (MFC) based ultra-local model assumes that the system response will behave as shown in Eq. (\ref{Eq:Def-MFC}) for a small time window:
-
-\begin{equation}
-    y^{v} = F + \alpha u,
-    \label{Eq:Def-MFC}
-\end{equation}
-where $y^{v}$ represents the $v${th} derivative of the output (usually $v = 1$ or $v = 2$) \citep{Fliess2009}, and $F$ is the input/output ratio of a simplified and little-known model of the plant. This parameter is a piecewise constant function that is updated in each time window and also includes measured and unmeasured perturbations of the plant.  On the other hand,  $\alpha \in \mathbb{R}$ is a number that represents a non-physical constant parameter. This parameter is defined by the designer in such a way as to have the same order of magnitude as the unknown real parameter, and then an adjustment is made based on the system's time response. In this paper, there are three plant variables: yaw rate ($\dot{\psi}$), side-slip angle ($\beta$), and roll angle ($\phi$), where the last two ones are controlled using a second-order ultra-local model, while the first one is represented by a first-order ultra-local model.
-
-Assuming that the model represents the plant dynamics in a short time window, then the stabilizing intelligent PID control (iPID) can be computed by: 
-\begin{equation}
-    u = \frac{-F}{\alpha}+\frac{\ddot{y^*}}{\alpha}+K_Pe+K_I\int e\,dt +K_D\frac{de}{dt},
-    \label{Def-u-v2}
-\end{equation}
-where $\ddot{y^*}$ is the reference second time-derivative that the output is intended to follow, $e = y - y^*$ is the system tracking error and $K_P$, $K_I$ and $K_D$ are the gains of a conventional PID controller. These gains are adjusted to cancel out the measured output and impose the desired dynamics. It should be noted that this control can be in the form of a PI or a PD as appropriate. Finally, the control method involves estimating the value of $F$ in constant time windows. It can be demonstrated that even if the initial guess for $\alpha$ is incorrect, the estimator will correctly estimate the compensation of $F$ \citep{NA2022}. Therefore, $\alpha$ will only slightly affect the performance but will ensure the system stability.
-
-% ------------------------------------------------------------------------
-\subsection{$F$ estimator to the ultra-local model of $\beta$ and $\phi$}
-As mentioned earlier, the ultra-local models of $\beta$ and $\phi$ are considered of second order ($v=2$). In that case, the equation would be $\ddot{y} = F_2+\alpha u$. Applying the Laplace transform in this equation results in $s^2Y(s)-sy(0)-\dot{y}(0) = F_2/s+\alpha U(s)$. Then, by taking the derivative of the equation concerning $s$ twice, one obtains:
-\begin{multline}
-    2Y(s)+4s\frac{d}{ds}Y(s)+s^2\frac{d^2}{ds^2}Y(s) = \\ = 2s^{-3}F_2 + \alpha\frac{d^2}{ds^2}U(s).
-    \label{Diff-Def-MFC-v2}
-\end{multline}
-
-Finally, multiplying Eq. (\ref{Diff-Def-MFC-v2}) by $\frac{1}{s^3}$ results in\footnote{This process ensures that integral terms appear in every factor, thereby aiding in noise reduction.}:
-\begin{multline}
-    2\frac{1}{s^3}Y(s)+4\frac{1}{s^2}\frac{d}{ds}Y(s)+\frac{1}{s}\frac{d^2}{ds^2}Y(s) = \\ = 2F_2\frac{1}{s^6}+\alpha\frac{1}{s^3}\frac{d^2}{ds^2}U(s).
-    \label{Div-1s3-Def-MFC-v2}
-\end{multline}
-
-Returning to the time domain using the Laplace anti-transform, it is obtained:
-\begin{multline}
-    F_2 = \frac{60}{t^5}\int_{0}^t(t^2-6t\tau+6\tau^2)y(\tau)\,d\tau + \\ -\frac{30\alpha}{t^5}\int_{0}^t(t-\tau)^2\tau^2u(\tau)\,d\tau.
-    \label{Antilaplace-Def-MFC-v2}
-\end{multline}
-
-% ------------------------------------------------------------------------
-\subsection{$F$ estimator to the ultra-local model of $\dot{\psi}$}
-
-The ultra-local model of $\dot{\psi}$ is considered of first order ($v=1$). In that case, the equation would look like $\dot{y} = F_1+\alpha u$. The demonstration is very similar to the estimator of second order. Applying the Laplace transform in this equation results in $sY(s)-y(0) = F_1/s+\alpha U(s)$.
-Then, by taking the derivative of the equation by $s$, one has:
-\begin{equation}
-    Y(s)+s\frac{d}{ds}Y(s)= -s^{-2}F_1+\alpha\frac{d}{ds}U(s).
-    \label{Diff-Def-MFC-v1}
-\end{equation}
-Finally, multiplying the Eq. (\ref{Diff-Def-MFC-v1}) by $\frac{1}{s^2}$ results in:
-\begin{equation}
-    \frac{Y(s)}{s^2}+\frac{1}{s}\frac{d}{ds}Y(s)= -F_1+\frac{\alpha}{s^2}\frac{d}{ds}U(s).
-    \label{Div-1s3-Def-MFC-v1}
-\end{equation}
-
-Upon returning to the time domain via the Laplace inverse transform, one obtains:
-\begin{multline}
-    F_1 = -\frac{6}{t^3}\int_{0}^t(t-2t\tau)y(\tau)\,d\tau + \\ - \frac{6\alpha}{t^3}\int_{0}^t(t-\tau)\tau u(\tau)\,d\tau.
-    \label{Antilaplace-Def-MFC-v1}
-\end{multline}
-
-% ------------------------------------------------------------------------
-\subsection{Discretization of algebraic estimators}
-
-The computational application of the estimator is possible through the window integral approximation. For this, the size of the integration window ($T$) must be decided, where, in general, the larger the window, the more precise the estimated value will be. On the other hand, the control will be slower since the estimator will take longer to converge to the value. Considering the response speed of the car dynamics, the windows for all estimators were defined as $T=1.0$ s.
-
-Considering the trapezoidal approximation of the integral, the estimators (of first and second order) can be written as:
-\begin{multline}
-    \hat{F}_2 = \frac{60}{T^5}\sum_{k=0}^{T/T_s} a_k(T^2-6TkT_s+6(kT_s)^2)y[k] + \\
-    - \frac{30\hat{\alpha}}{T^5}\sum_{k=0}^{T/T_s} a_k(T-kT_s)^2(kT_s)^2u[k],
-\end{multline}
-and
-\begin{multline}
-    \hat{F}_1 = -\frac{6}{T^3}\sum_{k=0}^{T/T_s} a_k(T-2TkT_s)y[k] + \\
-    - \frac{6\hat{\alpha}}{T^3}\sum_{k=0}^{T/T_s}a_k (T-kT_s)kT_s u[k],
-\end{multline}
-where:
-\begin{equation}
-    a_k = \left\{\begin{matrix}
-    T_2/2, & k=0 \text{ and } k=T/T_s \\ 
-    T_s, & k=1, \dots, T/T_s - 1
-    \end{matrix}\right. .
-\end{equation}
-
-
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-\section{UCC structure} \label{sec:ucc}
-In this work, an upstream architecture with multi-layer Coordination (MuC) is proposed for vehicle control. Fig. \ref{fig:MuC mio} shows the architecture with its components. In this architecture, inputs such as the longitudinal speed, steering angle of the front wheels and the system states (lateral speed V$_y$, yaw rate $\dot{\psi}$, roll angle $\phi$ and roll rate $\dot{\phi}$) are obtained from CarSim\textsuperscript{\textregistered} as it were from a real car.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = \linewidth]{MuC mio.png}
-    \caption{UCC architecture}
-    \label{fig:MuC mio}   
-\end{figure}
-
-% ------------------------------------------------------------------------
-\subsection{Supervision layer}
-
-The supervision layer aims to compute the references, as well as conditions under which the controller will act. The reference for $\beta$ is zero and it is calculated based on the estimated car lateral speed, as shown in Eq. (\ref{Eq:beta_def}). It is also defined that the controller for $\beta$ only performs whether it is outside the limits in Eq. (\ref{Eq:beta_lim}). In the case of the yaw rate, the controller's reference is calculated based in the longitudinal speed, the steering angle of the front wheels, and the coefficient of ground friction. The controller's operating range is determined by the limits described in Eq. (\ref{limYR}).  In the case of the roll angle, the reference will always be zero, as one of the controller's objectives is to reduce this parameter. The equations are: 
-\begin{equation}
-    \label{Eq:beta_def}
-    \beta = {\rm tan}^{-1}(\frac{V_y}{V_x}),
-\end{equation}
-\begin{equation}
-\label{Eq:beta_lim}
-\beta \le \beta_{lim} = \pm 2^{\circ},
-\end{equation}
-\begin{equation}
-\label{limYR}
-    \dot{\psi}_D = \min \left( \left|\frac{\mu g}{V_x}\right|,\left|G_{\dot{\psi}}\delta_f\right|\right) \cdot {\rm sign}(\delta_f),
-\end{equation}
-where, $G_{\dot{\psi}} = V_x/(L+K_{us}V_x^2)$, $V_x$ is the car longitudinal speed, $L$ is the distance between the car's axles in meters and $K_{us}$ is the under-steer coefficient.
-
-% ------------------------------------------------------------------------
-\subsection{High level controller}
-
-The high-level controller design uses the references calculated by the supervision layer and the estimated states and calculates the torques needed to control the dynamics. In the case of lateral dynamics (which involves $\dot{\psi}$ and $\beta$), the control signal will be a torque around the car's z-axis ($M_z$). This signal is setting a saturation level of $\pm 8000$Nm. To control the roll angle, torque is calculated around the x-axis ($M_x$). This signal is limited by saturation levels of $\pm 1500$Nm. Fig. \ref{Fig:UCC-implem} shows the implementation of this controller in Matlab/Simulink\textsuperscript{\textregistered}.
- \begin{figure*}[h]
-     \centering
-     \includegraphics[width =\linewidth]{MFC_Blocos.png}
-     \caption{UCC implementation}
-     \label{Fig:UCC-implem}
- \end{figure*}
-
-% ------------------------------------------------------------------------
-\subsection{Coordination layer}
-As can be seen in Fig. \ref{Fig:UCC-implem}, in the coordination phase, a Pure Subsumption strategy is used to weigh up which of the control signals corresponding to $\beta$ and $\dot{\psi}$ will have more weight in the final torque calculation. This layer is not involved in controlling the roll angle.
-
-% ------------------------------------------------------------------------
-\subsection{Control allocation}
-
-At this step, the control signals calculated in the previous steps are transformed into "understandable" variables by the subsystems that act directly on the car's chassis. In the case of the torque on the z-axis, it will be transformed into individual brake pressure signals for each wheel by the ABS. In the case of $M_x$, it will be transformed into suspension forces relating to the active stabilizer bar (AARB) system. This step is carried out directly by the CarSim\textsuperscript{\textregistered} software.
-
-% ------------------------------------------------------------------------
-\subsection{Individual actuators}
-
-The individual brake pressure signals and the motor torque signal of the AARB system from the previous step are taken in this step as references for the controllers of the car's ABS and the active stabilizer bar system, respectively. The control of these systems finally makes it possible to establish the desired behavior of the controlled dynamics. Like the previous one, this stage is implemented by CarSim\textsuperscript{\textregistered} software.
-
-
-
-
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-% ------------------------------------------------------------------------
-\section{Control tuning} \label{sec:contr}
-
-
-In the following subsections, a demonstration of how to adjust the parameters $\alpha$, $K_P$, and $K_D$ of the iPD proposed controllers is performed (in this paper, we consider the integrative factor equals to zero). It should be noted that this tuning is empirically done and that the dynamics to be controlled do not require high precision in tracking the corresponding references for the system to exhibit proper behavior.
-
-% ------------------------------------------------------------------------
-\subsection{$\alpha$ adjustment}
-
-This parameter is set individually for each control law, and has direct influence on the system outputs ($M_z$ and $M_x$ torques). Since the $M_z$ signal is composed of the sum of individual signals corresponding to the side-slip angle control and the yaw rate control, it is necessary to adjust simultaneously $\alpha_{\beta}$ and $\alpha_{\dot{\psi}}$. A bad choice of these parameters can result in an oscillatory control signal with a high saturation time and/or an unsatisfactory maneuver performance. In this work, the values of $\alpha_s$ are empirically obtained looking for a relationship between them and the time response of the controlled parameters. Higher $\alpha$ value can induce some delay in the system response while a lower $\alpha$ generates a more oscillatory control signal. The objective then is to find a equilibrium $\alpha$. The selected $\alpha$ values are  $\alpha_\beta = 0.01$,  $\alpha_{\dot{\psi}} = 10^{-3}$ and $\alpha_\phi = 10^{-2}$.
-
-
-% ------------------------------------------------------------------------
-\subsection{iPD adjustment}
-
-It was verified by simulations that the variation of the $K_d$ parameter does not have influence on the system response. The $K_p$ was adjusted firstly for the yaw rate and side-slip angle controllers and then for the roll control. The adjustment must keep a balance between reducing the steady state error and producing an oscillatory control signal. It should be noted that in the event of a sudden maneuver (as in the case of SWD) the control must prioritize the safety over the comfort. This is evidenced by the increase in the roll rate signal. Finally, the iPD adjustment is as follows: $Kp_{\beta} = 20$; $Kd_{\beta} = 3$; $Kp_{\dot{\psi}} = 50$; $Kd_{\dot{\psi}} = 3$; $ Kp_{\phi} = 200$; $Kd_{\phi} = 3$.
-
-
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
@@ -996,12 +777,24 @@ The SWD maneuver involves accelerating the vehicle to a speed of just over 80 km
 
 The UCC is tested by simulating a SWD maneuver as specified above for three different values of friction coefficient as described. The results below compare the open-loop situation (without controller), the gain-scheduled LQR benchmark, and the iPD MFC controller. It is shown that the first and second cases do not guarantee stability in all friction scenarios.
 
+%TODO: añadir una discusión más explícita sobre el alcance de la
+%      estabilidad en lazo cerrado. Ahora mismo la evidencia de estabilidad
+%      es esencialmente empírica y ligada a la maniobra SWD; convendría
+%      precisar el dominio de validez de esa afirmación, el papel de las
+%      saturaciones y qué se entiende aquí por "practical closed-loop
+%      stability", en línea con la solicitud del Revisor 2.
+
 %As a concept, a car is considered to have lateral stability in a maneuver if the side-slip angle and the difference between the measured yaw rate and the desired yaw rate are minimized. On the other hand, vertical stability (or roll stability) is achieved by minimizing the roll angle. In this work, it is not intended to minimize the roll rate (which would create a more comfortable environment for passengers) but this parameter is observed in the simulations.
  
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.7$}\label{sec3}
 
 Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show the side slip angle and yaw rate in the SWD maneuver for $\mu =0.7$. Here, both controllers, namely the gain-scheduled LQR and the iPD-based MFC, manage to decrease the side slip angle during the maneuver. Also, the measured yaw rate follows the reference for both controllers. It can be observed that the vehicle fails to complete the maneuver without the action of any controller (open-loop). Figures \ref{fig:roll_07} and \ref{fig:roll_rate_07} show the roll angle and roll rate behavior during the maneuver. Both controllers manage to reduce these variables during the maneuver, thus demonstrating their effectiveness in controlling the rollover dynamics.
+
+%TODO: añadir al menos un zoom/inset en una figura representativa (por
+%      ejemplo, alrededor del pico o de la zona donde las curvas más se
+%      aproximan) para mejorar la comparación visual, tal como sugieren los
+%      revisores respecto a la legibilidad de las figuras.
 
 
 \begin{figure}
@@ -1299,6 +1092,26 @@ Parameter & $\mu$ & RMS\tnote{1} & RMSE\tnote{2} & MAX\tnote{3} & RMS & RMSE & M
 This study proposes a novel Unified Chassis Control (UCC) system based on Model-Free Controllers (MFCs) to simultaneously regulate vehicle lateral (side-slip angle and yaw rate) and vertical (roll angle) dynamics during abrupt maneuvers. By leveraging ultra-local models and algebraic estimators, the MFC-based UCC eliminates the need for detailed vehicle modeling, effectively addressing challenges posed by parametric uncertainties and the nonlinear nature of traditional model-based approaches. The controller was evaluated through a Sine With Dwell (SWD) maneuver in a co-simulation environment using MATLAB/Simulink\textsuperscript{\textregistered} and CarSim\textsuperscript{\textregistered}, under varying road friction conditions ($\mu = 0.7$, $\mu = 0.5$, and $\mu = 0.3$), and compared against a gain-scheduled LQR benchmark. Results showed that the MFC-based UCC significantly reduced side-slip angle and yaw rate errors while maintaining good roll angle stability, ensuring comprehensive lateral and vertical control. In low-friction scenarios ($\mu = 0.3$), only the MFC showed stability. 
 
 Future research should focus on automating the tuning using optimization to enhance scalability and precision, validating the approach through real-world implementations, and comparing it with alternative model-free techniques such as neural networks or fuzzy logic controllers. Additionally, extending the UCC framework to account for longitudinal dynamics or adapting it for diverse vehicle types, including electric and heavy-duty platforms, could further expand its applicability. 
+
+% ========================================================================
+% INFO PARA ELIMINAR / LIMPIEZA FINAL
+% 1. Revisar la conveniencia de mantener \subsection{UCC model-based}
+%    y \subsection{Uncertainty Compensation}, ya que parte de ese material
+%    se solapa con la Introduction y con la discusión del estado del arte.
+% 2. El bloque legacy que comienza en \section{The ultra-local model-based
+%    MFC controller} y sigue con \section{UCC structure} y
+%    \section{Control tuning} duplica secciones activas ya presentes más
+%    arriba (\ref{sec:ulmodel}, \ref{sec:ucc}, \ref{sec:allocation},
+%    \ref{sec:params}) y es la causa de varias multiply-defined labels.
+%    Debe eliminarse una vez se confirme que no queda contenido único por
+%    rescatar de esa versión antigua.
+% 3. Eliminar las figuras comentadas antiguas para $\mu=0.7$, $\mu=0.5$
+%    y $\mu=0.3$ si se mantiene la versión con subfiguras.
+% 4. Eliminar la tabla comentada antigua de resultados estadísticos
+%    (la versión previa de Table~\ref{tab3}) si la versión actual con
+%    threeparttable es la definitiva.
+% 5. Eliminar los párrafos comentados de Conclusions si ya no se van a
+%    reutilizar en la versión final.
 
 
 \bmhead{Acknowledgements}
