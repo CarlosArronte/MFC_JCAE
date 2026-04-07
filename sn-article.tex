@@ -775,7 +775,14 @@ The SWD maneuver involves accelerating the vehicle to a speed of just over 80 km
 % ------------------------------------------------------------------------
 \section{Simulation results}\label{sec2}
 
-The UCC is tested by simulating a SWD maneuver as specified above for three different values of friction coefficient as described. The results below compare the open-loop situation (without controller), the gain-scheduled LQR benchmark, and the iPD MFC controller. It is shown that the first and second cases do not guarantee stability in all friction scenarios.
+The UCC is evaluated through the SWD maneuver described above under three
+different road-friction conditions. The results reported below compare the
+open-loop vehicle response, the CarSim\textsuperscript{\textregistered}
+ESC controller, the fixed-parameter 2PID+fuzzy controller, the
+gain-scheduled LQR benchmark, and the proposed iPD-based MFC controller.
+As will be shown, the open-loop case and the CarSim
+\textsuperscript{\textregistered} ESC baseline do not guarantee stable
+behavior in all tested scenarios.
 
 %TODO: añadir una discusión más explícita sobre el alcance de la
 %      estabilidad en lazo cerrado. Ahora mismo la evidencia de estabilidad
