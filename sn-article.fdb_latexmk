@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sn-article"] 1775591071.59716 "sn-article.aux" "sn-article.bbl" "sn-article" 1775591073.22882 0
+["bibtex sn-article"] 1775591219.75151 "sn-article.aux" "sn-article.bbl" "sn-article" 1775591221.44383 0
   "./sn-bibliography.bib" 1775478759 25799 35bcf0ba08b0d7562e643fa8d0fb0e97 ""
   "./sn-chicago.bst" 1773865822 42206 c63937dde0e51cb67319b12bd767934b ""
-  "sn-article.aux" 1775591072 14178 aacbe327499a21e745fd4357536335d6 "pdflatex"
+  "sn-article.aux" 1775591220 14154 4656f6824bf596e876a74701bfbdb986 "pdflatex"
   (generated)
   "sn-article.bbl"
   "sn-article.blg"
   (rewritten before read)
-["pdflatex"] 1775591071.76629 "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1775591073.22917 0
+["pdflatex"] 1775591219.94727 "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1775591221.44419 0
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775480194 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0500.pk" 1775590850 6108 30668e17e1ced223ee97140d086ceb98 ""
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk" 1775480201 7284 3022927893697ffa97be598eb4a3fec5 ""
@@ -171,7 +171,7 @@
   "MFC_Blocos.png" 1773865822 322208 cb0c6b0b7b01f8bc14f35f18a64c4518 ""
   "MuC mio.png" 1773865822 114377 419811efc3e28116129316b90f461dac ""
   "SWD_original.eps" 1773865822 86888 62df9e9f73ef7c3004c0ab145884b113 ""
-  "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" 1775591069 82205 c7028678cbccea0f50ede7781156257f ""
+  "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" 1775591217 82144 050cf92d53df26de1bc15388d0740b8e ""
   "new_figs/AVx_3.png" 1775587678 84444 00178ab9ffbeebb47e3491adc028da15 ""
   "new_figs/AVx_5.png" 1775587712 128613 9d65ce584b2f665178071e2c60fcf2b9 ""
   "new_figs/AVx_7.png" 1775587742 107312 bf090ac0a5a25e9ccc29f59d91fc3a10 ""
@@ -184,10 +184,10 @@
   "new_figs/beta_3.png" 1775588109 191608 e8897bc0308f0806b9b03a35c9cdb4c9 ""
   "new_figs/beta_5.png" 1775588141 128797 7588d91ff1e15ff067d8db9725083988 ""
   "new_figs/beta_7.png" 1775588175 132449 53822d4e544514012d8cb5b4add4e24d ""
-  "sn-article.aux" 1775591072 14178 aacbe327499a21e745fd4357536335d6 "pdflatex"
-  "sn-article.bbl" 1775591071 10770 9311635f5e6826fc9ce4ed0198e30269 "bibtex sn-article"
-  "sn-article.out" 1775591072 6397 f186ae726ec3a088af4c549fcd9df298 "pdflatex"
-  "sn-article.tex" 1775591069 82205 c7028678cbccea0f50ede7781156257f ""
+  "sn-article.aux" 1775591220 14154 4656f6824bf596e876a74701bfbdb986 "pdflatex"
+  "sn-article.bbl" 1775591219 10770 9311635f5e6826fc9ce4ed0198e30269 "bibtex sn-article"
+  "sn-article.out" 1775591220 6397 f186ae726ec3a088af4c549fcd9df298 "pdflatex"
+  "sn-article.tex" 1775591217 82144 050cf92d53df26de1bc15388d0740b8e ""
   "sn-jnl.cls" 1773865822 57122 d7cf5cb282c5c6c90059534004dcdf13 ""
   (generated)
   "sn-article.aux"

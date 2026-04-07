@@ -269,7 +269,7 @@ as described in Section~\ref{sec:references}. The roll angle reference is
 always set to zero, as the control objective is to minimize chassis tilt 
 throughout the maneuver.
 
-For the sine-with-dwell (SWD) maneuver considered in this study, choosing $\phi_{\mathrm{ref}} = 0$ is appropriate because the main control objective is to minimize body roll and preserve rollover safety margins during a severe transient maneuver, rather than to track a nonzero equilibrium roll angle. From this perspective, a zero roll reference represents the nominal upright posture of the vehicle and allows the controller to directly counteract excessive lateral load transfer.
+For the SWD maneuver considered in this study, choosing $\phi_{\mathrm{ref}} = 0$ is appropriate because the main control objective is to minimize body roll and preserve rollover safety margins during a severe transient maneuver, rather than to track a nonzero equilibrium roll angle. From this perspective, a zero roll reference represents the nominal upright posture of the vehicle and allows the controller to directly counteract excessive lateral load transfer.
 
 
 % -----------------------------------------------------------------------
@@ -329,7 +329,7 @@ in Section~\ref{sec:ucc}.
 \subsection{Maneuver Completion and Failure 
             Criteria}\label{sec:criteria}
 
-The performance of the UCC is evaluated under a sine-with-dwell (SWD) 
+The performance of the UCC is evaluated under a SWD
 maneuver, a standardized test used to assess vehicle response to sudden 
 evasive inputs, as specified in FMVSS 126 and UN/ECE Regulation No. 13-H 
 \citep{MSC2012}. A maneuver is considered successfully completed if the 
@@ -478,7 +478,7 @@ sine-with-dwell testing
 \citep{carsim_fmvss126}.
 
 As described in the official CarSim\textsuperscript{\textregistered} FMVSS~126 application example, this 
-built-in baseline is intended for ESC evaluation under the sine-with-dwell 
+built-in baseline is intended for ESC evaluation under the SWD 
 procedure and is assessed through lateral-stability criteria based mainly 
 on yaw-rate decay after the steering input, together with the prescribed 
 lateral-displacement check for high-gain cases \citep{carsim_fmvss126}. 
@@ -762,7 +762,7 @@ The SWD maneuver involves accelerating the vehicle to a speed slightly above 80\
 \begin{figure}
     \centering    
     \includegraphics[width = \linewidth]{SWD_original.eps}
-    \caption{Steering angle for the sine-with-dwell maneuver}
+    \caption{Steering angle for the SWD maneuver}
     \label{fig:sine-maneuver}
 \end{figure}
 

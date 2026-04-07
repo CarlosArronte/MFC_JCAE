@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -765,11 +765,6 @@ Underfull \hbox (badness 2165) in paragraph at lines 266--271
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 272--273
-\OT1/cmr/m/n/10 sid-ered in this study, choos-ing $\OML/cmm/m/it/10 ^^^[] \OT1/cmr/m/n/10 = 0$ is
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -801,6 +796,26 @@ Underfull \hbox (badness 1019) in paragraph at lines 474--479
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 480--489
+[]\OT1/cmr/m/n/10 As described in the offi-cial CarSim$[]$
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 480--489
+\OT1/cmr/m/n/10 the SWD pro-ce-dure and is assessed through
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 480--489
+\OT1/cmr/m/n/10 any ded-i-cated roll-control chan-nel; there-fore,
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 480--489
+\OT1/cmr/m/n/10 this base-line is inter-preted here as an ESC-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -809,21 +824,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 480--489
-[]\OT1/cmr/m/n/10 As described in the offi-cial CarSim$[]$
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 480--489
-\OT1/cmr/m/n/10 the sine-with-dwell pro-ce-dure and is assessed
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 480--489
-\OT1/cmr/m/n/10 ESC-oriented lateral-stability con-troller rather
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -869,7 +869,7 @@ Underfull \hbox (badness 3428) in paragraph at lines 597--601
 \OT1/cmr/m/n/10 For dig-i-tal imple-men-ta-tion, the inte-grals in
  []
 
-<MuC mio.png, id=303, 770.88pt x 578.16pt>
+<MuC mio.png, id=301, 770.88pt x 578.16pt>
 File: MuC mio.png Graphic file (type png)
 <use MuC mio.png>
 Package pdftex.def Info: MuC mio.png  used on input line 646.
@@ -886,7 +886,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-<MFC_Blocos.png, id=324, 723.6636pt x 283.2984pt>
+<MFC_Blocos.png, id=322, 723.6636pt x 283.2984pt>
 File: MFC_Blocos.png Graphic file (type png)
 <use MFC_Blocos.png>
 Package pdftex.def Info: MFC_Blocos.png  used on input line 674.
@@ -925,7 +925,7 @@ Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=SWD_original-eps-converted-to.pdf SWD_original.eps>
 (epstopdf)             \includegraphics on input line 764.
 Package epstopdf Info: Output file is already uptodate.
-<SWD_original-eps-converted-to.pdf, id=354, 554.07pt x 303.1325pt>
+<SWD_original-eps-converted-to.pdf, id=352, 554.07pt x 303.1325pt>
 File: SWD_original-eps-converted-to.pdf Graphic file (type pdf)
 <use SWD_original-eps-converted-to.pdf>
 Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 764.
@@ -952,6 +952,26 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 793.
 
+<new_figs/beta_7.png, id=357, 690.4194pt x 466.3824pt>
+File: new_figs/beta_7.png Graphic file (type png)
+<use new_figs/beta_7.png>
+Package pdftex.def Info: new_figs/beta_7.png  used on input line 807.
+(pdftex.def)             Requested size: 182.09485pt x 123.0072pt.
+<new_figs/AVz_7.png, id=358, 691.383pt x 465.4188pt>
+File: new_figs/AVz_7.png Graphic file (type png)
+<use new_figs/AVz_7.png>
+Package pdftex.def Info: new_figs/AVz_7.png  used on input line 813.
+(pdftex.def)             Requested size: 182.09485pt x 122.5755pt.
+<new_figs/Roll_7.png, id=359, 690.4194pt x 465.9006pt>
+File: new_figs/Roll_7.png Graphic file (type png)
+<use new_figs/Roll_7.png>
+Package pdftex.def Info: new_figs/Roll_7.png  used on input line 819.
+(pdftex.def)             Requested size: 182.09485pt x 122.88013pt.
+<new_figs/AVx_7.png, id=360, 703.428pt x 465.4188pt>
+File: new_figs/AVx_7.png Graphic file (type png)
+<use new_figs/AVx_7.png>
+Package pdftex.def Info: new_figs/AVx_7.png  used on input line 825.
+(pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -961,27 +981,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9 <./MFC_Blocos.png> <./SWD_original-eps-converted-to.pdf>]
-<new_figs/beta_7.png, id=373, 690.4194pt x 466.3824pt>
-File: new_figs/beta_7.png Graphic file (type png)
-<use new_figs/beta_7.png>
-Package pdftex.def Info: new_figs/beta_7.png  used on input line 807.
-(pdftex.def)             Requested size: 182.09485pt x 123.0072pt.
-<new_figs/AVz_7.png, id=374, 691.383pt x 465.4188pt>
-File: new_figs/AVz_7.png Graphic file (type png)
-<use new_figs/AVz_7.png>
-Package pdftex.def Info: new_figs/AVz_7.png  used on input line 813.
-(pdftex.def)             Requested size: 182.09485pt x 122.5755pt.
-<new_figs/Roll_7.png, id=375, 690.4194pt x 465.9006pt>
-File: new_figs/Roll_7.png Graphic file (type png)
-<use new_figs/Roll_7.png>
-Package pdftex.def Info: new_figs/Roll_7.png  used on input line 819.
-(pdftex.def)             Requested size: 182.09485pt x 122.88013pt.
-<new_figs/AVx_7.png, id=376, 703.428pt x 465.4188pt>
-File: new_figs/AVx_7.png Graphic file (type png)
-<use new_figs/AVx_7.png>
-Package pdftex.def Info: new_figs/AVx_7.png  used on input line 825.
-(pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 863.
@@ -994,22 +993,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 863.
 
-<new_figs/beta_5.png, id=381, 685.1196pt x 465.9006pt>
+<new_figs/beta_5.png, id=379, 685.1196pt x 465.9006pt>
 File: new_figs/beta_5.png Graphic file (type png)
 <use new_figs/beta_5.png>
 Package pdftex.def Info: new_figs/beta_5.png  used on input line 873.
 (pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
-<new_figs/AVz_5.png, id=382, 679.8198pt x 465.9006pt>
+<new_figs/AVz_5.png, id=380, 679.8198pt x 465.9006pt>
 File: new_figs/AVz_5.png Graphic file (type png)
 <use new_figs/AVz_5.png>
 Package pdftex.def Info: new_figs/AVz_5.png  used on input line 879.
 (pdftex.def)             Requested size: 182.09485pt x 124.79247pt.
-<new_figs/Roll_5.png, id=383, 685.1196pt x 465.9006pt>
+<new_figs/Roll_5.png, id=381, 685.1196pt x 465.9006pt>
 File: new_figs/Roll_5.png Graphic file (type png)
 <use new_figs/Roll_5.png>
 Package pdftex.def Info: new_figs/Roll_5.png  used on input line 885.
 (pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
-<new_figs/AVx_5.png, id=384, 693.792pt x 466.3824pt>
+<new_figs/AVx_5.png, id=382, 693.792pt x 466.3824pt>
 File: new_figs/AVx_5.png Graphic file (type png)
 <use new_figs/AVx_5.png>
 Package pdftex.def Info: new_figs/AVx_5.png  used on input line 891.
@@ -1026,22 +1025,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 929.
 
-<new_figs/beta_3.png, id=389, 698.61pt x 466.3824pt>
+<new_figs/beta_3.png, id=387, 698.61pt x 466.3824pt>
 File: new_figs/beta_3.png Graphic file (type png)
 <use new_figs/beta_3.png>
 Package pdftex.def Info: new_figs/beta_3.png  used on input line 937.
 (pdftex.def)             Requested size: 182.09485pt x 121.56256pt.
-<new_figs/AVz_3.png, id=390, 699.5736pt x 465.9006pt>
+<new_figs/AVz_3.png, id=388, 699.5736pt x 465.9006pt>
 File: new_figs/AVz_3.png Graphic file (type png)
 <use new_figs/AVz_3.png>
 Package pdftex.def Info: new_figs/AVz_3.png  used on input line 943.
 (pdftex.def)             Requested size: 182.09485pt x 121.26636pt.
-<new_figs/Roll_3.png, id=391, 693.792pt x 465.4188pt>
+<new_figs/Roll_3.png, id=389, 693.792pt x 465.4188pt>
 File: new_figs/Roll_3.png Graphic file (type png)
 <use new_figs/Roll_3.png>
 Package pdftex.def Info: new_figs/Roll_3.png  used on input line 949.
 (pdftex.def)             Requested size: 182.09485pt x 122.1565pt.
-<new_figs/AVx_3.png, id=392, 703.428pt x 465.4188pt>
+<new_figs/AVx_3.png, id=390, 703.428pt x 465.4188pt>
 File: new_figs/AVx_3.png Graphic file (type png)
 <use new_figs/AVx_3.png>
 Package pdftex.def Info: new_figs/AVx_3.png  used on input line 955.
@@ -1251,15 +1250,15 @@ Package rerunfilecheck Info: File `sn-article.out' has not changed.
 Here is how much of TeX's memory you used:
  16083 strings out of 467867
  252055 string characters out of 5418819
- 711327 words of memory out of 5000000
+ 711315 words of memory out of 5000000
  44605 multiletter control sequences out of 15000+600000
  652243 words of font info for 140 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  90i,13n,117p,1159b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0500.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (16 pages, 2333508 bytes).
+Output written on sn-article.pdf (16 pages, 2333193 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
+ 590 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
