@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sn-article"] 1775484049.28488 "sn-article.aux" "sn-article.bbl" "sn-article" 1775484051.00737 0
+["bibtex sn-article"] 1775504256.40564 "sn-article.aux" "sn-article.bbl" "sn-article" 1775504276.28151 0
   "./sn-bibliography.bib" 1775478759 25799 35bcf0ba08b0d7562e643fa8d0fb0e97 ""
   "./sn-chicago.bst" 1773865822 42206 c63937dde0e51cb67319b12bd767934b ""
-  "sn-article.aux" 1775484050 14133 c75fa2c2addbd272c9f53864014386e1 "pdflatex"
+  "sn-article.aux" 1775504275 14133 c75fa2c2addbd272c9f53864014386e1 "pdflatex"
   (generated)
   "sn-article.bbl"
   "sn-article.blg"
   (rewritten before read)
-["pdflatex"] 1775484049.48416 "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1775484051.00777 0
+["pdflatex"] 1775504274.73412 "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" "sn-article.pdf" "sn-article" 1775504276.28189 0
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775480194 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0600.pk" 1775480201 7284 3022927893697ffa97be598eb4a3fec5 ""
   "C:/Users/POLI/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0700.pk" 1775480200 8268 833f579e06c4956b4b27b2b60d0d70a4 ""
@@ -170,17 +170,17 @@
   "beta_03.eps" 1773865822 50589 b702f84302ca81190b95418299285ec9 ""
   "beta_05.eps" 1773865822 58194 01bdbc11bbd73168b3e7748f0dcab5a9 ""
   "beta_07.eps" 1773865822 57399 fbed870cbb930dc0e0344ecad6271050 ""
-  "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" 1775484047 69409 4a82d7f87effa404485a69b29c0d2473 ""
+  "c:/Users/POLI/Desktop/Carlos/JCAE_Articulo/MFC_JCAE/sn-article.tex" 1775504274 69409 4a82d7f87effa404485a69b29c0d2473 ""
   "roll_03.eps" 1773865822 56895 1118b55657160bc208ca477388adcb17 ""
   "roll_05.eps" 1773865822 70111 3753d27a764e26fcecae7a445d3979ca ""
   "roll_07.eps" 1773865822 54525 01476d55aa843f2c057e0b11c97875fe ""
   "roll_rate_03.eps" 1773865822 50971 5e5603e6c88942f2db69bc8a90eee842 ""
   "roll_rate_05.eps" 1773865822 68318 f0303cb9e3c7e667a81b257e94de0e74 ""
   "roll_rate_07.eps" 1773865822 62451 c03722380eadeb754354cd9ca5a46687 ""
-  "sn-article.aux" 1775484050 14133 c75fa2c2addbd272c9f53864014386e1 "pdflatex"
-  "sn-article.bbl" 1775484049 10770 9311635f5e6826fc9ce4ed0198e30269 "bibtex sn-article"
-  "sn-article.out" 1775484050 6397 f186ae726ec3a088af4c549fcd9df298 "pdflatex"
-  "sn-article.tex" 1775484047 69409 4a82d7f87effa404485a69b29c0d2473 ""
+  "sn-article.aux" 1775504275 14133 c75fa2c2addbd272c9f53864014386e1 "pdflatex"
+  "sn-article.bbl" 1775504256 10770 9311635f5e6826fc9ce4ed0198e30269 "bibtex sn-article"
+  "sn-article.out" 1775504275 6397 f186ae726ec3a088af4c549fcd9df298 "pdflatex"
+  "sn-article.tex" 1775504274 69409 4a82d7f87effa404485a69b29c0d2473 ""
   "sn-jnl.cls" 1773865822 57122 d7cf5cb282c5c6c90059534004dcdf13 ""
   "yaw_rate_03.eps" 1773865822 68461 5eba53744a62818dbc55761dcd6ea1fe ""
   "yaw_rate_05.eps" 1773865822 86760 73c168c6a248bc7a36a95f310e87bb51 ""
