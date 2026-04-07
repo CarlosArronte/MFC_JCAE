@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -682,6 +682,23 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.51686> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.51686> not available
 (Font)              size <5> substituted on input line 160.
 
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 160.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 160.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.015> not available
+(Font)              size <5> substituted on input line 160.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 160.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
+(Font)              size <5> substituted on input line 160.
+
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 160.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -784,6 +801,21 @@ Underfull \hbox (badness 1019) in paragraph at lines 474--479
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 480--489
+[]\OT1/cmr/m/n/10 As described in the offi-cial CarSim$[]$
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 480--489
+\OT1/cmr/m/n/10 the sine-with-dwell pro-ce-dure and is assessed
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 480--489
+\OT1/cmr/m/n/10 ESC-oriented lateral-stability con-troller rather
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -792,21 +824,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5]
-Underfull \hbox (badness 2103) in paragraph at lines 480--489
-\OT1/cmr/m/n/10 appli-ca-tion exam-ple, this built-in base-line is
- []
-
-
-Underfull \hbox (badness 1292) in paragraph at lines 480--489
-\OT1/cmr/m/n/10 intended for ESC eval-u-a-tion under the sine-
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 480--489
-\OT1/cmr/m/n/10 with-dwell pro-ce-dure and is assessed through
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -852,7 +869,7 @@ Underfull \hbox (badness 3428) in paragraph at lines 597--601
 \OT1/cmr/m/n/10 For dig-i-tal imple-men-ta-tion, the inte-grals in
  []
 
-<MuC mio.png, id=302, 770.88pt x 578.16pt>
+<MuC mio.png, id=303, 770.88pt x 578.16pt>
 File: MuC mio.png Graphic file (type png)
 <use MuC mio.png>
 Package pdftex.def Info: MuC mio.png  used on input line 646.
@@ -869,7 +886,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-<MFC_Blocos.png, id=323, 723.6636pt x 283.2984pt>
+<MFC_Blocos.png, id=324, 723.6636pt x 283.2984pt>
 File: MFC_Blocos.png Graphic file (type png)
 <use MFC_Blocos.png>
 Package pdftex.def Info: MFC_Blocos.png  used on input line 674.
@@ -878,7 +895,6 @@ Package pdftex.def Info: MFC_Blocos.png  used on input line 674.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 738.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.015> not available
 (Font)              size <5> substituted on input line 738.
@@ -889,10 +905,6 @@ LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.015> not available
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 738.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
 (Font)              size <5> substituted on input line 738.
 
 
@@ -918,32 +930,32 @@ Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=SWD_original-eps-converted-to.pdf SWD_original.eps>
 (epstopdf)             \includegraphics on input line 764.
 Package epstopdf Info: Output file is already uptodate.
-<SWD_original-eps-converted-to.pdf, id=353, 554.07pt x 303.1325pt>
+<SWD_original-eps-converted-to.pdf, id=354, 554.07pt x 303.1325pt>
 File: SWD_original-eps-converted-to.pdf Graphic file (type pdf)
 <use SWD_original-eps-converted-to.pdf>
 Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 764.
 (pdftex.def)             Requested size: 216.24094pt x 118.30446pt.
 
-Underfull \hbox (badness 2103) in paragraph at lines 776--784
+Underfull \hbox (badness 2103) in paragraph at lines 776--781
 \OT1/cmr/m/n/10 com-pare the open-loop vehi-cle response, the
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 776--784
+Underfull \hbox (badness 1033) in paragraph at lines 776--781
 \OT1/cmr/m/n/10 CarSim$[]$ ESC con-troller, the fixed-parameter
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 795.
+(hyperref)                removing `math shift' on input line 793.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 795.
+(hyperref)                removing `\mu' on input line 793.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 795.
+(hyperref)                removing `math shift' on input line 793.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -954,259 +966,145 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9 <./MFC_Blocos.png> <./SWD_original-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <beta_07.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 57399 bytes
-(epstopdf)             Output file: <beta_07-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 57487 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=beta_07-eps-converted-to.pdf beta_07.eps>
-(epstopdf)             \includegraphics on input line 809.
-Package epstopdf Info: Output file is already uptodate.
-<beta_07-eps-converted-to.pdf, id=372, 421.575pt x 224.84pt>
-File: beta_07-eps-converted-to.pdf Graphic file (type pdf)
-<use beta_07-eps-converted-to.pdf>
-Package pdftex.def Info: beta_07-eps-converted-to.pdf  used on input line 809.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <yaw_rate_07.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 84436 bytes
-(epstopdf)             Output file: <yaw_rate_07-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 88624 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_07-eps-converted-to.pdf yaw_rate_07.eps>
-(epstopdf)             \includegraphics on input line 815.
-Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_07-eps-converted-to.pdf, id=373, 421.575pt x 224.84pt>
-File: yaw_rate_07-eps-converted-to.pdf Graphic file (type pdf)
-<use yaw_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_07-eps-converted-to.pdf  used on input line 815.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <roll_07.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 54525 bytes
-(epstopdf)             Output file: <roll_07-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 54380 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_07-eps-converted-to.pdf roll_07.eps>
-(epstopdf)             \includegraphics on input line 821.
-Package epstopdf Info: Output file is already uptodate.
-<roll_07-eps-converted-to.pdf, id=374, 421.575pt x 225.84375pt>
-File: roll_07-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_07-eps-converted-to.pdf  used on input line 821.
-(pdftex.def)             Requested size: 182.09485pt x 97.552pt.
-Package epstopdf Info: Source file: <roll_rate_07.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 62451 bytes
-(epstopdf)             Output file: <roll_rate_07-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 63035 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_07-eps-converted-to.pdf roll_rate_07.eps>
-(epstopdf)             \includegraphics on input line 827.
-Package epstopdf Info: Output file is already uptodate.
-<roll_rate_07-eps-converted-to.pdf, id=375, 421.575pt x 225.84375pt>
-File: roll_rate_07-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_rate_07-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_07-eps-converted-to.pdf  used on input line 827.
-(pdftex.def)             Requested size: 182.09485pt x 97.552pt.
+<new_figs/beta_7.png, id=373, 690.4194pt x 466.3824pt>
+File: new_figs/beta_7.png Graphic file (type png)
+<use new_figs/beta_7.png>
+Package pdftex.def Info: new_figs/beta_7.png  used on input line 807.
+(pdftex.def)             Requested size: 182.09485pt x 123.0072pt.
+<new_figs/AVz_7.png, id=374, 691.383pt x 465.4188pt>
+File: new_figs/AVz_7.png Graphic file (type png)
+<use new_figs/AVz_7.png>
+Package pdftex.def Info: new_figs/AVz_7.png  used on input line 813.
+(pdftex.def)             Requested size: 182.09485pt x 122.5755pt.
+<new_figs/Roll_7.png, id=375, 690.4194pt x 465.9006pt>
+File: new_figs/Roll_7.png Graphic file (type png)
+<use new_figs/Roll_7.png>
+Package pdftex.def Info: new_figs/Roll_7.png  used on input line 819.
+(pdftex.def)             Requested size: 182.09485pt x 122.88013pt.
+<new_figs/AVx_7.png, id=376, 703.428pt x 465.4188pt>
+File: new_figs/AVx_7.png Graphic file (type png)
+<use new_figs/AVx_7.png>
+Package pdftex.def Info: new_figs/AVx_7.png  used on input line 825.
+(pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 865.
+(hyperref)                removing `math shift' on input line 863.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 865.
+(hyperref)                removing `\mu' on input line 863.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 865.
+(hyperref)                removing `math shift' on input line 863.
 
-Package epstopdf Info: Source file: <beta_05.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 58194 bytes
-(epstopdf)             Output file: <beta_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 57738 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=beta_05-eps-converted-to.pdf beta_05.eps>
-(epstopdf)             \includegraphics on input line 875.
-Package epstopdf Info: Output file is already uptodate.
-<beta_05-eps-converted-to.pdf, id=380, 421.575pt x 225.84375pt>
-File: beta_05-eps-converted-to.pdf Graphic file (type pdf)
-<use beta_05-eps-converted-to.pdf>
-Package pdftex.def Info: beta_05-eps-converted-to.pdf  used on input line 875.
-(pdftex.def)             Requested size: 182.09485pt x 97.552pt.
-Package epstopdf Info: Source file: <yaw_rate_05.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 86760 bytes
-(epstopdf)             Output file: <yaw_rate_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 89442 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_05-eps-converted-to.pdf yaw_rate_05.eps>
-(epstopdf)             \includegraphics on input line 881.
-Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_05-eps-converted-to.pdf, id=381, 421.575pt x 224.84pt>
-File: yaw_rate_05-eps-converted-to.pdf Graphic file (type pdf)
-<use yaw_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_05-eps-converted-to.pdf  used on input line 881.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <roll_05.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 70111 bytes
-(epstopdf)             Output file: <roll_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 69867 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_05-eps-converted-to.pdf roll_05.eps>
-(epstopdf)             \includegraphics on input line 887.
-Package epstopdf Info: Output file is already uptodate.
-<roll_05-eps-converted-to.pdf, id=382, 421.575pt x 224.84pt>
-File: roll_05-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_05-eps-converted-to.pdf  used on input line 887.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <roll_rate_05.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 68318 bytes
-(epstopdf)             Output file: <roll_rate_05-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 68067 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_05-eps-converted-to.pdf roll_rate_05.eps>
-(epstopdf)             \includegraphics on input line 893.
-Package epstopdf Info: Output file is already uptodate.
-<roll_rate_05-eps-converted-to.pdf, id=383, 421.575pt x 226.8475pt>
-File: roll_rate_05-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_rate_05-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_05-eps-converted-to.pdf  used on input line 893.
-(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
+<new_figs/beta_5.png, id=381, 685.1196pt x 465.9006pt>
+File: new_figs/beta_5.png Graphic file (type png)
+<use new_figs/beta_5.png>
+Package pdftex.def Info: new_figs/beta_5.png  used on input line 873.
+(pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
+<new_figs/AVz_5.png, id=382, 679.8198pt x 465.9006pt>
+File: new_figs/AVz_5.png Graphic file (type png)
+<use new_figs/AVz_5.png>
+Package pdftex.def Info: new_figs/AVz_5.png  used on input line 879.
+(pdftex.def)             Requested size: 182.09485pt x 124.79247pt.
+<new_figs/Roll_5.png, id=383, 685.1196pt x 465.9006pt>
+File: new_figs/Roll_5.png Graphic file (type png)
+<use new_figs/Roll_5.png>
+Package pdftex.def Info: new_figs/Roll_5.png  used on input line 885.
+(pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
+<new_figs/AVx_5.png, id=384, 693.792pt x 466.3824pt>
+File: new_figs/AVx_5.png Graphic file (type png)
+<use new_figs/AVx_5.png>
+Package pdftex.def Info: new_figs/AVx_5.png  used on input line 891.
+(pdftex.def)             Requested size: 182.09485pt x 122.40941pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 931.
+(hyperref)                removing `math shift' on input line 929.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 931.
+(hyperref)                removing `\mu' on input line 929.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 931.
+(hyperref)                removing `math shift' on input line 929.
 
-Package epstopdf Info: Source file: <beta_03.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 50589 bytes
-(epstopdf)             Output file: <beta_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 49424 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=beta_03-eps-converted-to.pdf beta_03.eps>
-(epstopdf)             \includegraphics on input line 939.
-Package epstopdf Info: Output file is already uptodate.
-<beta_03-eps-converted-to.pdf, id=388, 421.575pt x 224.84pt>
-File: beta_03-eps-converted-to.pdf Graphic file (type pdf)
-<use beta_03-eps-converted-to.pdf>
-Package pdftex.def Info: beta_03-eps-converted-to.pdf  used on input line 939.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
-Package epstopdf Info: Source file: <yaw_rate_03.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 68461 bytes
-(epstopdf)             Output file: <yaw_rate_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 66859 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=yaw_rate_03-eps-converted-to.pdf yaw_rate_03.eps>
-(epstopdf)             \includegraphics on input line 945.
-Package epstopdf Info: Output file is already uptodate.
-<yaw_rate_03-eps-converted-to.pdf, id=389, 421.575pt x 221.82875pt>
-File: yaw_rate_03-eps-converted-to.pdf Graphic file (type pdf)
-<use yaw_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: yaw_rate_03-eps-converted-to.pdf  used on input line 945.
-(pdftex.def)             Requested size: 182.09485pt x 95.81775pt.
-Package epstopdf Info: Source file: <roll_03.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 56895 bytes
-(epstopdf)             Output file: <roll_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 54634 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_03-eps-converted-to.pdf roll_03.eps>
-(epstopdf)             \includegraphics on input line 951.
-Package epstopdf Info: Output file is already uptodate.
-<roll_03-eps-converted-to.pdf, id=390, 421.575pt x 226.8475pt>
-File: roll_03-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_03-eps-converted-to.pdf  used on input line 951.
-(pdftex.def)             Requested size: 182.09485pt x 97.98558pt.
-Package epstopdf Info: Source file: <roll_rate_03.eps>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 50971 bytes
-(epstopdf)             Output file: <roll_rate_03-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-03-18 17:30:22
-(epstopdf)                    size: 49246 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=roll_rate_03-eps-converted-to.pdf roll_rate_03.eps>
-(epstopdf)             \includegraphics on input line 957.
-Package epstopdf Info: Output file is already uptodate.
-<roll_rate_03-eps-converted-to.pdf, id=391, 421.575pt x 224.84pt>
-File: roll_rate_03-eps-converted-to.pdf Graphic file (type pdf)
-<use roll_rate_03-eps-converted-to.pdf>
-Package pdftex.def Info: roll_rate_03-eps-converted-to.pdf  used on input line 957.
-(pdftex.def)             Requested size: 182.09485pt x 97.11845pt.
+<new_figs/beta_3.png, id=389, 698.61pt x 466.3824pt>
+File: new_figs/beta_3.png Graphic file (type png)
+<use new_figs/beta_3.png>
+Package pdftex.def Info: new_figs/beta_3.png  used on input line 937.
+(pdftex.def)             Requested size: 182.09485pt x 121.56256pt.
+<new_figs/AVz_3.png, id=390, 699.5736pt x 465.9006pt>
+File: new_figs/AVz_3.png Graphic file (type png)
+<use new_figs/AVz_3.png>
+Package pdftex.def Info: new_figs/AVz_3.png  used on input line 943.
+(pdftex.def)             Requested size: 182.09485pt x 121.26636pt.
+<new_figs/Roll_3.png, id=391, 693.792pt x 465.4188pt>
+File: new_figs/Roll_3.png Graphic file (type png)
+<use new_figs/Roll_3.png>
+Package pdftex.def Info: new_figs/Roll_3.png  used on input line 949.
+(pdftex.def)             Requested size: 182.09485pt x 122.1565pt.
+<new_figs/AVx_3.png, id=392, 703.428pt x 465.4188pt>
+File: new_figs/AVx_3.png Graphic file (type png)
+<use new_figs/AVx_3.png>
+Package pdftex.def Info: new_figs/AVx_3.png  used on input line 955.
+(pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
 
-LaTeX Warning: Reference `tab3' on page 10 undefined on input line 996.
+LaTeX Warning: Reference `tab3' on page 10 undefined on input line 994.
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 998--999
+Underfull \hbox (badness 1354) in paragraph at lines 996--997
 []\OT1/cmr/bx/n/10 Side-slip angle: \OT1/cmr/m/n/10 Both con-trollers demon-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[10 <./beta_07-eps-converted-to.pdf> <./yaw_rate_07-eps-converted-to.pdf> <./roll_07-eps-converted-to.pdf> <./roll_rate_07-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[10 <./new_figs/beta_7.png (PNG copy)> <./new_figs/AVz_7.png (PNG copy)> <./new_figs/Roll_7.png (PNG copy)> <./new_figs/AVx_7.png (PNG copy)>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[11 <./beta_05-eps-converted-to.pdf> <./yaw_rate_05-eps-converted-to.pdf> <./roll_05-eps-converted-to.pdf> <./roll_rate_05-eps-converted-to.pdf> <./beta_03-eps-converted-to.pdf> <./yaw_rate_03-eps-converted-to.pdf> <./roll_03-eps-converted-to.pdf> <./roll_rate_03-eps-converted-to.pdf>]
-Underfull \hbox (badness 2951) in paragraph at lines 1337--1338
+[11 <./new_figs/beta_5.png (PNG copy)> <./new_figs/AVz_5.png (PNG copy)> <./new_figs/Roll_5.png (PNG copy)> <./new_figs/AVx_5.png (PNG copy)> <./new_figs/beta_3.png (PNG copy)> <./new_figs/AVz_3.png (PNG copy)> <./new_figs/Roll_3.png (PNG copy)> <./new_figs/AVx_3.png (PNG copy)>]
+Underfull \hbox (badness 2951) in paragraph at lines 1335--1336
 \OT1/cmr/m/n/10 This study pro-poses a novel Uni-fied Chas-
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 1337--1338
+Underfull \hbox (badness 2035) in paragraph at lines 1335--1336
 \OT1/cmr/m/n/10 sis Con-trol (UCC) sys-tem based on Model-
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 1337--1338
+Underfull \hbox (badness 1132) in paragraph at lines 1335--1336
 \OT1/cmr/m/n/10 u-late vehi-cle lat-eral (side-slip angle and yaw
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 1337--1338
+Underfull \hbox (badness 1132) in paragraph at lines 1335--1336
 \OT1/cmr/m/n/10 rate) and ver-ti-cal (roll angle) dynam-ics dur-
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 1337--1338
+Underfull \hbox (badness 1184) in paragraph at lines 1335--1336
 \OT1/cmr/m/n/10 nature of tra-di-tional model-based approaches.
  []
 
 
 Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1364.
+(hyperref)                than one, level fixed on input line 1362.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1365
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1363
  []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 1364--1365
+Underfull \hbox (badness 3189) in paragraph at lines 1362--1363
 \OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
  []
 
@@ -1234,11 +1132,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
-Underfull \hbox (badness 1168) in paragraph at lines 52--57
-\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1247,6 +1140,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [14]
+Underfull \hbox (badness 1168) in paragraph at lines 52--57
+\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 79--83
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1356,17 +1254,17 @@ Package rerunfilecheck Info: File `sn-article.out' has not changed.
 (rerunfilecheck)             Checksum: F186AE726EC3A088AF4C549FCD9DF298;6397.
  ) 
 Here is how much of TeX's memory you used:
- 16072 strings out of 467867
- 252530 string characters out of 5418819
+ 16083 strings out of 467867
+ 252055 string characters out of 5418819
  711327 words of memory out of 5000000
- 44595 multiletter control sequences out of 15000+600000
- 651904 words of font info for 139 fonts, out of 8000000 for 9000
+ 44605 multiletter control sequences out of 15000+600000
+ 652243 words of font info for 140 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,13n,117p,1171b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (16 pages, 1584693 bytes).
+ 90i,13n,117p,1171b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0500.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on sn-article.pdf (16 pages, 2333576 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
+ 592 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
