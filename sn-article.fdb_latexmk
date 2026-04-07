@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex sn-article"] 1775146321 "sn-article.aux" "sn-article.bbl" "sn-article" 1775522547
+["bibtex sn-article"] 1775146321 "sn-article.aux" "sn-article.bbl" "sn-article" 1775522640
   "./sn-chicago.bst" 1774040725 40398 c63937dde0e51cb67319b12bd767934b ""
   "sn-article.aux" 1775146805 14926 8e20b190fb74e91b4ff1fff2b0f99f7e "pdflatex"
   "sn-bibliography.bib" 1775143904 25049 35bcf0ba08b0d7562e643fa8d0fb0e97 ""
   (generated)
-  "sn-article.bbl"
   "sn-article.blg"
-["pdflatex"] 1775146803 "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.tex" "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.pdf" "sn-article" 1775522547
+  "sn-article.bbl"
+["pdflatex"] 1775146803 "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.tex" "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.pdf" "sn-article" 1775522640
   "/etc/texmf/web2c/texmf.cnf" 1775057929 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.600pk" 1775058092 7260 fc3b047d4dbbf9bd72ef5b5b320a8d99 ""
   "/home/carlos/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0700.600pk" 1775058092 8244 4d0734411279ea575651344181648e5b ""
@@ -191,9 +191,9 @@
   "yaw_rate_05.eps" 1774040725 86760 f62bbd0d63e0a0ad374c790f16f75901 ""
   "yaw_rate_07.eps" 1774040725 84436 ca223a58224605cf521885d4ccd78703 ""
   (generated)
-  "sn-article.out"
-  "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.log"
   "sn-article.aux"
+  "sn-article.out"
+  "sn-article.pdf"
   "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.pdf"
   "sn-article.log"
-  "sn-article.pdf"
+  "/home/carlos/Doctorado/Papers/ESC + Roll/Paper/MFC_JCAE/sn-article.log"
