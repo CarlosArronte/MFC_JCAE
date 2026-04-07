@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -801,6 +801,14 @@ Underfull \hbox (badness 1019) in paragraph at lines 474--479
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 480--489
 []\OT1/cmr/m/n/10 As described in the offi-cial CarSim$[]$
  []
@@ -816,14 +824,6 @@ Underfull \hbox (badness 1796) in paragraph at lines 480--489
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -906,11 +906,6 @@ LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.015> not available
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
 (Font)              size <5> substituted on input line 738.
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 759--760
-\OT1/cmr/m/n/10 i-ments focus on the com-par-i-son between the
- []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1132,6 +1127,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
+Underfull \hbox (badness 1168) in paragraph at lines 52--57
+\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1140,11 +1140,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [14]
-Underfull \hbox (badness 1168) in paragraph at lines 52--57
-\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 79--83
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1260,9 +1255,9 @@ Here is how much of TeX's memory you used:
  44605 multiletter control sequences out of 15000+600000
  652243 words of font info for 140 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,13n,117p,1171b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,117p,1159b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0500.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (16 pages, 2333576 bytes).
+Output written on sn-article.pdf (16 pages, 2333508 bytes).
 PDF statistics:
  592 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
