@@ -135,7 +135,7 @@
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{This paper investigates a model-free unified chassis controller (UCC) for the simultaneous regulation of vehicle side-slip angle, yaw rate, and roll angle during abrupt maneuvers. The proposed strategy combines iPD-based model-free controllers with a control-allocation architecture and is evaluated in a MATLAB/Simulink\textsuperscript{\textregistered}-CarSim\textsuperscript{\textregistered} co-simulation environment under a sine-with-dwell maneuver for three road-friction conditions. The comparison includes the open-loop vehicle, the built-in CarSim\textsuperscript{\textregistered} ESC baseline, a fixed-parameter 2PID+fuzzy controller, and a gain-scheduled LQR benchmark. The results show that no benchmark minimizes every nominal metric at all friction levels. However, the proposed controller provides the most consistent robustness across the full range of conditions. In particular, it is the only strategy that completes the low-friction case while preserving bounded and meaningful lateral and roll responses, whereas the other baselines either lose practical stability before the end of the maneuver or exhibit unacceptable state excursions. The control-effort analysis further shows that this robustness is achieved through more active brake modulation while keeping the anti-roll torque within comparatively moderate bounds. These findings indicate that the proposed MFC-based UCC offers a favorable compromise between regulation quality, practical closed-loop stability, and actuator demand under friction variations.}
+\abstract{This paper investigates a model-free unified chassis controller (UCC) for simultaneous regulation of vehicle side-slip angle, yaw rate, and roll angle during abrupt maneuvers. The proposed strategy combines iPD-based model-free controllers with a control-allocation architecture and is evaluated in a MATLAB/Simulink\textsuperscript{\textregistered}-CarSim\textsuperscript{\textregistered} co-simulation environment under a sine-with-dwell maneuver for three road-friction conditions. The comparison includes the open-loop vehicle, the built-in CarSim\textsuperscript{\textregistered} ESC baseline, a fixed-parameter 2PID+fuzzy controller, and a gain-scheduled LQR benchmark. No benchmark minimizes every nominal metric at all friction levels. However, the proposed controller provides the most consistent robustness across conditions. It is the only strategy that completes the low-friction case while keeping lateral and roll responses bounded and meaningful, whereas the other baselines either lose practical stability before the end of the maneuver or exhibit unacceptable state excursions. This robustness is achieved through more active brake modulation while keeping the anti-roll torque within moderate bounds. These findings indicate that the proposed MFC-based UCC offers a favorable compromise between regulation quality, practical closed-loop stability, and actuator demand under friction variations.}
 
 %%================================%%
 %% Sample for structured abstract %%
@@ -163,58 +163,50 @@
 \section{Introduction}\label{intro}
 
 Road traffic accidents remain a major global concern, causing approximately 1.3 million deaths 
-and tens of millions of injuries each year \citep{UN2022}. Many of these incidents are associated 
-with loss of vehicle stability during abrupt maneuvers, tire failures, or adverse road conditions 
-\citep{Friedman2010}. Such situations are typically characterized by excessive side-slip angle and 
-yaw rate, which can lead to oversteer or understeer, as well as increased rollover risk due to 
-significant roll angle variations \citep{Stolle2011,zhan2017yawrate,nguyen2023rollover}. 
-Consequently, side-slip angle, yaw rate, and roll angle have been widely recognized as the key 
-state variables for vehicle stability monitoring and control, serving as the primary feedback 
-signals in active safety systems \citep{Rajamani2012}.
+and tens of millions of injuries each year \citep{UN2022}. Many are associated with loss of 
+vehicle stability during abrupt maneuvers, tire failures, or adverse road conditions 
+\citep{Friedman2010}. Such situations are characterized by excessive side-slip angle and yaw rate, 
+which can lead to oversteer or understeer, and by roll-angle variations that increase rollover risk 
+\citep{Stolle2011,zhan2017yawrate,nguyen2023rollover}. Accordingly, side-slip angle, yaw rate, and 
+roll angle are widely recognized as key variables for vehicle stability monitoring and control 
+\citep{Rajamani2012}.
 
-To address these challenges, modern vehicles incorporate advanced control systems such as Electronic 
+Modern vehicles address these challenges with systems such as Electronic 
 Stability Control (ESC), which improves lateral stability through selective braking and torque 
-modulation \citep{Hac2007}. In parallel, suspension-based systems, including active and semi-active 
-suspensions, are used to regulate vertical dynamics and enhance ride comfort.
-
- Unified Chassis Control 
+modulation \citep{Hac2007}, and suspension-based systems, including active and semi-active 
+suspensions, which regulate vertical dynamics and enhance ride comfort. Unified Chassis Control 
 (UCC) extends these concepts by coordinating multiple subsystems to simultaneously regulate lateral 
-and vertical vehicle dynamics, improving overall stability and safety, particularly under extreme 
-driving conditions \citep{Cho2012}. However, achieving this coordination is non-trivial, as 
-lateral stability enhancement, rollover mitigation, and actuator allocation are inherently competing 
-objectives, requiring careful trade-off management to avoid control conflicts between subsystems 
+and vertical vehicle dynamics, particularly under extreme driving conditions \citep{Cho2012}. This 
+coordination is non-trivial because lateral stability enhancement, rollover mitigation, and 
+actuator allocation are competing objectives that can create control conflicts between subsystems 
 \citep{Falcone2007}.
 
-Most existing UCC strategies rely on model-based control approaches, which can be broadly 
-categorized by their underlying vehicle representation. On one end, simplified formulations 
-such as the bicycle model have been widely adopted within Model Predictive Control (MPC) 
-frameworks, offering computational tractability for real-time path-following and yaw 
-stabilization tasks \citep{Ahmadi2021,Gidlewski2017,Yakub2016}. On the other end, 
-multi-degree-of-freedom formulations have been proposed to capture the coupling between 
-lateral, vertical, and suspension dynamics more faithfully: \citet{Lai2021} developed an 
-18-DOF chassis model that enables high-fidelity simulation of cross-subsystem interactions, 
-while \citet{Chen2021} extended this perspective to electric vehicles by explicitly 
-incorporating wheel vertical vibrations into a UCC architecture.
+Most existing UCC strategies are model-based. Simplified formulations such as the bicycle model 
+have been widely adopted within Model Predictive Control (MPC) frameworks because they offer 
+computational tractability for real-time path-following and yaw stabilization tasks 
+\citep{Ahmadi2021,Gidlewski2017,Yakub2016}. More detailed multi-degree-of-freedom formulations 
+capture the coupling between lateral, vertical, and suspension dynamics more faithfully: 
+\citet{Lai2021} developed an 18-DOF chassis model for high-fidelity cross-subsystem simulation, 
+while \citet{Chen2021} extended this perspective to electric vehicles by incorporating wheel 
+vertical vibrations into a UCC architecture.
 
-Although these high-fidelity representations improve prediction accuracy and allow for 
-a more principled treatment of lateral-vertical coupling, they introduce substantial 
-computational overhead and exhibit strong sensitivity to parametric uncertainty, limiting 
-their portability across varying road conditions and vehicle configurations 
-\citep{Guo2020A,Lew2024Risk-Averse}.
+Although these high-fidelity representations improve prediction accuracy and capture 
+lateral-vertical coupling more explicitly, they also introduce substantial computational overhead 
+and strong sensitivity to parametric uncertainty, limiting their portability across varying road 
+conditions and vehicle configurations \citep{Guo2020A,Lew2024Risk-Averse}.
 
 To mitigate these limitations, several works have introduced uncertainty compensation mechanisms 
 based on data-driven or adaptive techniques. Neural network-based controllers have been widely 
-used to approximate unknown nonlinearities and disturbances in vehicle dynamics, enhancing 
-robustness under varying conditions. Similarly, fuzzy and neuro-fuzzy approaches enable online 
-adaptation of control parameters, while sliding mode control combined with intelligent 
-approximators provides robustness against disturbances and model mismatch 
-\citep{electronics10040510,Guo2021}. More recently, hybrid strategies combining model-based 
-controllers with learning-based compensation terms have demonstrated improved performance in 
-the presence of uncertainties \citep{levine2016end}.
+used to approximate unknown nonlinearities and disturbances in vehicle dynamics. Similarly, fuzzy 
+and neuro-fuzzy approaches enable online adaptation of control parameters, while sliding mode 
+control combined with intelligent approximators provides robustness against disturbances and model 
+mismatch \citep{electronics10040510,Guo2021}. More recently, hybrid strategies combining 
+model-based controllers with learning-based compensation terms have demonstrated improved 
+performance in the presence of uncertainties \citep{levine2016end}.
 
- In this context, model-free control (MFC) has emerged as a structurally simpler alternative that reduces dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines \citep{SanchezMorales2023,Mazzilli2021}. In particular, many comparative studies in this domain rely primarily on simplified fixed-parameter benchmarks, often limited to lateral PID-based ESC schemes, leaving open the question of how MFC compares with more meaningful references such as gain-scheduled controllers and simulator-embedded baseline strategies under consistent evaluation conditions.
+ In this context, model-free control (MFC) has emerged as a structurally simpler alternative with less dependence on an explicit vehicle model; however, its performance within a UCC architecture has only rarely been assessed against representative baselines \citep{SanchezMorales2023,Mazzilli2021}. Many comparative studies in this domain still rely on simplified fixed-parameter benchmarks, often limited to lateral PID-based ESC schemes, leaving open how MFC compares with more meaningful references such as gain-scheduled controllers and simulator-embedded baseline strategies under consistent evaluation conditions.
  
- To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink\textsuperscript{\textregistered}-CarSim\textsuperscript{\textregistered} co-simulation environment under a sine-with-dwell (SWD) maneuver with different road friction coefficients. The main contributions of this work are threefold: first, the design and implementation of an MFC-based UCC architecture for the joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-parameter 2PID+fuzzy controller, a gain-scheduled LQR (GS-LQR), and a CarSim\textsuperscript{\textregistered} built-in baseline controller; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach.
+ To address this gap, this paper proposes a model-free UCC strategy for the simultaneous regulation of side-slip angle, yaw rate, and roll angle, and evaluates it in a MATLAB/Simulink\textsuperscript{\textregistered}-CarSim\textsuperscript{\textregistered} co-simulation environment under a sine-with-dwell (SWD) maneuver with different road friction coefficients. The main contributions are threefold: first, the design and implementation of an MFC-based UCC architecture for joint regulation of lateral and vertical vehicle dynamics without relying on an explicit vehicle model; second, a comparative assessment against representative benchmark controllers, including a fixed-parameter 2PID+fuzzy controller, a gain-scheduled LQR (GS-LQR), and a CarSim\textsuperscript{\textregistered} built-in baseline controller; and third, an analysis of practical closed-loop stability, robustness to friction variation, and control performance limits of the proposed approach.
 
 The remainder of the paper is organized as follows. Section~\ref{sec:problem} formulates the control problem, including the regulated variables, references, actuator constraints, and maneuver evaluation criteria. Section~\ref{sec:bench} presents the benchmark controllers and the comparative framework. Section~\ref{sec:mfc_ucc} describes the proposed MFC-based UCC architecture, including the ultra-local model, estimators, control allocation, and parameter selection. Section~\ref{sec:exper} details the experimental design, Section~\ref{sec2} discusses the simulation results, and Section~\ref{sec:concl} concludes the paper.
 
@@ -227,10 +219,9 @@ The remainder of the paper is organized as follows. Section~\ref{sec:problem} fo
 % -----------------------------------------------------------------------
 \section{Control Problem Formulation}\label{sec:problem}
 
-This section formally defines the control problem addressed in this work. 
-The regulated variables, reference generation strategy, actuator constraints, 
-and maneuver evaluation criteria are described, establishing the framework 
-within which the proposed UCC is designed and assessed.
+This section defines the regulated variables, reference generation strategy, 
+actuator constraints, and maneuver evaluation criteria used to design and 
+assess the proposed UCC.
 
 % -----------------------------------------------------------------------
 \subsection{Vehicle States and Control Objectives}\label{sec:states}
@@ -247,7 +238,13 @@ The side-slip angle is defined as:
     \label{Eq:beta_def}
 \end{equation}
 where $V_y$ and $V_x$ are the lateral and longitudinal vehicle velocities, 
-respectively. In the present co-simulation setup, both $V_x$ and $V_y$ are directly obtained from CarSim\textsuperscript{\textregistered}. Accordingly, $\beta$ is computed from ideal state information available in simulation, rather than being reconstructed from measured signals through an estimation algorithm. This choice is suitable for comparative controller assessment, although it abstracts from the state-estimation problem that would arise in a real-vehicle implementation.
+respectively. In the present co-simulation setup, both are obtained 
+directly from CarSim\textsuperscript{\textregistered}. Accordingly, 
+$\beta$ is computed from ideal state information available in simulation, 
+rather than reconstructed from measured signals through an estimation 
+algorithm. This choice is suitable for comparative controller assessment, 
+although it abstracts from the state-estimation problem that would arise in 
+a real-vehicle implementation.
 
 The reference for $\beta$ is set to zero, reflecting the control objective 
 of minimizing lateral drift. The controller acts only when the side-slip 
@@ -263,7 +260,7 @@ as described in Section~\ref{sec:references}. The roll angle reference is
 always set to zero, as the control objective is to minimize chassis tilt 
 throughout the maneuver.
 
-For the SWD maneuver considered in this study, choosing $\phi_{\mathrm{ref}} = 0$ is appropriate because the main control objective is to minimize body roll and preserve rollover safety margins during a severe transient maneuver, rather than to track a nonzero equilibrium roll angle. From this perspective, a zero roll reference represents the nominal upright posture of the vehicle and allows the controller to directly counteract excessive lateral load transfer.
+For the SWD maneuver considered in this study, choosing $\phi_{\mathrm{ref}} = 0$ is appropriate because the main control objective is to minimize body roll and preserve rollover safety margins during a severe transient maneuver, rather than to track a nonzero equilibrium roll angle. A zero roll reference therefore represents the nominal upright posture of the vehicle and allows the controller to directly counteract excessive lateral load transfer.
 
 
 % -----------------------------------------------------------------------
@@ -286,7 +283,13 @@ $L$ is the vehicle wheelbase, $K_{us}$ is the understeer coefficient,
 $\delta_f$ is the front wheel steering angle, $\mu$ is the road friction 
 coefficient, and $g$ is the gravitational acceleration. The parameters required to compute $G_{\dot{\psi}}$ are taken from \cite{Arronte2023}. The same reference provides the full set of vehicle parameters used in the CarSim\textsuperscript{\textregistered} model considered in this work.
 
-In this study, the road friction coefficient ($\mu$) is imposed as a simulation parameter and kept constant within each test scenario. Therefore, $\mu$ is not estimated online, but prescribed a priori in CarSim\textsuperscript{\textregistered} to define the operating condition under which the controllers are evaluated. This choice is consistent with the main objective of the experiments, namely, to assess controller performance and robustness under different known friction levels.
+In this study, the road friction coefficient ($\mu$) is imposed as a 
+simulation parameter and kept constant within each test scenario. Therefore, 
+$\mu$ is not estimated online, but prescribed a priori in 
+CarSim\textsuperscript{\textregistered} to define the operating condition 
+under which the controllers are evaluated. This choice is consistent with 
+the main objective of the experiments, namely, to assess controller 
+performance and robustness under different known friction levels.
 
 
 % -----------------------------------------------------------------------
@@ -307,11 +310,11 @@ constraints:
     \label{Eq:Mx_sat}
 \end{equation}
 
-The saturation limits were set in accordance with the maximum 
-torque capacity of the anti-lock braking system (ABS) and active anti-roll bar (AARB) subsystems as defined in the 
-CarSim\textsuperscript{\textregistered} SUV model used throughout 
-this work, consistent with the simulation framework established 
-in \citep{arronte2024controle}.
+The saturation limits were set in accordance with the maximum torque 
+capacity of the anti-lock braking system (ABS) and active anti-roll bar 
+(AARB) subsystems defined in the CarSim\textsuperscript{\textregistered} 
+SUV model used throughout this work, consistent with the simulation 
+framework established in \citep{arronte2024controle}.
 
 At the actuation level, $M_z$ is decomposed into individual wheel brake 
 pressure commands by the ABS subsystem, while $M_x$ is translated into 
@@ -323,12 +326,12 @@ in Section~\ref{sec:ucc}.
 \subsection{Maneuver Completion and Failure 
             Criteria}\label{sec:criteria}
 
-The performance of the UCC is evaluated under a SWD
-maneuver, a standardized test used to assess vehicle response to sudden 
-evasive inputs, as specified in FMVSS 126 and UN/ECE Regulation No. 13-H 
-\citep{MSC2012}. A maneuver is considered successfully completed if the 
-vehicle maintains controlled motion throughout the full duration of the 
-steering input without loss of stability.
+The performance of the UCC is evaluated under a SWD maneuver, a 
+standardized test used to assess vehicle response to sudden evasive inputs, 
+as specified in FMVSS 126 and UN/ECE Regulation No. 13-H \citep{MSC2012}. 
+A maneuver is considered successfully completed if the vehicle maintains 
+controlled motion throughout the full duration of the steering input 
+without loss of stability.
 
 In the context of the SWD maneuver, maneuver failure is determined 
 following the criteria established by FMVSS 126 and implemented in 
@@ -360,9 +363,9 @@ UCC, three benchmark controllers are considered. Each controller operates
 within the same UCC architecture described in Section~\ref{sec:ucc}, 
 receives the same input signals, and is subject to the same actuator 
 saturation constraints defined in Section~\ref{sec:actuators}. The 
-benchmarks are selected to represent progressively more capable reference 
-strategies, allowing the comparison to go beyond the fixed-gain baselines 
-that are common in the literature \citep{SanchezMorales2023}.
+benchmarks represent progressively more capable reference strategies, 
+allowing the comparison to go beyond the fixed-gain baselines common in 
+the literature \citep{SanchezMorales2023}.
 
 % ------------------------------------------------------------------------
 \subsection{Fixed-Parameter 2PID+Fuzzy Controller}\label{sec:pid}
@@ -373,7 +376,7 @@ regulated by two independent PID controllers with hysteresis acting on
 the side-slip angle $\beta$ and the yaw rate $\dot{\psi}$. Their outputs 
 are combined into a corrective yaw moment $M_z$, which is implemented by 
 differential braking in the ESC layer. As in the earlier ESC design, the 
-lateral PID branches are only activated when the corresponding regulated 
+lateral PID branches are activated only when the corresponding regulated 
 variables leave prescribed admissible bands, which reduces unnecessary 
 braking effort during mild transients.
 
@@ -389,7 +392,7 @@ Accordingly, this benchmark acts on the same two control moments
 considered in the present UCC framework, namely $M_z$ for lateral 
 stabilization and $M_x$ for roll mitigation. It therefore provides a 
 fixed-parameter reference for the joint lateral-roll regulation problem 
-addressed in this paper, while retaining a comparatively simple and 
+addressed in this paper while retaining a comparatively simple and 
 interpretable control structure.
 
 % ------------------------------------------------------------------------
@@ -469,11 +472,12 @@ corresponding feedback gain is then obtained from:
 \end{equation*} 
 
  
-This controller represents a more capable baseline than the fixed-parameter 2PID+fuzzy controller,
-as it exploits a linearized vehicle model and schedules the state-feedback
-gains as a function of the longitudinal speed $V_x$. Its inclusion allows
-the comparison to contrast the MFC's online disturbance estimation against
-a structured model-based benchmark with speed-dependent state feedback.
+This controller represents a more capable baseline than the fixed-parameter 
+2PID+fuzzy controller, as it exploits a linearized vehicle model and 
+schedules the state-feedback gains as a function of the longitudinal speed 
+$V_x$. Its inclusion allows the comparison to contrast the MFC's online 
+disturbance estimation against a structured model-based benchmark with 
+speed-dependent state feedback.
 
 
 % ------------------------------------------------------------------------
@@ -495,15 +499,16 @@ channel; therefore, this baseline is interpreted here as an ESC-oriented
 lateral-stability controller rather than as a full unified chassis 
 controller with explicit roll regulation.
 
-The public CarSim\textsuperscript{\textregistered} description documents the test procedure and the example 
-workflow, but it does not disclose the internal implementation of the 
-embedded ESC in sufficient detail to establish whether the controller uses 
-additional simulator-internal variables beyond the documented test signals 
-\citep{carsim_fmvss126}. For that reason, the CarSim\textsuperscript{\textregistered} baseline should be 
-viewed as a simulator-native black-box reference. This makes it valuable 
-as a practical benchmark, but also means that its informational symmetry 
-with the other controllers cannot be fully verified from the publicly 
-available documentation.
+The public CarSim\textsuperscript{\textregistered} description documents the 
+test procedure and the example workflow, but it does not disclose the 
+internal implementation of the embedded ESC in sufficient detail to 
+establish whether the controller uses additional simulator-internal 
+variables beyond the documented test signals \citep{carsim_fmvss126}. For 
+that reason, the CarSim\textsuperscript{\textregistered} baseline should be 
+viewed as a simulator-native black-box reference. This makes it valuable as 
+a practical benchmark, but also means that its informational symmetry with 
+the other controllers cannot be fully verified from the publicly available 
+documentation.
 
 This baseline is particularly relevant because it represents an 
 industry-relevant reference implemented within the same simulation 
@@ -517,9 +522,8 @@ conditions.
 This section presents the proposed MFC-based UCC architecture. The 
 formulation begins with the ultra-local model and the intelligent PID 
 control law, followed by the algebraic estimators for the lumped 
-disturbance term, the overall UCC architecture, and the coordination 
-and control allocation strategies. The section concludes with the 
-parameter selection procedure.
+disturbance term, the overall UCC architecture, the coordination and 
+control allocation strategies, and the parameter selection procedure.
 
 % ------------------------------------------------------------------------
 \subsection{Ultra-Local Model and Intelligent PID 
@@ -537,8 +541,8 @@ a lumped term that captures the unknown plant dynamics, external
 disturbances, and unmodeled nonlinearities, $\alpha \in \mathbb{R}$ is a 
 non-physical scaling parameter chosen by the designer, and $u$ is the 
 control input \citep{Fliess2009}. The term $F$ is treated as a 
-piecewise-constant function updated at each estimation window, making 
-the representation independent of any explicit vehicle model.
+piecewise-constant function updated at each estimation window, making the 
+representation independent of any explicit vehicle model.
 
 In this work, three plant variables are regulated: the yaw rate 
 $\dot{\psi}$, the side-slip angle $\beta$, and the roll angle $\phi$. 
@@ -546,10 +550,10 @@ The yaw rate channel is represented by a first-order ultra-local model
 ($v = 1$), while the side-slip angle and roll angle channels use a 
 second-order formulation ($v = 2$). This choice is consistent with the 
 order of the corresponding vehicle equations: $\dot{\psi}$ is taken as 
-the derivative of the yaw motion, whose dynamics stem from a second-order 
-equation and are therefore adequately captured with $v=1$, whereas 
-$\beta$ and $\phi$ are governed by first-order equations, making a 
-second-order ultra-local description more suitable for their regulation.
+the derivative of the yaw motion and is therefore adequately captured with 
+$v=1$, whereas $\beta$ and $\phi$ are governed by first-order equations, 
+making a second-order ultra-local description more suitable for their 
+regulation.
 
 Assuming that the ultra-local model holds over a short time window, 
 the stabilizing intelligent PID (iPID) control law is given by:
@@ -576,8 +580,8 @@ The real-time estimation of $F$ is performed using an algebraic approach
 derived from the ultra-local model via Laplace-domain manipulations, 
 following \citet{Fliess2009}. The estimators are expressed as weighted 
 integrals of the input and output signals over a sliding window of 
-length $T$, which provides inherent noise attenuation without requiring 
-explicit filtering.
+length $T$, which provides inherent noise attenuation without explicit 
+filtering.
 
 \subsubsection{Second-order estimator for $\beta$ and $\phi$}
 
@@ -628,14 +632,13 @@ where the trapezoidal weights are:
 
 The integration window was set to $T = 1.0$\,s for all three estimators, 
 based on the characteristic response time of the vehicle dynamics under 
-the SWD maneuver.
-This value represents a compromise between estimation smoothness and 
-responsiveness: longer windows improve the accuracy and noise attenuation 
-of $\hat{F}$ but slow down the estimator, whereas shorter windows yield 
-faster convergence at the expense of greater sensitivity to measurement 
-noise; in the present SWD conditions, $T = 1.0$\,s provided adequate 
-filtering without introducing excessive delay in the transient control 
-action.
+the SWD maneuver. This value represents a compromise between estimation 
+smoothness and responsiveness: longer windows improve the accuracy and 
+noise attenuation of $\hat{F}$ but slow down the estimator, whereas 
+shorter windows yield faster convergence at the expense of greater 
+sensitivity to measurement noise. In the present SWD conditions, 
+$T = 1.0$\,s provided adequate filtering without introducing excessive 
+delay in the transient control action.
 
 % ------------------------------------------------------------------------
 \subsection{Unified Chassis Control 
@@ -700,16 +703,16 @@ Specifically, $M_z$ is decomposed into individual wheel brake pressure
 signals processed by the ABS subsystem, and $M_x$ is converted into 
 active anti-roll bar force commands. This allocation step is handled 
 internally by the simulator, consistent with the setup described 
-in \citep{arronte2024controle}. Public CarSim\textsuperscript{\textregistered} documentation states that the 
-built-in ESC modulates the brakes of individual wheels, but it does not 
-provide the detailed internal allocation law used to map $M_z$ into 
-wheel-level brake pressures, nor an explicit public description of the 
-internal AARB mapping from $M_x$ to actuator commands 
-\citep{carsim_builtincontrollers,carsim_fmvss126}. Accordingly, in the 
-present work the allocation stage is treated as transparent to the 
-high-level controller: the controller supplies the virtual moments 
-$M_z$ and $M_x$, while the actuator-level distribution is resolved 
-internally by CarSim\textsuperscript{\textregistered}.
+in \citep{arronte2024controle}. Public CarSim\textsuperscript{\textregistered} 
+documentation states that the built-in ESC modulates the brakes of 
+individual wheels, but it does not provide the detailed internal 
+allocation law used to map $M_z$ into wheel-level brake pressures, nor an 
+explicit public description of the internal AARB mapping from $M_x$ to 
+actuator commands \citep{carsim_builtincontrollers,carsim_fmvss126}. 
+Accordingly, in the present work the allocation stage is treated as 
+transparent to the high-level controller: the controller supplies the 
+virtual moments $M_z$ and $M_x$, while the actuator-level distribution is 
+resolved internally by CarSim\textsuperscript{\textregistered}.
 
 % ------------------------------------------------------------------------
 \subsection{Parameter Selection and Implementation 
@@ -717,11 +720,11 @@ internally by CarSim\textsuperscript{\textregistered}.
 
 The iPD controllers involve three sets of parameters per channel: the 
 scaling constant $\alpha$, the proportional gain $K_P$, and the derivative 
-gain $K_D$. These were selected empirically through iterative simulation, 
-guided by the following criteria: $\alpha$ was adjusted to match the 
-order of magnitude of the unknown plant gain for each channel, while 
-$K_P$ and $K_D$ were tuned to balance tracking performance and control 
-signal smoothness, prioritizing maneuver safety over passenger comfort.
+gain $K_D$. These were selected empirically through iterative simulation: 
+$\alpha$ was adjusted to match the order of magnitude of the unknown plant 
+gain for each channel, while $K_P$ and $K_D$ were tuned to balance 
+tracking performance and control signal smoothness, prioritizing maneuver 
+safety over passenger comfort.
 
 The effect of $\alpha$ on closed-loop behavior was observed to be 
 monotonic: higher values introduce response delay, while lower values 
@@ -729,12 +732,11 @@ increase control signal oscillation. An intermediate value was sought
 for each channel independently. It was further verified through 
 simulation that variations in $K_D$ had negligible influence on the 
 system response; therefore, $K_D$ was fixed at a small value for all 
-channels to provide light damping.
-Although the tuning was empirical, it was guided by safety-oriented 
-criteria in the SWD maneuver, namely preserving closed-loop stability, 
-limiting actuator saturation, and achieving adequate transient 
-regulation, whose effectiveness is confirmed by the results in 
-Section~\ref{sec2}.
+channels to provide light damping. Although the tuning was empirical, it 
+was guided by safety-oriented criteria in the SWD maneuver, namely 
+preserving closed-loop stability, limiting actuator saturation, and 
+achieving adequate transient regulation, whose effectiveness is confirmed 
+by the results in Section~\ref{sec2}.
 
 The resulting parameter values are summarized in 
 Table~\ref{tab:params}.
@@ -782,16 +784,20 @@ The SWD maneuver involves accelerating the vehicle to a speed slightly above 80\
 \section{Simulation Results}\label{sec2}
 
 The UCC is evaluated through the SWD maneuver described above under three
-different road-friction conditions. The results reported below compare the
+road-friction conditions. The results reported below compare the
 open-loop vehicle response, the CarSim\textsuperscript{\textregistered}
 ESC controller, the fixed-parameter 2PID+fuzzy controller, the
 GS-LQR benchmark, and the proposed iPD-based MFC controller.
-In the discussion that follows, ``practical closed-loop stability'' refers to bounded and physically meaningful state trajectories over the finite SWD maneuver, taking actuator saturation and maneuver-completion time into account, rather than claiming asymptotic stability beyond the tested operating conditions.
+In the discussion that follows, ``practical closed-loop stability'' refers
+to bounded and physically meaningful state trajectories over the finite SWD
+maneuver, taking actuator saturation and maneuver-completion time into
+account rather than claiming asymptotic stability beyond the tested
+operating conditions.
  
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.7$}\label{sec3}
 
-Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show that the dry-road case is the least restrictive one, yet it still separates the controllers. The CarSim\textsuperscript{\textregistered} ESC remains bounded only during the initial stage of the maneuver, while the open-loop vehicle departs from the reference band after the dwell and later develops large lateral and roll excursions. Among the controllers that complete the full maneuver, the 2PID+fuzzy and MFC responses are clearly better damped than the GS-LQR trajectory. The 2PID+fuzzy controller yields the smallest side-slip and roll amplitudes, whereas the proposed MFC keeps the yaw-rate trace closer to its reference and exhibits a smoother post-dwell transient than the GS-LQR benchmark. Figures \ref{fig:roll_07} and \ref{fig:roll_rate_07} confirm the same pattern for the vertical dynamics: the 2PID+fuzzy controller shows the mildest roll activity, the MFC remains bounded with a clean recovery, and the open-loop and ESC responses lose practical usefulness much earlier.
+Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show that the dry-road case is the least restrictive one, yet it still separates the controllers. The CarSim\textsuperscript{\textregistered} ESC remains bounded only during the initial stage of the maneuver, while the open-loop vehicle departs from the reference band after the dwell and later develops large lateral and roll excursions. Among the controllers that complete the full maneuver, the 2PID+fuzzy and MFC responses are better damped than the GS-LQR trajectory. The 2PID+fuzzy controller yields the smallest side-slip and roll amplitudes, whereas the proposed MFC keeps the yaw-rate trace closer to its reference and exhibits a smoother post-dwell transient. Figures \ref{fig:roll_07} and \ref{fig:roll_rate_07} confirm the same pattern for the vertical dynamics: the 2PID+fuzzy controller shows the mildest roll activity, the MFC remains bounded with a clean recovery, and the open-loop and ESC responses lose practical usefulness much earlier.
 
 
 \begin{figure}
@@ -827,7 +833,7 @@ Figures \ref{fig:beta_07} and \ref{fig:yaw_07} show that the dry-road case is th
 
 
 
-Figure~\ref{fig:Control_mu_07} shows the brake-pressure distribution at each wheel for $\mu = 0.7$. As in the other friction conditions, the figure complements the quantitative information provided later in Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx}. The CarSim\textsuperscript{\textregistered} ESC intervenes only during the initial portion of the maneuver, whereas the GS-LQR uses sparse sharp pulses distributed over the full horizon. The 2PID+fuzzy controller produces a regular sequence of pulses with gradually increasing amplitude, while the proposed MFC combines repeated multiwheel peaks with a sustained front-wheel modulation. This pattern is consistent with the later control-effort analysis: at high friction, the MFC does not minimize average brake usage, but it maintains bounded peaks and preserves full-duration operation without the most aggressive anti-roll demand.
+Figure~\ref{fig:Control_mu_07} shows the brake-pressure distribution at each wheel for $\mu = 0.7$. The CarSim\textsuperscript{\textregistered} ESC intervenes only during the initial portion of the maneuver, whereas the GS-LQR uses sparse sharp pulses distributed over the full horizon. The 2PID+fuzzy controller produces a regular sequence of pulses with gradually increasing amplitude, while the proposed MFC combines repeated multiwheel peaks with a sustained front-wheel modulation. This pattern is consistent with the later control-effort analysis: at high friction, the MFC does not minimize average brake usage, but it maintains bounded peaks and preserves full-duration operation without the most aggressive anti-roll demand.
 \begin{figure}
      \centering
      \begin{subfigure}[b]{0.38\textwidth}
@@ -858,7 +864,7 @@ Figure~\ref{fig:Control_mu_07} shows the brake-pressure distribution at each whe
         \label{fig:Control_mu_07}
 \end{figure}
 
-Figure~\ref{fig:Mx_07} shows the corresponding anti-roll moment histories. The CarSim\textsuperscript{\textregistered} ESC only intervenes during the initial stage of the maneuver, while the GS-LQR produces alternating pulses of moderate amplitude. The 2PID+fuzzy controller also generates a regular periodic pattern, but the proposed MFC applies the most persistent anti-roll action over the full maneuver, with bounded peaks that remain within the imposed limits. This visual trend is consistent with the later statistical discussion: at $\mu = 0.7$, the MFC does not minimize $M_x$ activity, but it preserves a sustained and coordinated vertical-control action throughout the complete test.
+Figure~\ref{fig:Mx_07} shows the corresponding anti-roll moment histories. The CarSim\textsuperscript{\textregistered} ESC only intervenes during the initial stage of the maneuver, while the GS-LQR produces alternating pulses of moderate amplitude. The 2PID+fuzzy controller also generates a regular periodic pattern, but the proposed MFC applies the most persistent anti-roll action over the full maneuver, with bounded peaks within the imposed limits. This visual trend is consistent with the later statistical discussion: at $\mu = 0.7$, the MFC does not minimize $M_x$ activity, but it preserves a sustained and coordinated vertical-control action throughout the complete test.
 
 \begin{figure}
     \centering
@@ -871,7 +877,7 @@ Figure~\ref{fig:Mx_07} shows the corresponding anti-roll moment histories. The C
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.5$}
 
-Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show that the intermediate-friction case already separates the benchmark controllers more clearly than the dry-road scenario. The CarSim\textsuperscript{\textregistered} ESC loses bounded response first, shortly after the maneuver begins, and the open-loop vehicle fails later as the lateral oscillations grow. The GS-LQR benchmark initially attenuates the lateral variables, but its response becomes unacceptable after approximately 80\,s, when the oscillations no longer remain within a useful operating range. By contrast, both the 2PID+fuzzy controller and the proposed iPD-based MFC complete the maneuver. Among these two full-duration responses, the 2PID+fuzzy controller exhibits slightly smaller side-slip and roll amplitudes, whereas the MFC preserves a comparably accurate yaw response while keeping all states bounded during the whole test. Figures \ref{fig:roll_05} and \ref{fig:roll_rate_05} confirm the same hierarchy: only the 2PID+fuzzy controller and the MFC remain operative until the end of the maneuver, while the other baselines lose practical stability earlier.
+Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show that the intermediate-friction case already separates the benchmark controllers more clearly than the dry-road scenario. The CarSim\textsuperscript{\textregistered} ESC loses bounded response first, shortly after the maneuver begins, and the open-loop vehicle fails later as the lateral oscillations grow. The GS-LQR benchmark initially attenuates the lateral variables, but its response becomes unacceptable after approximately 80\,s, when the oscillations no longer remain within a useful operating range. By contrast, both the 2PID+fuzzy controller and the proposed iPD-based MFC complete the maneuver. Among these full-duration responses, the 2PID+fuzzy controller exhibits slightly smaller side-slip and roll amplitudes, whereas the MFC preserves a comparably accurate yaw response while keeping all states bounded during the whole test. Figures \ref{fig:roll_05} and \ref{fig:roll_rate_05} confirm the same hierarchy: only the 2PID+fuzzy controller and the MFC remain operative until the end of the maneuver, while the other baselines lose practical stability earlier.
 
 
 
@@ -906,7 +912,7 @@ Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show that the intermediate-fricti
 \end{figure}
 
 
-Figure~\ref{fig:Control_mu_05} shows the brake-pressure distribution at each wheel for $\mu = 0.5$. The temporal patterns help explain the differences observed in the state responses without duplicating the quantitative discussion of Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx}. The CarSim\textsuperscript{\textregistered} ESC acts only during the initial portion of the maneuver, with isolated interventions that vanish once the controller loses bounded behavior. The GS-LQR uses sparse and narrow pulses, mainly on the left wheels, which is consistent with its low average brake demand but also with its inability to sustain acceptable regulation throughout the maneuver. The 2PID+fuzzy controller applies a regular sequence of periodic pulses whose amplitude gradually increases, while the proposed MFC maintains a more persistent multiwheel modulation with bounded peaks and continuous participation of the four brakes. This qualitative picture is coherent with the control-effort metrics: at $\mu = 0.5$, the MFC does not minimize brake RMS or energy, but it avoids the very large isolated peaks of the GS-LQR and the more aggressive peak growth of the 2PID+fuzzy controller, thereby supporting a full-duration bounded response without requiring the most demanding anti-roll action.
+Figure~\ref{fig:Control_mu_05} shows the brake-pressure distribution at each wheel for $\mu = 0.5$. The CarSim\textsuperscript{\textregistered} ESC acts only during the initial portion of the maneuver, with isolated interventions that vanish once the controller loses bounded behavior. The GS-LQR uses sparse and narrow pulses, mainly on the left wheels, which is consistent with its low average brake demand but also with its inability to sustain acceptable regulation throughout the maneuver. The 2PID+fuzzy controller applies a regular sequence of periodic pulses whose amplitude gradually increases, while the proposed MFC maintains a more persistent multiwheel modulation with bounded peaks and continuous participation of the four brakes. This qualitative picture is coherent with the control-effort metrics: at $\mu = 0.5$, the MFC does not minimize brake RMS or energy, but it avoids the very large isolated peaks of the GS-LQR and the more aggressive peak growth of the 2PID+fuzzy controller, thereby supporting a full-duration bounded response without requiring the most demanding anti-roll action.
 \begin{figure}
      \centering
      \begin{subfigure}[b]{0.38\textwidth}
@@ -937,7 +943,7 @@ Figure~\ref{fig:Control_mu_05} shows the brake-pressure distribution at each whe
         \label{fig:Control_mu_05}
 \end{figure}
 
-Figure~\ref{fig:Mx_05} shows a similar ordering for the anti-roll moment at $\mu = 0.5$, but with clearer separation among controllers. The CarSim\textsuperscript{\textregistered} ESC acts only before losing bounded behavior, and the GS-LQR moment becomes irrelevant once that benchmark no longer maintains acceptable state regulation. The 2PID+fuzzy controller exhibits a regular periodic sequence with moderate-to-high peaks, whereas the MFC maintains the most persistent full-duration $M_x$ action, again with bounded amplitudes. Therefore, in this intermediate-friction case, the figure supports the same interpretation as the control-effort table: the MFC accepts a more active anti-roll contribution in order to sustain bounded closed-loop performance until the end of the maneuver.
+Figure~\ref{fig:Mx_05} shows a similar ordering for the anti-roll moment at $\mu = 0.5$, but with clearer separation among controllers. The CarSim\textsuperscript{\textregistered} ESC acts only before losing bounded behavior, and the GS-LQR moment becomes irrelevant once that benchmark no longer maintains acceptable state regulation. The 2PID+fuzzy controller exhibits a regular periodic sequence with moderate-to-high peaks, whereas the MFC maintains the most persistent full-duration $M_x$ action, again with bounded amplitudes. In this intermediate-friction case, the figure supports the same interpretation as the control-effort table: the MFC accepts a more active anti-roll contribution in order to sustain bounded closed-loop performance until the end of the maneuver.
 
 \begin{figure}
     \centering
@@ -951,7 +957,7 @@ Figure~\ref{fig:Mx_05} shows a similar ordering for the anti-roll moment at $\mu
 % ------------------------------------------------------------------------
 \subsection{Simulation for $\mu = 0.3$}
 
-Figures \ref{fig:beta_03} and \ref{fig:yaw_03} correspond to the most demanding case, $\mu = 0.3$, and make the robustness differences fully explicit. The open-loop vehicle departs from the desired behavior shortly after the maneuver begins, and both the CarSim\textsuperscript{\textregistered} ESC and the 2PID+fuzzy controller lose practical stability later in the test. The GS-LQR benchmark reaches the end of the simulation horizon, but its lateral responses cease to be physically meaningful after about 90\,s, as shown by the very large side-slip oscillations and the severe yaw-rate excursions. Consequently, the proposed iPD-based MFC is the only controller that both completes the maneuver and keeps the side-slip angle and yaw-rate tracking error within an acceptable bounded range. Figures \ref{fig:roll_03} and \ref{fig:roll_rate_03} lead to the same conclusion for the vertical dynamics: the MFC maintains small roll oscillations throughout the maneuver, while the CarSim\textsuperscript{\textregistered} ESC develops a severe roll-rate burst and the remaining baselines fail to preserve a physically acceptable response over the full test duration.
+Figures \ref{fig:beta_03} and \ref{fig:yaw_03} correspond to the most demanding case, $\mu = 0.3$, and make the robustness differences fully explicit. The open-loop vehicle departs from the desired behavior shortly after the maneuver begins, and both the CarSim\textsuperscript{\textregistered} ESC and the 2PID+fuzzy controller lose practical stability later in the test. The GS-LQR benchmark reaches the end of the simulation horizon, but its lateral responses cease to be physically meaningful after about 90\,s, as shown by the very large side-slip oscillations and severe yaw-rate excursions. Consequently, the proposed iPD-based MFC is the only controller that both completes the maneuver and keeps the side-slip angle and yaw-rate tracking error within an acceptable bounded range. Figures \ref{fig:roll_03} and \ref{fig:roll_rate_03} lead to the same conclusion for the vertical dynamics: the MFC maintains small roll oscillations throughout the maneuver, while the CarSim\textsuperscript{\textregistered} ESC develops a severe roll-rate burst and the remaining baselines fail to preserve a physically acceptable response over the full test duration.
 
 \begin{figure}
      \centering
@@ -1015,12 +1021,10 @@ Figures \ref{fig:beta_03} and \ref{fig:yaw_03} correspond to the most demanding 
         \label{fig:mu_03_zoom}
 \end{figure}
 
-Figure~\ref{fig:mu_03_zoom} provides a closer view of the most critical interval of the icy-road maneuver and helps explain why the proposed controller is the only one that preserves meaningful regulation until the end of the test. In the lateral variables, the zoomed panels show that the MFC keeps the yaw-rate trajectory better centered around the reference while maintaining a compact side-slip response during the transient in which the benchmark controllers begin to separate. The 2PID+fuzzy controller remains competitive in some local amplitudes, but its response is less robust over time, whereas the GS-LQR already exhibits the onset of the oscillatory growth that later becomes dominant in the full-scale plots. The roll-angle and roll-rate zooms reinforce the same interpretation: the proposed MFC keeps the vertical response smoother and more symmetric around the equilibrium, while the CarSim\textsuperscript{\textregistered} ESC and the GS-LQR reveal an earlier loss of damping. Therefore, the zoomed figure complements Figure~\ref{fig:mu_03} by showing that the advantage of the MFC at $\mu = 0.3$ is not only a matter of surviving longer, but also of preserving better local transient regulation in the interval where the maneuver becomes critical.
+Figure~\ref{fig:mu_03_zoom} provides a closer view of the most critical interval of the icy-road maneuver and helps explain why the proposed controller is the only one that preserves meaningful regulation until the end of the test. In the lateral variables, the zoomed panels show that the MFC keeps the yaw-rate trajectory better centered around the reference while maintaining a compact side-slip response during the transient in which the benchmark controllers begin to separate. The 2PID+fuzzy controller remains competitive in some local amplitudes, but its response is less robust over time, whereas the GS-LQR already exhibits the onset of the oscillatory growth that later becomes dominant in the full-scale plots. The roll-angle and roll-rate zooms reinforce the same interpretation: the proposed MFC keeps the vertical response smoother and more symmetric around the equilibrium, while the CarSim\textsuperscript{\textregistered} ESC and the GS-LQR reveal an earlier loss of damping. The zoomed figure therefore shows that the advantage of the MFC at $\mu = 0.3$ is not only a matter of surviving longer, but also of preserving better local transient regulation in the interval where the maneuver becomes critical.
 
 
-Figure~\ref{fig:Control_mu_03} shows the brake-pressure distribution at each wheel for the most demanding case, namely $\mu = 0.3$. Beyond the scalar metrics reported later in Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx}, these plots reveal clear differences in the temporal structure of the control action. In Figure~\ref{fig:Carsim_03}, the CarSim\textsuperscript{\textregistered} ESC concentrates most of the intervention on the right-rear wheel, with a long ramp followed by late pulses, while the remaining wheels are only marginally used. Figure~\ref{fig:LQR_03} shows that the GS-LQR relies on sparse and narrow pulses, first concentrated on the left-rear wheel and later shifted to the left-front wheel, which is indicative of a highly impulsive and weakly distributed braking strategy. Figure~\ref{fig:PID_03} exhibits a more regular sequence of moderate-amplitude pulses, mainly on the left side, but this action stops before the end of the test, consistently with the fact that the controller does not complete the maneuver. By contrast, Figure~\ref{fig:MFC_03} shows that the proposed iPD-based MFC maintains a sustained and coordinated multiwheel modulation over the whole maneuver, with repeated bounded pulses distributed among the four brakes.
-
-This figure is consistent with, but not redundant with, the discussion of Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx}. The brake-pressure table quantifies that, for $\mu = 0.3$, the proposed controller does not minimize RMS, energy, or saturation percentage; the figure explains why, since the MFC deliberately applies a persistent brake modulation in order to preserve bounded vehicle states until the end of the maneuver. Conversely, the more intermittent patterns of the CarSim\textsuperscript{\textregistered} ESC, GS-LQR, and 2PID+fuzzy controllers help explain why they either lose practical stability early or fail to maintain acceptable state regulation. At the same time, the anti-roll torque table shows that this more active brake intervention is not accompanied by the largest anti-roll demand. Therefore, the combined reading of Figure~\ref{fig:Control_mu_03} and Tables~\ref{tab:control_effort_pbs}--\ref{tab:control_effort_mx} supports the same conclusion from two complementary viewpoints: in the icy-road case, the MFC attains the best robustness by replacing sporadic high-impact interventions with a more sustained and coordinated use of the brake channel, while keeping the anti-roll action within comparatively moderate levels.
+Figure~\ref{fig:Control_mu_03} shows the brake-pressure distribution at each wheel for the most demanding case, namely $\mu = 0.3$. The CarSim\textsuperscript{\textregistered} ESC concentrates most of the intervention on the right-rear wheel, the GS-LQR relies on sparse and narrow pulses mainly on the left side, and the 2PID+fuzzy controller applies a more regular sequence of moderate-amplitude pulses but stops before the end of the test. By contrast, the proposed iPD-based MFC maintains a sustained and coordinated multiwheel modulation over the whole maneuver, with repeated bounded pulses distributed among the four brakes. This complements Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx}: for $\mu = 0.3$, the proposed controller does not minimize RMS, energy, or saturation percentage, but its persistent brake modulation helps preserve bounded vehicle states until the end of the maneuver. At the same time, the anti-roll torque table shows that this more active brake intervention is not accompanied by the largest anti-roll demand.
 
 \begin{figure}
      \centering
@@ -1069,15 +1073,15 @@ Table~\ref{tab:perf_friction} and Tables~\ref{tab:control_effort_pbs}--\ref{tab:
 
 \subsubsection{Vehicle-state performance metrics}
 
-The low-friction case, $\mu = 0.3$, is the clearest discriminator. The open-loop vehicle loses practical stability after 45.6\,s, while the CarSim\textsuperscript{\textregistered} ESC and the 2PID+fuzzy controller extend that interval to 101.9\,s and 90.9\,s, respectively, but still fail to complete the maneuver. The GS-LQR benchmark reaches ST$=180$\,s, yet its statistical values reveal a loss of useful regulation rather than satisfactory closed-loop behavior: the side-slip RMS rises to 84.06$^\circ$, the yaw-rate RMSE reaches 11025\,deg/s, and the peak yaw rate exceeds 559\,deg/s. In contrast, the proposed MFC is the only strategy that combines ST$=180$\,s with bounded lateral and roll responses, namely $\beta$ RMS of 0.382$^\circ$, yaw-rate RMSE of 2.786\,deg/s, roll-angle RMS of 0.598$^\circ$, and roll-rate RMS of 2.320\,deg/s. Table~\ref{tab:perf_friction} therefore indicates that, under icy-road conditions, the key advantage of the proposed controller is not merely low error magnitude, but the preservation of meaningful closed-loop regulation throughout the whole maneuver.
+The low-friction case, $\mu = 0.3$, is the clearest discriminator. The open-loop vehicle loses practical stability after 45.6\,s, while the CarSim\textsuperscript{\textregistered} ESC and the 2PID+fuzzy controller extend that interval to 101.9\,s and 90.9\,s, respectively, but still fail to complete the maneuver. The GS-LQR benchmark reaches ST$=180$\,s, yet its statistical values reveal a loss of useful regulation rather than satisfactory closed-loop behavior: the side-slip RMS rises to 84.06$^\circ$, the yaw-rate RMSE reaches 11025\,deg/s, and the peak yaw rate exceeds 559\,deg/s. In contrast, the proposed MFC is the only strategy that combines ST$=180$\,s with bounded lateral and roll responses, namely $\beta$ RMS of 0.382$^\circ$, yaw-rate RMSE of 2.786\,deg/s, roll-angle RMS of 0.598$^\circ$, and roll-rate RMS of 2.320\,deg/s. Under icy-road conditions, the key advantage of the proposed controller is therefore not merely low error magnitude, but the preservation of meaningful closed-loop regulation throughout the whole maneuver.
 
-At the intermediate friction level, $\mu = 0.5$, the trade-offs become more subtle. The CarSim\textsuperscript{\textregistered} ESC yields the smallest side-slip RMS (0.6085$^\circ$), but this occurs together with the shortest ST among the controlled cases (32.9\,s), so that result cannot be interpreted as robust superiority. Among the controllers that complete the full maneuver, the 2PID+fuzzy approach provides the lowest values for yaw-rate RMSE (5.159\,deg/s), roll-angle RMS (0.222$^\circ$), and roll-rate RMS (2.488\,deg/s), while the MFC remains close in yaw-rate tracking (RMSE of 5.218\,deg/s) but with larger roll activity. The GS-LQR benchmark again exhibits limited robustness, stopping at 80.7\,s. Thus, for $\mu = 0.5$, the proposed MFC does not minimize every metric, but it maintains full-duration operation with a balanced multivariable response and without the premature loss of stability observed in the ESC and GS-LQR cases.
+At the intermediate friction level, $\mu = 0.5$, the trade-offs become more subtle. The CarSim\textsuperscript{\textregistered} ESC yields the smallest side-slip RMS (0.6085$^\circ$), but this occurs together with the shortest ST among the controlled cases (32.9\,s), so that result cannot be interpreted as robust superiority. Among the controllers that complete the full maneuver, the 2PID+fuzzy approach provides the lowest values for yaw-rate RMSE (5.159\,deg/s), roll-angle RMS (0.222$^\circ$), and roll-rate RMS (2.488\,deg/s), while the MFC remains close in yaw-rate tracking (RMSE of 5.218\,deg/s) but with larger roll activity. The GS-LQR benchmark again exhibits limited robustness, stopping at 80.7\,s. Thus, for $\mu = 0.5$, the proposed MFC does not minimize every metric, but it maintains full-duration operation with a balanced multivariable response and without the premature loss of stability seen in the ESC and GS-LQR cases.
 
-For the dry-road case, $\mu = 0.7$, the 2PID+fuzzy controller attains the lowest side-slip RMS (0.679$^\circ$) and the smallest roll-related statistics, whereas the MFC achieves the lowest yaw-rate RMSE (7.480\,deg/s), which indicates the most accurate tracking of the desired yaw response even though its yaw-rate RMS and peak value are not the smallest. This difference between RMS and RMSE is important: the 2PID+fuzzy controller reduces motion amplitudes more aggressively, while the MFC keeps the yaw response better centered around the reference trajectory. The GS-LQR and MFC controllers both complete the full maneuver, but the GS-LQR still shows larger yaw-tracking error (RMSE of 17.746\,deg/s), and the CarSim\textsuperscript{\textregistered} ESC remains stable only for 57.8\,s. Overall, Table~\ref{tab:perf_friction} shows that no single controller minimizes every state metric at all friction levels; however, the proposed MFC is the only one that preserves acceptable and bounded performance over the entire friction range without collapsing at $\mu = 0.3$.
+For the dry-road case, $\mu = 0.7$, the 2PID+fuzzy controller attains the lowest side-slip RMS (0.679$^\circ$) and the smallest roll-related statistics, whereas the MFC achieves the lowest yaw-rate RMSE (7.480\,deg/s), which indicates the most accurate tracking of the desired yaw response even though its yaw-rate RMS and peak value are not the smallest. This difference between RMS and RMSE is important: the 2PID+fuzzy controller reduces motion amplitudes more aggressively, while the MFC keeps the yaw response better centered around the reference trajectory. The GS-LQR and MFC controllers both complete the full maneuver, but the GS-LQR still shows larger yaw-tracking error (RMSE of 17.746\,deg/s), and the CarSim\textsuperscript{\textregistered} ESC remains stable only for 57.8\,s. Overall, Table~\ref{tab:perf_friction} shows that no single controller minimizes every state metric at all friction levels; however, the proposed MFC is the only one that preserves acceptable and bounded performance over the entire friction range without failing at $\mu = 0.3$.
 
 \subsubsection{Control-signal analysis}
 
-Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx} clarify how the competing controllers generate those state responses. The metrics Sat and Rate RMS measure, respectively, the percentage of time spent at actuator saturation and the aggressiveness of the input variations. For the brake-pressure signal $P_{bs}$, the GS-LQR controller yields the smallest RMS and energy at $\mu = 0.5$ and $\mu = 0.7$, but it does so with highly impulsive behavior, as evidenced by peak pressures of 96.05 and 405.65, and by large Rate RMS values. This tendency becomes extreme at $\mu = 0.3$, where the GS-LQR reaches a peak of $1.68\times10^3$ and a Rate RMS of $3.14\times10^3$, which is consistent with the poor state regulation observed in Table~\ref{tab:perf_friction}. By contrast, the MFC brake channel remains peak-bounded at 23.93 for all three friction levels, although it uses a larger sustained brake effort, with RMS values between 6.57 and 8.21 and nonzero saturation percentages, especially 6.72\% at $\mu = 0.3$. This pattern suggests that the proposed controller relies on continuous brake modulation, rather than sporadic high-amplitude pulses, to preserve stability in the most demanding scenario.
+Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx} clarify how the competing controllers generate those state responses. The metrics Sat and Rate RMS measure, respectively, the percentage of time spent at actuator saturation and the aggressiveness of the input variations. For the brake-pressure signal $P_{bs}$, the GS-LQR controller yields the smallest RMS and energy at $\mu = 0.5$ and $\mu = 0.7$, but it does so with highly impulsive behavior, as evidenced by peak pressures of 96.05 and 405.65 and by large Rate RMS values. This tendency becomes extreme at $\mu = 0.3$, where the GS-LQR reaches a peak of $1.68\times10^3$ and a Rate RMS of $3.14\times10^3$, which is consistent with the poor state regulation observed in Table~\ref{tab:perf_friction}. By contrast, the MFC brake channel remains peak-bounded at 23.93 for all three friction levels, although it uses a larger sustained brake effort, with RMS values between 6.57 and 8.21 and nonzero saturation percentages, especially 6.72\% at $\mu = 0.3$. This pattern suggests that the proposed controller relies on continuous brake modulation rather than sporadic high-amplitude pulses to preserve stability in the most demanding scenario.
 
 The anti-roll torque $M_x$ exhibits the opposite tendency. At $\mu = 0.3$, the MFC requires the smallest torque RMS (206.07), the smallest peak torque (962.18), the lowest energy ($1.53\times10^7$), and zero saturation, whereas the CarSim\textsuperscript{\textregistered} ESC, the 2PID+fuzzy controller, and the GS-LQR demand substantially larger torques and, in two cases, severe saturation. At $\mu = 0.5$ and $\mu = 0.7$, the ESC and GS-LQR reduce torque energy more than the MFC, but the 2PID+fuzzy controller remains by far the most demanding strategy, with energy above $10^9$ and saturation around 22\%. The proposed MFC therefore exhibits a clear allocation trend: it accepts a more active brake intervention, particularly on low-friction roads, while keeping the anti-roll actuation within comparatively moderate bounds.
 
@@ -1246,6 +1250,21 @@ $\mu$ & Metric & ESC & 2PID & GS-LQR & MFC \\
 \label{tab:control_effort_pbs}
 \end{table}
 
+\section{Conclusions} \label{sec:concl}
+
+
+
+
+This paper presented a model-free unified chassis controller for the simultaneous regulation of side-slip angle, yaw rate, and roll angle during abrupt maneuvers. By combining ultra-local models, algebraic estimators, and a dedicated allocation stage, the proposed iPD-based architecture avoids the need for an explicit vehicle model while still coordinating the brake and anti-roll actuators within a common UCC framework.
+
+The comparative study under the sine-with-dwell maneuver showed that the interpretation of the results cannot rely on RMS or RMSE values alone. At medium and high friction, some benchmark controllers achieve smaller values for individual metrics, especially the fixed-parameter 2PID+fuzzy controller. However, when those statistics are interpreted together with maneuver completion time and control effort, the proposed controller provides the most consistent behavior across the full friction range. In particular, for $\mu = 0.3$, it is the only strategy that completes the maneuver while keeping the lateral and roll variables within acceptable bounds; the remaining baselines either lose practical closed-loop stability before the end of the test or produce very large state excursions despite reaching the simulation horizon. The control-signal analysis also shows that this robustness is obtained through a more active brake intervention, especially on low-friction roads, while maintaining the anti-roll torque at comparatively moderate levels. Therefore, the main contribution of the proposed approach is not the minimization of every nominal metric, but a favorable compromise between regulation quality, practical robustness, and actuator demand.
+
+These conclusions remain bounded by the scope of the present study, which is based on a co-simulation environment, prescribed friction levels, ideal state information for the regulated variables, and the SWD maneuver as the common evaluation scenario. Future work should therefore address automatic tuning procedures, validation with estimated rather than ideal states, additional maneuvers and operating conditions, and experimental assessment in hardware-in-the-loop or real-vehicle implementations. Extensions toward longitudinal coordination and adaptation to other vehicle classes also remain relevant directions for further research.
+
+\bmhead{Acknowledgements}
+
+The authors thank Funda\c{c}\~ao de Desenvolvimento da Pesquisa - Fundep Mover - Linha V, for the Grants ``Sistema de Suspens\~ao Semi-ativa para Controle Avan\c{c}ado de Estabilidade (SUSP-EST)'' and ``Projeto, Implementa\c{c}\~ao e Testes de Componentes e Dispositivos para o Desenvolvimento de Sistemas de Assist\^encia \`a Condu\c{c}\~ao (SEGCOM)'', and Coordena\c{c}\~ao de Aperfei\c{c}oamento de Pessoal de N\'ivel Superior - Brasil (CAPES) - Finance Code 001.
+
 \begin{table}[!t]
 \centering
 \scriptsize
@@ -1282,22 +1301,11 @@ $\mu$ & Metric & ESC & 2PID & GS-LQR & MFC \\
 \label{tab:control_effort_mx}
 \end{table}
 \FloatBarrier
-\section{Conclusions} \label{sec:concl}
 
-
-
-
-This paper presented a model-free unified chassis controller for the simultaneous regulation of side-slip angle, yaw rate, and roll angle during abrupt maneuvers. By combining ultra-local models, algebraic estimators, and a dedicated allocation stage, the proposed iPD-based architecture avoids the need for an explicit vehicle model while still coordinating the brake and anti-roll actuators within a common UCC framework.
-
-The comparative study under the sine-with-dwell maneuver showed that the interpretation of the results cannot rely on RMS or RMSE values alone. At medium and high friction, some benchmark controllers achieve smaller values for individual metrics, especially the fixed-parameter 2PID+fuzzy controller. Nevertheless, when those statistics are interpreted together with maneuver completion time and control effort, the proposed controller provides the most consistent behavior across the full friction range. In particular, for $\mu = 0.3$, it is the only strategy that completes the maneuver while keeping the lateral and roll variables within acceptable bounds; the remaining baselines either lose practical closed-loop stability before the end of the test or produce very large state excursions despite reaching the simulation horizon. The control-signal analysis also shows that this robustness is obtained through a more active brake intervention, especially on low-friction roads, while maintaining the anti-roll torque at comparatively moderate levels. Therefore, the main contribution of the proposed approach is not the minimization of every nominal metric, but a favorable compromise between regulation quality, practical robustness, and actuator demand.
-
-These conclusions remain bounded by the scope of the present study, which is based on a co-simulation environment, prescribed friction levels, ideal state information for the regulated variables, and the SWD maneuver as the common evaluation scenario. Future work should therefore address automatic tuning procedures, validation with estimated rather than ideal states, additional maneuvers and operating conditions, and experimental assessment in hardware-in-the-loop or real-vehicle implementations. Extensions toward longitudinal coordination and adaptation to other vehicle classes also constitute relevant directions for further research.
 
 % ========================================================================
 
-\bmhead{Acknowledgements}
 
-The authors thank Funda\c{c}\~ao de Desenvolvimento da Pesquisa - Fundep Mover - Linha V, for the Grants ``Sistema de Suspens\~ao Semi-ativa para Controle Avan\c{c}ado de Estabilidade (SUSP-EST)'' and ``Projeto, Implementa\c{c}\~ao e Testes de Componentes e Dispositivos para o Desenvolvimento de Sistemas de Assist\^encia \`a Condu\c{c}\~ao (SEGCOM)'', and Coordena\c{c}\~ao de Aperfei\c{c}oamento de Pessoal de N\'ivel Superior - Brasil (CAPES) - Finance Code 001.
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  7 APR 2026 21:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -703,6 +703,16 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
 
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 159.
 
+Underfull \hbox (badness 2173) in paragraph at lines 174--183
+\OT1/cmr/m/n/10 sys-tems such as Elec-tronic Sta-bil-ity Con-trol
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 174--183
+\OT1/cmr/m/n/10 includ-ing active and semi-active sus-pen-sions,
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -714,33 +724,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
-Underfull \hbox (badness 1565) in paragraph at lines 175--179
-\OT1/cmr/m/n/10 as Elec-tronic Sta-bil-ity Con-trol (ESC), which
+Underfull \hbox (badness 1888) in paragraph at lines 193--197
+\OT1/cmr/m/n/10 duce sub-stan-tial com-pu-ta-tional over-head and
  []
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 175--179
-[]\OT1/cmr/m/n/10 2007[]). In par-al-lel, suspension-based sys-tems,
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 180--187
-\OT1/cmr/m/n/10 cle dynam-ics, improv-ing over-all sta-bil-ity and
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 180--187
-\OT1/cmr/m/n/10 con-trol con-flicts between sub-sys-tems ([]Fal-cone
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 188--198
-\OT1/cmr/m/n/10 that enables high-fidelity sim-u-la-tion of cross-
- []
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 205--214
+Underfull \hbox (badness 1297) in paragraph at lines 198--206
 \OT1/cmr/m/n/10 niques. Neu-ral network-based con-trollers have
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 embedded base-line strate-gies under con-sis-tent
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 re-sen-ta-tive bench-mark con-trollers, includ-ing a
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 211--212
+\OT1/cmr/m/n/10 tec-ture, includ-ing the ultra-local model, esti-
  []
 
 
@@ -752,17 +757,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 1383) in paragraph at lines 219--220
-\OT1/cmr/m/n/10 tec-ture, includ-ing the ultra-local model, esti-
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 230--234
-\OT1/cmr/m/n/10 described, estab-lish-ing the frame-work within
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 260--265
+Underfull \hbox (badness 2165) in paragraph at lines 257--262
 []\OT1/cmr/m/n/10 The yaw rate ref-er-ence $[]$ is com-puted
  []
 
@@ -783,50 +778,42 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-Underfull \hbox (badness 1052) in paragraph at lines 402--406
+Underfull \hbox (badness 1052) in paragraph at lines 405--409
 []\OT1/cmr/m/n/10 The LQR bench-mark is derived from the
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 462--467
+Underfull \hbox (badness 1983) in paragraph at lines 465--470
 []\OT1/cmr/m/n/10 For each schedul-ing point, the descrip-tor
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 472--477
+Underfull \hbox (badness 1354) in paragraph at lines 475--481
 \OT1/cmr/m/n/10 model-based bench-mark with speed-dependent
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[5]
-Underfull \hbox (badness 1019) in paragraph at lines 482--487
+Underfull \hbox (badness 1019) in paragraph at lines 486--491
 \OT1/cmr/m/n/10 ple for FMVSS 126 / ECE R13H sine-with-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--497
+Underfull \hbox (badness 10000) in paragraph at lines 492--501
 []\OT1/cmr/m/n/10 As described in the offi-cial CarSim$[]$
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 488--497
+Underfull \hbox (badness 1253) in paragraph at lines 492--501
 \OT1/cmr/m/n/10 the SWD pro-ce-dure and is assessed through
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 488--497
+Underfull \hbox (badness 2818) in paragraph at lines 492--501
 \OT1/cmr/m/n/10 any ded-i-cated roll-control chan-nel; there-fore,
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 488--497
+Underfull \hbox (badness 1184) in paragraph at lines 492--501
 \OT1/cmr/m/n/10 this base-line is inter-preted here as an ESC-
  []
 
@@ -838,50 +825,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[6]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 593.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 593.
-
-
-Underfull \hbox (badness 3428) in paragraph at lines 605--609
-\OT1/cmr/m/n/10 For dig-i-tal imple-men-ta-tion, the inte-grals in
- []
-
-<MuC mio.png, id=308, 770.88pt x 578.16pt>
-File: MuC mio.png Graphic file (type png)
-<use MuC mio.png>
-Package pdftex.def Info: MuC mio.png  used on input line 654.
-(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
-
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -889,13 +833,49 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[7]
-<MFC_Blocos.png, id=330, 723.6636pt x 283.2984pt>
-File: MFC_Blocos.png Graphic file (type png)
-<use MFC_Blocos.png>
-Package pdftex.def Info: MFC_Blocos.png  used on input line 682.
-(pdftex.def)             Requested size: 455.24408pt x 178.21524pt.
+[6]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 586.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 597.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 597.
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 609--613
+\OT1/cmr/m/n/10 For dig-i-tal imple-men-ta-tion, the inte-grals in
+ []
+
+<MuC mio.png, id=310, 770.88pt x 578.16pt>
+File: MuC mio.png Graphic file (type png)
+<use MuC mio.png>
+Package pdftex.def Info: MuC mio.png  used on input line 657.
+(pdftex.def)             Requested size: 216.24094pt x 162.17482pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -907,24 +887,42 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[8 <./MuC mio.png>]
+[7]
+<MFC_Blocos.png, id=331, 723.6636pt x 283.2984pt>
+File: MFC_Blocos.png Graphic file (type png)
+<use MFC_Blocos.png>
+Package pdftex.def Info: MFC_Blocos.png  used on input line 685.
+(pdftex.def)             Requested size: 455.24408pt x 178.21524pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 746.
+(Font)              size <5> substituted on input line 748.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.015> not available
-(Font)              size <5> substituted on input line 746.
+(Font)              size <5> substituted on input line 748.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 746.
+(Font)              size <5> substituted on input line 748.
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 767--768
+Underfull \hbox (badness 1642) in paragraph at lines 769--770
 \OT1/cmr/m/n/10 and the pro-posed iPD-based MFC con-troller
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[8 <./MuC mio.png>]
 Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)                    date: 2026-03-18 17:30:22
 (epstopdf)                    size: 86888 bytes
@@ -932,31 +930,29 @@ Package epstopdf Info: Source file: <SWD_original.eps>
 (epstopdf)                    date: 2026-03-18 17:30:22
 (epstopdf)                    size: 81100 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=SWD_original-eps-converted-to.pdf SWD_original.eps>
-(epstopdf)             \includegraphics on input line 772.
+(epstopdf)             \includegraphics on input line 774.
 Package epstopdf Info: Output file is already uptodate.
-<SWD_original-eps-converted-to.pdf, id=353, 554.07pt x 303.1325pt>
+<SWD_original-eps-converted-to.pdf, id=360, 554.07pt x 303.1325pt>
 File: SWD_original-eps-converted-to.pdf Graphic file (type pdf)
 <use SWD_original-eps-converted-to.pdf>
-Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 772.
+Package pdftex.def Info: SWD_original-eps-converted-to.pdf  used on input line 774.
 (pdftex.def)             Requested size: 216.24094pt x 118.30446pt.
 
-Underfull \hbox (badness 2103) in paragraph at lines 784--790
-\OT1/cmr/m/n/10 com-pare the open-loop vehi-cle response, the
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 798.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 784--790
-\OT1/cmr/m/n/10 CarSim$[]$ ESC con-troller, the fixed-parameter
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 798.
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 784--790
-\OT1/cmr/m/n/10 and the pro-posed iPD-based MFC con-troller.
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 798.
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 784--790
-\OT1/cmr/m/n/10 loop sta-bil-ity'' refers to bounded and phys-i-
+Underfull \hbox (badness 1052) in paragraph at lines 800--801
+\OT1/cmr/m/n/10 is the least restric-tive one, yet it still sep-a-
  []
 
 
@@ -968,206 +964,205 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9 <./MFC_Blocos.png> <./SWD_original-eps-converted-to.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 792.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 792.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 792.
-
-<new_figs/beta_7.png, id=377, 690.4194pt x 466.3824pt>
+<new_figs/beta_7.png, id=379, 690.4194pt x 466.3824pt>
 File: new_figs/beta_7.png Graphic file (type png)
 <use new_figs/beta_7.png>
-Package pdftex.def Info: new_figs/beta_7.png  used on input line 801.
+Package pdftex.def Info: new_figs/beta_7.png  used on input line 807.
 (pdftex.def)             Requested size: 182.09485pt x 123.0072pt.
-<new_figs/AVz_7.png, id=378, 691.383pt x 465.4188pt>
+<new_figs/AVz_7.png, id=380, 691.383pt x 465.4188pt>
 File: new_figs/AVz_7.png Graphic file (type png)
 <use new_figs/AVz_7.png>
-Package pdftex.def Info: new_figs/AVz_7.png  used on input line 807.
+Package pdftex.def Info: new_figs/AVz_7.png  used on input line 813.
 (pdftex.def)             Requested size: 182.09485pt x 122.5755pt.
-<new_figs/Roll_7.png, id=379, 690.4194pt x 465.9006pt>
+<new_figs/Roll_7.png, id=381, 690.4194pt x 465.9006pt>
 File: new_figs/Roll_7.png Graphic file (type png)
 <use new_figs/Roll_7.png>
-Package pdftex.def Info: new_figs/Roll_7.png  used on input line 813.
+Package pdftex.def Info: new_figs/Roll_7.png  used on input line 819.
 (pdftex.def)             Requested size: 182.09485pt x 122.88013pt.
-<new_figs/AVx_7.png, id=380, 703.428pt x 465.4188pt>
+<new_figs/AVx_7.png, id=382, 703.428pt x 465.4188pt>
 File: new_figs/AVx_7.png Graphic file (type png)
 <use new_figs/AVx_7.png>
-Package pdftex.def Info: new_figs/AVx_7.png  used on input line 819.
+Package pdftex.def Info: new_figs/AVx_7.png  used on input line 825.
 (pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
 <new_figs/P_Carsim_7.png, id=384, 685.1196pt x 465.9006pt>
 File: new_figs/P_Carsim_7.png Graphic file (type png)
 <use new_figs/P_Carsim_7.png>
-Package pdftex.def Info: new_figs/P_Carsim_7.png  used on input line 835.
+Package pdftex.def Info: new_figs/P_Carsim_7.png  used on input line 841.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
 <new_figs/P_LQR_7.png, id=385, 685.1196pt x 465.9006pt>
 File: new_figs/P_LQR_7.png Graphic file (type png)
 <use new_figs/P_LQR_7.png>
-Package pdftex.def Info: new_figs/P_LQR_7.png  used on input line 841.
+Package pdftex.def Info: new_figs/P_LQR_7.png  used on input line 847.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
 <new_figs/P_PID_7.png, id=386, 685.1196pt x 465.9006pt>
 File: new_figs/P_PID_7.png Graphic file (type png)
 <use new_figs/P_PID_7.png>
-Package pdftex.def Info: new_figs/P_PID_7.png  used on input line 847.
+Package pdftex.def Info: new_figs/P_PID_7.png  used on input line 853.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
 <new_figs/P_MFC_7.png, id=387, 685.1196pt x 465.9006pt>
 File: new_figs/P_MFC_7.png Graphic file (type png)
 <use new_figs/P_MFC_7.png>
-Package pdftex.def Info: new_figs/P_MFC_7.png  used on input line 853.
+Package pdftex.def Info: new_figs/P_MFC_7.png  used on input line 859.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
+
+Underfull \hbox (badness 1675) in paragraph at lines 836--866
+\OT1/cmr/m/n/10 The 2PID+fuzzy con-troller pro-duces a reg-u-
+ []
+
+<new_figs/Mx_07.png, id=389, 709.6914pt x 468.7914pt>
+File: new_figs/Mx_07.png Graphic file (type png)
+<use new_figs/Mx_07.png>
+Package pdftex.def Info: new_figs/Mx_07.png  used on input line 871.
+(pdftex.def)             Requested size: 216.24094pt x 142.83452pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 878.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 878.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 878.
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 880--881
+\OT1/cmr/m/n/10 responses, the 2PID+fuzzy con-troller exhibits
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 880--881
+\OT1/cmr/m/n/10 slightly smaller side-slip and roll ampli-tudes,
+ []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
 [10 <./new_figs/beta_7.png (PNG copy)> <./new_figs/AVz_7.png (PNG copy)> <./new_figs/Roll_7.png (PNG copy)> <./new_figs/AVx_7.png (PNG copy)>]
-<new_figs/Mx_07.png, id=397, 709.6914pt x 468.7914pt>
-File: new_figs/Mx_07.png Graphic file (type png)
-<use new_figs/Mx_07.png>
-Package pdftex.def Info: new_figs/Mx_07.png  used on input line 865.
-(pdftex.def)             Requested size: 216.24094pt x 142.83452pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 872.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 872.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 872.
-
-<new_figs/beta_5.png, id=402, 685.1196pt x 465.9006pt>
+<new_figs/beta_5.png, id=401, 685.1196pt x 465.9006pt>
 File: new_figs/beta_5.png Graphic file (type png)
 <use new_figs/beta_5.png>
-Package pdftex.def Info: new_figs/beta_5.png  used on input line 882.
+Package pdftex.def Info: new_figs/beta_5.png  used on input line 888.
 (pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
-<new_figs/AVz_5.png, id=403, 679.8198pt x 465.9006pt>
+<new_figs/AVz_5.png, id=402, 679.8198pt x 465.9006pt>
 File: new_figs/AVz_5.png Graphic file (type png)
 <use new_figs/AVz_5.png>
-Package pdftex.def Info: new_figs/AVz_5.png  used on input line 888.
+Package pdftex.def Info: new_figs/AVz_5.png  used on input line 894.
 (pdftex.def)             Requested size: 182.09485pt x 124.79247pt.
-<new_figs/Roll_5.png, id=404, 685.1196pt x 465.9006pt>
+<new_figs/Roll_5.png, id=403, 685.1196pt x 465.9006pt>
 File: new_figs/Roll_5.png Graphic file (type png)
 <use new_figs/Roll_5.png>
-Package pdftex.def Info: new_figs/Roll_5.png  used on input line 894.
+Package pdftex.def Info: new_figs/Roll_5.png  used on input line 900.
 (pdftex.def)             Requested size: 182.09485pt x 123.82562pt.
-<new_figs/AVx_5.png, id=405, 693.792pt x 466.3824pt>
+<new_figs/AVx_5.png, id=404, 693.792pt x 466.3824pt>
 File: new_figs/AVx_5.png Graphic file (type png)
 <use new_figs/AVx_5.png>
-Package pdftex.def Info: new_figs/AVx_5.png  used on input line 900.
+Package pdftex.def Info: new_figs/AVx_5.png  used on input line 906.
 (pdftex.def)             Requested size: 182.09485pt x 122.40941pt.
-<new_figs/P_Carsim_5.png, id=409, 685.1196pt x 465.9006pt>
+<new_figs/P_Carsim_5.png, id=406, 685.1196pt x 465.9006pt>
 File: new_figs/P_Carsim_5.png Graphic file (type png)
 <use new_figs/P_Carsim_5.png>
-Package pdftex.def Info: new_figs/P_Carsim_5.png  used on input line 914.
+Package pdftex.def Info: new_figs/P_Carsim_5.png  used on input line 920.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_LQR_5.png, id=410, 685.1196pt x 465.9006pt>
+<new_figs/P_LQR_5.png, id=407, 685.1196pt x 465.9006pt>
 File: new_figs/P_LQR_5.png Graphic file (type png)
 <use new_figs/P_LQR_5.png>
-Package pdftex.def Info: new_figs/P_LQR_5.png  used on input line 920.
+Package pdftex.def Info: new_figs/P_LQR_5.png  used on input line 926.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_PID_5.png, id=411, 685.1196pt x 465.9006pt>
+<new_figs/P_PID_5.png, id=408, 685.1196pt x 465.9006pt>
 File: new_figs/P_PID_5.png Graphic file (type png)
 <use new_figs/P_PID_5.png>
-Package pdftex.def Info: new_figs/P_PID_5.png  used on input line 926.
+Package pdftex.def Info: new_figs/P_PID_5.png  used on input line 932.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_MFC_5.png, id=412, 685.1196pt x 465.9006pt>
+<new_figs/P_MFC_5.png, id=409, 685.1196pt x 465.9006pt>
 File: new_figs/P_MFC_5.png Graphic file (type png)
 <use new_figs/P_MFC_5.png>
-Package pdftex.def Info: new_figs/P_MFC_5.png  used on input line 932.
+Package pdftex.def Info: new_figs/P_MFC_5.png  used on input line 938.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[11 <./new_figs/P_Carsim_7.png (PNG copy)> <./new_figs/P_LQR_7.png (PNG copy)> <./new_figs/P_PID_7.png (PNG copy)> <./new_figs/P_MFC_7.png (PNG copy)>]
-Underfull \hbox (badness 1147) in paragraph at lines 940--941
-\OT1/cmr/m/n/10 high peaks, whereas the MFC main-tains the
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 940--941
-\OT1/cmr/m/n/10 with bounded ampli-tudes. There-fore, in this
- []
-
-<new_figs/Mx_05.png, id=421, 709.6914pt x 469.2732pt>
+[11 <./new_figs/P_Carsim_7.png (PNG copy)> <./new_figs/P_LQR_7.png (PNG copy)> <./new_figs/P_PID_7.png (PNG copy)> <./new_figs/P_MFC_7.png (PNG copy)> <./new_figs/Mx_07.png (PNG copy)>]
+<new_figs/Mx_05.png, id=416, 709.6914pt x 469.2732pt>
 File: new_figs/Mx_05.png Graphic file (type png)
 <use new_figs/Mx_05.png>
-Package pdftex.def Info: new_figs/Mx_05.png  used on input line 944.
+Package pdftex.def Info: new_figs/Mx_05.png  used on input line 950.
 (pdftex.def)             Requested size: 216.24094pt x 142.98132pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 952.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 952.
+(hyperref)                removing `math shift' on input line 958.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 952.
+(hyperref)                removing `\mu' on input line 958.
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 958.
 
-[12 <./new_figs/Mx_07.png (PNG copy)> <./new_figs/beta_5.png (PNG copy)> <./new_figs/AVz_5.png (PNG copy)> <./new_figs/Roll_5.png (PNG copy)> <./new_figs/AVx_5.png (PNG copy)>]
-<new_figs/beta_3.png, id=431, 698.61pt x 466.3824pt>
+<new_figs/beta_3.png, id=421, 698.61pt x 466.3824pt>
 File: new_figs/beta_3.png Graphic file (type png)
 <use new_figs/beta_3.png>
-Package pdftex.def Info: new_figs/beta_3.png  used on input line 960.
+Package pdftex.def Info: new_figs/beta_3.png  used on input line 966.
 (pdftex.def)             Requested size: 182.09485pt x 121.56256pt.
-<new_figs/AVz_3.png, id=432, 699.5736pt x 465.9006pt>
+<new_figs/AVz_3.png, id=422, 699.5736pt x 465.9006pt>
 File: new_figs/AVz_3.png Graphic file (type png)
 <use new_figs/AVz_3.png>
-Package pdftex.def Info: new_figs/AVz_3.png  used on input line 966.
+Package pdftex.def Info: new_figs/AVz_3.png  used on input line 972.
 (pdftex.def)             Requested size: 182.09485pt x 121.26636pt.
-<new_figs/Roll_3.png, id=433, 693.792pt x 465.4188pt>
+<new_figs/Roll_3.png, id=423, 693.792pt x 465.4188pt>
 File: new_figs/Roll_3.png Graphic file (type png)
 <use new_figs/Roll_3.png>
-Package pdftex.def Info: new_figs/Roll_3.png  used on input line 972.
+Package pdftex.def Info: new_figs/Roll_3.png  used on input line 978.
 (pdftex.def)             Requested size: 182.09485pt x 122.1565pt.
-<new_figs/AVx_3.png, id=434, 703.428pt x 465.4188pt>
+<new_figs/AVx_3.png, id=424, 703.428pt x 465.4188pt>
 File: new_figs/AVx_3.png Graphic file (type png)
 <use new_figs/AVx_3.png>
-Package pdftex.def Info: new_figs/AVx_3.png  used on input line 978.
+Package pdftex.def Info: new_figs/AVx_3.png  used on input line 984.
 (pdftex.def)             Requested size: 182.09485pt x 120.4805pt.
-<new_figs/beta_3_zoom.png, id=435, 678.8562pt x 465.9006pt>
+<new_figs/beta_3_zoom.png, id=425, 678.8562pt x 465.9006pt>
 File: new_figs/beta_3_zoom.png Graphic file (type png)
 <use new_figs/beta_3_zoom.png>
-Package pdftex.def Info: new_figs/beta_3_zoom.png  used on input line 992.
+Package pdftex.def Info: new_figs/beta_3_zoom.png  used on input line 998.
 (pdftex.def)             Requested size: 182.09485pt x 124.97018pt.
-<new_figs/AVz_3_zoom.png, id=436, 683.1924pt x 465.4188pt>
+<new_figs/AVz_3_zoom.png, id=426, 683.1924pt x 465.4188pt>
 File: new_figs/AVz_3_zoom.png Graphic file (type png)
 <use new_figs/AVz_3_zoom.png>
-Package pdftex.def Info: new_figs/AVz_3_zoom.png  used on input line 998.
+Package pdftex.def Info: new_figs/AVz_3_zoom.png  used on input line 1004.
 (pdftex.def)             Requested size: 182.09485pt x 124.04556pt.
-<new_figs/Roll_3_z.png, id=437, 693.792pt x 465.4188pt>
+<new_figs/Roll_3_z.png, id=427, 693.792pt x 465.4188pt>
 File: new_figs/Roll_3_z.png Graphic file (type png)
 <use new_figs/Roll_3_z.png>
-Package pdftex.def Info: new_figs/Roll_3_z.png  used on input line 1004.
+Package pdftex.def Info: new_figs/Roll_3_z.png  used on input line 1010.
 (pdftex.def)             Requested size: 182.09485pt x 122.1565pt.
-<new_figs/AVx_3_zoom.png, id=438, 702.9462pt x 465.4188pt>
+<new_figs/AVx_3_zoom.png, id=428, 702.9462pt x 465.4188pt>
 File: new_figs/AVx_3_zoom.png Graphic file (type png)
 <use new_figs/AVx_3_zoom.png>
-Package pdftex.def Info: new_figs/AVx_3_zoom.png  used on input line 1010.
+Package pdftex.def Info: new_figs/AVx_3_zoom.png  used on input line 1016.
 (pdftex.def)             Requested size: 182.09485pt x 120.55861pt.
 
-Underfull \hbox (badness 1072) in paragraph at lines 1018--1019
+Underfull \hbox (badness 1072) in paragraph at lines 1024--1025
 \OT1/cmr/m/n/10 2PID+fuzzy con-troller remains com-pet-i-tive in
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[12 <./new_figs/beta_5.png (PNG copy)> <./new_figs/AVz_5.png (PNG copy)> <./new_figs/Roll_5.png (PNG copy)> <./new_figs/AVx_5.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1181,41 +1176,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [14 <./new_figs/beta_3.png (PNG copy)> <./new_figs/AVz_3.png (PNG copy)> <./new_figs/Roll_3.png (PNG copy)> <./new_figs/AVx_3.png (PNG copy)> <./new_figs/beta_3_zoom.png (PNG copy)> <./new_figs/AVz_3_zoom.png (PNG copy)> <./new_figs/Roll_3_z.png (PNG copy)> <./new_figs/AVx_3_zoom.png (PNG copy)>]
-<new_figs/P_Carsim_3.png, id=464, 685.1196pt x 465.9006pt>
+<new_figs/P_Carsim_3.png, id=452, 685.1196pt x 465.9006pt>
 File: new_figs/P_Carsim_3.png Graphic file (type png)
 <use new_figs/P_Carsim_3.png>
-Package pdftex.def Info: new_figs/P_Carsim_3.png  used on input line 1029.
+Package pdftex.def Info: new_figs/P_Carsim_3.png  used on input line 1033.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_LQR_3.png, id=465, 685.1196pt x 465.9006pt>
+<new_figs/P_LQR_3.png, id=453, 685.1196pt x 465.9006pt>
 File: new_figs/P_LQR_3.png Graphic file (type png)
 <use new_figs/P_LQR_3.png>
-Package pdftex.def Info: new_figs/P_LQR_3.png  used on input line 1035.
+Package pdftex.def Info: new_figs/P_LQR_3.png  used on input line 1039.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_PID_3.png, id=466, 685.1196pt x 465.9006pt>
+<new_figs/P_PID_3.png, id=454, 685.1196pt x 465.9006pt>
 File: new_figs/P_PID_3.png Graphic file (type png)
 <use new_figs/P_PID_3.png>
-Package pdftex.def Info: new_figs/P_PID_3.png  used on input line 1041.
+Package pdftex.def Info: new_figs/P_PID_3.png  used on input line 1045.
 (pdftex.def)             Requested size: 172.99496pt x 117.64075pt.
-<new_figs/P_MFC_3.png, id=467, 681.2652pt x 456.7464pt>
+<new_figs/P_MFC_3.png, id=455, 681.2652pt x 456.7464pt>
 File: new_figs/P_MFC_3.png Graphic file (type png)
 <use new_figs/P_MFC_3.png>
-Package pdftex.def Info: new_figs/P_MFC_3.png  used on input line 1047.
+Package pdftex.def Info: new_figs/P_MFC_3.png  used on input line 1051.
 (pdftex.def)             Requested size: 172.99496pt x 115.98442pt.
-<new_figs/Mx_03.png, id=469, 709.6914pt x 468.7914pt>
+<new_figs/Mx_03.png, id=457, 709.6914pt x 468.7914pt>
 File: new_figs/Mx_03.png Graphic file (type png)
 <use new_figs/Mx_03.png>
-Package pdftex.def Info: new_figs/Mx_03.png  used on input line 1059.
+Package pdftex.def Info: new_figs/Mx_03.png  used on input line 1063.
 (pdftex.def)             Requested size: 216.24094pt x 142.83452pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[15]
-Underfull \hbox (badness 4416) in paragraph at lines 1076--1077
+[15 <./new_figs/P_Carsim_3.png (PNG copy)> <./new_figs/P_LQR_3.png (PNG copy)> <./new_figs/P_PID_3.png (PNG copy)> <./new_figs/P_MFC_3.png (PNG copy)>]
+Underfull \hbox (badness 4416) in paragraph at lines 1080--1081
 []\OT1/cmr/m/n/10 For the dry-road case, $\OML/cmm/m/it/10 ^^V \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7$, the
  []
 
@@ -1227,7 +1219,36 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[16 <./new_figs/P_Carsim_3.png (PNG copy)> <./new_figs/P_LQR_3.png (PNG copy)> <./new_figs/P_PID_3.png (PNG copy)> <./new_figs/P_MFC_3.png (PNG copy)> <./new_figs/Mx_03.png (PNG copy)>]
+[16 <./new_figs/Mx_03.png (PNG copy)>]
+Underfull \hbox (badness 2582) in paragraph at lines 1260--1261
+\OT1/cmr/m/n/10 2PID+fuzzy con-troller. How-ever, when those
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 1262--1263
+[]\OT1/cmr/m/n/10 These con-clu-sions remain bounded by the
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 1262--1263
+\OT1/cmr/m/n/10 i-men-tal assess-ment in hardware-in-the-loop or
+ []
+
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1266.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1267
+ []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
+ []
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 1266--1267
+\OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1257,9 +1278,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[18]
-Underfull \hbox (badness 1005) in paragraph at lines 1294--1295
-[]\OT1/cmr/m/n/10 These con-clu-sions remain bounded by the
+[18] (sn-article.bbl
+Underfull \hbox (badness 1168) in paragraph at lines 44--49
+\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
  []
 
 
@@ -1271,26 +1292,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [19]
-
-Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1300.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1300--1301
- []\OT1/cmr/bx/n/10 Acknowledgements.[][] \OT1/cmr/m/n/10 The authors thank
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 1300--1301
-\OT1/cmr/m/n/10 de Esta-bil-i-dade (SUSP-EST)'' and ``Pro-jeto,
- []
-
-(sn-article.bbl
-Underfull \hbox (badness 1168) in paragraph at lines 44--49
-\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 71--75
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1306,14 +1307,6 @@ Underfull \hbox (badness 1178) in paragraph at lines 101--107
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[20]
 Underfull \hbox (badness 10000) in paragraph at lines 166--171
 []\OT1/cmr/m/n/10 Naciones Unidas (Noti-cias ONU). 2022,
  []
@@ -1339,6 +1332,14 @@ Overfull \hbox (4.03738pt too wide) in paragraph at lines 166--171
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 207--213
 []\OT1/cmr/m/n/10 Wanki, C., C. Jae-woong, K. Chongkap,
  []
@@ -1376,7 +1377,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[21] (sn-article.aux)
+[21
+
+] (sn-article.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1387,20 +1390,20 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.985pt have occurred.
 
 Package rerunfilecheck Info: File `sn-article.out' has not changed.
-(rerunfilecheck)             Checksum: 1AAE195FD3CC261ADD3DBD52682F705A;6820.
+(rerunfilecheck)             Checksum: 3048737AF68603626DB77E551E8FDD43;6820.
  ) 
 Here is how much of TeX's memory you used:
  16303 strings out of 467867
  257433 string characters out of 5418819
- 714809 words of memory out of 5000000
+ 714807 words of memory out of 5000000
  44805 multiletter control sequences out of 15000+600000
  651904 words of font info for 139 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,14n,117p,1615b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,14n,117p,1492b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (21 pages, 4226662 bytes).
+Output written on sn-article.pdf (21 pages, 4221698 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
+ 665 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)
  427 words of extra memory for PDF output out of 10000 (max. 10000000)
 
