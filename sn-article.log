@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  8 APR 2026 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.6)  8 APR 2026 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1225,6 +1225,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [16 <./new_figs/Mx_03.png (PNG copy)>]
+Underfull \hbox (badness 1668) in paragraph at lines 1252--1252
+\OT1/cmr/m/n/10 ing iso-lated non-rep-re-sen-ta-tive spikes removed
+ []
+
+
 Underfull \hbox (badness 2582) in paragraph at lines 1263--1264
 \OT1/cmr/m/n/10 2PID+fuzzy con-troller. How-ever, when those
  []
@@ -1284,11 +1289,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [18] (sn-article.bbl
-Underfull \hbox (badness 1168) in paragraph at lines 44--49
-\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1297,6 +1297,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [19]
+Underfull \hbox (badness 1168) in paragraph at lines 44--49
+\OT1/cmr/m/it/10 nol-ogy 15\OT1/cmr/m/n/10 (3): 566--580.  []$https : / / doi . org / 10 .
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 71--75
 []\OT1/cmr/m/n/10 Gidlewski, M.J., K. JANKOWSKI,
  []
@@ -1312,6 +1317,14 @@ Underfull \hbox (badness 1178) in paragraph at lines 101--107
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 166--171
 []\OT1/cmr/m/n/10 Naciones Unidas (Noti-cias ONU). 2022,
  []
@@ -1337,14 +1350,6 @@ Overfull \hbox (4.03738pt too wide) in paragraph at lines 166--171
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[20]
 Underfull \hbox (badness 10000) in paragraph at lines 207--213
 []\OT1/cmr/m/n/10 Wanki, C., C. Jae-woong, K. Chongkap,
  []
@@ -1382,9 +1387,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[21
-
-] (sn-article.aux)
+[21] (sn-article.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1400,15 +1403,15 @@ Package rerunfilecheck Info: File `sn-article.out' has not changed.
 Here is how much of TeX's memory you used:
  16303 strings out of 467867
  257433 string characters out of 5418819
- 715807 words of memory out of 5000000
+ 710183 words of memory out of 5000000
  44805 multiletter control sequences out of 15000+600000
  651904 words of font info for 139 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 90i,14n,117p,1509b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,14n,117p,1867b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0700.pk> <C:\Users\POLI\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.pk><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/POLI/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on sn-article.pdf (21 pages, 4222272 bytes).
+Output written on sn-article.pdf (21 pages, 4223138 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
+ 667 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)
  427 words of extra memory for PDF output out of 10000 (max. 10000000)
 

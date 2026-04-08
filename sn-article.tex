@@ -915,7 +915,7 @@ Figures \ref{fig:beta_05} and \ref{fig:yaw_05} show that the intermediate-fricti
 \end{figure}
 
 
-Figure~\ref{fig:Control_mu_05} shows the realized brake-pressure distribution at each wheel for $\mu = 0.5$. The CarSim\textsuperscript{\textregistered} ESC acts only during the initial portion of the maneuver, with isolated interventions that vanish once the controller loses bounded behavior. The GS-LQR uses sparse and narrow pulses, mainly on the left wheels, which is consistent with its low average brake demand but also with its inability to sustain acceptable regulation throughout the maneuver. The 2PID+fuzzy controller applies a regular sequence of periodic pulses whose amplitude gradually increases, while the actuator-level realization associated with the proposed MFC exhibits a more persistent multiwheel pressure pattern with bounded peaks and continuous participation of the four brakes. This qualitative picture is coherent with the control-effort metrics: at $\mu = 0.5$, the MFC-associated closed-loop response does not minimize brake RMS or energy, but it avoids the very large isolated peaks of the GS-LQR and the more aggressive peak growth of the 2PID+fuzzy controller, thereby supporting a full-duration bounded response without requiring the most demanding anti-roll action.
+Figure~\ref{fig:Control_mu_05} shows the realized brake-pressure distribution at each wheel for $\mu = 0.5$. The CarSim\textsuperscript{\textregistered} ESC acts only during the initial portion of the maneuver, with isolated interventions that vanish once the controller loses bounded behavior. The GS-LQR uses sparse and narrow pulses, mainly on the left wheels, which is consistent with its low average brake demand but also with its inability to sustain acceptable regulation throughout the maneuver. The 2PID+fuzzy controller applies a regular sequence of periodic pulses whose amplitude gradually increases, while the actuator-level realization associated with the proposed MFC exhibits a more persistent multiwheel pressure pattern with bounded peaks and continuous participation of the four brakes. This qualitative picture is coherent with the control-effort metrics: at $\mu = 0.5$, the MFC-associated closed-loop response does not minimize brake RMS or energy, but it avoids relying on the sparse isolated pulses of the GS-LQR and the more aggressive peak growth of the 2PID+fuzzy controller, thereby supporting a full-duration bounded response without requiring the most demanding anti-roll action.
 \begin{figure}
      \centering
      \begin{subfigure}[b]{0.38\textwidth}
@@ -1084,9 +1084,9 @@ For the dry-road case, $\mu = 0.7$, the 2PID+fuzzy controller attains the lowest
 
 \subsubsection{Control-signal analysis}
 
-Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx} characterize the realized actuator-level signals associated with each closed-loop implementation under CarSim's internal allocation. The metrics Sat and Rate RMS measure, respectively, the percentage of time spent at actuator saturation and the aggressiveness of the input variations. For the brake-pressure signal $P_{bs}$, the GS-LQR controller yields the smallest RMS and energy at $\mu = 0.5$ and $\mu = 0.7$, but it does so with highly impulsive behavior, as evidenced by peak pressures of 96.05 and 405.65 and by large Rate RMS values. This tendency becomes extreme at $\mu = 0.3$, where the GS-LQR reaches a peak of $1.68\times10^3$ and a Rate RMS of $3.14\times10^3$, which is consistent with the poor state regulation observed in Table~\ref{tab:perf_friction}. By contrast, the brake-pressure pattern associated with the MFC remains peak-bounded at 23.93 for all three friction levels, although it uses a larger sustained brake effort, with RMS values between 6.57 and 8.21 and nonzero saturation percentages, especially 6.72\% at $\mu = 0.3$. This pattern suggests that, under CarSim's internal allocation, the MFC-associated closed-loop response is realized through more continuous brake-pressure activity rather than sporadic high-amplitude pulses in the most demanding scenario.
+Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx} characterize the realized actuator-level signals associated with each closed-loop implementation under CarSim's internal allocation. For practical readability, a few isolated nonrepresentative spikes were excluded from the plotted ranges of the actuator-level figures; accordingly, the MAX values discussed in this subsection and reported in Tables~\ref{tab:control_effort_pbs} and \ref{tab:control_effort_mx} correspond to the visible representative peaks used for comparison rather than to those isolated outliers. The metrics Sat and Rate RMS measure, respectively, the percentage of time spent at actuator saturation and the aggressiveness of the input variations. For the brake-pressure signal $P_{bs}$, the GS-LQR controller yields the smallest RMS and energy at $\mu = 0.5$ and $\mu = 0.7$, but it does so with sparse and highly impulsive behavior, as evidenced by visible peak pressures of about 25.0 and 24.3\,MPa, respectively, together with large Rate RMS values. At $\mu = 0.3$, the same pattern persists: the GS-LQR reaches a visible peak of about 24.9\,MPa, yet its sparse actuation is still consistent with the poor state regulation observed in Table~\ref{tab:perf_friction}. By contrast, the brake-pressure pattern associated with the MFC remains peak-bounded at 23.93 for all three friction levels, although it uses a larger sustained brake effort, with RMS values between 6.57 and 8.21 and nonzero saturation percentages, especially 6.72\% at $\mu = 0.3$. This pattern suggests that, under CarSim's internal allocation, the MFC-associated closed-loop response is realized through more continuous brake-pressure activity rather than sparse impulsive pulses in the most demanding scenario.
 
-The anti-roll torque $M_x$ exhibits the opposite tendency. At $\mu = 0.3$, the MFC requires the smallest torque RMS (206.07), the smallest peak torque (962.18), the lowest energy ($1.53\times10^7$), and zero saturation, whereas the CarSim\textsuperscript{\textregistered} ESC, the 2PID+fuzzy controller, and the GS-LQR demand substantially larger torques and, in two cases, severe saturation. At $\mu = 0.5$ and $\mu = 0.7$, the ESC and GS-LQR reduce torque energy more than the MFC, but the 2PID+fuzzy controller remains by far the most demanding strategy, with energy above $10^9$ and saturation around 22\%. The MFC-associated actuator-level signals therefore reveal a clear actuation trend: the closed-loop implementation accepts a more active realized brake intervention, particularly on low-friction roads, while keeping the anti-roll actuation within comparatively moderate bounds.
+The anti-roll torque $M_x$ exhibits the opposite tendency. At $\mu = 0.3$, the MFC requires the smallest torque RMS (206.07), the lowest energy ($1.53\times10^7$), and zero saturation, while keeping its peak torque below 1000\,Nm. The ESC and the GS-LQR reach substantially larger peaks, whereas the 2PID+fuzzy controller shows lower visible peaks only over a shorter operating interval before failure. At $\mu = 0.5$ and $\mu = 0.7$, the ESC and GS-LQR reduce torque energy more than the MFC, but the 2PID+fuzzy controller remains the most demanding strategy in cumulative terms, with energy above $10^9$ and saturation around 22\%. The MFC-associated actuator-level signals therefore reveal a clear actuation trend: the closed-loop implementation accepts a more active realized brake intervention, particularly on low-friction roads, while keeping the anti-roll actuation within comparatively moderate bounds.
 
 Taken together, Table~\ref{tab:perf_friction} and Tables~\ref{tab:control_effort_pbs}--\ref{tab:control_effort_mx} show that the main strength of the proposed controller is not the minimization of every nominal metric, but a more favorable robustness-versus-effort compromise. The MFC is the only controller that maintains bounded vehicle states for the full duration of all three scenarios, and it does so with the corrective action being realized mainly through brake-pressure activity when friction is scarce, instead of demanding excessively large anti-roll torques. This joint reading is essential, because a ranking based only on RMS or RMSE would favor controllers that either lose stability before the end of the maneuver or achieve low average errors at the price of unrealistic control peaks.
 
@@ -1228,28 +1228,28 @@ $\mu$ & Metric & ESC & 2PID & GS-LQR & MFC \\
 \midrule
 \multirow{5}{*}{0.3}
 & RMS      & 23.4196 & 2.6088 & 2.2192 & 8.2063 \\
-& MAX      & 55.2815 & 11.8114 & 1.68E+03 & 23.9273 \\
+& MAX      & 55.2815 & 11.8114 & 24.9 & 23.9273 \\
 & Energy   & 55876 & 618.5951 & 1.77E+03 & 2.42E+04 \\
 & Sat      & NA & 0 & 0.01 & 6.7227 \\
 & Rate RMS & 557.7514 & 218.6228 & 3.14E+03 & 7.83E+03 \\
 \midrule
 \multirow{5}{*}{0.5}
 & RMS      & 2.8170 & 4.9124 & 0.3941 & 6.5678 \\
-& MAX      & 12 & 66.7595 & 96.0468 & 23.9273 \\
+& MAX      & 12 & 66.7595 & 25.0 & 23.9273 \\
 & Energy   & 260.9212 & 8.51E+03 & 12.5355 & 1.51E+04 \\
 & Sat      & NA & 1.5661 & 0.0056 & 1.6008 \\
 & Rate RMS & 93.5817 & 861.0666 & 557.3531 & 5.97E+03 \\
 \midrule
 \multirow{5}{*}{0.7}
 & RMS      & 3.4939 & 5.0176 & 0.7799 & 7.3820 \\
-& MAX      & 12 & 22.9088 & 405.6450 & 23.9273 \\
+& MAX      & 12 & 22.9088 & 24.3 & 23.9273 \\
 & Energy   & 705.6629 & 8.94E+03 & 121.6541 & 1.93E+04 \\
 & Sat      & NA & 3.7111 & 0.0037 & 2.9302 \\
 & Rate RMS & 151.9735 & 572.9802 & 1.10E+03 & 9.06E+03 \\
 \bottomrule
 \end{tabular}
 }
-\caption{Brake-pressure control effort metrics $P_{bs}$. Sat denotes the percentage of time at saturation, and NA indicates that the metric is not available for the simulator-native ESC output in this setup.}
+\caption{Brake-pressure control effort metrics $P_{bs}$. MAX denotes the visible representative peak used in the comparative discussion, after excluding isolated nonrepresentative spikes removed from the plotted range for practical readability. Sat denotes the percentage of time at saturation, and NA indicates that the metric is not available for the simulator-native ESC output in this setup.}
 \label{tab:control_effort_pbs}
 \end{table}
 
@@ -1279,28 +1279,28 @@ $\mu$ & Metric & ESC & 2PID & GS-LQR & MFC \\
 \midrule
 \multirow{5}{*}{0.3}
 & RMS      & 492.0474 & 897.7965 & 1.55E+03 & 206.0696 \\
-& MAX      & 2228 & 3.39E+03 & 1.09E+04 & 962.1785 \\
+& MAX      & 2228 & 339 & 1500 & 962.1785 \\
 & Energy   & 2.13E+10 & 7.33E+07 & 8.67E+08 & 1.53E+07 \\
 & Sat      & NA & 12.5566 & 22.0652 & 0 \\
 & Rate RMS & 764.1464 & 5.93E+03 & 9.26E+03 & 3.95E+03 \\
 \midrule
 \multirow{5}{*}{0.5}
 & RMS      & 210.4468 & 1.98E+03 & 148.8898 & 351.4349 \\
-& MAX      & 525.3417 & 6.74E+03 & 669.5755 & 1200 \\
+& MAX      & 525.3417 & 674 & 669.5755 & 1200 \\
 & Energy   & 1.46E+06 & 1.38E+09 & 1.79E+06 & 4.34E+07 \\
 & Sat      & NA & 22.9564 & 0 & 0.2259 \\
 & Rate RMS & 386.8675 & 9.40E+03 & 617.4531 & 7.32E+03 \\
 \midrule
 \multirow{5}{*}{0.7}
 & RMS      & 271.0004 & 2.42E+03 & 243.2953 & 455.9170 \\
-& MAX      & 731.5411 & 9.18E+03 & 835.7442 & 1200 \\
+& MAX      & 731.5411 & 918 & 835.7442 & 1200 \\
 & Energy   & 2.94E+06 & 2.07E+09 & 1.18E+07 & 7.37E+07 \\
 & Sat      & NA & 22.3799 & 0 & 4.52 \\
 & Rate RMS & 539.0644 & 9.85E+03 & 841.1845 & 8.04E+03 \\
 \bottomrule
 \end{tabular}
 }
-\caption{Anti-roll torque control effort metrics $M_x$.}
+\caption{Anti-roll torque control effort metrics $M_x$. MAX denotes the visible representative peak used in the comparative discussion, after excluding isolated nonrepresentative spikes removed from the plotted range for practical readability.}
 \label{tab:control_effort_mx}
 \end{table}
 \FloatBarrier
