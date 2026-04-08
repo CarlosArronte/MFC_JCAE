@@ -6,50 +6,44 @@ The style file: sn-chicago.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: sn-bibliography.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Warning--no volume for Hac2007
-Warning--page numbers missing in Hac2007
-Warning--no number and no volume in Lew2024Risk-Averse
-Warning--empty organization in carsimintro2021
-Warning--page numbers missing in electronics10040510
 You've used 30 entries,
             3204 wiz_defined-function locations,
-            891 strings with 12056 characters,
-and the built_in function-call counts, 21879 in all, are:
-= -- 1731
+            892 strings with 12074 characters,
+and the built_in function-call counts, 22375 in all, are:
+= -- 1796
 > -- 1787
-< -- 1
+< -- 3
 + -- 540
 - -- 588
-* -- 2082
-:= -- 4046
-add.period$ -- 125
+* -- 2089
+:= -- 4084
+add.period$ -- 122
 call.type$ -- 30
 change.case$ -- 237
 chr.to.int$ -- 29
-cite$ -- 35
-duplicate$ -- 566
-empty$ -- 1283
+cite$ -- 30
+duplicate$ -- 607
+empty$ -- 1328
 format.name$ -- 664
-if$ -- 4060
+if$ -- 4204
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 24
-newline$ -- 167
+newline$ -- 166
 num.names$ -- 298
-pop$ -- 195
+pop$ -- 205
 preamble$ -- 1
 purify$ -- 415
 quote$ -- 0
-skip$ -- 547
+skip$ -- 589
 stack$ -- 0
-substring$ -- 981
-swap$ -- 166
-text.length$ -- 1
+substring$ -- 1059
+swap$ -- 196
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 586
-warning$ -- 5
-while$ -- 260
+warning$ -- 0
+while$ -- 265
 width$ -- 0
-write$ -- 427
-(There were 5 warnings)
+write$ -- 428

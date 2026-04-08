@@ -16,14 +16,6 @@ Ahrenhold, T., J.~Iatropoulos, and R.~Henze. 2023.
   a friction-adaptive automatic emergency steer assist (esa).
 \newblock {\em Automotive and Engine Technology\/}~{\em 8\/}(3): 141--151 .
 
-\bibitem[\protect\citeauthoryear{Aleksander and Edward}{Aleksander and
-  Edward}{2007}]{Hac2007}
-Aleksander, H. and B.~Edward. 2007.
-\newblock Robustness of side slip estimation and control algorithms for vehicle
-  chassis control.
-\newblock {\em 20th International Technical Conference on the Enhanced Safety
-  of Vehicles (ESV)\/}~(07-0353) .
-
 \bibitem[\protect\citeauthoryear{Arronte, Ripari, Angélico, and
   Colón}{Arronte et~al.}{2023}]{Arronte2023}
 Arronte, C.A., G.A. Ripari, B.A. Angélico, and D.~Colón 2023.
@@ -97,6 +89,14 @@ Guo, N., B.~Lenzo, X.~Zhang, Y.~Zou, R.~Zhai, and T.~Zhang. 2020.
 \newblock {\em IEEE Transactions on Vehicular Technology\/}~69: 4935--4946.
 \newblock \doi{10.1109/tvt.2020.2980169} .
 
+\bibitem[\protect\citeauthoryear{Hac and Bedner}{Hac and
+  Bedner}{2007}]{Hac2007}
+Hac, A. and E.~Bedner 2007.
+\newblock Robustness of side slip estimation and control algorithms for vehicle
+  chassis control.
+\newblock In {\em 20th International Technical Conference on the Enhanced
+  Safety of Vehicles (ESV)}, pp.\  Paper 07--0353.
+
 \bibitem[\protect\citeauthoryear{Lai and Jiang}{Lai and Jiang}{2021}]{Lai2021}
 Lai, F. and C.Y. Jiang. 2021.
 \newblock Establishment and simulation analysis of 18 dof unified dynamics
@@ -113,13 +113,12 @@ Levine, S., C.~Finn, T.~Darrell, and P.~Abbeel. 2016.
 
 \bibitem[\protect\citeauthoryear{Lew, Greiff, Djeumou, Suminaka, Thompson, and
   Subosits}{Lew et~al.}{2024}]{Lew2024Risk-Averse}
-Lew, T., M.~Greiff, F.~Djeumou, M.~Suminaka, M.~Thompson, and J.K. Subosits.
+Lew, T., M.~Greiff, F.~Djeumou, M.~Suminaka, M.~Thompson, and J.K. Subosits
   2024.
 \newblock Risk-averse model predictive control for racing in adverse
   conditions.
-\newblock {\em 2025 IEEE International Conference on Robotics and Automation
-  (ICRA)\/}: 8508--8514.
-\newblock \doi{10.1109/icra55743.2025.11127729} .
+\newblock In {\em 2025 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pp.\  8508--8514.
 
 \bibitem[\protect\citeauthoryear{Mazzilli, De~Pinto, Pascali, Contrino,
   Bottiglione, Mantriota, Gruber, and Sorniotti}{Mazzilli
@@ -142,7 +141,8 @@ Mazzilli, V., S.~De~Pinto, L.~Pascali, M.~Contrino, F.~Bottiglione,
   Corporation}}{{Mechanical Simulation Corporation}}{2021}]{carsimintro2021}
 {Mechanical Simulation Corporation} 2021, June.
 \newblock {\em Introduction to CarSim}.
-\newblock 755 Phoenix Drive, Ann Arbor MI, 48108, USA.
+\newblock 755 Phoenix Drive, Ann Arbor MI, 48108, USA: Mechanical Simulation
+  Corporation.
 \newblock Technical overview of CarSim features and capabilities.
 
 \bibitem[\protect\citeauthoryear{{Mechanical Simulation
@@ -199,7 +199,7 @@ Stolle, C.S., J.C. Bohlken, K.A. Lechtenberg, and D.~Sicking 2011.
 Swain, S.K., J.J. Rath, and K.C. Veluvolu. 2021.
 \newblock Neural network based robust lateral control for an autonomous
   vehicle.
-\newblock {\em Electronics\/}~{\em 10\/}(4).
+\newblock {\em Electronics\/}~{\em 10\/}(4): 510.
 \newblock \doi{10.3390/electronics10040510} .
 
 \bibitem[\protect\citeauthoryear{Wanki, Jaewoong, Chongkap, Seibum, and
